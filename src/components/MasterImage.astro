@@ -1,0 +1,39 @@
+---
+import { asset } from '../data/content';
+interface Props {
+  kind: 'hero' | 'space' | 'files' | 'shield';
+  alt: string;
+  eager?: boolean;
+  sizes?: string;
+}
+const { kind, alt, eager = false, sizes = '(max-width: 850px) 100vw, 50vw' } = Astro.props;
+const width = kind === 'hero' ? 1344 : 1328;
+const height = kind === 'hero' ? 768 : 800;
+const original =
+  kind === 'hero'
+    ? 'brand/hero/eryndex-hero-master.png'
+    : 'products/' + kind + '/eryndex-' + kind + '-master.png';
+---
+
+<picture
+  ><source
+    type="image/webp"
+    srcset={asset('web/' + kind + '-' + width / 2 + '.webp') +
+      ' ' +
+      width / 2 +
+      'w, ' +
+      asset('web/' + kind + '-' + width + '.webp') +
+      ' ' +
+      width +
+      'w'}
+    sizes={sizes}
+  /><img
+    src={asset(original)}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={eager ? 'eager' : 'lazy'}
+    fetchpriority={eager ? 'high' : 'auto'}
+    decoding={eager ? 'sync' : 'async'}
+  /></picture
+>

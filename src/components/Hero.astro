@@ -1,0 +1,122 @@
+---
+import MasterImage from './MasterImage.astro';
+import { href, asset, translator, type Locale } from '../data/content';
+const { lang } = Astro.props as { lang: Locale };
+const t = translator(lang);
+// Source H3 remains untouched. Enable only after separate derivatives pass loop QA.
+const productionMotion = false;
+---
+
+<section class="hero">
+  <div class="hero-art">
+    <MasterImage
+      kind="hero"
+      eager
+      sizes="100vw"
+      alt={t(
+        '暖光中的半透明材質，以結構、層次與流動呈現秩序',
+        'Translucent materials in warm light expressing structure, layers and flow',
+      )}
+    />
+    {
+      productionMotion && (
+        <video
+          class="hero-video"
+          muted
+          playsinline
+          loop
+          preload="none"
+          poster={asset('brand/hero/eryndex-hero-master.png')}
+          aria-label={t('品牌動態主視覺', 'Brand motion')}
+          data-motion
+        >
+          <>
+            <source data-src={asset('brand/hero/production/hero-loop.webm')} type="video/webm" />
+            <source data-src={asset('brand/hero/production/hero-loop.mp4')} type="video/mp4" />
+          </>
+        </video>
+      )
+    }
+  </div>
+  <div class="hero-copy">
+    <p class="eyebrow">ERYNDEX · TECHNOLOGY, IN ORDER.</p><h1>
+      {t('讓企業的每一天，', 'A little more clarity.')}<br /><em
+        >{t('更有條理。', 'A lot more possibility.')}</em>
+    </h1><p class="hero-description">
+      {
+        t(
+          '讓工作、資訊與信任各就其位。\n把更多心力，留給值得向前的事。',
+          'Bring work, information and trust into place.\nMake room for what comes next.',
+        )
+      }
+    </p><a class="button" href={href(lang, 'products')}
+      >{t('探索 Eryndex', 'Discover Eryndex')} <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="hero-foot">
+    <span>{t('為真實的企業日常而設計', 'DESIGNED AROUND EVERYDAY BUSINESS')}</span><a
+      href="#proposition">{t('往下探索', 'Explore below')} ↓</a>
+  </div>
+  {
+    productionMotion && (
+      <button
+        class="motion-toggle"
+        data-motion-toggle
+        data-play={t('播放動畫', 'Play motion')}
+        data-pause={t('暫停動畫', 'Pause motion')}
+        aria-pressed="false"
+      >
+        {t('播放動畫', 'Play motion')}
+      </button>
+    )
+  }
+</section>
+<script>
+  const video = document.querySelector<HTMLVideoElement>('[data-motion]');
+  const toggle = document.querySelector<HTMLButtonElement>('[data-motion-toggle]');
+  if (video && toggle) {
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    const wide = matchMedia('(min-width: 900px)');
+    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } })
+      .connection;
+    const allowed = () => wide.matches && !reduced.matches && !connection?.saveData;
+    const label = () => {
+      toggle.textContent = video.paused ? toggle.dataset.play! : toggle.dataset.pause!;
+      toggle.setAttribute('aria-pressed', String(!video.paused));
+    };
+    const load = () => {
+      if (!video.dataset.loaded) {
+        video.querySelectorAll('source').forEach((s) => {
+          s.src = s.dataset.src!;
+        });
+        video.load();
+        video.dataset.loaded = 'true';
+      }
+    };
+    toggle.addEventListener('click', async () => {
+      if (video.paused) {
+        load();
+        try {
+          await video.play();
+        } catch {}
+      } else video.pause();
+      label();
+    });
+    if (allowed()) {
+      load();
+      video.play().catch(() => {});
+    }
+    reduced.addEventListener('change', () => {
+      if (reduced.matches) video.pause();
+      label();
+    });
+    wide.addEventListener('change', () => {
+      if (!wide.matches) video.pause();
+      label();
+    });
+    video.addEventListener('play', label);
+    video.addEventListener('pause', label);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) video.pause();
+    });
+  }
+</script>

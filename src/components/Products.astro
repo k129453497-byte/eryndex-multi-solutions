@@ -1,0 +1,73 @@
+---
+import { content, href, type Locale } from '../data/content';
+import CTA from './CTA.astro';
+import MasterImage from './MasterImage.astro';
+const { lang } = Astro.props as { lang: Locale };
+const { t, products } = content(lang);
+---
+
+<section class="wrap page-intro">
+  <p class="eyebrow">ERYNDEX PRODUCTS</p><h1>
+    {t('三種專注，\n回應不同的需要。', 'Three distinct purposes.\nOne thoughtful approach.')}
+  </h1><p class="lead">
+    {
+      t(
+        '組織工作、保存資訊、管理信任。每套產品都能獨立使用，也能在你需要時相互連結。',
+        'Organize work, preserve information and manage trust. Each product stands on its own and connects when you need it.',
+      )
+    }
+  </p>
+</section>
+<section class="wrap product-catalog">
+  {
+    products.map((p, i) => (
+      <article class={'catalog-row ' + p.accent}>
+        <>
+          <div>
+            <>
+              <p class="eyebrow">
+                0{i + 1} / {p.category}
+              </p>
+              <h2>{p.name}</h2>
+              <h3>{p.line}</h3>
+              <p>{p.desc}</p>
+              <a class="text-link" href={href(lang, 'products/' + p.id)}>
+                {t('探索', 'Explore')} {p.word} ↗
+              </a>
+            </>
+          </div>
+          <a href={href(lang, 'products/' + p.id)} class="product-art">
+            <MasterImage
+              kind={p.id as 'space' | 'files' | 'shield'}
+              alt={p.name + ' / ' + p.concept}
+            />
+          </a>
+        </>
+      </article>
+    ))
+  }
+</section>
+<section class="wrap section">
+  <p class="eyebrow">FIND YOUR STARTING POINT</p><h2>
+    {t('先看要解決的問題。', 'Start with the problem to solve.')}
+  </h2><div class="comparison">
+    {
+      products.map((p) => (
+        <article class={p.accent}>
+          <>
+            <h3>{p.name}</h3>
+            <p>{p.category}</p>
+            <ul>
+              {p.features.map((f) => (
+                <li>{f[0]}</li>
+              ))}
+            </ul>
+            <a href={href(lang, 'products/' + p.id)} class="text-link">
+              {t('深入了解', 'Learn more')} ↗
+            </a>
+          </>
+        </article>
+      ))
+    }
+  </div>
+</section><CTA lang={lang} />

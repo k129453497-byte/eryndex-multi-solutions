@@ -1,0 +1,132 @@
+---
+import { content, href, type Locale } from '../data/content';
+import CTA from './CTA.astro';
+const { lang, id } = Astro.props as { lang: Locale; id?: string };
+const { t, solutions, products } = content(lang);
+const s = solutions.find((s) => s.id === id);
+---
+
+{
+  s ? (
+    <>
+      <section class="wrap page-intro">
+        <>
+          <a class="back-link" href={href(lang, 'solutions')}>
+            ← {t('所有解決方案', 'All solutions')}
+          </a>
+          <p class="eyebrow">{s.name}</p>
+          <h1>{s.title}</h1>
+          <p class="lead">{s.desc}</p>
+        </>
+      </section>
+      <section class="wrap solution-composition">
+        <>
+          <p class="eyebrow">{t('產品如何分工', 'HOW THE PRODUCTS WORK TOGETHER')}</p>
+          <div class="composition">
+            {s.ids.map((id, i) => {
+              const p = products.find((p) => p.id === id)!;
+              return (
+                <article class={p.accent}>
+                  <span class={'dot ' + p.accent} />
+                  <h2>{p.name}</h2>
+                  <p>{s.roles[i]}</p>
+                  <a class="text-link" href={href(lang, 'products/' + id)}>
+                    {t('認識產品', 'Explore product')} ↗
+                  </a>
+                </article>
+              );
+            })}
+          </div>
+        </>
+      </section>
+      <section class="wrap section implementation">
+        <>
+          <div>
+            <>
+              <p class="eyebrow">A PRACTICAL PATH</p>
+              <h2>{t('循序，走進日常。', 'A practical path\ninto everyday work.')}</h2>
+              <p>
+                {t(
+                  '以下是討論導入的起點，實際順序依企業現況與需求調整。',
+                  'Use this as a starting point for implementation. The sequence adapts to your environment and needs.',
+                )}
+              </p>
+            </>
+          </div>
+          <ol>
+            {s.steps.map((step, i) => (
+              <li>
+                <span>0{i + 1}</span>
+                <h3>{step}</h3>
+              </li>
+            ))}
+          </ol>
+        </>
+      </section>
+      <section class="outcome wrap">
+        <>
+          <p class="eyebrow">{t('期待的工作改變', 'THE CHANGE TO WORK TOWARD')}</p>
+          <h2>{s.outcome}</h2>
+          <a class="text-link" href={href(lang, 'contact')}>
+            {t('討論這個情境', 'Discuss this scenario')} ↗
+          </a>
+        </>
+      </section>
+      <section class="wrap section service-callout">
+        <>
+          <h3>{t('產品之外，還有人協助落地。', 'Support beyond the product.')}</h3>
+          <p>
+            {t(
+              'Eryndex Services 協助遷移、設定、訓練與持續維運。服務範圍會依導入計畫確認。',
+              'Eryndex Services helps with migration, configuration, training and ongoing operation. Scope is agreed as part of your implementation plan.',
+            )}
+          </p>
+          <a class="text-link" href={href(lang, 'services')}>
+            {t('認識專業服務', 'Explore professional services')} ↗
+          </a>
+        </>
+      </section>
+    </>
+  ) : (
+    <>
+      <section class="wrap page-intro">
+        <>
+          <p class="eyebrow">ERYNDEX SOLUTIONS</p>
+          <h1>{t('從企業的情境，\n找到適合的解法。', 'Built around\nyour business situation.')}</h1>
+          <p class="lead">
+            {t(
+              '解決方案是產品的合適組合。從團隊正在面對的工作開始，選擇需要的能力，再逐步連結。',
+              'A solution is the right combination of products for your situation. Start with the work your team faces, choose what is needed, and connect over time.',
+            )}
+          </p>
+        </>
+      </section>
+      <section class="wrap solution-catalog">
+        {solutions.map((s, i) => (
+          <article>
+            <div>
+              <span class="index">
+                0{i + 1} / {s.eyebrow}
+              </span>
+              <h2>{s.name}</h2>
+              <div class="combination">
+                {s.ids.map((id) => (
+                  <span class={'pill ' + products.find((p) => p.id === id)!.accent}>
+                    {products.find((p) => p.id === id)!.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
+              <a class="text-link" href={href(lang, 'solutions/' + s.id)}>
+                {t('了解方案', 'Explore the solution')} ↗
+              </a>
+            </div>
+          </article>
+        ))}
+      </section>
+    </>
+  )
+}<CTA lang={lang} />

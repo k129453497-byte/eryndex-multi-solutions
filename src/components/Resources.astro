@@ -1,0 +1,81 @@
+---
+import { content, href, type Locale } from '../data/content';
+import CTA from './CTA.astro';
+const { lang, id } = Astro.props as { lang: Locale; id?: string };
+const { t, articles, products } = content(lang);
+const article = articles.find((a) => a.id === id);
+---
+
+{
+  article ? (
+    <>
+      <article class="reading wrap">
+        <>
+          <a class="back-link" href={href(lang, 'resources')}>
+            ← {t('所有資源', 'All resources')}
+          </a>
+          <header>
+            <>
+              <p class="eyebrow">{article.tag} / ERYNDEX NOTES</p>
+              <h1>{article.title}</h1>
+              <p class="lead">{article.intro}</p>
+              <p class="article-byline">
+                {t('Eryndex 編輯團隊 · 工作觀點', 'Eryndex editorial team · Working perspectives')}
+              </p>
+            </>
+          </header>
+          <div class="article-body">
+            {article.sections.map(([h, p]) => (
+              <section>
+                <h2>{h}</h2>
+                <p>{p}</p>
+              </section>
+            ))}
+          </div>
+          <aside class="reading-related">
+            <>
+              <p class="eyebrow">{t('延伸認識', 'CONTINUE EXPLORING')}</p>
+              <h3>{products.find((p) => p.id === article.related)!.name}</h3>
+              <p>{products.find((p) => p.id === article.related)!.short}</p>
+              <a class="text-link" href={href(lang, 'products/' + article.related)}>
+                {t('探索產品', 'Explore the product')} ↗
+              </a>
+            </>
+          </aside>
+        </>
+      </article>
+    </>
+  ) : (
+    <>
+      <section class="wrap page-intro">
+        <>
+          <p class="eyebrow">ERYNDEX NOTES</p>
+          <h1>{t('讓理解，\n走在改變之前。', 'Understanding first.\nBetter decisions next.')}</h1>
+          <p class="lead">
+            {t(
+              '關於工作、資訊與信任的實務觀點。從一個小問題開始，找到值得改善的下一步。',
+              'Practical perspectives on work, information and trust. Start with a small question and find the next thing worth improving.',
+            )}
+          </p>
+        </>
+      </section>
+      <section class="wrap resource-list">
+        {articles.map((a, i) => (
+          <article>
+            <span class="resource-index">0{i + 1}</span>
+            <div>
+              <p class="eyebrow">{a.tag}</p>
+              <h2>
+                <a href={href(lang, 'resources/' + a.id)}>{a.title}</a>
+              </h2>
+              <p>{a.intro}</p>
+              <a class="text-link" href={href(lang, 'resources/' + a.id)}>
+                {t('閱讀文章', 'Read article')} ↗
+              </a>
+            </div>
+          </article>
+        ))}
+      </section>
+    </>
+  )
+}<CTA lang={lang} />

@@ -1,0 +1,129 @@
+---
+import { content, href, type Locale } from '../data/content';
+import ProductUI from './ProductUI.astro';
+import CTA from './CTA.astro';
+import MasterImage from './MasterImage.astro';
+const { lang, id } = Astro.props as { lang: Locale; id: string };
+const { products, solutions, t } = content(lang);
+const p = products.find((p) => p.id === id)!;
+---
+
+<nav class="product-subnav wrap" aria-label={t('產品導覽', 'Product navigation')}>
+  <a href={href(lang, 'products')}>{t('所有產品', 'All products')}</a><div>
+    {
+      products.map((q) => (
+        <a href={href(lang, 'products/' + q.id)} aria-current={id === q.id ? 'page' : undefined}>
+          <span class={'dot ' + q.accent} />
+          {q.word}
+        </a>
+      ))
+    }
+  </div>
+</nav>
+<section class={'product-hero wrap ' + p.accent}>
+  <div>
+    <p class="eyebrow">{p.category} · {p.concept.toUpperCase()}</p><p class="product-name">
+      {p.name}
+    </p><h1>{p.line}</h1><p class="lead">{p.desc}</p><a
+      class="button"
+      href={href(lang, 'contact') + '?product=' + p.id}
+      >{t('討論導入', 'Discuss implementation')} ↗</a
+    ><a class="text-link" href="#experience">{t('看看如何運作', 'See how it works')} ↓</a>
+  </div><figure>
+    <MasterImage
+      kind={id as 'space' | 'files' | 'shield'}
+      eager
+      alt={p.name + ' — ' + p.concept}
+    /><figcaption>{p.concept} / {p.name}</figcaption>
+  </figure>
+</section>
+<section class="wrap section product-story">
+  <p class="eyebrow">DESIGNED FOR YOUR EVERYDAY</p><div>
+    <h2>{p.pain}</h2><p class="lead">{p.story}</p>
+  </div>
+</section>
+<section id="experience" class="experience-section">
+  <div class="wrap section">
+    <div class="section-heading">
+      <div><p class="eyebrow">THE PRODUCT EXPERIENCE</p><h2>{p.short}</h2></div><p>
+        {
+          t(
+            '操作以下示意介面，體驗核心工作方式。',
+            'Try the interface below to explore the core working model.',
+          )
+        }
+      </p>
+    </div><ProductUI lang={lang} id={id} /><p class="demo-note">
+      {
+        t(
+          '以上為產品體驗示意，使用範例資料；操作不會更動真實系統或檔案。',
+          'This is a representative product experience using sample data. Interactions do not change real systems or files.',
+        )
+      }
+    </p>
+  </div>
+</section>
+<section class={'wrap section capabilities ' + p.accent}>
+  <p class="eyebrow">PURPOSEFUL CAPABILITIES</p><div>
+    <h2>{t('把需要的事，\n做好。', 'The things you need.\nThoughtfully done.')}</h2><div
+      class="feature-list"
+    >
+      {
+        p.features.map(([h, d], i) => (
+          <article>
+            <>
+              <span>0{i + 1}</span>
+              <div>
+                <>
+                  <h3>{h}</h3>
+                  <p>{d}</p>
+                </>
+              </div>
+            </>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>
+<section class="wrap section fit">
+  <div>
+    <p class="eyebrow">{t('適合的工作情境', 'WHERE IT FITS')}</p><h2>
+      {t('從熟悉的工作開始。', 'Begin with familiar work.')}
+    </h2><p class="lead">{p.example}</p>
+  </div><div>
+    <h3>{t('獨立有價值，連結更完整。', 'Valuable alone. Connected when needed.')}</h3><p>
+      {p.boundary}
+    </p><a class="text-link" href={href(lang, 'solutions')}
+      >{t('探索產品組合', 'Explore combinations')} ↗</a>
+  </div>
+</section>
+<section class="wrap section">
+  <div class="section-heading">
+    <h2>{t('放進你的業務情境。', 'Put it in context.')}</h2><a
+      class="text-link"
+      href={href(lang, 'services')}>{t('需要導入協助？', 'Need help implementing?')} ↗</a>
+  </div><div class="solution-list">
+    {
+      solutions
+        .filter((s) => s.ids.includes(id))
+        .map((s, i) => (
+          <a href={href(lang, 'solutions/' + s.id)}>
+            <>
+              <span class="index">0{i + 1}</span>
+              <h3>{s.name}</h3>
+              <span class="combination">
+                {s.ids.map((k) => (
+                  <span class={'pill ' + products.find((q) => q.id === k)!.accent}>
+                    {products.find((q) => q.id === k)!.word}
+                  </span>
+                ))}
+              </span>
+              <span>↗</span>
+            </>
+          </a>
+        ))
+    }
+  </div>
+</section>
+<CTA lang={lang} />

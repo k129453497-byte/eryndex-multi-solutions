@@ -1,0 +1,405 @@
+---
+import { translator, type Locale } from '../data/content';
+const { lang, id } = Astro.props as { lang: Locale; id: string };
+const t = translator(lang);
+const tasks = [
+  t('確認專案範圍', 'Confirm project scope'),
+  t('整理交接文件', 'Prepare handoff notes'),
+  t('檢視首頁文案', 'Review homepage copy'),
+];
+const files = [
+  t('品牌提案.pdf', 'Brand proposal.pdf'),
+  t('交接清單.xlsx', 'Handoff checklist.xlsx'),
+  t('合作合約.docx', 'Collaboration agreement.docx'),
+];
+---
+
+<div class={'software-demo ' + id} data-demo={id}>
+  <div class="demo-top">
+    <strong>Eryndex {id[0].toUpperCase() + id.slice(1)}</strong><span
+      >{t('互動示意 · 範例資料', 'Interactive preview · Sample data')}</span
+    ><span class="avatar">E</span>
+  </div>
+  {
+    id === 'space' && (
+      <div class="demo-body">
+        <>
+          <aside class="demo-sidebar">
+            <>
+              <span>{t('設計團隊', 'Design team')}</span>
+              <strong>{t('專案', 'Projects')}</strong>
+              <span>{t('團隊知識', 'Team knowledge')}</span>
+              <span>{t('工作流程', 'Workflows')}</span>
+              <small>{t('春季品牌計畫', 'Spring brand project')}</small>
+            </>
+          </aside>
+          <div class="demo-main">
+            <>
+              <div class="demo-title">
+                <>
+                  <div>
+                    <>
+                      <p class="eyebrow">{t('工作空間 / 專案', 'WORKSPACE / PROJECT')}</p>
+                      <h3>{t('品牌更新計畫', 'Brand refresh')}</h3>
+                    </>
+                  </div>
+                  <span class="avatar-group">YL · CW</span>
+                </>
+              </div>
+              <p class="demo-hint">
+                {t(
+                  '試著完成一項任務，讓交接接著往前。',
+                  'Complete a task to move the handoff forward.',
+                )}
+              </p>
+              <div class="kanban">
+                <>
+                  <section>
+                    <h4>
+                      {t('待處理', 'To do')} <span>2</span>
+                    </h4>
+                    {tasks.slice(0, 2).map((name, i) => (
+                      <div class="task">
+                        <span class="task-tag">
+                          {i === 0 ? t('規劃', 'Planning') : t('交接', 'Handoff')}
+                        </span>
+                        <label>
+                          <input
+                            type="checkbox"
+                            data-task
+                            aria-label={t('完成：', 'Complete: ') + name}
+                          />
+                          <span>{name}</span>
+                        </label>
+                        <p>
+                          {i === 0 ? 'YL' : 'CW'} <span>{t('本週', 'This week')}</span>
+                        </p>
+                      </div>
+                    ))}
+                  </section>
+                  <section>
+                    <>
+                      <h4>
+                        {t('進行中', 'In progress')} <span>1</span>
+                      </h4>
+                      <div class="task">
+                        <>
+                          <span class="task-tag">{t('內容', 'Content')}</span>
+                          <label>
+                            <>
+                              <input
+                                type="checkbox"
+                                data-task
+                                aria-label={t('完成：', 'Complete: ') + tasks[2]}
+                              />
+                              <span>{tasks[2]}</span>
+                            </>
+                          </label>
+                          <p>
+                            YL <span>{t('本週', 'This week')}</span>
+                          </p>
+                          <div class="task-progress">
+                            <span />
+                          </div>
+                        </>
+                      </div>
+                    </>
+                  </section>
+                  <section class="completed-column">
+                    <>
+                      <h4>
+                        {t('已完成', 'Done')} <span data-completed-count>1</span>
+                      </h4>
+                      <div class="task done">
+                        <>
+                          <span class="task-tag">{t('研究', 'Research')}</span>
+                          <p>{t('彙整需求與訪談', 'Gather requirements')}</p>
+                          <p>
+                            CW <span>✓</span>
+                          </p>
+                        </>
+                      </div>
+                    </>
+                  </section>
+                </>
+              </div>
+              <p
+                class="demo-status"
+                role="status"
+                data-task-status
+                data-template={t('已完成 {count} 項示意任務', '{count} sample tasks completed')}
+              />
+            </>
+          </div>
+        </>
+      </div>
+    )
+  }
+  {
+    id === 'files' && (
+      <div class="demo-body">
+        <>
+          <aside class="demo-sidebar">
+            <>
+              <span>{t('企業資料', 'Business information')}</span>
+              <strong>{t('團隊檔案', 'Team files')}</strong>
+              <span>{t('分享連結', 'Shared links')}</span>
+              <span>{t('備份與還原', 'Backup & restore')}</span>
+              <small>{t('保存狀態：已同步', 'Preservation: Synced')}</small>
+            </>
+          </aside>
+          <div class="demo-main">
+            <>
+              <div class="demo-title">
+                <div>
+                  <>
+                    <p class="eyebrow">{t('企業資料 / 品牌專案', 'BUSINESS / BRAND PROJECT')}</p>
+                    <h3>{t('一份資訊，完整脈絡。', 'One file. Its full history.')}</h3>
+                  </>
+                </div>
+              </div>
+              <label class="file-search">
+                <>
+                  <span>{t('搜尋檔案', 'Search files')}</span>
+                  <input
+                    type="search"
+                    data-file-search
+                    placeholder={t('輸入檔名', 'Type a filename')}
+                  />
+                </>
+              </label>
+              <div class="file-workspace">
+                <>
+                  <div class="file-list" role="group" aria-label={t('檔案列表', 'File list')}>
+                    {files.map((name, i) => (
+                      <button
+                        class={'file-row ' + (i === 0 ? 'selected' : '')}
+                        data-file
+                        data-name={name}
+                        data-version={[3, 2, 4][i]}
+                        aria-pressed={i === 0 ? 'true' : 'false'}
+                      >
+                        <span class="file-type">{['PDF', 'XLS', 'DOC'][i]}</span>
+                        <span>
+                          <strong>{name}</strong>
+                          <small>{t('今天更新 · 團隊共享', 'Updated today · Team shared')}</small>
+                        </span>
+                        <span data-version-label>v{[3, 2, 4][i]}</span>
+                      </button>
+                    ))}
+                    <p data-no-files hidden>
+                      {t(
+                        '找不到符合的檔案，請試試其他關鍵字。',
+                        'No matching files. Try another search.',
+                      )}
+                    </p>
+                  </div>
+                  <aside class="version-panel">
+                    <>
+                      <p class="eyebrow">{t('版本紀錄', 'VERSION HISTORY')}</p>
+                      <strong data-current-file>{files[0]}</strong>
+                      <div class="version-current">
+                        <span class="dot cyan" /> {t('目前版本', 'Current version')}{' '}
+                        <span data-current-version>v3</span>
+                      </div>
+                      <p>{t('內容檢視與版本操作', 'Content and version actions')}</p>
+                      <button
+                        class="demo-button"
+                        data-restore
+                        data-message={t(
+                          '示意還原已完成：保留歷史版本，建立新的目前版本。',
+                          'Sample restore complete: history is retained and a new current version is created.',
+                        )}
+                      >
+                        {t('示意還原前一版', 'Try restoring a version')}
+                      </button>
+                      <p class="demo-status" data-file-status role="status" />
+                    </>
+                  </aside>
+                </>
+              </div>
+            </>
+          </div>
+        </>
+      </div>
+    )
+  }
+  {
+    id === 'shield' && (
+      <div class="demo-body">
+        <>
+          <aside class="demo-sidebar">
+            <>
+              <span>{t('信任管理', 'Trust management')}</span>
+              <strong>{t('存取政策', 'Access policies')}</strong>
+              <span>{t('身分與裝置', 'Identity & devices')}</span>
+              <span>{t('稽核紀錄', 'Audit records')}</span>
+              <small>{t('預設：依條件授權', 'Default: Conditional access')}</small>
+            </>
+          </aside>
+          <div class="demo-main">
+            <>
+              <div class="demo-title">
+                <>
+                  <div>
+                    <>
+                      <p class="eyebrow">{t('政策 / 企業資料存取', 'POLICY / BUSINESS ACCESS')}</p>
+                      <h3>{t('每次存取，都有依據。', 'Every access decision, explained.')}</h3>
+                    </>
+                  </div>
+                  <span class="policy-live">{t('政策示意', 'Sample policy')}</span>
+                </>
+              </div>
+              <div class="policy-layout">
+                <>
+                  <section>
+                    <>
+                      <p class="demo-hint">
+                        {t(
+                          '切換條件，查看政策如何判斷存取。',
+                          'Change the conditions to see how the policy responds.',
+                        )}
+                      </p>
+                      <div class="policy-condition">
+                        <>
+                          <span>
+                            <>
+                              <strong>{t('身分已驗證', 'Identity verified')}</strong>
+                              <small>
+                                {t('完成多因素驗證', 'Multifactor authentication completed')}
+                              </small>
+                            </>
+                          </span>
+                          <input
+                            type="checkbox"
+                            role="switch"
+                            checked
+                            data-policy
+                            aria-label={t('身分已驗證', 'Identity verified')}
+                          />
+                        </>
+                      </div>
+                      <div class="policy-condition">
+                        <>
+                          <span>
+                            <>
+                              <strong>{t('裝置符合條件', 'Device meets policy')}</strong>
+                              <small>
+                                {t(
+                                  '裝置狀態符合組織要求',
+                                  'Device state meets organizational requirements',
+                                )}
+                              </small>
+                            </>
+                          </span>
+                          <input
+                            type="checkbox"
+                            role="switch"
+                            checked
+                            data-policy
+                            aria-label={t('裝置符合條件', 'Device meets policy')}
+                          />
+                        </>
+                      </div>
+                      <div
+                        class="policy-decision"
+                        data-decision
+                        data-allow={t('允許存取', 'Access allowed')}
+                        data-deny={t('需要進一步驗證', 'Further verification required')}
+                        role="status"
+                      >
+                        {t('允許存取', 'Access allowed')}
+                      </div>
+                    </>
+                  </section>
+                  <aside class="audit-panel">
+                    <>
+                      <p class="eyebrow">{t('決策紀錄', 'DECISION RECORD')}</p>
+                      <ol>
+                        <>
+                          <li>
+                            {t('收到存取要求', 'Access requested')}
+                            <small>{t('企業工作帳號', 'Business account')}</small>
+                          </li>
+                          <li>
+                            {t('檢查身分與裝置', 'Check identity and device')}
+                            <small>{t('套用企業資料政策', 'Apply business access policy')}</small>
+                          </li>
+                          <li>
+                            {t('留下判斷依據', 'Record the decision')}
+                            <small>{t('可供後續稽核檢視', 'Available for later review')}</small>
+                          </li>
+                        </>
+                      </ol>
+                    </>
+                  </aside>
+                </>
+              </div>
+            </>
+          </div>
+        </>
+      </div>
+    )
+  }
+</div>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-demo]').forEach((demo) => {
+    demo.querySelectorAll<HTMLInputElement>('[data-task]').forEach((task) => {
+      const card = task.closest('.task')!;
+      const origin = card.parentElement!;
+      task.addEventListener('change', () => {
+        card.classList.toggle('done', task.checked);
+        (task.checked ? demo.querySelector('.completed-column')! : origin).append(card);
+        task.focus();
+        const count = demo.querySelectorAll('[data-task]:checked').length;
+        const status = demo.querySelector<HTMLElement>('[data-task-status]')!;
+        status.textContent = status.dataset.template!.replace('{count}', String(count));
+        demo.querySelectorAll('.kanban>section').forEach((column) => {
+          const total = column.querySelector('h4 span');
+          if (total) total.textContent = String(column.querySelectorAll('.task').length);
+        });
+      });
+    });
+    const search = demo.querySelector<HTMLInputElement>('[data-file-search]');
+    search?.addEventListener('input', () => {
+      let visible = 0;
+      demo.querySelectorAll<HTMLButtonElement>('[data-file]').forEach((file) => {
+        file.hidden = !file.dataset.name!.toLowerCase().includes(search.value.trim().toLowerCase());
+        if (!file.hidden) visible++;
+      });
+      demo.querySelector<HTMLElement>('[data-no-files]')!.hidden = visible > 0;
+    });
+    demo.querySelectorAll<HTMLButtonElement>('[data-file]').forEach((file) =>
+      file.addEventListener('click', () => {
+        demo.querySelectorAll('[data-file]').forEach((f) => {
+          f.classList.remove('selected');
+          f.setAttribute('aria-pressed', 'false');
+        });
+        file.classList.add('selected');
+        file.setAttribute('aria-pressed', 'true');
+        demo.querySelector('[data-current-file]')!.textContent = file.dataset.name!;
+        demo.querySelector('[data-current-version]')!.textContent = 'v' + file.dataset.version;
+        demo.querySelector('[data-file-status]')!.textContent = '';
+      }),
+    );
+    demo.querySelector<HTMLButtonElement>('[data-restore]')?.addEventListener('click', (e) => {
+      const button = e.currentTarget as HTMLButtonElement;
+      const selected = demo.querySelector<HTMLButtonElement>('[data-file][aria-pressed="true"]')!;
+      const version = Number(selected.dataset.version) + 1;
+      selected.dataset.version = String(version);
+      selected.querySelector('[data-version-label]')!.textContent = 'v' + version;
+      demo.querySelector('[data-current-version]')!.textContent = 'v' + version;
+      demo.querySelector('[data-file-status]')!.textContent = button.dataset.message!;
+    });
+    demo.querySelectorAll<HTMLInputElement>('[data-policy]').forEach((input) =>
+      input.addEventListener('change', () => {
+        const all = [...demo.querySelectorAll<HTMLInputElement>('[data-policy]')].every(
+          (i) => i.checked,
+        );
+        const decision = demo.querySelector<HTMLElement>('[data-decision]')!;
+        decision.textContent = all ? decision.dataset.allow! : decision.dataset.deny!;
+        decision.classList.toggle('requires-review', !all);
+      }),
+    );
+  });
+</script>

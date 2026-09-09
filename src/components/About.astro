@@ -1,0 +1,76 @@
+---
+import { translator, type Locale } from '../data/content';
+import CTA from './CTA.astro';
+const { lang } = Astro.props as { lang: Locale };
+const t = translator(lang);
+---
+
+<section class="wrap page-intro about-intro">
+  <p class="eyebrow">ABOUT ERYNDEX / 智序科技</p><h1>
+    {t('科技應該把注意力，\n還給人。', 'Technology should\ngive attention back to people.')}
+  </h1><p class="lead">
+    {
+      t(
+        '我們關心的，是企業每天如何運作。讓工具有清楚的用途，讓資訊有合適的位置，讓每個人能更從容地完成工作。',
+        'We care about how businesses work every day. Give tools a clear purpose, information a proper place, and people a calmer way to get things done.',
+      )
+    }
+  </p>
+</section>
+<section class="wrap section about-story">
+  <p class="eyebrow">OUR POINT OF VIEW</p><h2>
+    {t('清楚，是一種重要的能力。', 'Clarity is a capability.')}
+  </h2><div>
+    <p class="lead">
+      {
+        t(
+          '企業成長，常常伴隨更多工具、更多資訊與更多交接。我們相信，好的軟體應該把複雜的事整理清楚，讓工作能被理解、接續與改善。',
+          'Growth often brings more tools, more information and more handoffs. We believe good software should make complexity understandable, so work can be continued and improved.',
+        )
+      }
+    </p><p>
+      {
+        t(
+          'Eryndex 以 Space、Files、Shield 分別回應工作、資訊與信任的需要，再透過專業服務，把產品帶進企業真實的環境。',
+          'Eryndex addresses work, information and trust through Space, Files and Shield, with professional services that bring those products into real business environments.',
+        )
+      }
+    </p>
+  </div>
+</section>
+<section class="wrap section">
+  <p class="eyebrow">WHAT GUIDES US</p><div class="principles about-principles">
+    {
+      [
+        [
+          t('讓用途清楚', 'Keep purpose clear'),
+          t(
+            '每套產品都有明確的責任。讓企業能理解選擇，也能從真正需要的地方開始。',
+            'Each product has a clear responsibility. Help businesses understand their options and begin where the need is real.',
+          ),
+        ],
+        [
+          t('讓人保有判斷', 'Keep people in the process'),
+          t(
+            '自動化與 AI 協助整理日常工作，重要判斷仍應能被理解、檢視與調整。',
+            'Automation and AI support everyday work. Important decisions should remain understandable, reviewable and adjustable.',
+          ),
+        ],
+        [
+          t('讓改變可以持續', 'Make change sustainable'),
+          t(
+            '把導入、訓練與維運一起考慮，讓好工具成為團隊持續使用的工作方式。',
+            'Consider implementation, training and maintenance together, so good tools become lasting working practices.',
+          ),
+        ],
+      ].map(([h, p]) => (
+        <div>
+          <>
+            <h3>{h}</h3>
+            <p>{p}</p>
+          </>
+        </div>
+      ))
+    }
+  </div>
+</section><CTA lang={lang} />

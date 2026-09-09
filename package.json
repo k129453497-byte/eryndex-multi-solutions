@@ -1,0 +1,25 @@
+{
+  "name": "eryndex-multi-solutions",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1",
+    "check": "astro check",
+    "qa": "node scripts/qa.mjs"
+  },
+  "dependencies": {
+    "astro": "7.3.2",
+    "opencc-js": "^1.4.2"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "linkedom": "^0.18.13",
+    "prettier": "^3.9.6",
+    "prettier-plugin-astro": "^0.14.1",
+    "sharp": "^0.35.4",
+    "typescript": "^5.9.3"
+  }
+}

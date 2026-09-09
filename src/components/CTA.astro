@@ -1,0 +1,21 @@
+---
+import { href, translator, type Locale } from '../data/content';
+const { lang } = Astro.props as { lang: Locale };
+const t = translator(lang);
+---
+
+<section class="cta wrap">
+  <p class="eyebrow">LET'S MOVE FORWARD</p><div>
+    <h2>{t('下一步，從你的工作開始。', 'Start with the way you work.')}</h2><a
+      class="button"
+      href={href(lang, 'contact')}
+      >{t('和我們聊聊', 'Let’s talk')} <span aria-hidden="true">↗</span></a>
+  </div><p>
+    {
+      t(
+        '告訴我們目前的挑戰，一起找出適合企業的第一步。',
+        'Tell us what is getting in the way. Let’s find a first step that fits your business.',
+      )
+    }
+  </p>
+</section>

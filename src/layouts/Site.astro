@@ -1,0 +1,180 @@
+---
+import '../styles/global.css';
+import '../styles/pages.css';
+import { locales, href, asset, translator, type Locale } from '../data/content';
+interface Props {
+  lang: Locale;
+  path?: string;
+  title: string;
+  description: string;
+}
+const { lang, path = '', title, description } = Astro.props;
+const t = translator(lang);
+const canonical = new URL(href(lang, path), Astro.site);
+const nav = [
+  ['products', t('產品', 'Products')],
+  ['solutions', t('解決方案', 'Solutions')],
+  ['services', t('服務', 'Services')],
+  ['resources', t('資源', 'Resources')],
+  ['about', t('關於我們', 'About')],
+];
+const languageNames = { 'zh-tw': '繁體中文', 'zh-cn': '简体中文', en: 'English' };
+---
+
+<!doctype html>
+<html lang={lang === 'zh-tw' ? 'zh-Hant' : lang === 'zh-cn' ? 'zh-Hans' : 'en'}>
+  <head>
+    <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · Eryndex 智序科技</title><meta name="description" content={description} />
+    <meta name="theme-color" content="#f7f5ef" /><link
+      rel="icon"
+      type="image/webp"
+      href={asset('brand/logo/eryndex-logo.webp')}
+    />
+    <link rel="canonical" href={canonical} />
+    {
+      locales.map((l) => (
+        <link
+          rel="alternate"
+          hreflang={l === 'zh-tw' ? 'zh-Hant' : l === 'zh-cn' ? 'zh-Hans' : 'en'}
+          href={new URL(href(l, path), Astro.site)}
+        />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={new URL(href('zh-tw', path), Astro.site)} />
+    <meta property="og:type" content="website" /><meta
+      property="og:title"
+      content={title + ' · Eryndex'}
+    /><meta property="og:description" content={description} /><meta
+      property="og:url"
+      content={canonical}
+    /><meta property="og:site_name" content="Eryndex 智序科技" /><meta
+      property="og:locale"
+      content={lang === 'zh-tw' ? 'zh_TW' : lang === 'zh-cn' ? 'zh_CN' : 'en_US'}
+    />
+    <meta name="twitter:card" content="summary" /><meta
+      name="twitter:title"
+      content={title + ' · Eryndex'}
+    /><meta name="twitter:description" content={description} />
+  </head>
+  <body>
+    <a class="skip" href="#main">{t('跳至主要內容', 'Skip to content')}</a>
+    <header class="site-header">
+      <a class="brand" href={href(lang)} aria-label={t('Eryndex 智序科技首頁', 'Eryndex home')}
+        ><span class="brand-mark"
+          ><img src={asset('brand/logo/eryndex-logo.webp')} alt="" width="36" height="36" /></span
+        ><span>Eryndex<span class="brand-cn">{t('智序科技', '')}</span></span></a
+      >
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"
+        >{t('選單', 'Menu')} <span aria-hidden="true">☰</span></button
+      >
+      <nav id="site-nav" aria-label={t('主要導覽', 'Main navigation')}>
+        {
+          nav.map(([p, label]) => (
+            <a
+              href={href(lang, p)}
+              aria-current={path === p || path.startsWith(p + '/') ? 'page' : undefined}
+            >
+              {label}
+            </a>
+          ))
+        }
+        <a class="nav-contact" href={href(lang, 'contact')}
+          >{t('聯絡我們', 'Let’s talk')} <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+      <details class="language">
+        <summary aria-label={t('切換語言', 'Change language')}
+          ><span aria-hidden="true">◎</span>
+          {lang === 'en' ? 'EN' : lang === 'zh-tw' ? '繁' : '简'}</summary
+        ><div>
+          {
+            locales.map((l) => (
+              <a href={href(l, path)} lang={l} aria-current={lang === l ? 'true' : undefined}>
+                {languageNames[l]}
+              </a>
+            ))
+          }
+        </div>
+      </details>
+    </header>
+    <main id="main" tabindex="-1"><slot /></main>
+    <footer class="footer">
+      <div class="footer-top">
+        <a class="brand" href={href(lang)}>Eryndex</a><p>
+          {
+            t(
+              '讓科技融入工作，讓企業從容前進。',
+              'Technology that fits your work. Room for your business to grow.',
+            )
+          }
+        </p><a href="mailto:contact@eryndex.com">contact@eryndex.com ↗</a>
+      </div>
+      <div class="footer-links">
+        <div>
+          <span>{t('產品', 'Products')}</span>{
+            ['space', 'files', 'shield'].map((id) => (
+              <a href={href(lang, 'products/' + id)}>Eryndex {id[0].toUpperCase() + id.slice(1)}</a>
+            ))
+          }
+        </div><div>
+          <span>{t('一起落地', 'Put it into practice')}</span><a href={href(lang, 'solutions')}
+            >{t('解決方案', 'Solutions')}</a
+          ><a href={href(lang, 'services')}>Eryndex Services</a><a href={href(lang, 'contact')}
+            >{t('討論你的需求', 'Discuss your needs')}</a>
+        </div><div>
+          <span>{t('認識智序', 'Discover Eryndex')}</span><a href={href(lang, 'about')}
+            >{t('關於我們', 'About us')}</a
+          ><a href={href(lang, 'resources')}>{t('觀點與資源', 'Ideas & resources')}</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© {new Date().getFullYear()} Eryndex {t('智序科技', '')}</span><div>
+          <a href={href(lang, 'privacy')}>{t('隱私權說明', 'Privacy')}</a><a
+            href={href(lang, 'terms')}>{t('網站使用條款', 'Terms')}</a
+          ><a href="#main">{t('回到頂端', 'Back to top')} ↑</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const menu = document.querySelector<HTMLButtonElement>('.menu-toggle');
+      const nav = document.querySelector<HTMLElement>('#site-nav');
+      menu?.addEventListener('click', () => {
+        const on = menu.getAttribute('aria-expanded') !== 'true';
+        menu.setAttribute('aria-expanded', String(on));
+        nav?.classList.toggle('is-open', on);
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          if (menu?.getAttribute('aria-expanded') === 'true') {
+            menu.setAttribute('aria-expanded', 'false');
+            nav?.classList.remove('is-open');
+            menu.focus();
+          }
+          document.querySelectorAll<HTMLDetailsElement>('.language[open]').forEach((x) => {
+            x.open = false;
+            x.querySelector<HTMLElement>('summary')?.focus();
+          });
+        }
+      });
+      document.addEventListener('click', (e) => {
+        const language = document.querySelector<HTMLDetailsElement>('.language');
+        if (language && !language.contains(e.target as Node)) language.open = false;
+      });
+      const mq = matchMedia('(prefers-reduced-motion: reduce)');
+      if (!mq.matches && 'IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries)
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+          },
+          { threshold: 0.08 },
+        );
+        document.querySelectorAll('.section').forEach((e) => observer.observe(e));
+      }
+    </script>
+  </body>
+</html>

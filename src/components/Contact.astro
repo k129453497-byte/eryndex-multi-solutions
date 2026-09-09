@@ -1,0 +1,172 @@
+---
+import { translator, href, type Locale } from '../data/content';
+const { lang } = Astro.props as { lang: Locale };
+const t = translator(lang);
+---
+
+<section class="wrap page-intro">
+  <p class="eyebrow">LET'S START A CONVERSATION</p><h1>
+    {t('從你的工作，\n聊起。', 'Tell us about\nthe way you work.')}
+  </h1><p class="lead">
+    {
+      t(
+        '不需要先有完整的規格。告訴我們正在面對的挑戰，一起找到適合的開始。',
+        'You do not need a complete specification. Tell us what is getting in the way and let’s find a sensible starting point.',
+      )
+    }
+  </p>
+</section>
+<section class="wrap contact-layout">
+  <aside>
+    <h2>{t('直接寫信給我們', 'Write to us')}</h2><a
+      class="contact-email"
+      href="mailto:contact@eryndex.com">contact@eryndex.com ↗</a
+    ><p>
+      {
+        t(
+          '你可以描述目前的工作方式、想改善的問題，以及希望從哪裡開始。',
+          'Describe your current way of working, the challenge you want to address and where you would like to begin.',
+        )
+      }
+    </p><div class="contact-note">
+      <p>
+        {
+          t(
+            '這份表單會整理郵件草稿，不會自動寄出或儲存資料。完成後請自行寄送至上述信箱。',
+            'This form prepares an email draft. It does not automatically send or store your information. Send the draft to the address above when ready.',
+          )
+        }
+      </p>
+    </div>
+  </aside>
+  <form
+    id="contact-form"
+    data-ready={t(
+      '郵件草稿已準備好，尚未寄出。請使用下方按鈕開啟郵件程式，或複製內容自行寄送。',
+      'Your email draft is ready and has not been sent. Open your email app below, or copy the text and send it yourself.',
+    )}
+    data-copy={t('已複製草稿內容。', 'Draft copied.')}
+    data-copy-fail={t(
+      '無法自動複製，請選取草稿內容後手動複製。',
+      'Automatic copy is unavailable. Select and copy the draft manually.',
+    )}
+    data-subject={t('Eryndex 需求諮詢', 'Eryndex enquiry')}
+  >
+    <div class="form-row">
+      <label
+        >{t('姓名', 'Name')}
+        <span>*</span><input name="name" autocomplete="name" required maxlength="80" /></label
+      ><label
+        >{t('公司名稱', 'Company')}
+        <span>*</span><input
+          name="company"
+          autocomplete="organization"
+          required
+          maxlength="120"
+        /></label>
+    </div>
+    <label
+      >{t('電子郵件', 'Email')}
+      <span>*</span><input
+        name="email"
+        type="email"
+        autocomplete="email"
+        required
+        maxlength="254"
+      /></label
+    >
+    <label
+      >{t('想了解的方向', 'Area of interest')}<select name="interest"
+        ><option value="">{t('尚未確定，想先聊聊', 'Not sure yet')}</option><option value="space"
+          >Eryndex Space</option
+        ><option value="files">Eryndex Files</option><option value="shield">Eryndex Shield</option
+        ><option value="services">Eryndex Services</option><option value="solutions"
+          >{t('產品組合與解決方案', 'Product combinations & solutions')}</option
+        ></select
+      ></label
+    >
+    <label
+      >{t('目前的挑戰或需求', 'Your challenge or need')}
+      <span>*</span><textarea
+        name="message"
+        rows="5"
+        required
+        minlength="10"
+        maxlength="4000"
+        placeholder={t(
+          '例如：專案交接時常找不到最新文件，希望整理團隊協作流程。',
+          'For example: handoffs often miss the latest document, and we want a clearer team workflow.',
+        )}></textarea><small
+        >{
+          t(
+            '至少 10 個字元，請勿填入密碼或機密資料。',
+            'At least 10 characters. Do not include passwords or confidential information.',
+          )
+        }</small
+      ></label
+    >
+    <label class="consent"
+      ><input type="checkbox" required name="consent" /><span
+        >{t('我已閱讀', 'I have read the')}
+        <a href={href(lang, 'privacy')}>{t('隱私權說明', 'privacy notice')}</a>{
+          t(
+            '，了解表單僅用來產生本機郵件草稿。',
+            ' and understand that this form only creates a local email draft.',
+          )
+        }</span
+      ></label
+    >
+    <button class="button" type="submit">{t('整理郵件草稿', 'Prepare email draft')} ↗</button>
+    <p id="contact-status" role="status" class="form-status"></p>
+    <section id="contact-result" hidden>
+      <label
+        >{t('草稿內容', 'Draft content')}<textarea id="email-draft" rows="9" readonly
+        ></textarea></label
+      ><div class="draft-actions">
+        <a class="button secondary" id="open-email" href="mailto:contact@eryndex.com"
+          >{t('開啟郵件程式', 'Open email app')} ↗</a
+        ><button class="text-link" type="button" id="copy-draft"
+          >{t('複製草稿', 'Copy draft')}</button>
+      </div>
+    </section>
+  </form>
+</section>
+<script>
+  import { prepareEnquiry } from '../lib/contact';
+  const form = document.querySelector<HTMLFormElement>('#contact-form');
+  if (form) {
+    const interest = form.elements.namedItem('interest') as HTMLSelectElement;
+    const initial = new URLSearchParams(location.search).get('product');
+    if (initial && [...interest.options].some((o) => o.value === initial)) interest.value = initial;
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      ['name', 'company', 'email', 'message'].forEach((name) => {
+        const field = form.elements.namedItem(name) as HTMLInputElement | HTMLTextAreaElement;
+        field.value = field.value.trim();
+      });
+      if (!form.reportValidity()) return;
+      const result = prepareEnquiry(
+        new FormData(form),
+        interest.selectedOptions[0].text,
+        form.dataset.subject!,
+      );
+      const draft = document.querySelector<HTMLTextAreaElement>('#email-draft')!;
+      draft.value = result.body;
+      document.querySelector<HTMLAnchorElement>('#open-email')!.href = result.mailto;
+      document.querySelector<HTMLElement>('#contact-result')!.hidden = false;
+      document.querySelector('#contact-status')!.textContent = form.dataset.ready!;
+      draft.focus();
+    });
+    document.querySelector('#copy-draft')?.addEventListener('click', async () => {
+      const draft = document.querySelector<HTMLTextAreaElement>('#email-draft')!;
+      try {
+        await navigator.clipboard.writeText(draft.value);
+        document.querySelector('#contact-status')!.textContent = form.dataset.copy!;
+      } catch {
+        draft.focus();
+        draft.select();
+        document.querySelector('#contact-status')!.textContent = form.dataset.copyFail!;
+      }
+    });
+  }
+</script>

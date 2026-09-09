@@ -1,0 +1,52 @@
+{
+  "masters": {
+    "brand/hero/eryndex-hero-master.png": "77e338a421d12311a2a2fc7611515a269948ab93f997c6f813b55221df5994ff",
+    "products/space/eryndex-space-master.png": "504d5b9f8bf9956443df17a66bf83da1d0a8439d1eb07449a5b46703a38db68f",
+    "products/files/eryndex-files-master.png": "4ad450da3fc3483fdd542a64497380061028a1defa1b79eafea7dd29b3d2105b",
+    "products/shield/eryndex-shield-master.png": "d8125e0446852133a4e8cd2a6c9ab9047a4169d8622f3fd98a164c67e34b486b",
+    "brand/logo/eryndex-logo.webp": "9fac05d1638b47642555ceefc062134b11edffc7d2b229f73b5d1a730d70b6a8",
+    "brand/hero/eryndex-hero-h3-source.mp4": "469d50d61e866c051d36b07c7f13a61be7f018cf7c2c807e21325ef42942d9b8"
+  },
+  "derivatives": [
+    {
+      "source": "brand/hero/eryndex-hero-master.png",
+      "output": "web/hero-672.webp",
+      "bytes": 6490
+    },
+    {
+      "source": "brand/hero/eryndex-hero-master.png",
+      "output": "web/hero-1344.webp",
+      "bytes": 17240
+    },
+    {
+      "source": "products/space/eryndex-space-master.png",
+      "output": "web/space-664.webp",
+      "bytes": 3812
+    },
+    {
+      "source": "products/space/eryndex-space-master.png",
+      "output": "web/space-1328.webp",
+      "bytes": 9894
+    },
+    {
+      "source": "products/files/eryndex-files-master.png",
+      "output": "web/files-664.webp",
+      "bytes": 4474
+    },
+    {
+      "source": "products/files/eryndex-files-master.png",
+      "output": "web/files-1328.webp",
+      "bytes": 10252
+    },
+    {
+      "source": "products/shield/eryndex-shield-master.png",
+      "output": "web/shield-664.webp",
+      "bytes": 4058
+    },
+    {
+      "source": "products/shield/eryndex-shield-master.png",
+      "output": "web/shield-1328.webp",
+      "bytes": 10076
+    }
+  ]
+}

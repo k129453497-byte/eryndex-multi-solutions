@@ -1,0 +1,86 @@
+---
+import { translator, href, type Locale } from '../data/content';
+const { lang, kind } = Astro.props as { lang: Locale; kind: string };
+const t = translator(lang);
+const privacy = kind === 'privacy';
+const sections = privacy
+  ? [
+      [
+        t('網站如何處理資訊', 'How this website handles information'),
+        t(
+          '本網站提供產品與服務資訊。目前的聯絡表單僅在你的瀏覽器中整理郵件草稿，不會透過表單將內容傳送至 Eryndex 伺服器，也不會存入瀏覽器的持久儲存空間。',
+          'This website provides product and service information. The contact form prepares a draft in your browser. It does not submit the form to an Eryndex server or save it to persistent browser storage.',
+        ),
+      ],
+      [
+        t('當你選擇寄送郵件', 'When you choose to send email'),
+        t(
+          '使用郵件連結會開啟你設定的郵件程式。寄送前請自行確認內容；後續郵件傳送與保存由你的郵件服務及收件端處理。',
+          'Email links open your configured email application. Review the content before sending. Your mail provider and the recipient handle subsequent delivery and storage.',
+        ),
+      ],
+      [
+        t('網站資源與連線', 'Website resources and connections'),
+        t(
+          '圖片與程式由網站所在主機提供，本站程式未加入廣告追蹤或分析工具。託管平台可能依其服務方式處理連線紀錄；相關細節以實際部署平台的說明為準。',
+          'Images and code are served by the website host. The site code includes no advertising trackers or analytics tools. The hosting provider may process connection logs according to its own service practices.',
+        ),
+      ],
+      [
+        t('聯絡與後續更新', 'Contact and future updates'),
+        t(
+          '若未來啟用表單後端、分析工具或其他資料處理功能，會同步更新本說明。與本網站相關的問題，可來信 contact@eryndex.com。',
+          'This notice will be updated if a form backend, analytics or other data-processing capabilities are introduced. For questions about this website, write to contact@eryndex.com.',
+        ),
+      ],
+    ]
+  : [
+      [
+        t('網站資訊用途', 'Purpose of website information'),
+        t(
+          '本網站用於介紹 Eryndex 的產品構想、功能方向與專業服務。頁面內容不構成報價、服務合約或交付承諾，實際範圍須另行確認。',
+          'This website introduces Eryndex product concepts, capabilities and professional services. Its content is not a quotation, service agreement or delivery commitment. Actual scope must be agreed separately.',
+        ),
+      ],
+      [
+        t('產品示意介面', 'Representative interfaces'),
+        t(
+          '網站上的互動產品介面使用範例資料，用於說明操作概念。它們不連接真實產品帳號，也不會對你的檔案、裝置或權限進行任何變更。',
+          'Interactive product interfaces use sample data to explain working concepts. They do not connect to real product accounts or change your files, devices or permissions.',
+        ),
+      ],
+      [
+        t('素材與品牌', 'Assets and brand'),
+        t(
+          'Eryndex 品牌、圖片及網站內容用於本網站展示。任何其他用途應先確認素材的使用權限與適用範圍。',
+          'The Eryndex brand, images and content are used for this website. Confirm appropriate rights and scope before using them elsewhere.',
+        ),
+      ],
+      [
+        t('資訊更新與聯絡', 'Updates and contact'),
+        t(
+          '產品內容可能隨規劃調整。若你需要確認功能、導入方式或服務條件，請來信 contact@eryndex.com，並以雙方另行確認的內容為準。',
+          'Product information may change as plans develop. To confirm capabilities, implementation or service terms, contact contact@eryndex.com and rely on the scope agreed separately.',
+        ),
+      ],
+    ];
+---
+
+<article class="wrap reading">
+  <header>
+    <p class="eyebrow">ERYNDEX / {privacy ? 'PRIVACY' : 'TERMS'}</p><h1>
+      {privacy ? t('隱私權說明', 'Privacy notice') : t('網站使用條款', 'Website terms')}
+    </h1><p>{t('更新日期：2026 年 9 月 9 日', 'Updated: 9 September 2026')}</p>
+  </header><div class="article-body">
+    {
+      sections.map(([h, p]) => (
+        <section>
+          <>
+            <h2>{h}</h2>
+            <p>{p}</p>
+          </>
+        </section>
+      ))
+    }
+  </div><a class="text-link" href={href(lang, 'contact')}>{t('聯絡我們', 'Contact us')} ↗</a>
+</article>

@@ -1,0 +1,79 @@
+---
+import { content, href, type Locale } from '../data/content';
+import CTA from './CTA.astro';
+const { lang } = Astro.props as { lang: Locale };
+const { t, stages } = content(lang);
+---
+
+<section class="wrap page-intro">
+  <p class="eyebrow">ERYNDEX SERVICES / PROFESSIONAL SERVICES</p><h1>
+    {t('產品的下一步，\n是你的企業。', 'Good software.\nMade right for your business.')}
+  </h1><p class="lead">
+    {
+      t(
+        '軟體只是開始。我們協助把產品放進真實環境，陪團隊建立可持續的使用方式。',
+        'Software is just the beginning. We help introduce products into real environments and build practices your team can sustain.',
+      )
+    }
+  </p><a class="button" href={href(lang, 'contact') + '?product=services'}
+    >{t('討論服務需求', 'Discuss your needs')} ↗</a>
+</section>
+<section class="wrap service-timeline">
+  {
+    stages.map((s, i) => (
+      <article>
+        <>
+          <span class="service-number">0{i + 1}</span>
+          <div>
+            <>
+              <p class="eyebrow">{['INTRODUCE', 'ADAPT', 'CONTINUE'][i]}</p>
+              <h2>{s.title}</h2>
+              <p class="lead">{s.desc}</p>
+            </>
+          </div>
+          <div>
+            <>
+              <ul>
+                {s.items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+              <p class="deliverable">
+                {t('一起完成', 'What we work toward')}
+                <br />
+                {s.deliver}
+              </p>
+            </>
+          </div>
+        </>
+      </article>
+    ))
+  }
+</section>
+<section class="wrap section service-boundary">
+  <p class="eyebrow">PEOPLE, PRACTICE & CONTINUITY</p><h2>
+    {
+      t(
+        '產品提供能力，\n服務讓能力真正用得上。',
+        'Products create capability.\nServices put it into practice.',
+      )
+    }
+  </h2><div>
+    <p class="lead">
+      {
+        t(
+          '例如，Files 的版本還原是一項產品功能；協助企業搬遷既有資料、規劃保存原則並完成還原演練，則屬於專業服務。兩者分工清楚，才能讓期待一致。',
+          'For example, version restore is a Files capability. Migrating existing information, planning retention and practicing recovery are professional services. Clear responsibilities create shared expectations.',
+        )
+      }
+    </p><p>
+      {
+        t(
+          '導入範圍、時程、支援方式與費用，會依實際需求另行確認。',
+          'Implementation scope, timing, support arrangements and fees are agreed around your actual needs.',
+        )
+      }
+    </p>
+  </div>
+</section>
+<CTA lang={lang} />
