@@ -24,10 +24,53 @@
   scroll-margin-top: 110px;
 }
 .single-product-intro {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  min-height: 490px;
+  padding: 65px 5%;
   align-items: center;
-  gap: 7%;
+  background: var(--paper);
+}
+.product-atmosphere {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+}
+.product-atmosphere picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0 !important;
+}
+.product-atmosphere img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 70% center;
+}
+.single-product-intro::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(90deg, var(--paper) 0%, rgba(247,245,239,.97) 28%, rgba(247,245,239,.86) 43%, rgba(247,245,239,.28) 67%, rgba(247,245,239,.08) 100%);
+}
+.product-intro-copy {
+  width: 46%;
+  max-width: 520px;
+}
+/* Presentation-only color treatment: original Files artwork is preserved. */
+.single-product.blue .product-atmosphere img {
+  filter: grayscale(1);
+  mix-blend-mode: luminosity;
+}
+.single-product.blue .product-atmosphere {
+  background: #6895cf;
+  isolation: isolate;
 }
 .single-product-intro h3 {
   font-size: clamp(29px, 3vw, 44px);
@@ -42,12 +85,6 @@
 }
 .single-product-intro .text-link {
   margin-top: 25px;
-}
-.single-product:nth-of-type(even) .single-product-intro > div {
-  order: 2;
-}
-.single-product-intro picture {
-  border-bottom: 2px solid var(--accent);
 }
 .disclosure {
   border-block-start: 1px solid var(--line);
@@ -230,14 +267,20 @@ details[id] {
 }
 @media (max-width: 850px) {
   .single-product-intro {
-    grid-template-columns: 1fr;
-    gap: 28px;
+    min-height: 570px;
+    align-items: flex-end;
+    padding: 235px 24px 32px;
   }
-  .single-product:nth-of-type(even) .single-product-intro > div {
-    order: 0;
+  .product-intro-copy {
+    width: 100%;
+    max-width: 650px;
   }
-  .single-product-intro picture {
-    max-width: 700px;
+  .product-atmosphere {
+    bottom: auto;
+    height: 340px;
+  }
+  .single-product-intro::after {
+    background: linear-gradient(180deg, rgba(247,245,239,.08) 0%, rgba(247,245,239,.3) 23%, rgba(247,245,239,.95) 43%, var(--paper) 60%);
   }
   .single-product-story {
     grid-template-columns: 1fr;

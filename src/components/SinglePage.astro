@@ -55,8 +55,15 @@ const { t, products, solutions, stages, articles } = content(lang);
     products.map((p, i) => (
       <article id={'products-' + p.id} class={'single-product ' + p.accent}>
         <div class="single-product-intro">
+          <div class="product-atmosphere" aria-hidden="true">
+            <MasterImage
+              kind={p.id as 'space' | 'files' | 'shield'}
+              alt=""
+              sizes="(max-width: 850px) 100vw, 75vw"
+            />
+          </div>
           <>
-            <div>
+            <div class="product-intro-copy">
               <>
                 <p class="eyebrow">
                   0{i + 1} / {p.category}
@@ -69,10 +76,6 @@ const { t, products, solutions, stages, articles } = content(lang);
                 </a>
               </>
             </div>
-            <MasterImage
-              kind={p.id as 'space' | 'files' | 'shield'}
-              alt={p.name + ' / ' + p.concept}
-            />
           </>
         </div>
         <details class="disclosure product-details" id={'product-details-' + p.id}>
