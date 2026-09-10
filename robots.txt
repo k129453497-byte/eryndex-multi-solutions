@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://k129453497-byte.github.io/eryndex-multi-solutions/sitemap.xml
