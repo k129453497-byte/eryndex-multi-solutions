@@ -5,7 +5,7 @@
   --muted: #69665d;
   --line: #dcd8cf;
   --coral: #db735c;
-  --cyan: #488b96;
+  --blue: #3565ad;
   --mint: #528778;
   --lavender: #8b7c9c;
   --gutter: clamp(24px, 5vw, 88px);
@@ -378,9 +378,9 @@ main:focus {
   --accent: var(--coral);
   --tint: #f8e8e1;
 }
-.cyan {
-  --accent: var(--cyan);
-  --tint: #e4eef0;
+.blue {
+  --accent: var(--blue);
+  --tint: #e7eef9;
 }
 .mint {
   --accent: var(--mint);

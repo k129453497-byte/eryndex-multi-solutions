@@ -631,8 +631,8 @@ label > small {
   font-size: 12px;
 }
 .file-row.selected {
-  background: #e9f1f0;
-  border-color: #a9c4c5;
+  background: #e7eef9;
+  border-color: #9bb5db;
 }
 .file-row strong {
   display: block;
@@ -651,12 +651,12 @@ label > small {
 }
 .file-type {
   font-size: 12px;
-  border: 1px solid #cad8d5;
+  border: 1px solid #b6c9e5;
   padding: 8px 4px;
-  color: #386673;
+  color: #3565ad;
 }
 .version-panel {
-  background: #f4f5f0;
+  background: #f0f4fa;
   padding: 20px;
   min-width: 0;
 }
@@ -686,6 +686,10 @@ label > small {
   margin-top: 15px;
   font-size: 14px;
   min-height: 44px;
+}
+.version-panel .demo-button {
+  border-color: #9bb5db;
+  color: #3565ad;
 }
 .policy-live {
   border: 1px solid #b9d0c3;

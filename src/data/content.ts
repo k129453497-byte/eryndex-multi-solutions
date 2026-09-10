@@ -99,7 +99,7 @@ export function content(lang: Locale) {
       name: 'Eryndex Files',
       word: 'Files',
       concept: 'Layers',
-      accent: 'cyan',
+      accent: 'blue',
       category: t('企業檔案平台', 'Enterprise file platform'),
       line: t('讓重要資訊妥善保存。', 'Keep information worth keeping.'),
       short: t('每份資訊，都有可追溯的來處。', 'Every file, with a history.'),
