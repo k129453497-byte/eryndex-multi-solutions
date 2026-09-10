@@ -95,14 +95,16 @@ const p = products.find((p) => p.id === id)!;
     <h3>{t('獨立有價值，連結更完整。', 'Valuable alone. Connected when needed.')}</h3><p>
       {p.boundary}
     </p><a class="text-link" href={href(lang, 'solutions')}
-      >{t('探索產品組合', 'Explore combinations')} ↗</a>
+      >{t('探索產品組合', 'Explore combinations')} ↗</a
+    >
   </div>
 </section>
 <section class="wrap section">
   <div class="section-heading">
     <h2>{t('放進你的業務情境。', 'Put it in context.')}</h2><a
       class="text-link"
-      href={href(lang, 'services')}>{t('需要導入協助？', 'Need help implementing?')} ↗</a>
+      href={href(lang, 'services')}>{t('需要導入協助？', 'Need help implementing?')} ↗</a
+    >
   </div><div class="solution-list">
     {
       solutions

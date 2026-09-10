@@ -7,7 +7,7 @@ export function translator(lang: Locale) {
   return (tw: string, en: string, cn?: string): string =>
     lang === 'en' ? en : lang === 'zh-cn' ? (cn ?? simplify(tw)) : tw;
 }
-export const routes = [
+export const legacyRoutes = [
   '',
   'products',
   'products/space',
@@ -28,10 +28,12 @@ export const routes = [
   'privacy',
   'terms',
 ];
+export const routes = [''];
+export const anchorFor = (path: string) => path.replace(/^\/|\/$/g, '').replaceAll('/', '-');
 export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const asset = (path: string) => base + '/assets/' + path;
 export const href = (lang: Locale, path = '') =>
-  base + '/' + lang + '/' + (path ? path.replace(/^\/|\/$/g, '') + '/' : '');
+  path ? '#' + anchorFor(path) : base + '/' + lang + '/';
 export function content(lang: Locale) {
   const t = translator(lang);
   const products = [

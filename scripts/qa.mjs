@@ -41,18 +41,21 @@ function resolveTarget(raw, from) {
 for (const [file, doc] of docs) {
   const relative = path.relative(root, file);
   const fail = (msg) => issues.push(relative + ': ' + msg);
-  if (doc.querySelectorAll('h1').length !== 1) fail('Expected exactly one H1');
-  if (!doc.querySelector('html')?.getAttribute('lang')) fail('Missing document language');
-  if (!doc.querySelector('title')?.textContent?.trim()) fail('Missing title');
-  if (!doc.querySelector('meta[name="description"]')?.getAttribute('content'))
-    fail('Missing description');
-  if (!doc.querySelector('link[rel="canonical"]')) fail('Missing canonical');
-  if (!doc.querySelector('main#main')) fail('Missing main landmark');
-  if (doc.querySelectorAll('link[rel="alternate"][hreflang]').length !== 4)
-    fail('Missing language alternates');
-  if (/Lorem ipsum/i.test(doc.textContent)) fail('Placeholder copy');
-  const ids = [...doc.querySelectorAll('[id]')].map((el) => el.id);
-  if (new Set(ids).size !== ids.length) fail('Duplicate element IDs');
+  const redirect = doc.querySelector('meta[http-equiv="refresh"]');
+  if (!redirect) {
+    if (doc.querySelectorAll('h1').length !== 1) fail('Expected exactly one H1');
+    if (!doc.querySelector('html')?.getAttribute('lang')) fail('Missing document language');
+    if (!doc.querySelector('title')?.textContent?.trim()) fail('Missing title');
+    if (!doc.querySelector('meta[name="description"]')?.getAttribute('content'))
+      fail('Missing description');
+    if (!doc.querySelector('link[rel="canonical"]')) fail('Missing canonical');
+    if (!doc.querySelector('main#main')) fail('Missing main landmark');
+    if (doc.querySelectorAll('link[rel="alternate"][hreflang]').length !== 4)
+      fail('Missing language alternates');
+    if (/Lorem ipsum/i.test(doc.textContent)) fail('Placeholder copy');
+    const ids = [...doc.querySelectorAll('[id]')].map((el) => el.id);
+    if (new Set(ids).size !== ids.length) fail('Duplicate element IDs');
+  }
   for (const image of doc.querySelectorAll('img')) {
     if (!image.hasAttribute('alt')) fail('Missing image alt');
     if (!image.hasAttribute('width') || !image.hasAttribute('height'))
@@ -104,10 +107,44 @@ for (const [file, hash] of Object.entries(integrity.masters)) {
   assert.ok(original.equals(current), 'Official master differs from original commit: ' + file);
 }
 for (const locale of ['zh-tw', 'zh-cn', 'en']) {
-  const list = [...docs.keys()].filter((f) => path.relative(root, f).startsWith(locale + '/'));
-  assert.equal(list.length, 19, 'Missing localized routes: ' + locale);
+  const list = [...docs.keys()].filter(
+    (f) =>
+      path.relative(root, f).startsWith(locale + '/') &&
+      !docs.get(f).querySelector('meta[http-equiv="refresh"]'),
+  );
+  assert.equal(list.length, 1, 'Missing localized routes: ' + locale);
   const names = list.map((f) => docs.get(f).querySelector('title').textContent);
   assert.equal(new Set(names).size, names.length, 'Duplicate page titles: ' + locale);
+}
+for (const [file, doc] of docs) {
+  if (doc.querySelector('meta[http-equiv="refresh"]') || file.endsWith('/404.html')) continue;
+  for (const id of [
+    'products',
+    'products-space',
+    'products-files',
+    'products-shield',
+    'solutions',
+    'services',
+    'resources',
+    'about',
+    'contact',
+    'privacy',
+    'terms',
+  ]) {
+    assert.ok(doc.getElementById(id), 'Missing single-page section: ' + id + ' in ' + file);
+  }
+  assert.equal(doc.querySelectorAll('[data-demo]').length, 3, 'Expected three product experiences');
+  assert.equal(
+    doc.querySelectorAll('.resource-disclosure').length,
+    3,
+    'Expected three complete articles',
+  );
+  assert.equal(
+    doc.querySelectorAll('.solution-disclosure').length,
+    4,
+    'Expected four complete solutions',
+  );
+  assert.equal(doc.querySelectorAll('#contact-form').length, 1, 'Expected one contact form');
 }
 const data = new FormData();
 data.set('name', 'Sample Person');
@@ -132,7 +169,8 @@ if (issues.length) {
         internalLinkReferences: links,
         assetReferences: assets,
         originalMastersVerified: 6,
-        localizedPages: 57,
+        localizedPages: 3,
+        legacyRedirects: 54,
         contactDraft: 'PASS',
         scope:
           'Static HTML, assets, links, metadata and contact logic. Not browser, accessibility or visual QA.',

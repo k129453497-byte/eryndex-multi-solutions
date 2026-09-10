@@ -1,14 +1,15 @@
 ---
 import { translator, type Locale } from '../data/content';
 import CTA from './CTA.astro';
-const { lang } = Astro.props as { lang: Locale };
+const { lang, embedded = false } = Astro.props as { lang: Locale; embedded?: boolean };
+const Heading = embedded ? 'h2' : 'h1';
 const t = translator(lang);
 ---
 
 <section class="wrap page-intro about-intro">
-  <p class="eyebrow">ABOUT ERYNDEX / 智序科技</p><h1>
+  <p class="eyebrow">ABOUT ERYNDEX / 智序科技</p><Heading>
     {t('科技應該把注意力，\n還給人。', 'Technology should\ngive attention back to people.')}
-  </h1><p class="lead">
+  </Heading><p class="lead">
     {
       t(
         '我們關心的，是企業每天如何運作。讓工具有清楚的用途，讓資訊有合適的位置，讓每個人能更從容地完成工作。',
@@ -73,4 +74,4 @@ const t = translator(lang);
       ))
     }
   </div>
-</section><CTA lang={lang} />
+</section>{!embedded && <CTA lang={lang} />}

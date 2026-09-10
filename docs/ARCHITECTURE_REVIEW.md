@@ -1,5 +1,7 @@
 # Architecture & Design Review — 2026-09-09
 
+2026-09-10 更新：使用者明確要求「全部整合進同一頁」，以下原始多頁架構決策已由此新要求取代。每種語言改為一個完整頁面，保留全部內容，詳見 SINGLE_PAGE_CHANGE.md。原有品牌、三個產品、服務定位與素材限制不變。
+
 已完整讀取 README、Master Brief、ASSET_GUIDE、DESIGN_SYSTEM、四份產品／服務文件，逐一檢視六個正式素材。基準 commit：7a14df0。
 
 ## 決策

@@ -1,6 +1,12 @@
 ---
 import { translator, href, type Locale } from '../data/content';
-const { lang, kind } = Astro.props as { lang: Locale; kind: string };
+const {
+  lang,
+  kind,
+  embedded = false,
+} = Astro.props as { lang: Locale; kind: string; embedded?: boolean };
+const Heading = embedded ? 'h2' : 'h1';
+const Subheading = embedded ? 'h3' : 'h2';
 const t = translator(lang);
 const privacy = kind === 'privacy';
 const sections = privacy
@@ -68,15 +74,15 @@ const sections = privacy
 
 <article class="wrap reading">
   <header>
-    <p class="eyebrow">ERYNDEX / {privacy ? 'PRIVACY' : 'TERMS'}</p><h1>
+    <p class="eyebrow">ERYNDEX / {privacy ? 'PRIVACY' : 'TERMS'}</p><Heading>
       {privacy ? t('隱私權說明', 'Privacy notice') : t('網站使用條款', 'Website terms')}
-    </h1><p>{t('更新日期：2026 年 9 月 9 日', 'Updated: 9 September 2026')}</p>
+    </Heading><p>{t('更新日期：2026 年 9 月 9 日', 'Updated: 9 September 2026')}</p>
   </header><div class="article-body">
     {
       sections.map(([h, p]) => (
         <section>
           <>
-            <h2>{h}</h2>
+            <Subheading>{h}</Subheading>
             <p>{p}</p>
           </>
         </section>

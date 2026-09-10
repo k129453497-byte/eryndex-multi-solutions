@@ -1,0 +1,395 @@
+---
+import { content, type Locale } from '../data/content';
+import Hero from './Hero.astro';
+import MasterImage from './MasterImage.astro';
+import ProductUI from './ProductUI.astro';
+import About from './About.astro';
+import Contact from './Contact.astro';
+import Legal from './Legal.astro';
+import '../styles/single-page.css';
+const { lang } = Astro.props as { lang: Locale };
+const { t, products, solutions, stages, articles } = content(lang);
+---
+
+<Hero lang={lang} />
+<section id="proposition" class="proposition wrap section">
+  <p class="eyebrow">A CLEARER WAY TO WORK</p><div>
+    <h2>{t('科技的價值，\n在於讓人從容。', 'Better technology.\nMore room to be human.')}</h2><p
+      class="lead"
+    >
+      {
+        t(
+          '工作需要組織，資訊需要保存，信任需要管理。三套各有所長的軟體，搭配陪你落地的專業服務，讓企業從需要的地方開始。',
+          'Work needs structure, information needs care, and trust needs boundaries. Three focused products and practical services help your business start where it matters.',
+        )
+      }
+    </p>
+  </div>
+</section>
+<section id="products" class="wrap section single-products">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">ERYNDEX PRODUCTS</p><h2>
+        {t('三種專注，\n回應不同的需要。', 'Three distinct purposes.\nOne thoughtful approach.')}
+      </h2>
+    </div><p>
+      {
+        t(
+          '每套產品都能獨立使用，也能在需要時彼此連結。',
+          'Each product stands on its own and connects when you need it.',
+        )
+      }
+    </p>
+  </div>
+  <nav class="product-jumps" aria-label={t('選擇產品', 'Choose a product')}>
+    {
+      products.map((p) => (
+        <a href={'#products-' + p.id}>
+          <span class={'dot ' + p.accent} />
+          {p.name} ↓
+        </a>
+      ))
+    }
+  </nav>
+  {
+    products.map((p, i) => (
+      <article id={'products-' + p.id} class={'single-product ' + p.accent}>
+        <div class="single-product-intro">
+          <>
+            <div>
+              <>
+                <p class="eyebrow">
+                  0{i + 1} / {p.category}
+                </p>
+                <h3>{p.name}</h3>
+                <h4>{p.line}</h4>
+                <p class="lead">{p.desc}</p>
+                <a class="text-link" href="#contact" data-interest={p.id}>
+                  {t('討論導入', 'Discuss implementation')} ↗
+                </a>
+              </>
+            </div>
+            <MasterImage
+              kind={p.id as 'space' | 'files' | 'shield'}
+              alt={p.name + ' / ' + p.concept}
+            />
+          </>
+        </div>
+        <details class="disclosure product-details" id={'product-details-' + p.id}>
+          <summary>
+            <>
+              <span>{t('深入了解功能與操作', 'Explore capabilities and try the interface')}</span>
+              <span class="expand-symbol" aria-hidden="true">
+                ＋
+              </span>
+            </>
+          </summary>
+          <div class="disclosure-content">
+            <div class="single-product-story">
+              <>
+                <h4>{p.pain}</h4>
+                <p>{p.story}</p>
+              </>
+            </div>
+            <div class="single-features">
+              {p.features.map(([h, d]) => (
+                <section>
+                  <h4>{h}</h4>
+                  <p>{d}</p>
+                </section>
+              ))}
+            </div>
+            <>
+              <h4 class="experience-label">{p.short}</h4>
+              <ProductUI id={p.id} lang={lang} />
+              <p class="demo-note">
+                {t(
+                  '互動示意使用範例資料，不會更動真實系統或檔案。',
+                  'Interactive examples use sample data and do not change real systems or files.',
+                )}
+              </p>
+            </>
+            <div class="single-fit">
+              <>
+                <div>
+                  <>
+                    <h4>{t('適合的工作情境', 'Where it fits')}</h4>
+                    <p>{p.example}</p>
+                  </>
+                </div>
+                <div>
+                  <>
+                    <h4>{t('獨立有價值，連結更完整', 'Valuable alone, connected when needed')}</h4>
+                    <p>{p.boundary}</p>
+                    <a class="text-link" href="#solutions">
+                      {t('探索產品組合', 'Explore combinations')} ↓
+                    </a>
+                  </>
+                </div>
+              </>
+            </div>
+          </div>
+        </details>
+      </article>
+    ))
+  }
+</section>
+<section id="solutions" class="wrap section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">BETTER TOGETHER</p><h2>
+        {t('從你的情境，\n找到合適的組合。', 'Your situation.\nThe right combination.')}
+      </h2>
+    </div><p>
+      {
+        t(
+          '解決方案是產品的合適組合。可以從一套開始，選擇跟著需求走。',
+          'Solutions combine the right products for your situation. Start with one and let your needs set the pace.',
+        )
+      }
+    </p>
+  </div>
+  {
+    solutions.map((s, i) => (
+      <details class="disclosure solution-disclosure" id={'solutions-' + s.id}>
+        <summary>
+          <>
+            <span class="index">0{i + 1}</span>
+            <h3>{s.name}</h3>
+            <span class="combination">
+              {s.ids.map((id) => {
+                const p = products.find((p) => p.id === id)!;
+                return <span class={'pill ' + p.accent}>{p.word}</span>;
+              })}
+            </span>
+            <span class="expand-symbol" aria-hidden="true">
+              ＋
+            </span>
+          </>
+        </summary>
+        <div class="disclosure-content">
+          <>
+            <h4 class="solution-title">{s.title}</h4>
+            <p class="lead">{s.desc}</p>
+            <div class="composition">
+              {s.ids.map((id, i) => {
+                const p = products.find((p) => p.id === id)!;
+                return (
+                  <section class={p.accent}>
+                    <h4>{p.name}</h4>
+                    <p>{s.roles[i]}</p>
+                    <a class="text-link" href={'#products-' + id}>
+                      {t('認識產品', 'Explore product')} ↑
+                    </a>
+                  </section>
+                );
+              })}
+            </div>
+          </>
+          <div class="single-steps">
+            <>
+              <h4>{t('循序走進日常', 'A practical path')}</h4>
+              <ol>
+                {s.steps.map((step) => (
+                  <li>{step}</li>
+                ))}
+              </ol>
+            </>
+          </div>
+          <div class="single-outcome">
+            <>
+              <h4>{t('期待的工作改變', 'The change to work toward')}</h4>
+              <p>{s.outcome}</p>
+            </>
+          </div>
+          <>
+            <p>
+              {t(
+                'Eryndex Services 可協助遷移、設定、訓練與維運，實際範圍依需求確認。',
+                'Eryndex Services can help with migration, configuration, training and maintenance. Scope is agreed around your needs.',
+              )}
+            </p>
+            <a class="text-link" href="#contact">
+              {t('討論這個情境', 'Discuss this scenario')} ↗
+            </a>
+          </>
+        </div>
+      </details>
+    ))
+  }
+</section>
+<section id="services" class="service-band">
+  <div class="wrap section">
+    <p class="eyebrow">ERYNDEX SERVICES · PROFESSIONAL SERVICES</p><div class="service-intro">
+      <h2>
+        {
+          t(
+            '軟體只是開始。\n我們陪你真正落地。',
+            'Software is the beginning.\nWe help make it work.',
+          )
+        }
+      </h2><div>
+        <p class="lead">
+          {
+            t(
+              '從導入、遷移到訓練與維護，讓產品適合你的企業，也讓團隊有能力持續使用。',
+              'From implementation and migration to training and maintenance, fit the products to your business and help your team keep using them well.',
+            )
+          }
+        </p><a class="text-link" href="#contact" data-interest="services"
+          >{t('討論服務需求', 'Discuss service needs')} ↗</a>
+      </div>
+    </div>
+    <ol class="stages">
+      {
+        stages.map((s, i) => (
+          <li>
+            <>
+              <span>0{i + 1}</span>
+              <h3>{s.title}</h3>
+              <p>{s.desc}</p>
+              <ul>
+                {s.items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+              <p class="deliverable">{s.deliver}</p>
+            </>
+          </li>
+        ))
+      }
+    </ol>
+    <div class="service-explanation">
+      <h3>
+        {
+          t(
+            '產品提供能力，服務讓能力用得上。',
+            'Products create capability. Services put it into practice.',
+          )
+        }
+      </h3><p>
+        {
+          t(
+            'Files 的版本還原是產品功能；協助搬遷既有資料、規劃保存原則與演練還原，則屬於專業服務。導入範圍、時程、支援方式與費用，會依實際需求另行確認。',
+            'Version restore is a Files capability. Migrating existing information, planning retention and practicing recovery are professional services. Scope, timing, support and fees are agreed around your actual needs.',
+          )
+        }
+      </p>
+    </div>
+  </div>
+</section>
+<section id="resources" class="wrap section">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">ERYNDEX NOTES</p><h2>
+        {t('讓理解，\n走在改變之前。', 'Understanding first.\nBetter decisions next.')}
+      </h2>
+    </div><p>
+      {
+        t(
+          '在這裡閱讀完整文章，找到值得改善的下一步。',
+          'Read the full articles here and find your next improvement.',
+        )
+      }
+    </p>
+  </div>
+  {
+    articles.map((a, i) => (
+      <details class="disclosure resource-disclosure" id={'resources-' + a.id}>
+        <>
+          <summary>
+            <>
+              <span class="index">0{i + 1}</span>
+              <div>
+                <>
+                  <p class="eyebrow">{a.tag}</p>
+                  <h3>{a.title}</h3>
+                </>
+              </div>
+              <span class="expand-symbol" aria-hidden="true">
+                ＋
+              </span>
+            </>
+          </summary>
+          <article class="disclosure-content">
+            <p class="article-byline">
+              {t('Eryndex 編輯團隊 · 工作觀點', 'Eryndex editorial team · Working perspectives')}
+            </p>
+            {a.sections.map(([h, p]) => (
+              <section class="article-section">
+                <h4>{h}</h4>
+                <p>{p}</p>
+              </section>
+            ))}
+            <a class="text-link" href={'#products-' + a.related}>
+              {t('延伸認識', 'Explore')} Eryndex {products.find((p) => p.id === a.related)!.word} ↑
+            </a>
+          </article>
+        </>
+      </details>
+    ))
+  }
+</section>
+<section id="about"><About lang={lang} embedded /></section>
+<section id="contact"><Contact lang={lang} embedded /></section>
+<section class="wrap single-legal" aria-label={t('網站政策', 'Website policies')}>
+  {
+    ['privacy', 'terms'].map((kind) => (
+      <details id={kind} class="disclosure">
+        <>
+          <summary>
+            <>
+              <span>
+                {kind === 'privacy'
+                  ? t('隱私權說明', 'Privacy notice')
+                  : t('網站使用條款', 'Website terms')}
+              </span>
+              <span class="expand-symbol" aria-hidden="true">
+                ＋
+              </span>
+            </>
+          </summary>
+          <Legal lang={lang} kind={kind} embedded />
+        </>
+      </details>
+    ))
+  }
+</section>
+<script>
+  function revealAnchor() {
+    if (!location.hash) return;
+    let id: string;
+    try {
+      id = decodeURIComponent(location.hash.slice(1));
+    } catch {
+      return;
+    }
+    const target = document.getElementById(id);
+    if (!target) return;
+    let node: HTMLElement | null = target;
+    while (node) {
+      if (node instanceof HTMLDetailsElement) node.open = true;
+      node = node.parentElement;
+    }
+    requestAnimationFrame(() =>
+      target.scrollIntoView({
+        block: 'start',
+        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+      }),
+    );
+  }
+  window.addEventListener('hashchange', revealAnchor);
+  if (location.hash) revealAnchor();
+  document.addEventListener('click', (event) => {
+    const anchor = (event.target as Element).closest<HTMLAnchorElement>('a[href^="#"]');
+    if (!anchor) return;
+    const interest = anchor.dataset.interest;
+    if (interest) {
+      const field = document.querySelector<HTMLSelectElement>(
+        '#contact-form select[name="interest"]',
+      );
+      if (field) field.value = interest;
+    }
+    if (anchor.hash === location.hash) revealAnchor();
+  });
+</script>

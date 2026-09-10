@@ -29,6 +29,8 @@ BASE_PATH 同時控制素材、站內連結、語言切換、canonical 及 sitem
 
 每條頁面路徑有真實 index.html，不需要 SPA rewrite。主機須支援目錄 index.html。404.html 是找不到頁面的備援。
 
+目前為一頁式：/zh-tw/、/zh-cn/、/en/ 各包含完整網站，根目錄提供繁中版。站內導覽使用 #products、#solutions 等錨點。54 個舊內頁僅提供 noindex 轉向至對應區段，sitemap 只列三個語言主頁。
+
 ## 發布控制
 
 此交付尚未發布正式環境。先完成桌機、平板、手機瀏覽器 QA 與主管檢視，再決定發布。docs/ci/validate.example.yml 提供 CI 範例，只驗證與產生 artifact，不會自動部署；目前 GitHub 憑證沒有 workflow 寫入權限，因此尚未啟用。

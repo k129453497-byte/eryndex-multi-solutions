@@ -1,101 +1,53 @@
 ---
 import Site from '../layouts/Site.astro';
-import Home from '../components/Home.astro';
-import Products from '../components/Products.astro';
-import ProductPage from '../components/ProductPage.astro';
-import Solutions from '../components/Solutions.astro';
-import Services from '../components/Services.astro';
-import Resources from '../components/Resources.astro';
-import About from '../components/About.astro';
-import Contact from '../components/Contact.astro';
-import Legal from '../components/Legal.astro';
-import { locales, routes, content, type Locale } from '../data/content';
+import SinglePage from '../components/SinglePage.astro';
+import { locales, legacyRoutes, href, anchorFor, translator, type Locale } from '../data/content';
 export function getStaticPaths() {
   return locales.flatMap((lang) =>
-    routes.map((path) => ({
+    legacyRoutes.map((path) => ({
       params: { route: lang + (path ? '/' + path : '') },
       props: { lang, path },
     })),
   );
 }
 const { lang, path } = Astro.props as { lang: Locale; path: string };
-const { t, products, solutions, articles } = content(lang);
-const [section, id] = path.split('/');
-const p = products.find((p) => p.id === id);
-const solution = solutions.find((s) => s.id === id);
-const article = articles.find((a) => a.id === id);
-const titles: Record<string, string> = {
-  '': t('讓企業的每一天，更有條理', 'A clearer way to work'),
-  products: t('三種專注，回應不同的需要', 'Three distinct products'),
-  solutions: t('從企業情境出發的解決方案', 'Solutions for your business'),
-  services: t('專業導入與持續支援', 'Professional services'),
-  resources: t('工作、資訊與信任的實務觀點', 'Ideas for better work'),
-  about: t('關於智序科技', 'About Eryndex'),
-  contact: t('從你的工作聊起', 'Let’s talk'),
-  privacy: t('隱私權說明', 'Privacy notice'),
-  terms: t('網站使用條款', 'Website terms'),
-};
-const title = p
-  ? p.name + ' — ' + p.line
-  : solution
-    ? solution.name
-    : article
-      ? article.title
-      : titles[section || ''];
-const descriptions: Record<string, string> = {
-  '': t(
-    'Eryndex 智序科技以 Space、Files、Shield 與專業服務，協助企業組織工作、保存資訊與管理信任。',
-    'Eryndex helps businesses organize work, preserve information and manage trust with Space, Files, Shield and professional services.',
-  ),
-  products: t(
-    'Space 組織工作、Files 保存資訊、Shield 管理信任。探索各自獨立、也能連結的三套企業軟體。',
-    'Explore three independent, connected products: Space for work, Files for information and Shield for trust.',
-  ),
-  solutions: t(
-    '依協作、資訊保護、安心辦公與數位工作環境，選擇適合企業的 Eryndex 產品組合。',
-    'Find a product combination for modern work, information protection, secure office or a complete digital workplace.',
-  ),
-  services: t(
-    '從部署、遷移到訓練、整合與維運，讓 Eryndex 產品適合企業的真實工作方式。',
-    'Implementation, migration, training, integration and ongoing services that fit Eryndex products to your business.',
-  ),
-  resources: t(
-    '閱讀關於工作交接、資訊保存與存取管理的實務觀點，找到值得改善的下一步。',
-    'Read practical perspectives on handoffs, information preservation and access to find your next improvement.',
-  ),
-  about: t(
-    '認識 Eryndex 智序科技：以清楚的軟體用途與專業服務，協助企業從容工作。',
-    'Discover Eryndex: purposeful software and professional services for a calmer way to work.',
-  ),
-  contact: t(
-    '透過 contact@eryndex.com 或準備郵件草稿，與 Eryndex 討論產品與導入需求。',
-    'Contact Eryndex at contact@eryndex.com or prepare an email draft to discuss your needs.',
-  ),
-  privacy: t(
-    '了解本網站聯絡表單、郵件草稿及連線資訊的實際處理方式。',
-    'How this website handles contact forms, email drafts and connection information.',
-  ),
-  terms: t(
-    '本網站資訊與產品示意介面的使用說明。',
-    'Information about this website and its representative product interfaces.',
-  ),
-};
-const description = p
-  ? p.desc
-  : solution
-    ? solution.desc
-    : article
-      ? article.intro
-      : descriptions[section || ''];
+const t = translator(lang);
+const target = href(lang) + (path ? '#' + anchorFor(path) : '');
 ---
 
-<Site lang={lang} path={path} title={title} description={description}>
-  {!path && <Home lang={lang} />}
-  {section === 'products' && (id ? <ProductPage lang={lang} id={id} /> : <Products lang={lang} />)}
-  {section === 'solutions' && <Solutions lang={lang} id={id} />}
-  {section === 'services' && <Services lang={lang} />}
-  {section === 'resources' && <Resources lang={lang} id={id} />}
-  {section === 'about' && <About lang={lang} />}
-  {section === 'contact' && <Contact lang={lang} />}
-  {(section === 'privacy' || section === 'terms') && <Legal lang={lang} kind={section} />}
-</Site>
+{
+  path ? (
+    <html lang={lang === 'zh-tw' ? 'zh-Hant' : lang === 'zh-cn' ? 'zh-Hans' : 'en'}>
+      <>
+        <head>
+          <>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta http-equiv="refresh" content={'0;url=' + target} />
+            <meta name="robots" content="noindex" />
+            <link rel="canonical" href={new URL(href(lang), Astro.site)} />
+            <title>{t('前往 Eryndex', 'Continue to Eryndex')}</title>
+          </>
+        </head>
+        <body>
+          <p>
+            <a href={target}>
+              {t('前往首頁對應內容', 'Continue to this section on the home page')} →
+            </a>
+          </p>
+        </body>
+      </>
+    </html>
+  ) : (
+    <Site
+      lang={lang}
+      title={t('讓企業的每一天，更有條理', 'A clearer way to work')}
+      description={t(
+        'Eryndex 智序科技以 Space、Files、Shield 與專業服務，協助企業組織工作、保存資訊與管理信任。',
+        'Eryndex helps businesses organize work, preserve information and manage trust with Space, Files, Shield and professional services.',
+      )}
+    >
+      <SinglePage lang={lang} />
+    </Site>
+  )
+}

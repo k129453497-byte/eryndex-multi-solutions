@@ -1,0 +1,321 @@
+.site-header {
+  position: sticky;
+  top: 0;
+}
+.single-products {
+  padding-bottom: 35px;
+}
+.product-jumps {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--line);
+}
+.product-jumps a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+}
+.single-product {
+  padding: 55px 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 110px;
+}
+.single-product-intro {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  align-items: center;
+  gap: 7%;
+}
+.single-product-intro h3 {
+  font-size: clamp(29px, 3vw, 44px);
+}
+.single-product-intro h4 {
+  font-size: 24px;
+  font-weight: 400;
+  margin: 15px 0;
+}
+.single-product-intro .lead {
+  font-size: 17px;
+}
+.single-product-intro .text-link {
+  margin-top: 25px;
+}
+.single-product:nth-of-type(even) .single-product-intro > div {
+  order: 2;
+}
+.single-product-intro picture {
+  border-bottom: 2px solid var(--accent);
+}
+.disclosure {
+  border-block-start: 1px solid var(--line);
+  scroll-margin-top: 110px;
+}
+.disclosure:last-child {
+  border-bottom: 1px solid var(--line);
+}
+.disclosure > summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 27px 0;
+  min-height: 60px;
+}
+.disclosure > summary::-webkit-details-marker {
+  display: none;
+}
+.expand-symbol {
+  margin-left: auto;
+  font-size: 22px;
+  flex-shrink: 0;
+  font-weight: 400;
+  transition: transform 0.2s;
+}
+.disclosure[open] > summary .expand-symbol {
+  transform: rotate(45deg);
+}
+.product-details {
+  margin-top: 32px;
+}
+.disclosure-content {
+  padding: 15px 0 40px;
+}
+.disclosure-content h4 {
+  font-size: 22px;
+  line-height: 1.6;
+  font-weight: 500;
+  margin: 0 0 15px;
+}
+.single-product-story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7%;
+  margin-bottom: 35px;
+}
+.single-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px 6%;
+  margin: 25px 0 50px;
+}
+.single-features > section {
+  border-top: 1px solid var(--line);
+  padding-top: 23px;
+}
+.single-fit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7%;
+  margin-top: 35px;
+}
+.single-fit .text-link {
+  margin-top: 20px;
+}
+.solution-disclosure > summary {
+  display: grid;
+  grid-template-columns: 35px 1fr auto 25px;
+}
+.solution-disclosure .disclosure-content {
+  max-width: 1100px;
+}
+.solution-title {
+  font-size: 30px !important;
+}
+.composition {
+  margin: 32px 0;
+}
+.composition > section {
+  border-top: 2px solid var(--accent);
+  padding-top: 22px;
+}
+.composition .text-link {
+  margin-top: 15px;
+}
+.single-steps {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 35px;
+}
+.single-steps ol {
+  margin: 0;
+  padding-left: 22px;
+  line-height: 2.2;
+}
+.single-outcome {
+  padding: 25px;
+  background: #eeeee6;
+  margin: 25px 0;
+}
+.solution-disclosure .disclosure-content > .text-link {
+  margin-top: 25px;
+}
+.service-band .stages > li > ul {
+  grid-column: 2;
+  list-style: none;
+  padding: 0;
+  margin: 18px 0;
+  font-size: 14px;
+}
+.service-band .stages > li > ul > li {
+  display: list-item;
+  border: 0;
+  padding: 5px 0;
+  line-height: 1.6;
+}
+.service-band .stages > li > .deliverable {
+  grid-column: 2;
+}
+.service-explanation {
+  margin-top: 45px;
+  padding-top: 30px;
+  border-top: 1px solid #c8bfce;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7%;
+}
+.resource-disclosure > summary {
+  align-items: start;
+}
+.resource-disclosure summary .eyebrow {
+  margin: 0 0 8px;
+}
+.resource-disclosure summary > .index {
+  padding-top: 4px;
+}
+.resource-disclosure .disclosure-content {
+  max-width: 820px;
+  margin-inline: auto;
+}
+.article-section {
+  margin-top: 30px;
+}
+.article-section p {
+  font-size: 17px;
+}
+.article-byline {
+  font-size: 13px;
+  margin-top: 20px;
+}
+.resource-disclosure .text-link {
+  margin-top: 30px;
+}
+.single-legal {
+  padding-block: 15px 65px;
+}
+.single-legal .reading {
+  width: 100%;
+  padding-block: 15px 35px;
+  max-width: 850px;
+}
+.single-legal .reading h2 {
+  font-size: 28px;
+}
+.single-legal .article-body h3 {
+  font-size: 23px;
+  margin-bottom: 16px;
+}
+#about .page-intro,
+#contact .page-intro {
+  padding-top: 65px;
+}
+section[id],
+details[id] {
+  scroll-margin-top: 110px;
+}
+.language a {
+  white-space: nowrap;
+}
+@media (max-width: 850px) {
+  .single-product-intro {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .single-product:nth-of-type(even) .single-product-intro > div {
+    order: 0;
+  }
+  .single-product-intro picture {
+    max-width: 700px;
+  }
+  .single-product-story {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .single-product-intro .lead {
+    max-width: 650px;
+  }
+  .solution-disclosure > summary {
+    gap: 15px;
+    grid-template-columns: 25px 1fr auto 20px;
+  }
+  .solution-disclosure h3 {
+    font-size: 20px;
+  }
+  .single-fit {
+    gap: 25px;
+  }
+  .service-explanation {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .product-jumps {
+    gap: 15px;
+    font-size: 14px;
+  }
+  .product-jumps a {
+    font-size: 14px;
+  }
+  .single-product {
+    padding-block: 38px;
+  }
+  .single-product-intro h4 {
+    font-size: 21px;
+  }
+  .disclosure > summary {
+    gap: 12px;
+    padding: 22px 0;
+  }
+  .product-details > summary {
+    font-size: 15px;
+  }
+  .single-features,
+  .single-fit,
+  .single-steps {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  .solution-disclosure > summary {
+    grid-template-columns: 24px 1fr 24px;
+  }
+  .solution-disclosure .combination {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .solution-disclosure .expand-symbol {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .resource-disclosure h3 {
+    font-size: 21px;
+  }
+  .resource-disclosure > summary > .index {
+    display: none;
+  }
+  .disclosure-content {
+    padding-bottom: 30px;
+  }
+  .solution-title {
+    font-size: 25px !important;
+  }
+  .single-legal .reading h2 {
+    font-size: 25px;
+  }
+  section[id],
+  details[id] {
+    scroll-margin-top: 92px;
+  }
+}

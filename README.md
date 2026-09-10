@@ -36,6 +36,8 @@ The website architecture must support Traditional Chinese, Simplified Chinese, a
 
 ## Website implementation
 
+As requested on 2026-09-10, all content now lives on one page per language: products and interactive examples, solutions, services, full resource articles, about, contact, privacy and terms. Navigation uses section anchors; longer content expands inline. The 54 legacy inner-page URLs redirect to their corresponding sections. See [single-page change and verification](docs/SINGLE_PAGE_CHANGE.md).
+
 The website uses Astro, TypeScript, shared components and static localized routes. Read the [architecture review](docs/ARCHITECTURE_REVIEW.md), [deployment guide](docs/DEPLOYMENT.md), and [QA report](docs/QA_REPORT.md) before review or publishing.
 
 Run with Node.js 24 and pnpm 11:

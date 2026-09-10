@@ -3,7 +3,11 @@ import Site from '../layouts/Site.astro';
 import { href } from '../data/content';
 ---
 
-<Site lang="zh-tw" title="找不到這個頁面" description="請從首頁或產品總覽繼續探索 Eryndex。"
+<Site
+  singlePage={false}
+  lang="zh-tw"
+  title="找不到這個頁面"
+  description="請從首頁或產品總覽繼續探索 Eryndex。"
   ><section class="wrap page-intro">
     <p class="eyebrow">404 / PAGE NOT FOUND</p><h1>這條路，暫時沒有頁面。</h1><p class="lead">
       你可以回到首頁，或從產品總覽重新開始。<br />This page could not be found. Continue from the

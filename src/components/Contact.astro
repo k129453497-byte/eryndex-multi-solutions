@@ -1,13 +1,14 @@
 ---
 import { translator, href, type Locale } from '../data/content';
-const { lang } = Astro.props as { lang: Locale };
+const { lang, embedded = false } = Astro.props as { lang: Locale; embedded?: boolean };
+const Heading = embedded ? 'h2' : 'h1';
 const t = translator(lang);
 ---
 
 <section class="wrap page-intro">
-  <p class="eyebrow">LET'S START A CONVERSATION</p><h1>
+  <p class="eyebrow">LET'S START A CONVERSATION</p><Heading>
     {t('從你的工作，\n聊起。', 'Tell us about\nthe way you work.')}
-  </h1><p class="lead">
+  </Heading><p class="lead">
     {
       t(
         '不需要先有完整的規格。告訴我們正在面對的挑戰，一起找到適合的開始。',
@@ -63,7 +64,8 @@ const t = translator(lang);
           autocomplete="organization"
           required
           maxlength="120"
-        /></label>
+        /></label
+      >
     </div>
     <label
       >{t('電子郵件', 'Email')}
@@ -126,7 +128,8 @@ const t = translator(lang);
         <a class="button secondary" id="open-email" href="mailto:contact@eryndex.com"
           >{t('開啟郵件程式', 'Open email app')} ↗</a
         ><button class="text-link" type="button" id="copy-draft"
-          >{t('複製草稿', 'Copy draft')}</button>
+          >{t('複製草稿', 'Copy draft')}</button
+        >
       </div>
     </section>
   </form>
