@@ -5,7 +5,7 @@ export type Locale = (typeof locales)[number];
 const simplify = OpenCC.Converter({ from: 'tw', to: 'cn' });
 export function translator(lang: Locale) {
   return (tw: string, en: string, cn?: string): string =>
-    lang === 'en' ? en : lang === 'zh-cn' ? (cn ?? simplify(tw)) : tw;
+    lang === 'en' ? en : lang === 'zh-cn' ? (cn ?? simplify(tw).replaceAll('专案', '项目').replaceAll('字元', '字符').replaceAll('选单', '菜单').replaceAll('邮件程式', '邮件应用').replaceAll('程式', '程序')) : tw;
 }
 export const legacyRoutes = [
   '',

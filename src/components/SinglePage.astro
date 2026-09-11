@@ -78,10 +78,21 @@ const { t, products, solutions, stages, articles } = content(lang);
             </div>
           </>
         </div>
+            <>
+              <h4 class="experience-label">{p.short}</h4>
+              <ProductUI id={p.id} lang={lang} />
+              <p class="demo-note">
+                {t(
+                  '互動示意使用範例資料，不會更動真實系統或檔案。',
+                  'Interactive examples use sample data and do not change real systems or files.',
+                )}
+              </p>
+            </>
+
         <details class="disclosure product-details" id={'product-details-' + p.id}>
           <summary>
             <>
-              <span>{t('深入了解功能與操作', 'Explore capabilities and try the interface')}</span>
+              <span>{t('詳細功能與適用情境', 'Capabilities and use cases')}</span>
               <span class="expand-symbol" aria-hidden="true">
                 ＋
               </span>
@@ -102,16 +113,6 @@ const { t, products, solutions, stages, articles } = content(lang);
                 </section>
               ))}
             </div>
-            <>
-              <h4 class="experience-label">{p.short}</h4>
-              <ProductUI id={p.id} lang={lang} />
-              <p class="demo-note">
-                {t(
-                  '互動示意使用範例資料，不會更動真實系統或檔案。',
-                  'Interactive examples use sample data and do not change real systems or files.',
-                )}
-              </p>
-            </>
             <div class="single-fit">
               <>
                 <div>

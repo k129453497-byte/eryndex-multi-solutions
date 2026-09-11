@@ -134,6 +134,10 @@ for (const [file, doc] of docs) {
     assert.ok(doc.getElementById(id), 'Missing single-page section: ' + id + ' in ' + file);
   }
   assert.equal(doc.querySelectorAll('[data-demo]').length, 3, 'Expected three product experiences');
+  for (const demo of doc.querySelectorAll('[data-demo]')) {
+    assert.equal(demo.closest('details'), null, 'Product experience must be visible without expanding details');
+  }
+  assert.ok(doc.querySelector('meta[property="og:image"]'), 'Missing sharing image');
   assert.equal(
     doc.querySelectorAll('.resource-disclosure').length,
     3,

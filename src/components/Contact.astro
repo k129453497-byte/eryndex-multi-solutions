@@ -42,6 +42,7 @@ const t = translator(lang);
   </aside>
   <form
     id="contact-form"
+    data-short={t('請輸入至少 10 個非前後空白的字元。', 'Enter at least 10 characters, excluding leading and trailing spaces.')}
     data-ready={t(
       '郵件草稿已準備好，尚未寄出。請使用下方按鈕開啟郵件程式，或複製內容自行寄送。',
       'Your email draft is ready and has not been sent. Open your email app below, or copy the text and send it yourself.',
@@ -109,7 +110,7 @@ const t = translator(lang);
     >
     <label class="consent"
       ><input type="checkbox" required name="consent" /><span
-        >{t('我已閱讀', 'I have read the')}
+        >{t('我已閱讀', 'I have read the')}{' '}
         <a href={href(lang, 'privacy')}>{t('隱私權說明', 'privacy notice')}</a>{
           t(
             '，了解表單僅用來產生本機郵件草稿。',
@@ -141,12 +142,17 @@ const t = translator(lang);
     const interest = form.elements.namedItem('interest') as HTMLSelectElement;
     const initial = new URLSearchParams(location.search).get('product');
     if (initial && [...interest.options].some((o) => o.value === initial)) interest.value = initial;
+    const message = form.elements.namedItem('message') as HTMLTextAreaElement;
+    message.addEventListener('input', () => message.setCustomValidity(''));
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       ['name', 'company', 'email', 'message'].forEach((name) => {
         const field = form.elements.namedItem(name) as HTMLInputElement | HTMLTextAreaElement;
         field.value = field.value.trim();
       });
+      message.setCustomValidity(message.value.length < 10 ? form.dataset.short! : '');
+      document.querySelector<HTMLElement>('#contact-result')!.hidden = true;
+      document.querySelector('#contact-status')!.textContent = '';
       if (!form.reportValidity()) return;
       const result = prepareEnquiry(
         new FormData(form),

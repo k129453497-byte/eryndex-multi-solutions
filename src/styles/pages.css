@@ -580,10 +580,10 @@ label > small {
 }
 .task.done label > span {
   text-decoration: line-through;
-  color: #837d70;
+  color: #59564e;
 }
 .task.done {
-  opacity: 0.75;
+  opacity: 1;
 }
 .task-progress {
   height: 3px;
