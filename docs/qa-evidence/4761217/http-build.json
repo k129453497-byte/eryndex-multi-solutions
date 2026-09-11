@@ -1,0 +1,356 @@
+{
+  "testedCommit": "476121718885b39f9c4ebd10b08beb0a9bd22d13",
+  "base": "http://127.0.0.1:4379/eryndex-multi-solutions/",
+  "pages": [
+    {
+      "route": "en/about/",
+      "status": 200,
+      "sha256": "8528596d240da89dc207ddd8a1fe31427a586399cfd69dd0bc3098f2d941e9eb",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#about"
+    },
+    {
+      "route": "en/contact/",
+      "status": 200,
+      "sha256": "2598d96d4351a70373fe3db0bda660cdc4efa3b0014d1ad447d9ada87b03ede8",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#contact"
+    },
+    {
+      "route": "en/",
+      "status": 200,
+      "sha256": "3b151d29f0a141dd16e305911b23ce111cab2db24ddf6d7895890bc6656a61a1",
+      "redirect": null
+    },
+    {
+      "route": "en/privacy/",
+      "status": 200,
+      "sha256": "6d28827f2a2ebf5e8d15d2a6c9ef7b26d92bf792005a52b67b9d822e7db45a4e",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#privacy"
+    },
+    {
+      "route": "en/products/files/",
+      "status": 200,
+      "sha256": "60d2f259428f4a1679293d0a9397491aba643242ed973b053c929c7b690aeb20",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#products-files"
+    },
+    {
+      "route": "en/products/",
+      "status": 200,
+      "sha256": "75d02d0351936c67296f6b813693fcdd6ddf216d0bd3d7d93d59782c1145bdee",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#products"
+    },
+    {
+      "route": "en/products/shield/",
+      "status": 200,
+      "sha256": "f4e22d16eddad8bfc7aa65a369506feae5456610f1712e12698d744f15b64bdd",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#products-shield"
+    },
+    {
+      "route": "en/products/space/",
+      "status": 200,
+      "sha256": "de30095e78b8104103796e1a08273701f8bffcbe600b3ae6e744e363b65540bb",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#products-space"
+    },
+    {
+      "route": "en/resources/access-review/",
+      "status": 200,
+      "sha256": "6b3668c88e30126dd2461566b758531df958441c9a7d0769a2a1cb392f726582",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#resources-access-review"
+    },
+    {
+      "route": "en/resources/",
+      "status": 200,
+      "sha256": "e8ac795e946fb5168f421f23b36716bb8f576aae184b1fb342b569b9b93f3c4d",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#resources"
+    },
+    {
+      "route": "en/resources/information-lifecycle/",
+      "status": 200,
+      "sha256": "9df374fa4f0cf774b230b6632a08454c771e6b4a6985c9031ae8a34a914a6f26",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#resources-information-lifecycle"
+    },
+    {
+      "route": "en/resources/work-handoffs/",
+      "status": 200,
+      "sha256": "8792ba3f8b54d054b2ae0b4dcc9ed7cb549bed48037d17fbd84468269e8eafb3",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#resources-work-handoffs"
+    },
+    {
+      "route": "en/services/",
+      "status": 200,
+      "sha256": "bbe056d587339add508476fc3861d8e389823d0beb8ae8e705550c7940e7f0ab",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#services"
+    },
+    {
+      "route": "en/solutions/digital-workplace/",
+      "status": 200,
+      "sha256": "9c189698e93c59c82ecdea1f67a231d6ee44d7ba9392530d8e3f11bc7eff95b1",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#solutions-digital-workplace"
+    },
+    {
+      "route": "en/solutions/",
+      "status": 200,
+      "sha256": "e1c79b518e32c8f53ff47f808a002e5e329e9d31713de86e7f004ec2c358ee7d",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#solutions"
+    },
+    {
+      "route": "en/solutions/information-protection/",
+      "status": 200,
+      "sha256": "85cabe0526380dcc01c610d637ed2e60bcb59e45eb87a7ea84e5728a9e8bd1d0",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#solutions-information-protection"
+    },
+    {
+      "route": "en/solutions/modern-work/",
+      "status": 200,
+      "sha256": "5984d1beb2f35c211ff626fb8a5c3d9957105bbce5e5b7e310a0ff795e5c8f1d",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#solutions-modern-work"
+    },
+    {
+      "route": "en/solutions/secure-office/",
+      "status": 200,
+      "sha256": "4525119da475af52aa874811f498e06942f23bb44802c87004bb668c4d03cf0b",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#solutions-secure-office"
+    },
+    {
+      "route": "en/terms/",
+      "status": 200,
+      "sha256": "11c496e5280f033633f0200d607bd6607d9cc7751edf4632c2ff5147abddf185",
+      "redirect": "0;url=/eryndex-multi-solutions/en/#terms"
+    },
+    {
+      "route": "",
+      "status": 200,
+      "sha256": "07a9a1e9d92c80292cca31348b6b8d799f32246ea37c2572545d084ca220097b",
+      "redirect": null
+    },
+    {
+      "route": "zh-cn/about/",
+      "status": 200,
+      "sha256": "d067363c761cc5f9f6a4da050fe7dc043ebf9815666083959261b3130ec99200",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#about"
+    },
+    {
+      "route": "zh-cn/contact/",
+      "status": 200,
+      "sha256": "d7864481463102660d5d44ed5b826700c1bac042d88b644af0e3103b53525645",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#contact"
+    },
+    {
+      "route": "zh-cn/",
+      "status": 200,
+      "sha256": "e0b6705aaaf087eb1e0c697ca584fe562a436b4791c0abb51d7fbf5b919b6db8",
+      "redirect": null
+    },
+    {
+      "route": "zh-cn/privacy/",
+      "status": 200,
+      "sha256": "2467ee966421e7b0f18f57922279c4904f53ca9d2a4287b8e0badb854d52c81e",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#privacy"
+    },
+    {
+      "route": "zh-cn/products/files/",
+      "status": 200,
+      "sha256": "8f3c44edb8b3bb28335e146f088c3955c3682cf11cf19ff54222f181b2cc8910",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#products-files"
+    },
+    {
+      "route": "zh-cn/products/",
+      "status": 200,
+      "sha256": "a722d05a8d4126e7c79e8c3c34dc6493d34dc8db740252ae1303558f8da47f4b",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#products"
+    },
+    {
+      "route": "zh-cn/products/shield/",
+      "status": 200,
+      "sha256": "b16c9abc41ccc24580819dae4a086c92e8004088b777ccac953179e2bfefc085",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#products-shield"
+    },
+    {
+      "route": "zh-cn/products/space/",
+      "status": 200,
+      "sha256": "3887ca565d8dc8db9cb8919f80cc60c1bc290c766c50b4cf989d46e309c39e85",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#products-space"
+    },
+    {
+      "route": "zh-cn/resources/access-review/",
+      "status": 200,
+      "sha256": "e48a00604a9f379e8e20b9d423fc5ed6b20bcb4aaf3de1b13ef51a7468429acd",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#resources-access-review"
+    },
+    {
+      "route": "zh-cn/resources/",
+      "status": 200,
+      "sha256": "490fd6b47091ef00d861e5ba4c874fb4d42d4a1066ee286564c06ca82e81d695",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#resources"
+    },
+    {
+      "route": "zh-cn/resources/information-lifecycle/",
+      "status": 200,
+      "sha256": "b8571da68b6b08ed47d9e23a9c5909253501ae1bddd2fe9615f43e4e42d2b412",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#resources-information-lifecycle"
+    },
+    {
+      "route": "zh-cn/resources/work-handoffs/",
+      "status": 200,
+      "sha256": "5cc2dd95396cb2c88f010c71e2dca0b0c4fbe6dff73a94db4650841775ce7b5d",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#resources-work-handoffs"
+    },
+    {
+      "route": "zh-cn/services/",
+      "status": 200,
+      "sha256": "85a4ce506dab1ace2157aa2d116181f71b7b87dfdeb20bc5ffcde4e855eedd1a",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#services"
+    },
+    {
+      "route": "zh-cn/solutions/digital-workplace/",
+      "status": 200,
+      "sha256": "9035f64c06d3c46d71776a5a2c99afe727bac393503126106b9c3ec981ee4a43",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#solutions-digital-workplace"
+    },
+    {
+      "route": "zh-cn/solutions/",
+      "status": 200,
+      "sha256": "4a1cf1c3583858cc354920545a6ea475499192935d2dbd91fcfc4179eca38b4c",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#solutions"
+    },
+    {
+      "route": "zh-cn/solutions/information-protection/",
+      "status": 200,
+      "sha256": "03fcf5ba8e152bde3b026864201207ccad5a45727e2f99e8dc4459086c992630",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#solutions-information-protection"
+    },
+    {
+      "route": "zh-cn/solutions/modern-work/",
+      "status": 200,
+      "sha256": "f92c47f750d0294b7870cb84cb5669c1d3aea74b3cb14386e06eaedbb22c078a",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#solutions-modern-work"
+    },
+    {
+      "route": "zh-cn/solutions/secure-office/",
+      "status": 200,
+      "sha256": "0217f89703ec13df3ca90c10d8e3da2eff47be8a902d41a51bc0c8ceebe27255",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#solutions-secure-office"
+    },
+    {
+      "route": "zh-cn/terms/",
+      "status": 200,
+      "sha256": "b0f69163d692761dfb8211868e0af1453eaaf73278d20c7e8ea66f352c52948c",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-cn/#terms"
+    },
+    {
+      "route": "zh-tw/about/",
+      "status": 200,
+      "sha256": "accdfb872b06c302b2a576a6920470c9515dfd20d909a3a209ac53104bb58a44",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#about"
+    },
+    {
+      "route": "zh-tw/contact/",
+      "status": 200,
+      "sha256": "0ced51f90bee2c7f5658c33e292854825e270cfb62c316c3e3c9ad45141cf83f",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#contact"
+    },
+    {
+      "route": "zh-tw/",
+      "status": 200,
+      "sha256": "07a9a1e9d92c80292cca31348b6b8d799f32246ea37c2572545d084ca220097b",
+      "redirect": null
+    },
+    {
+      "route": "zh-tw/privacy/",
+      "status": 200,
+      "sha256": "584f22522a47506d9ab976622014ec31c92dba0c629a490c27a271c5a2715541",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#privacy"
+    },
+    {
+      "route": "zh-tw/products/files/",
+      "status": 200,
+      "sha256": "3addc73c527353c17bf67d055ecdd20375546a276f3c1fa7e60368443e36e867",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#products-files"
+    },
+    {
+      "route": "zh-tw/products/",
+      "status": 200,
+      "sha256": "331862692f6214e8dfdc0823d3362f93ca30475ca27059da86a29cf70eb8fc6a",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#products"
+    },
+    {
+      "route": "zh-tw/products/shield/",
+      "status": 200,
+      "sha256": "deb41524484f28b9c08e9ef1dd81c6cecc5a71c4bdc91790dd39d5899330b693",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#products-shield"
+    },
+    {
+      "route": "zh-tw/products/space/",
+      "status": 200,
+      "sha256": "96bb7a7dd6e416a84b3b48a0882528d6fca43eea2d7eb01c93ae1d19616129f3",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#products-space"
+    },
+    {
+      "route": "zh-tw/resources/access-review/",
+      "status": 200,
+      "sha256": "4bae21c0e53f5aa3efc1cbb2cd3bd3f850924ddfa97c946d3bbf0157a093fdf2",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#resources-access-review"
+    },
+    {
+      "route": "zh-tw/resources/",
+      "status": 200,
+      "sha256": "fb003041b5de1be87c5e8e9acaa984005f55658f39b95cb895a096ddb767b693",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#resources"
+    },
+    {
+      "route": "zh-tw/resources/information-lifecycle/",
+      "status": 200,
+      "sha256": "733fc515c8e62857460411c329d2964a87ee04c8bb6743e9dcae2f0c8e0e84e3",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#resources-information-lifecycle"
+    },
+    {
+      "route": "zh-tw/resources/work-handoffs/",
+      "status": 200,
+      "sha256": "80e604ebb9752708b1828dd9e4559179e89b356ec19e83ca0f7994a64e71b9f6",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#resources-work-handoffs"
+    },
+    {
+      "route": "zh-tw/services/",
+      "status": 200,
+      "sha256": "790f26378b4e97cb5061121dc5f454500e75d04443e7e56304ed840e3d02349e",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#services"
+    },
+    {
+      "route": "zh-tw/solutions/digital-workplace/",
+      "status": 200,
+      "sha256": "3d59b9ecce2de04f34f8258dd963ad2cb99ffa0ccd85b777d8eddea88cca1a0d",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#solutions-digital-workplace"
+    },
+    {
+      "route": "zh-tw/solutions/",
+      "status": 200,
+      "sha256": "299b9054ab4974215cdaaa35aa6750d9f4dd5c877878f5f8c826ed15f3d7f23b",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#solutions"
+    },
+    {
+      "route": "zh-tw/solutions/information-protection/",
+      "status": 200,
+      "sha256": "3ba1b8372cf5ef91b6a982ef4b0e7208d2110aeb6ebb4d742d40bee2fb19c69e",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#solutions-information-protection"
+    },
+    {
+      "route": "zh-tw/solutions/modern-work/",
+      "status": 200,
+      "sha256": "ab17a106825195f16d3f04371e8f7822d27108f407d54139e0ce45e91cfbfaa3",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#solutions-modern-work"
+    },
+    {
+      "route": "zh-tw/solutions/secure-office/",
+      "status": 200,
+      "sha256": "daa75f2eab532ebc4f80fb69cf638f84b5efa06ebd235af58633840f1a2dc287",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#solutions-secure-office"
+    },
+    {
+      "route": "zh-tw/terms/",
+      "status": 200,
+      "sha256": "6daa3c30843bf3a119ffad4a289147e864ac6139d653249c452905bfee629e09",
+      "redirect": "0;url=/eryndex-multi-solutions/zh-tw/#terms"
+    }
+  ],
+  "result": "PASS",
+  "identicalToBuild": 58
+}

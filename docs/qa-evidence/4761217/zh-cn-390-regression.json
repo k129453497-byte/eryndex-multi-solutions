@@ -1,0 +1,493 @@
+{
+  "lang": "zh-cn",
+  "size": {
+    "width": 390,
+    "height": 844
+  },
+  "steps": [
+    {
+      "action": "space sidebar 团队知识",
+      "state": {
+        "active": [
+          "团队知识"
+        ],
+        "items": [
+          "01品牌语气与用字→",
+          "02提案交接方式→",
+          "03素材命名规则→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "团队知识"
+      }
+    },
+    {
+      "action": "space sidebar 工作流程",
+      "state": {
+        "active": [
+          "工作流程"
+        ],
+        "items": [
+          "01内容提交 → 指派负责人→",
+          "02负责人审核 → 留下意见→",
+          "03核准发布 → 通知团队→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "工作流程"
+      }
+    },
+    {
+      "action": "space sidebar 项目",
+      "state": {
+        "active": [
+          "项目"
+        ],
+        "items": [
+          "01内容提交 → 指派负责人→",
+          "02负责人审核 → 留下意见→",
+          "03核准发布 → 通知团队→"
+        ],
+        "moduleVisible": false,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "工作流程"
+      }
+    },
+    {
+      "action": "files sidebar 共享链接",
+      "state": {
+        "active": [
+          "共享链接"
+        ],
+        "items": [
+          "01品牌提案.pdf · 3 天后到期→",
+          "02交接清单.xlsx · 仅限组织内→",
+          "03合作合同.docx · 明天到期→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "共享链接"
+      }
+    },
+    {
+      "action": "files sidebar 备份与恢复",
+      "state": {
+        "active": [
+          "备份与恢复"
+        ],
+        "items": [
+          "01最近备份 · 今天 02:00→",
+          "02保留范围 · 30 个每日恢复点→",
+          "03恢复演练 · 2026 年 9 月 8 日完成→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "备份与恢复"
+      }
+    },
+    {
+      "action": "files sidebar 团队文件",
+      "state": {
+        "active": [
+          "团队文件"
+        ],
+        "items": [
+          "01最近备份 · 今天 02:00→",
+          "02保留范围 · 30 个每日恢复点→",
+          "03恢复演练 · 2026 年 9 月 8 日完成→"
+        ],
+        "moduleVisible": false,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "备份与恢复"
+      }
+    },
+    {
+      "action": "shield sidebar 身份与设备",
+      "state": {
+        "active": [
+          "身份与设备"
+        ],
+        "items": [
+          "01YL · 营销管理员 · MacBook 符合条件→",
+          "02CW · 内容编辑 · Windows 符合条件→",
+          "03KT · 外部协作者 · 未知设备待验证→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "身份与设备"
+      }
+    },
+    {
+      "action": "shield sidebar 审计记录",
+      "state": {
+        "active": [
+          "审计记录"
+        ],
+        "items": [
+          "0109:18 · 允许访问 · YL→",
+          "0208:42 · 要求进一步验证 · KT→",
+          "0308:05 · 策略已更新 · CW→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "审计记录"
+      }
+    },
+    {
+      "action": "shield sidebar 访问策略",
+      "state": {
+        "active": [
+          "访问策略"
+        ],
+        "items": [
+          "0109:18 · 允许访问 · YL→",
+          "0208:42 · 要求进一步验证 · KT→",
+          "0308:05 · 策略已更新 · CW→"
+        ],
+        "moduleVisible": false,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "审计记录"
+      }
+    },
+    {
+      "action": "Space step 0",
+      "state": {
+        "counts": [
+          "1",
+          "2",
+          "1"
+        ],
+        "focus": "INPUT",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 调整首页提案内容\nv2\n2026 年 9 月 10 日 16:05\nCW · 补上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始文件",
+        "historyCount": 3,
+        "pageHeight": 13837,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "开始：整理交接文件",
+            "stage": "todo"
+          },
+          {
+            "name": "完成：查看首页文案",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：确认项目范围",
+            "stage": "progress"
+          },
+          {
+            "name": "重新开启：汇总需求与访谈",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 390
+      }
+    },
+    {
+      "action": "Space step 1",
+      "state": {
+        "counts": [
+          "0",
+          "3",
+          "1"
+        ],
+        "focus": "INPUT",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 调整首页提案内容\nv2\n2026 年 9 月 10 日 16:05\nCW · 补上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始文件",
+        "historyCount": 3,
+        "pageHeight": 13855,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：查看首页文案",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：确认项目范围",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新开启：汇总需求与访谈",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 390
+      }
+    },
+    {
+      "action": "Space step 2",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "INPUT",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 调整首页提案内容\nv2\n2026 年 9 月 10 日 16:05\nCW · 补上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始文件",
+        "historyCount": 3,
+        "pageHeight": 13837,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：确认项目范围",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新开启：汇总需求与访谈",
+            "stage": "done"
+          },
+          {
+            "name": "重新开启：查看首页文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 390
+      }
+    },
+    {
+      "action": "initial history v2 click",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 调整首页提案内容\nv2\n2026 年 9 月 10 日 16:05\nCW · 补上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始文件",
+        "historyCount": 3,
+        "pageHeight": 13837,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：确认项目范围",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新开启：汇总需求与访谈",
+            "stage": "done"
+          },
+          {
+            "name": "重新开启：查看首页文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 390
+      }
+    },
+    {
+      "action": "restore 0",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 调整首页提案内容\nv2\n2026 年 9 月 10 日 16:05\nCW · 补上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始文件",
+        "historyCount": 3,
+        "pageHeight": 13862,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：确认项目范围",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新开启：汇总需求与访谈",
+            "stage": "done"
+          },
+          {
+            "name": "重新开启：查看首页文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v2",
+        "width": 390
+      }
+    },
+    {
+      "action": "restore 1",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BODY",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 调整首页提案内容\nv2\n2026 年 9 月 10 日 16:05\nCW · 补上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始文件",
+        "historyCount": 3,
+        "pageHeight": 13862,
+        "restoreDisabled": true,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：确认项目范围",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新开启：汇总需求与访谈",
+            "stage": "done"
+          },
+          {
+            "name": "重新开启：查看首页文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v1",
+        "width": 390
+      }
+    },
+    {
+      "action": "file 1",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 844,
+        "history": "v2\n2026 年 9 月 11 日 10:15\nCW · 更新负责人与期限\nv1\n2026 年 9 月 9 日 11:40\nCW · 建立交接栏位",
+        "historyCount": 2,
+        "pageHeight": 13782,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：确认项目范围",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新开启：汇总需求与访谈",
+            "stage": "done"
+          },
+          {
+            "name": "重新开启：查看首页文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v2",
+        "width": 390
+      }
+    },
+    {
+      "action": "file 2",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 844,
+        "history": "v4\n2026 年 9 月 11 日 09:45\nYL · 确认最终条款\nv3\n2026 年 9 月 10 日 13:25\nCW · 修订服务范围\nv2\n2026 年 9 月 9 日 15:10\nYL · 加入交付项目\nv1\n2026 年 9 月 7 日 10:00\nYL · 建立合同草稿",
+        "historyCount": 4,
+        "pageHeight": 13891,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：确认项目范围",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新开启：汇总需求与访谈",
+            "stage": "done"
+          },
+          {
+            "name": "重新开启：查看首页文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v4",
+        "width": 390
+      }
+    }
+  ],
+  "initial": {
+    "counts": [
+      "2",
+      "1",
+      "1"
+    ],
+    "focus": "BODY",
+    "height": 844,
+    "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 调整首页提案内容\nv2\n2026 年 9 月 10 日 16:05\nCW · 补上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始文件",
+    "historyCount": 3,
+    "pageHeight": 13818,
+    "restoreDisabled": false,
+    "scrollWidth": 390,
+    "taskStage": [
+      {
+        "name": "开始：确认项目范围",
+        "stage": "todo"
+      },
+      {
+        "name": "开始：整理交接文件",
+        "stage": "todo"
+      },
+      {
+        "name": "完成：查看首页文案",
+        "stage": "progress"
+      },
+      {
+        "name": "重新开启：汇总需求与访谈",
+        "stage": "done"
+      }
+    ],
+    "view": "v3",
+    "width": 390
+  },
+  "errors": []
+}

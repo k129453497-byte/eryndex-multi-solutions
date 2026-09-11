@@ -1,0 +1,19 @@
+{
+  "url": "http://127.0.0.1:4379/eryndex-multi-solutions/en/#privacy",
+  "state": {
+    "privacyOpen": true,
+    "top": 13761.7265625
+  },
+  "escape": {
+    "expanded": "false",
+    "focus": "Menu ☰"
+  },
+  "skipFocus": {
+    "outline": "rgb(130, 80, 39) solid 3px",
+    "text": "Skip to content"
+  },
+  "skipResult": {
+    "focus": "main",
+    "hash": "#main"
+  }
+}

@@ -1,0 +1,493 @@
+{
+  "lang": "en",
+  "size": {
+    "width": 1440,
+    "height": 900
+  },
+  "steps": [
+    {
+      "action": "space sidebar Team knowledge",
+      "state": {
+        "active": [
+          "Team knowledge"
+        ],
+        "items": [
+          "01Brand voice and language→",
+          "02Proposal handoff→",
+          "03Asset naming rules→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 174,
+        "sidebarWidth": 174,
+        "title": "Team knowledge"
+      }
+    },
+    {
+      "action": "space sidebar Workflows",
+      "state": {
+        "active": [
+          "Workflows"
+        ],
+        "items": [
+          "01Content submitted → Assign owner→",
+          "02Owner review → Record feedback→",
+          "03Approval → Notify team→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 174,
+        "sidebarWidth": 174,
+        "title": "Workflows"
+      }
+    },
+    {
+      "action": "space sidebar Projects",
+      "state": {
+        "active": [
+          "Projects"
+        ],
+        "items": [
+          "01Content submitted → Assign owner→",
+          "02Owner review → Record feedback→",
+          "03Approval → Notify team→"
+        ],
+        "moduleVisible": false,
+        "sidebarScroll": 174,
+        "sidebarWidth": 174,
+        "title": "Workflows"
+      }
+    },
+    {
+      "action": "files sidebar Shared links",
+      "state": {
+        "active": [
+          "Shared links"
+        ],
+        "items": [
+          "01Brand proposal.pdf · Expires in 3 days→",
+          "02Handoff checklist.xlsx · Organization only→",
+          "03Collaboration agreement.docx · Expires tomorrow→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 174,
+        "sidebarWidth": 174,
+        "title": "Shared links"
+      }
+    },
+    {
+      "action": "files sidebar Backup & restore",
+      "state": {
+        "active": [
+          "Backup & restore"
+        ],
+        "items": [
+          "01Latest backup · Today 02:00→",
+          "02Retention · 30 daily restore points→",
+          "03Recovery drill · Completed 8 Sep 2026→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 174,
+        "sidebarWidth": 174,
+        "title": "Backup & restore"
+      }
+    },
+    {
+      "action": "files sidebar Team files",
+      "state": {
+        "active": [
+          "Team files"
+        ],
+        "items": [
+          "01Latest backup · Today 02:00→",
+          "02Retention · 30 daily restore points→",
+          "03Recovery drill · Completed 8 Sep 2026→"
+        ],
+        "moduleVisible": false,
+        "sidebarScroll": 174,
+        "sidebarWidth": 174,
+        "title": "Backup & restore"
+      }
+    },
+    {
+      "action": "shield sidebar Identity & devices",
+      "state": {
+        "active": [
+          "Identity & devices"
+        ],
+        "items": [
+          "01YL · Marketing admin · MacBook compliant→",
+          "02CW · Content editor · Windows compliant→",
+          "03KT · External collaborator · Unknown device→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 174,
+        "sidebarWidth": 174,
+        "title": "Identity & devices"
+      }
+    },
+    {
+      "action": "shield sidebar Audit records",
+      "state": {
+        "active": [
+          "Audit records"
+        ],
+        "items": [
+          "0109:18 · Access allowed · YL→",
+          "0208:42 · Verification required · KT→",
+          "0308:05 · Policy updated · CW→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 174,
+        "sidebarWidth": 174,
+        "title": "Audit records"
+      }
+    },
+    {
+      "action": "shield sidebar Access policies",
+      "state": {
+        "active": [
+          "Access policies"
+        ],
+        "items": [
+          "0109:18 · Access allowed · YL→",
+          "0208:42 · Verification required · KT→",
+          "0308:05 · Policy updated · CW→"
+        ],
+        "moduleVisible": false,
+        "sidebarScroll": 174,
+        "sidebarWidth": 174,
+        "title": "Audit records"
+      }
+    },
+    {
+      "action": "Space step 0",
+      "state": {
+        "counts": [
+          "1",
+          "2",
+          "1"
+        ],
+        "focus": "INPUT",
+        "height": 900,
+        "history": "v3\n11 Sep 2026, 14:20\nYL · Homepage proposal updated\nv2\n10 Sep 2026, 16:05\nCW · Brand direction added\nv1\n8 Sep 2026, 09:30\nYL · Initial file created",
+        "historyCount": 3,
+        "pageHeight": 11049,
+        "restoreDisabled": false,
+        "scrollWidth": 1440,
+        "taskStage": [
+          {
+            "name": "Start: Prepare handoff notes",
+            "stage": "todo"
+          },
+          {
+            "name": "Complete: Review homepage copy",
+            "stage": "progress"
+          },
+          {
+            "name": "Complete: Confirm project scope",
+            "stage": "progress"
+          },
+          {
+            "name": "Reopen: Gather requirements",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 1440
+      }
+    },
+    {
+      "action": "Space step 1",
+      "state": {
+        "counts": [
+          "0",
+          "3",
+          "1"
+        ],
+        "focus": "INPUT",
+        "height": 900,
+        "history": "v3\n11 Sep 2026, 14:20\nYL · Homepage proposal updated\nv2\n10 Sep 2026, 16:05\nCW · Brand direction added\nv1\n8 Sep 2026, 09:30\nYL · Initial file created",
+        "historyCount": 3,
+        "pageHeight": 11197,
+        "restoreDisabled": false,
+        "scrollWidth": 1440,
+        "taskStage": [
+          {
+            "name": "Complete: Review homepage copy",
+            "stage": "progress"
+          },
+          {
+            "name": "Complete: Confirm project scope",
+            "stage": "progress"
+          },
+          {
+            "name": "Complete: Prepare handoff notes",
+            "stage": "progress"
+          },
+          {
+            "name": "Reopen: Gather requirements",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 1440
+      }
+    },
+    {
+      "action": "Space step 2",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "INPUT",
+        "height": 900,
+        "history": "v3\n11 Sep 2026, 14:20\nYL · Homepage proposal updated\nv2\n10 Sep 2026, 16:05\nCW · Brand direction added\nv1\n8 Sep 2026, 09:30\nYL · Initial file created",
+        "historyCount": 3,
+        "pageHeight": 11049,
+        "restoreDisabled": false,
+        "scrollWidth": 1440,
+        "taskStage": [
+          {
+            "name": "Complete: Confirm project scope",
+            "stage": "progress"
+          },
+          {
+            "name": "Complete: Prepare handoff notes",
+            "stage": "progress"
+          },
+          {
+            "name": "Reopen: Gather requirements",
+            "stage": "done"
+          },
+          {
+            "name": "Reopen: Review homepage copy",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 1440
+      }
+    },
+    {
+      "action": "initial history v2 click",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 900,
+        "history": "v3\n11 Sep 2026, 14:20\nYL · Homepage proposal updated\nv2\n10 Sep 2026, 16:05\nCW · Brand direction added\nv1\n8 Sep 2026, 09:30\nYL · Initial file created",
+        "historyCount": 3,
+        "pageHeight": 11049,
+        "restoreDisabled": false,
+        "scrollWidth": 1440,
+        "taskStage": [
+          {
+            "name": "Complete: Confirm project scope",
+            "stage": "progress"
+          },
+          {
+            "name": "Complete: Prepare handoff notes",
+            "stage": "progress"
+          },
+          {
+            "name": "Reopen: Gather requirements",
+            "stage": "done"
+          },
+          {
+            "name": "Reopen: Review homepage copy",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 1440
+      }
+    },
+    {
+      "action": "restore 0",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 900,
+        "history": "v3\n11 Sep 2026, 14:20\nYL · Homepage proposal updated\nv2\n10 Sep 2026, 16:05\nCW · Brand direction added\nv1\n8 Sep 2026, 09:30\nYL · Initial file created",
+        "historyCount": 3,
+        "pageHeight": 11051,
+        "restoreDisabled": false,
+        "scrollWidth": 1440,
+        "taskStage": [
+          {
+            "name": "Complete: Confirm project scope",
+            "stage": "progress"
+          },
+          {
+            "name": "Complete: Prepare handoff notes",
+            "stage": "progress"
+          },
+          {
+            "name": "Reopen: Gather requirements",
+            "stage": "done"
+          },
+          {
+            "name": "Reopen: Review homepage copy",
+            "stage": "done"
+          }
+        ],
+        "view": "v2",
+        "width": 1440
+      }
+    },
+    {
+      "action": "restore 1",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BODY",
+        "height": 900,
+        "history": "v3\n11 Sep 2026, 14:20\nYL · Homepage proposal updated\nv2\n10 Sep 2026, 16:05\nCW · Brand direction added\nv1\n8 Sep 2026, 09:30\nYL · Initial file created",
+        "historyCount": 3,
+        "pageHeight": 11051,
+        "restoreDisabled": true,
+        "scrollWidth": 1440,
+        "taskStage": [
+          {
+            "name": "Complete: Confirm project scope",
+            "stage": "progress"
+          },
+          {
+            "name": "Complete: Prepare handoff notes",
+            "stage": "progress"
+          },
+          {
+            "name": "Reopen: Gather requirements",
+            "stage": "done"
+          },
+          {
+            "name": "Reopen: Review homepage copy",
+            "stage": "done"
+          }
+        ],
+        "view": "v1",
+        "width": 1440
+      }
+    },
+    {
+      "action": "file 1",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 900,
+        "history": "v2\n11 Sep 2026, 10:15\nCW · Owners and dates updated\nv1\n9 Sep 2026, 11:40\nCW · Handoff fields created",
+        "historyCount": 2,
+        "pageHeight": 10998,
+        "restoreDisabled": false,
+        "scrollWidth": 1440,
+        "taskStage": [
+          {
+            "name": "Complete: Confirm project scope",
+            "stage": "progress"
+          },
+          {
+            "name": "Complete: Prepare handoff notes",
+            "stage": "progress"
+          },
+          {
+            "name": "Reopen: Gather requirements",
+            "stage": "done"
+          },
+          {
+            "name": "Reopen: Review homepage copy",
+            "stage": "done"
+          }
+        ],
+        "view": "v2",
+        "width": 1440
+      }
+    },
+    {
+      "action": "file 2",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 900,
+        "history": "v4\n11 Sep 2026, 09:45\nYL · Final terms reviewed\nv3\n10 Sep 2026, 13:25\nCW · Service scope revised\nv2\n9 Sep 2026, 15:10\nYL · Deliverables added\nv1\n7 Sep 2026, 10:00\nYL · Agreement draft created",
+        "historyCount": 4,
+        "pageHeight": 11100,
+        "restoreDisabled": false,
+        "scrollWidth": 1440,
+        "taskStage": [
+          {
+            "name": "Complete: Confirm project scope",
+            "stage": "progress"
+          },
+          {
+            "name": "Complete: Prepare handoff notes",
+            "stage": "progress"
+          },
+          {
+            "name": "Reopen: Gather requirements",
+            "stage": "done"
+          },
+          {
+            "name": "Reopen: Review homepage copy",
+            "stage": "done"
+          }
+        ],
+        "view": "v4",
+        "width": 1440
+      }
+    }
+  ],
+  "initial": {
+    "counts": [
+      "2",
+      "1",
+      "1"
+    ],
+    "focus": "BODY",
+    "height": 900,
+    "history": "v3\n11 Sep 2026, 14:20\nYL · Homepage proposal updated\nv2\n10 Sep 2026, 16:05\nCW · Brand direction added\nv1\n8 Sep 2026, 09:30\nYL · Initial file created",
+    "historyCount": 3,
+    "pageHeight": 11012,
+    "restoreDisabled": false,
+    "scrollWidth": 1440,
+    "taskStage": [
+      {
+        "name": "Start: Confirm project scope",
+        "stage": "todo"
+      },
+      {
+        "name": "Start: Prepare handoff notes",
+        "stage": "todo"
+      },
+      {
+        "name": "Complete: Review homepage copy",
+        "stage": "progress"
+      },
+      {
+        "name": "Reopen: Gather requirements",
+        "stage": "done"
+      }
+    ],
+    "view": "v3",
+    "width": 1440
+  },
+  "errors": []
+}

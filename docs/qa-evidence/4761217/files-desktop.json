@@ -1,0 +1,128 @@
+[
+  {
+    "step": "initial v2 click is inert",
+    "state": {
+      "disabled": false,
+      "file": "品牌提案.pdf",
+      "focus": {
+        "tag": "BUTTON",
+        "text": "v22026 年 9 月 10 日 16:05CW · 補上品牌方向"
+      },
+      "history": [
+        "v32026 年 9 月 11 日 14:20YL · 調整首頁提案內容",
+        "v22026 年 9 月 10 日 16:05CW · 補上品牌方向",
+        "v12026 年 9 月 8 日 09:30YL · 建立初始檔案"
+      ],
+      "status": "",
+      "view": "v3"
+    }
+  },
+  {
+    "step": "v3 to v2",
+    "state": {
+      "disabled": false,
+      "file": "品牌提案.pdf",
+      "focus": {
+        "tag": "BUTTON",
+        "text": "回復前一版"
+      },
+      "history": [
+        "v32026 年 9 月 11 日 14:20YL · 調整首頁提案內容",
+        "v22026 年 9 月 10 日 16:05CW · 補上品牌方向",
+        "v12026 年 9 月 8 日 09:30YL · 建立初始檔案"
+      ],
+      "status": "目前檢視已從 v3 回復為 v2；歷史紀錄仍保留。",
+      "view": "v2"
+    }
+  },
+  {
+    "step": "v2 to v1",
+    "state": {
+      "disabled": true,
+      "file": "品牌提案.pdf",
+      "focus": {
+        "tag": "BODY",
+        "text": "跳至主要內容Eryndex智序科技選單 ☰產品解決方案服務資源關於我們聯絡我們 ↗◎繁繁體中文简体中文EnglishERYNDEX · TECHNOLOGY, IN ORDER.讓"
+      },
+      "history": [
+        "v32026 年 9 月 11 日 14:20YL · 調整首頁提案內容",
+        "v22026 年 9 月 10 日 16:05CW · 補上品牌方向",
+        "v12026 年 9 月 8 日 09:30YL · 建立初始檔案"
+      ],
+      "status": "目前檢視已從 v2 回復為 v1；歷史紀錄仍保留。",
+      "view": "v1"
+    }
+  },
+  {
+    "step": "xlsx independent v2",
+    "state": {
+      "disabled": false,
+      "file": "交接清單.xlsx",
+      "focus": {
+        "tag": "BUTTON",
+        "text": "XLS交接清單.xlsx今天更新 · 團隊共享v2"
+      },
+      "history": [
+        "v22026 年 9 月 11 日 10:15CW · 更新負責人與期限",
+        "v12026 年 9 月 9 日 11:40CW · 建立交接欄位"
+      ],
+      "status": "",
+      "view": "v2"
+    }
+  },
+  {
+    "step": "docx independent v4",
+    "state": {
+      "disabled": false,
+      "file": "合作合約.docx",
+      "focus": {
+        "tag": "BUTTON",
+        "text": "DOC合作合約.docx今天更新 · 團隊共享v4"
+      },
+      "history": [
+        "v42026 年 9 月 11 日 09:45YL · 確認最終條款",
+        "v32026 年 9 月 10 日 13:25CW · 修訂服務範圍",
+        "v22026 年 9 月 9 日 15:10YL · 加入交付項目",
+        "v12026 年 9 月 7 日 10:00YL · 建立合約草稿"
+      ],
+      "status": "",
+      "view": "v4"
+    }
+  },
+  {
+    "step": "pdf remembers v1",
+    "state": {
+      "disabled": true,
+      "file": "品牌提案.pdf",
+      "focus": {
+        "tag": "BUTTON",
+        "text": "PDF品牌提案.pdf今天更新 · 團隊共享v1"
+      },
+      "history": [
+        "v32026 年 9 月 11 日 14:20YL · 調整首頁提案內容",
+        "v22026 年 9 月 10 日 16:05CW · 補上品牌方向",
+        "v12026 年 9 月 8 日 09:30YL · 建立初始檔案"
+      ],
+      "status": "",
+      "view": "v1"
+    }
+  },
+  {
+    "step": "v2 keyboard after initialization",
+    "state": {
+      "disabled": false,
+      "file": "品牌提案.pdf",
+      "focus": {
+        "tag": "BODY",
+        "text": "跳至主要內容Eryndex智序科技選單 ☰產品解決方案服務資源關於我們聯絡我們 ↗◎繁繁體中文简体中文EnglishERYNDEX · TECHNOLOGY, IN ORDER.讓"
+      },
+      "history": [
+        "v32026 年 9 月 11 日 14:20YL · 調整首頁提案內容",
+        "v22026 年 9 月 10 日 16:05CW · 補上品牌方向",
+        "v12026 年 9 月 8 日 09:30YL · 建立初始檔案"
+      ],
+      "status": "",
+      "view": "v2"
+    }
+  }
+]

@@ -1,0 +1,493 @@
+{
+  "lang": "zh-tw",
+  "size": {
+    "width": 390,
+    "height": 844
+  },
+  "steps": [
+    {
+      "action": "space sidebar 團隊知識",
+      "state": {
+        "active": [
+          "團隊知識"
+        ],
+        "items": [
+          "01品牌語氣與用字→",
+          "02提案交接方式→",
+          "03素材命名規則→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "團隊知識"
+      }
+    },
+    {
+      "action": "space sidebar 工作流程",
+      "state": {
+        "active": [
+          "工作流程"
+        ],
+        "items": [
+          "01內容提交 → 指派負責人→",
+          "02負責人審核 → 留下意見→",
+          "03核准發布 → 通知團隊→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "工作流程"
+      }
+    },
+    {
+      "action": "space sidebar 專案",
+      "state": {
+        "active": [
+          "專案"
+        ],
+        "items": [
+          "01內容提交 → 指派負責人→",
+          "02負責人審核 → 留下意見→",
+          "03核准發布 → 通知團隊→"
+        ],
+        "moduleVisible": false,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "工作流程"
+      }
+    },
+    {
+      "action": "files sidebar 分享連結",
+      "state": {
+        "active": [
+          "分享連結"
+        ],
+        "items": [
+          "01品牌提案.pdf · 3 天後到期→",
+          "02交接清單.xlsx · 僅限組織內→",
+          "03合作合約.docx · 明天到期→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "分享連結"
+      }
+    },
+    {
+      "action": "files sidebar 備份與還原",
+      "state": {
+        "active": [
+          "備份與還原"
+        ],
+        "items": [
+          "01最近備份 · 今天 02:00→",
+          "02保留範圍 · 30 個每日還原點→",
+          "03還原演練 · 2026 年 9 月 8 日完成→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "備份與還原"
+      }
+    },
+    {
+      "action": "files sidebar 團隊檔案",
+      "state": {
+        "active": [
+          "團隊檔案"
+        ],
+        "items": [
+          "01最近備份 · 今天 02:00→",
+          "02保留範圍 · 30 個每日還原點→",
+          "03還原演練 · 2026 年 9 月 8 日完成→"
+        ],
+        "moduleVisible": false,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "備份與還原"
+      }
+    },
+    {
+      "action": "shield sidebar 身分與裝置",
+      "state": {
+        "active": [
+          "身分與裝置"
+        ],
+        "items": [
+          "01YL · 行銷管理員 · MacBook 符合條件→",
+          "02CW · 內容編輯 · Windows 符合條件→",
+          "03KT · 外部協作者 · 未知裝置待驗證→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "身分與裝置"
+      }
+    },
+    {
+      "action": "shield sidebar 稽核紀錄",
+      "state": {
+        "active": [
+          "稽核紀錄"
+        ],
+        "items": [
+          "0109:18 · 允許存取 · YL→",
+          "0208:42 · 要求進一步驗證 · KT→",
+          "0308:05 · 政策已更新 · CW→"
+        ],
+        "moduleVisible": true,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "稽核紀錄"
+      }
+    },
+    {
+      "action": "shield sidebar 存取政策",
+      "state": {
+        "active": [
+          "存取政策"
+        ],
+        "items": [
+          "0109:18 · 允許存取 · YL→",
+          "0208:42 · 要求進一步驗證 · KT→",
+          "0308:05 · 政策已更新 · CW→"
+        ],
+        "moduleVisible": false,
+        "sidebarScroll": 340,
+        "sidebarWidth": 340,
+        "title": "稽核紀錄"
+      }
+    },
+    {
+      "action": "Space step 0",
+      "state": {
+        "counts": [
+          "1",
+          "2",
+          "1"
+        ],
+        "focus": "INPUT",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 調整首頁提案內容\nv2\n2026 年 9 月 10 日 16:05\nCW · 補上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始檔案",
+        "historyCount": 3,
+        "pageHeight": 13837,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "開始：整理交接文件",
+            "stage": "todo"
+          },
+          {
+            "name": "完成：檢視首頁文案",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：確認專案範圍",
+            "stage": "progress"
+          },
+          {
+            "name": "重新開啟：彙整需求與訪談",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 390
+      }
+    },
+    {
+      "action": "Space step 1",
+      "state": {
+        "counts": [
+          "0",
+          "3",
+          "1"
+        ],
+        "focus": "INPUT",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 調整首頁提案內容\nv2\n2026 年 9 月 10 日 16:05\nCW · 補上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始檔案",
+        "historyCount": 3,
+        "pageHeight": 13855,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：檢視首頁文案",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：確認專案範圍",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新開啟：彙整需求與訪談",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 390
+      }
+    },
+    {
+      "action": "Space step 2",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "INPUT",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 調整首頁提案內容\nv2\n2026 年 9 月 10 日 16:05\nCW · 補上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始檔案",
+        "historyCount": 3,
+        "pageHeight": 13837,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：確認專案範圍",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新開啟：彙整需求與訪談",
+            "stage": "done"
+          },
+          {
+            "name": "重新開啟：檢視首頁文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 390
+      }
+    },
+    {
+      "action": "initial history v2 click",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 調整首頁提案內容\nv2\n2026 年 9 月 10 日 16:05\nCW · 補上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始檔案",
+        "historyCount": 3,
+        "pageHeight": 13837,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：確認專案範圍",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新開啟：彙整需求與訪談",
+            "stage": "done"
+          },
+          {
+            "name": "重新開啟：檢視首頁文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v3",
+        "width": 390
+      }
+    },
+    {
+      "action": "restore 0",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 調整首頁提案內容\nv2\n2026 年 9 月 10 日 16:05\nCW · 補上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始檔案",
+        "historyCount": 3,
+        "pageHeight": 13862,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：確認專案範圍",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新開啟：彙整需求與訪談",
+            "stage": "done"
+          },
+          {
+            "name": "重新開啟：檢視首頁文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v2",
+        "width": 390
+      }
+    },
+    {
+      "action": "restore 1",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BODY",
+        "height": 844,
+        "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 調整首頁提案內容\nv2\n2026 年 9 月 10 日 16:05\nCW · 補上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始檔案",
+        "historyCount": 3,
+        "pageHeight": 13862,
+        "restoreDisabled": true,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：確認專案範圍",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新開啟：彙整需求與訪談",
+            "stage": "done"
+          },
+          {
+            "name": "重新開啟：檢視首頁文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v1",
+        "width": 390
+      }
+    },
+    {
+      "action": "file 1",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 844,
+        "history": "v2\n2026 年 9 月 11 日 10:15\nCW · 更新負責人與期限\nv1\n2026 年 9 月 9 日 11:40\nCW · 建立交接欄位",
+        "historyCount": 2,
+        "pageHeight": 13782,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：確認專案範圍",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新開啟：彙整需求與訪談",
+            "stage": "done"
+          },
+          {
+            "name": "重新開啟：檢視首頁文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v2",
+        "width": 390
+      }
+    },
+    {
+      "action": "file 2",
+      "state": {
+        "counts": [
+          "0",
+          "2",
+          "2"
+        ],
+        "focus": "BUTTON",
+        "height": 844,
+        "history": "v4\n2026 年 9 月 11 日 09:45\nYL · 確認最終條款\nv3\n2026 年 9 月 10 日 13:25\nCW · 修訂服務範圍\nv2\n2026 年 9 月 9 日 15:10\nYL · 加入交付項目\nv1\n2026 年 9 月 7 日 10:00\nYL · 建立合約草稿",
+        "historyCount": 4,
+        "pageHeight": 13891,
+        "restoreDisabled": false,
+        "scrollWidth": 390,
+        "taskStage": [
+          {
+            "name": "完成：確認專案範圍",
+            "stage": "progress"
+          },
+          {
+            "name": "完成：整理交接文件",
+            "stage": "progress"
+          },
+          {
+            "name": "重新開啟：彙整需求與訪談",
+            "stage": "done"
+          },
+          {
+            "name": "重新開啟：檢視首頁文案",
+            "stage": "done"
+          }
+        ],
+        "view": "v4",
+        "width": 390
+      }
+    }
+  ],
+  "initial": {
+    "counts": [
+      "2",
+      "1",
+      "1"
+    ],
+    "focus": "BODY",
+    "height": 844,
+    "history": "v3\n2026 年 9 月 11 日 14:20\nYL · 調整首頁提案內容\nv2\n2026 年 9 月 10 日 16:05\nCW · 補上品牌方向\nv1\n2026 年 9 月 8 日 09:30\nYL · 建立初始檔案",
+    "historyCount": 3,
+    "pageHeight": 13818,
+    "restoreDisabled": false,
+    "scrollWidth": 390,
+    "taskStage": [
+      {
+        "name": "開始：確認專案範圍",
+        "stage": "todo"
+      },
+      {
+        "name": "開始：整理交接文件",
+        "stage": "todo"
+      },
+      {
+        "name": "完成：檢視首頁文案",
+        "stage": "progress"
+      },
+      {
+        "name": "重新開啟：彙整需求與訪談",
+        "stage": "done"
+      }
+    ],
+    "view": "v3",
+    "width": 390
+  },
+  "errors": []
+}

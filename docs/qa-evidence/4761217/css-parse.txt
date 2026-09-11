@@ -1,0 +1,10 @@
+Checking formatting...
+[error] src/styles/pages.css: SyntaxError: CssSyntaxError: Unclosed block (885:1)
+[error]   883 |   margin-top: 8px;
+[error]   884 | }
+[error] > 885 | @media (max-width: 1100px) {
+[error]       | ^
+[error]   886 |   .demo-sidebar {
+[error]   887 |     padding: 20px 14px;
+[error]   888 |   }
+Error occurred when checking code style in the above file.

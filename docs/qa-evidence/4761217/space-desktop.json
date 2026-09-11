@@ -1,0 +1,38 @@
+[
+  {
+    "step": "todo to progress",
+    "state": {
+      "active": "完成：確認專案範圍",
+      "counts": [
+        "待處理 1",
+        "進行中 2",
+        "已完成 1"
+      ],
+      "status": "已移至進行中：確認專案範圍"
+    }
+  },
+  {
+    "step": "progress to done",
+    "state": {
+      "active": "重新開啟：確認專案範圍",
+      "counts": [
+        "待處理 1",
+        "進行中 1",
+        "已完成 2"
+      ],
+      "status": "已完成：確認專案範圍"
+    }
+  },
+  {
+    "step": "done to progress",
+    "state": {
+      "active": "完成：確認專案範圍",
+      "counts": [
+        "待處理 1",
+        "進行中 2",
+        "已完成 1"
+      ],
+      "status": "已重新開啟：確認專案範圍"
+    }
+  }
+]

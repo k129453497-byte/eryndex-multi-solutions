@@ -1,0 +1,7 @@
+$ astro check
+23:03:03 [types] Generated 44ms
+23:03:03 [check] Getting diagnostics for Astro files in /Users/glen/Documents/Obsidian/2026-09-11/eryndex-independent-qa/work/eryndex...
+Result (28 files):
+- 0 errors
+- 0 warnings
+- 0 hints

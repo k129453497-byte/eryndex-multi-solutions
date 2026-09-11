@@ -1,0 +1,74 @@
+[
+  {
+    "lang": "zh-cn",
+    "name": "开始：确认项目范围",
+    "state": {
+      "counts": [
+        "1",
+        "2",
+        "1"
+      ],
+      "status": "已移至进行中：确认项目范围"
+    }
+  },
+  {
+    "lang": "zh-cn",
+    "name": "完成：确认项目范围",
+    "state": {
+      "counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "status": "已完成：确认项目范围"
+    }
+  },
+  {
+    "lang": "zh-cn",
+    "name": "重新开启：确认项目范围",
+    "state": {
+      "counts": [
+        "1",
+        "2",
+        "1"
+      ],
+      "status": "已重新开启：确认项目范围"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "Start: Confirm project scope",
+    "state": {
+      "counts": [
+        "1",
+        "2",
+        "1"
+      ],
+      "status": "Moved to in progress: Confirm project scope"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "Complete: Confirm project scope",
+    "state": {
+      "counts": [
+        "1",
+        "1",
+        "2"
+      ],
+      "status": "Completed: Confirm project scope"
+    }
+  },
+  {
+    "lang": "en",
+    "name": "Reopen: Confirm project scope",
+    "state": {
+      "counts": [
+        "1",
+        "2",
+        "1"
+      ],
+      "status": "Reopened: Confirm project scope"
+    }
+  }
+]
