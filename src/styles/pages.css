@@ -916,6 +916,7 @@ label > small {
   }
   .contact-layout {
     gap: 7%;
+  }
 }
 @media (max-width: 850px) {
   .page-intro {

@@ -143,7 +143,16 @@ const t = translator(lang);
     const initial = new URLSearchParams(location.search).get('product');
     if (initial && [...interest.options].some((o) => o.value === initial)) interest.value = initial;
     const message = form.elements.namedItem('message') as HTMLTextAreaElement;
+    const invalidateDraft = () => {
+      document.querySelector<HTMLElement>('#contact-result')!.hidden = true;
+      document.querySelector('#contact-status')!.textContent = '';
+      document.querySelector<HTMLTextAreaElement>('#email-draft')!.value = '';
+      document.querySelector<HTMLAnchorElement>('#open-email')!.href = 'mailto:contact@eryndex.com';
+    };
     message.addEventListener('input', () => message.setCustomValidity(''));
+    form.addEventListener('input', invalidateDraft);
+    form.addEventListener('change', invalidateDraft);
+    form.addEventListener('invalid', invalidateDraft, true);
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       ['name', 'company', 'email', 'message'].forEach((name) => {
@@ -151,8 +160,7 @@ const t = translator(lang);
         field.value = field.value.trim();
       });
       message.setCustomValidity(message.value.length < 10 ? form.dataset.short! : '');
-      document.querySelector<HTMLElement>('#contact-result')!.hidden = true;
-      document.querySelector('#contact-status')!.textContent = '';
+      invalidateDraft();
       if (!form.reportValidity()) return;
       const result = prepareEnquiry(
         new FormData(form),

@@ -16,6 +16,8 @@ try {
   assert.ok(cn.querySelector('.hero-description').textContent.includes('访问控制软件'));
   assert.ok(cn.querySelector('#contact-form').getAttribute('data-short').includes('首尾空格'));
   assert.ok(output.includes('共享链接') && output.includes('邮件链接'));
+  assert.ok(output.includes('恢复上一版本') && output.includes('恢复为 {to}'));
+  assert.ok(!output.includes('回复上一版本') && !output.includes('回复为 {to}'));
   assert.equal(localizeSimplified('已完成 {count} 项示意任务'), '已完成 {count} 项示意任务');
   assert.equal(localizeSimplified('Eryndex Space Files Shield Services'), 'Eryndex Space Files Shield Services');
   for (const document of Object.values(docs)) {

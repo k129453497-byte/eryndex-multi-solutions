@@ -254,14 +254,15 @@ const fileVersions = [
                       <button
                         class="demo-button"
                         data-restore
-                        data-label={t('回復前一版', 'Restore previous version')}
-                        data-min={t('目前已是最早版本', 'Already at the earliest version')}
+                        data-label={t('回復前一版', 'Restore previous version', '恢复上一版本')}
+                        data-min={t('目前已是最早版本', 'Already at the earliest version', '当前已是最早版本')}
                         data-message={t(
                           '目前檢視已從 {from} 回復為 {to}；歷史紀錄仍保留。',
                           'Viewing restored from {from} to {to}; history remains available.',
+                          '当前查看已从 {from} 恢复为 {to}；历史记录仍保留。',
                         )}
                       >
-                        {t('回復前一版', 'Restore previous version')}
+                        {t('回復前一版', 'Restore previous version', '恢复上一版本')}
                       </button>
                       <p class="demo-status" data-file-status role="status" />
                     </>
@@ -477,7 +478,7 @@ const fileVersions = [
     }));
 
     const history = demo.querySelector<HTMLOListElement>('[data-version-history]');
-    const showHistory = (file: HTMLButtonElement) => {
+    const showHistory = (file: HTMLButtonElement, focusVersion?: string) => {
       const versions = JSON.parse(file.dataset.versions!) as string[][];
       const current = Number(file.dataset.version);
       demo.querySelector('[data-current-file]')!.textContent = file.dataset.name!;
@@ -495,19 +496,26 @@ const fileVersions = [
         const small = document.createElement('small');
         small.textContent = owner + ' · ' + note;
         button.append(strong, span, small);
-        button.addEventListener('click', () => {
-          file.dataset.version = version.slice(1);
-          file.querySelector('[data-version-label]')!.textContent = version;
-          showHistory(file);
-          demo.querySelector('[data-file-status]')!.textContent = '';
-        });
         item.append(button);
         return item;
       }));
       const restore = demo.querySelector<HTMLButtonElement>('[data-restore]')!;
       restore.disabled = current <= 1;
       restore.textContent = current <= 1 ? restore.dataset.min! : restore.dataset.label!;
+      if (focusVersion) {
+        history!.querySelector<HTMLButtonElement>(`[data-history-version="${focusVersion}"]`)?.focus();
+      }
     };
+    history?.addEventListener('click', (event) => {
+      const button = (event.target as Element).closest<HTMLButtonElement>('[data-history-version]');
+      if (!button) return;
+      const file = demo.querySelector<HTMLButtonElement>('[data-file][aria-pressed="true"]')!;
+      const version = button.dataset.historyVersion!;
+      file.dataset.version = version;
+      file.querySelector('[data-version-label]')!.textContent = 'v' + version;
+      showHistory(file, version);
+      demo.querySelector('[data-file-status]')!.textContent = '';
+    });
     const search = demo.querySelector<HTMLInputElement>('[data-file-search]');
     search?.addEventListener('input', () => {
       let visible = 0;
