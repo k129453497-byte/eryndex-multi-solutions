@@ -136,7 +136,17 @@ for (const [file, doc] of docs) {
   assert.equal(doc.querySelectorAll('[data-demo]').length, 3, 'Expected three product experiences');
   for (const demo of doc.querySelectorAll('[data-demo]')) {
     assert.equal(demo.closest('details'), null, 'Product experience must be visible without expanding details');
+    assert.equal(demo.querySelectorAll('.demo-sidebar button').length, 3, 'Every product demo needs three sidebar actions');
+    assert.ok(demo.querySelector('[data-module-panel]'), 'Every product demo needs an alternate feature panel');
   }
+  const space = doc.querySelector('[data-demo="space"]');
+  assert.equal(space.querySelectorAll('[data-task-column]').length, 3, 'Space needs three task stages');
+  assert.equal(space.querySelectorAll('[data-stage="todo"]').length, 2, 'Space needs two initial to-do tasks');
+  assert.equal(space.querySelectorAll('[data-stage="progress"]').length, 1, 'Space needs one initial in-progress task');
+  const files = doc.querySelector('[data-demo="files"]');
+  assert.ok(files.querySelector('[data-version-history]'), 'Files needs a visible version timeline');
+  assert.equal(files.querySelectorAll('[data-version-history] li').length, 3, 'Selected file needs v1-v3 history');
+  assert.ok(files.querySelector('[data-restore]')?.getAttribute('data-message')?.includes('{from}'), 'Restore needs explicit from/to versions');
   assert.ok(doc.querySelector('meta[property="og:image"]'), 'Missing sharing image');
   assert.equal(
     doc.querySelectorAll('.resource-disclosure').length,

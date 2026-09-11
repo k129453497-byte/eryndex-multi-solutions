@@ -12,6 +12,23 @@ const files = [
   t('交接清單.xlsx', 'Handoff checklist.xlsx'),
   t('合作合約.docx', 'Collaboration agreement.docx'),
 ];
+const fileVersions = [
+  [
+    ['v3', t('2026 年 9 月 11 日 14:20', '11 Sep 2026, 14:20'), 'YL', t('調整首頁提案內容', 'Homepage proposal updated')],
+    ['v2', t('2026 年 9 月 10 日 16:05', '10 Sep 2026, 16:05'), 'CW', t('補上品牌方向', 'Brand direction added')],
+    ['v1', t('2026 年 9 月 8 日 09:30', '8 Sep 2026, 09:30'), 'YL', t('建立初始檔案', 'Initial file created')],
+  ],
+  [
+    ['v2', t('2026 年 9 月 11 日 10:15', '11 Sep 2026, 10:15'), 'CW', t('更新負責人與期限', 'Owners and dates updated')],
+    ['v1', t('2026 年 9 月 9 日 11:40', '9 Sep 2026, 11:40'), 'CW', t('建立交接欄位', 'Handoff fields created')],
+  ],
+  [
+    ['v4', t('2026 年 9 月 11 日 09:45', '11 Sep 2026, 09:45'), 'YL', t('確認最終條款', 'Final terms reviewed')],
+    ['v3', t('2026 年 9 月 10 日 13:25', '10 Sep 2026, 13:25'), 'CW', t('修訂服務範圍', 'Service scope revised')],
+    ['v2', t('2026 年 9 月 9 日 15:10', '9 Sep 2026, 15:10'), 'YL', t('加入交付項目', 'Deliverables added')],
+    ['v1', t('2026 年 9 月 7 日 10:00', '7 Sep 2026, 10:00'), 'YL', t('建立合約草稿', 'Agreement draft created')],
+  ],
+];
 ---
 
 <div class={'software-demo ' + id} data-demo={id}>
@@ -27,9 +44,9 @@ const files = [
           <aside class="demo-sidebar">
             <>
               <span>{t('設計團隊', 'Design team')}</span>
-              <strong>{t('專案', 'Projects')}</strong>
-              <span>{t('團隊知識', 'Team knowledge')}</span>
-              <span>{t('工作流程', 'Workflows')}</span>
+              <button type="button" class="active" data-module-close>{t('專案', 'Projects')}</button>
+              <button type="button" data-module-title={t('團隊知識', 'Team knowledge')} data-module-copy={t('把作業方式、決策背景與交接文件整理成團隊可以延續使用的知識。', 'Keep working practices, decision context and handoff notes in reusable team knowledge.')} data-module-items={JSON.stringify([t('品牌語氣與用字', 'Brand voice and language'), t('提案交接方式', 'Proposal handoff'), t('素材命名規則', 'Asset naming rules')])}>{t('團隊知識', 'Team knowledge')}</button>
+              <button type="button" data-module-title={t('工作流程', 'Workflows')} data-module-copy={t('以清楚的狀態與條件串接指派、審核與通知，同時保留人工判斷。', 'Connect assignment, review and notifications with clear states while retaining human judgment.')} data-module-items={JSON.stringify([t('內容提交 → 指派負責人', 'Content submitted → Assign owner'), t('負責人審核 → 留下意見', 'Owner review → Record feedback'), t('核准發布 → 通知團隊', 'Approval → Notify team')])}>{t('工作流程', 'Workflows')}</button>
               <small>{t('春季品牌計畫', 'Spring brand project')}</small>
             </>
           </aside>
@@ -48,18 +65,18 @@ const files = [
               </div>
               <p class="demo-hint">
                 {t(
-                  '試著完成一項任務，讓交接接著往前。',
-                  'Complete a task to move the handoff forward.',
+                  '勾選待處理任務以開始工作；再次勾選進行中的任務即可完成。',
+                  'Check a to-do item to start it; check it again in progress to complete it.',
                 )}
               </p>
               <div class="kanban">
                 <>
-                  <section>
+                  <section data-task-column="todo">
                     <h4>
                       {t('待處理', 'To do')} <span>2</span>
                     </h4>
                     {tasks.slice(0, 2).map((name, i) => (
-                      <div class="task">
+                      <div class="task" data-stage="todo">
                         <span class="task-tag">
                           {i === 0 ? t('規劃', 'Planning') : t('交接', 'Handoff')}
                         </span>
@@ -67,7 +84,9 @@ const files = [
                           <input
                             type="checkbox"
                             data-task
-                            aria-label={t('完成：', 'Complete: ') + name}
+                            data-complete={t('完成：', 'Complete: ')}
+                            data-reopen={t('重新開啟：', 'Reopen: ')}
+                            aria-label={t('開始：', 'Start: ') + name}
                           />
                           <span>{name}</span>
                         </label>
@@ -77,12 +96,12 @@ const files = [
                       </div>
                     ))}
                   </section>
-                  <section>
+                  <section data-task-column="progress">
                     <>
                       <h4>
                         {t('進行中', 'In progress')} <span>1</span>
                       </h4>
-                      <div class="task">
+                      <div class="task" data-stage="progress">
                         <>
                           <span class="task-tag">{t('內容', 'Content')}</span>
                           <label>
@@ -90,6 +109,8 @@ const files = [
                               <input
                                 type="checkbox"
                                 data-task
+                                data-complete={t('完成：', 'Complete: ')}
+                                data-reopen={t('重新開啟：', 'Reopen: ')}
                                 aria-label={t('完成：', 'Complete: ') + tasks[2]}
                               />
                               <span>{tasks[2]}</span>
@@ -105,15 +126,25 @@ const files = [
                       </div>
                     </>
                   </section>
-                  <section class="completed-column">
+                  <section class="completed-column" data-task-column="done">
                     <>
                       <h4>
                         {t('已完成', 'Done')} <span data-completed-count>1</span>
                       </h4>
-                      <div class="task done">
+                      <div class="task done" data-stage="done">
                         <>
                           <span class="task-tag">{t('研究', 'Research')}</span>
-                          <p>{t('彙整需求與訪談', 'Gather requirements')}</p>
+                          <label>
+                            <input
+                              type="checkbox"
+                              data-task
+                              data-complete={t('完成：', 'Complete: ')}
+                              data-reopen={t('重新開啟：', 'Reopen: ')}
+                              checked
+                              aria-label={t('重新開啟：', 'Reopen: ') + t('彙整需求與訪談', 'Gather requirements')}
+                            />
+                            <span>{t('彙整需求與訪談', 'Gather requirements')}</span>
+                          </label>
                           <p>
                             CW <span>✓</span>
                           </p>
@@ -127,8 +158,16 @@ const files = [
                 class="demo-status"
                 role="status"
                 data-task-status
-                data-template={t('已完成 {count} 項示意任務', '{count} sample tasks completed')}
+                data-started={t('已移至進行中：{task}', 'Moved to in progress: {task}')}
+                data-completed={t('已完成：{task}', 'Completed: {task}')}
+                data-reopened={t('已重新開啟：{task}', 'Reopened: {task}')}
               />
+              <section class="demo-module" data-module-panel hidden>
+                <p class="eyebrow">{t('功能示意', 'FEATURE PREVIEW')}</p>
+                <h3 data-module-heading />
+                <p data-module-copy />
+                <div class="module-list" data-module-list />
+              </section>
             </>
           </div>
         </>
@@ -142,9 +181,9 @@ const files = [
           <aside class="demo-sidebar">
             <>
               <span>{t('企業資料', 'Business information')}</span>
-              <strong>{t('團隊檔案', 'Team files')}</strong>
-              <span>{t('分享連結', 'Shared links')}</span>
-              <span>{t('備份與還原', 'Backup & restore')}</span>
+              <button type="button" class="active" data-module-close>{t('團隊檔案', 'Team files')}</button>
+              <button type="button" data-module-title={t('分享連結', 'Shared links')} data-module-copy={t('集中檢視分享對象、權限與到期時間，避免連結長期留在外部。', 'Review recipients, permissions and expiry in one place so links do not remain external indefinitely.')} data-module-items={JSON.stringify([t('品牌提案.pdf · 3 天後到期', 'Brand proposal.pdf · Expires in 3 days'), t('交接清單.xlsx · 僅限組織內', 'Handoff checklist.xlsx · Organization only'), t('合作合約.docx · 明天到期', 'Collaboration agreement.docx · Expires tomorrow')])}>{t('分享連結', 'Shared links')}</button>
+              <button type="button" data-module-title={t('備份與還原', 'Backup & restore')} data-module-copy={t('追蹤備份時間、保留點與還原演練，讓重要資料有可驗證的回復路徑。', 'Track backup times, restore points and recovery drills so important information has a verified path back.')} data-module-items={JSON.stringify([t('最近備份 · 今天 02:00', 'Latest backup · Today 02:00'), t('保留範圍 · 30 個每日還原點', 'Retention · 30 daily restore points'), t('還原演練 · 2026 年 9 月 8 日完成', 'Recovery drill · Completed 8 Sep 2026')])}>{t('備份與還原', 'Backup & restore')}</button>
               <small>{t('保存狀態：已同步', 'Preservation: Synced')}</small>
             </>
           </aside>
@@ -177,6 +216,7 @@ const files = [
                         data-file
                         data-name={name}
                         data-version={[3, 2, 4][i]}
+                        data-versions={JSON.stringify(fileVersions[i])}
                         aria-pressed={i === 0 ? 'true' : 'false'}
                       >
                         <span class="file-type">{['PDF', 'XLS', 'DOC'][i]}</span>
@@ -199,25 +239,41 @@ const files = [
                       <p class="eyebrow">{t('版本紀錄', 'VERSION HISTORY')}</p>
                       <strong data-current-file>{files[0]}</strong>
                       <div class="version-current">
-                        <span class="dot blue" /> {t('目前版本', 'Current version')}{' '}
+                        <span class="dot blue" /> {t('目前檢視', 'Viewing')}{' '}
                         <span data-current-version>v3</span>
                       </div>
-                      <p>{t('內容檢視與版本操作', 'Content and version actions')}</p>
+                      <ol class="version-history" data-version-history aria-label={t('版本建立時間紀錄', 'Version creation timeline')}>
+                        {fileVersions[0].map(([version, date, owner, note], index) => (
+                          <li class={index === 0 ? 'active' : ''}>
+                            <button type="button" data-history-version={version.slice(1)}>
+                              <strong>{version}</strong><span>{date}</span><small>{owner} · {note}</small>
+                            </button>
+                          </li>
+                        ))}
+                      </ol>
                       <button
                         class="demo-button"
                         data-restore
+                        data-label={t('回復前一版', 'Restore previous version')}
+                        data-min={t('目前已是最早版本', 'Already at the earliest version')}
                         data-message={t(
-                          '示意還原已完成：保留歷史版本，建立新的目前版本。',
-                          'Sample restore complete: history is retained and a new current version is created.',
+                          '目前檢視已從 {from} 回復為 {to}；歷史紀錄仍保留。',
+                          'Viewing restored from {from} to {to}; history remains available.',
                         )}
                       >
-                        {t('示意還原前一版', 'Try restoring a version')}
+                        {t('回復前一版', 'Restore previous version')}
                       </button>
                       <p class="demo-status" data-file-status role="status" />
                     </>
                   </aside>
                 </>
               </div>
+              <section class="demo-module" data-module-panel hidden>
+                <p class="eyebrow">{t('功能示意', 'FEATURE PREVIEW')}</p>
+                <h3 data-module-heading />
+                <p data-module-copy />
+                <div class="module-list" data-module-list />
+              </section>
             </>
           </div>
         </>
@@ -231,9 +287,9 @@ const files = [
           <aside class="demo-sidebar">
             <>
               <span>{t('信任管理', 'Trust management')}</span>
-              <strong>{t('存取政策', 'Access policies')}</strong>
-              <span>{t('身分與裝置', 'Identity & devices')}</span>
-              <span>{t('稽核紀錄', 'Audit records')}</span>
+              <button type="button" class="active" data-module-close>{t('存取政策', 'Access policies')}</button>
+              <button type="button" data-module-title={t('身分與裝置', 'Identity & devices')} data-module-copy={t('檢視人員角色、最近使用裝置與驗證狀態，找出需要重新確認的存取。', 'Review roles, recent devices and verification state to identify access that needs attention.')} data-module-items={JSON.stringify([t('YL · 行銷管理員 · MacBook 符合條件', 'YL · Marketing admin · MacBook compliant'), t('CW · 內容編輯 · Windows 符合條件', 'CW · Content editor · Windows compliant'), t('KT · 外部協作者 · 未知裝置待驗證', 'KT · External collaborator · Unknown device')])}>{t('身分與裝置', 'Identity & devices')}</button>
+              <button type="button" data-module-title={t('稽核紀錄', 'Audit records')} data-module-copy={t('依時間查看允許、阻擋與政策變更，保留每次判斷的原因。', 'Review allowed, blocked and policy-change events with the reason for each decision.')} data-module-items={JSON.stringify([t('09:18 · 允許存取 · YL', '09:18 · Access allowed · YL'), t('08:42 · 要求進一步驗證 · KT', '08:42 · Verification required · KT'), t('08:05 · 政策已更新 · CW', '08:05 · Policy updated · CW')])}>{t('稽核紀錄', 'Audit records')}</button>
               <small>{t('預設：依條件授權', 'Default: Conditional access')}</small>
             </>
           </aside>
@@ -335,6 +391,12 @@ const files = [
                   </aside>
                 </>
               </div>
+              <section class="demo-module" data-module-panel hidden>
+                <p class="eyebrow">{t('功能示意', 'FEATURE PREVIEW')}</p>
+                <h3 data-module-heading />
+                <p data-module-copy />
+                <div class="module-list" data-module-list />
+              </section>
             </>
           </div>
         </>
@@ -344,22 +406,108 @@ const files = [
 </div>
 <script>
   document.querySelectorAll<HTMLElement>('[data-demo]').forEach((demo) => {
-    demo.querySelectorAll<HTMLInputElement>('[data-task]').forEach((task) => {
-      const card = task.closest('.task')!;
-      const origin = card.parentElement!;
-      task.addEventListener('change', () => {
-        card.classList.toggle('done', task.checked);
-        (task.checked ? demo.querySelector('.completed-column')! : origin).append(card);
-        task.focus();
-        const count = demo.querySelectorAll('[data-task]:checked').length;
-        const status = demo.querySelector<HTMLElement>('[data-task-status]')!;
-        status.textContent = status.dataset.template!.replace('{count}', String(count));
-        demo.querySelectorAll('.kanban>section').forEach((column) => {
-          const total = column.querySelector('h4 span');
-          if (total) total.textContent = String(column.querySelectorAll('.task').length);
-        });
+    const primary = demo.querySelector<HTMLElement>('.demo-main')!;
+    const module = demo.querySelector<HTMLElement>('[data-module-panel]')!;
+    demo.querySelectorAll<HTMLButtonElement>('[data-module-title]').forEach((button) => {
+      button.addEventListener('click', () => {
+        demo.querySelectorAll('.demo-sidebar button').forEach((item) => item.classList.toggle('active', item === button));
+        primary.classList.add('show-module');
+        module.hidden = false;
+        module.querySelector('[data-module-heading]')!.textContent = button.dataset.moduleTitle!;
+        module.querySelector('[data-module-copy]')!.textContent = button.dataset.moduleCopy!;
+        const list = module.querySelector<HTMLElement>('[data-module-list]')!;
+        list.replaceChildren(...(JSON.parse(button.dataset.moduleItems!) as string[]).map((text, index) => {
+          const item = document.createElement('button');
+          item.type = 'button';
+          item.innerHTML = '<span>0' + (index + 1) + '</span><strong></strong><em>→</em>';
+          item.querySelector('strong')!.textContent = text;
+          item.addEventListener('click', () => {
+            list.querySelectorAll('button').forEach(row => row.classList.toggle('selected', row === item));
+          });
+          return item;
+        }));
       });
     });
+    demo.querySelector<HTMLButtonElement>('[data-module-close]')?.addEventListener('click', (event) => {
+      demo.querySelectorAll('.demo-sidebar button').forEach((item) => item.classList.toggle('active', item === event.currentTarget));
+      primary.classList.remove('show-module');
+      module.hidden = true;
+    });
+
+    const updateCounts = () => demo.querySelectorAll<HTMLElement>('[data-task-column]').forEach((column) => {
+      const total = column.querySelector('h4 span');
+      if (total) total.textContent = String(column.querySelectorAll('.task').length);
+    });
+    demo.querySelectorAll<HTMLInputElement>('[data-task]').forEach((task) => task.addEventListener('change', () => {
+      const card = task.closest<HTMLElement>('.task')!;
+      const name = card.querySelector('label span')!.textContent!;
+      const status = demo.querySelector<HTMLElement>('[data-task-status]')!;
+      if (card.dataset.stage === 'todo') {
+        card.dataset.stage = 'progress';
+        task.checked = false;
+        task.setAttribute('aria-label', task.dataset.complete! + name);
+        const progress = document.createElement('div');
+        progress.className = 'task-progress';
+        progress.append(document.createElement('span'));
+        card.append(progress);
+        demo.querySelector('[data-task-column="progress"]')!.append(card);
+        status.textContent = status.dataset.started!.replace('{task}', name);
+      } else if (card.dataset.stage === 'progress') {
+        card.dataset.stage = 'done';
+        card.classList.add('done');
+        task.checked = true;
+        task.setAttribute('aria-label', task.dataset.reopen! + name);
+        card.querySelector('.task-progress')?.remove();
+        demo.querySelector('[data-task-column="done"]')!.append(card);
+        status.textContent = status.dataset.completed!.replace('{task}', name);
+      } else {
+        card.dataset.stage = 'progress';
+        card.classList.remove('done');
+        task.checked = false;
+        task.setAttribute('aria-label', task.dataset.complete! + name);
+        const progress = document.createElement('div');
+        progress.className = 'task-progress';
+        progress.append(document.createElement('span'));
+        card.append(progress);
+        demo.querySelector('[data-task-column="progress"]')!.append(card);
+        status.textContent = status.dataset.reopened!.replace('{task}', name);
+      }
+      updateCounts();
+      task.focus();
+    }));
+
+    const history = demo.querySelector<HTMLOListElement>('[data-version-history]');
+    const showHistory = (file: HTMLButtonElement) => {
+      const versions = JSON.parse(file.dataset.versions!) as string[][];
+      const current = Number(file.dataset.version);
+      demo.querySelector('[data-current-file]')!.textContent = file.dataset.name!;
+      demo.querySelector('[data-current-version]')!.textContent = 'v' + current;
+      history!.replaceChildren(...versions.map(([version, date, owner, note]) => {
+        const item = document.createElement('li');
+        item.classList.toggle('active', Number(version.slice(1)) === current);
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.dataset.historyVersion = version.slice(1);
+        const strong = document.createElement('strong');
+        strong.textContent = version;
+        const span = document.createElement('span');
+        span.textContent = date;
+        const small = document.createElement('small');
+        small.textContent = owner + ' · ' + note;
+        button.append(strong, span, small);
+        button.addEventListener('click', () => {
+          file.dataset.version = version.slice(1);
+          file.querySelector('[data-version-label]')!.textContent = version;
+          showHistory(file);
+          demo.querySelector('[data-file-status]')!.textContent = '';
+        });
+        item.append(button);
+        return item;
+      }));
+      const restore = demo.querySelector<HTMLButtonElement>('[data-restore]')!;
+      restore.disabled = current <= 1;
+      restore.textContent = current <= 1 ? restore.dataset.min! : restore.dataset.label!;
+    };
     const search = demo.querySelector<HTMLInputElement>('[data-file-search]');
     search?.addEventListener('input', () => {
       let visible = 0;
@@ -377,19 +525,22 @@ const files = [
         });
         file.classList.add('selected');
         file.setAttribute('aria-pressed', 'true');
-        demo.querySelector('[data-current-file]')!.textContent = file.dataset.name!;
-        demo.querySelector('[data-current-version]')!.textContent = 'v' + file.dataset.version;
+        showHistory(file);
         demo.querySelector('[data-file-status]')!.textContent = '';
       }),
     );
     demo.querySelector<HTMLButtonElement>('[data-restore]')?.addEventListener('click', (e) => {
       const button = e.currentTarget as HTMLButtonElement;
       const selected = demo.querySelector<HTMLButtonElement>('[data-file][aria-pressed="true"]')!;
-      const version = Number(selected.dataset.version) + 1;
-      selected.dataset.version = String(version);
-      selected.querySelector('[data-version-label]')!.textContent = 'v' + version;
-      demo.querySelector('[data-current-version]')!.textContent = 'v' + version;
-      demo.querySelector('[data-file-status]')!.textContent = button.dataset.message!;
+      const from = Number(selected.dataset.version);
+      if (from <= 1) return;
+      const to = from - 1;
+      selected.dataset.version = String(to);
+      selected.querySelector('[data-version-label]')!.textContent = 'v' + to;
+      showHistory(selected);
+      demo.querySelector('[data-file-status]')!.textContent = button.dataset.message!
+        .replace('{from}', 'v' + from)
+        .replace('{to}', 'v' + to);
     });
     demo.querySelectorAll<HTMLInputElement>('[data-policy]').forEach((input) =>
       input.addEventListener('change', () => {
