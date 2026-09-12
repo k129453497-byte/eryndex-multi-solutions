@@ -1,0 +1,1356 @@
+{
+  "lang": "en",
+  "width": 1440,
+  "height": 900,
+  "panels": [
+    {
+      "product": "space",
+      "kind": "knowledge",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "VoiceBrand voice and language✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "HandoffProposal handoff✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "RulesAsset naming rules✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "Voice",
+          "Handoff",
+          "Rules"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "true",
+              "selected": true,
+              "text": "VoiceBrand voice and language✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "HandoffProposal handoff✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "RulesAsset naming rules✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "Voice",
+            "Handoff",
+            "Rules"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "VoiceBrand voice and language✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "HandoffProposal handoff✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "RulesAsset naming rules✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "Voice",
+            "Handoff",
+            "Rules"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "VoiceBrand voice and language✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "HandoffProposal handoff✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "RulesAsset naming rules✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "markers": [
+            "Voice",
+            "Handoff",
+            "Rules"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        }
+      ],
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "VoiceBrand voice and language✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "HandoffProposal handoff✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "pressed": "true",
+            "selected": true,
+            "text": "RulesAsset naming rules✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "Voice",
+          "Handoff",
+          "Rules"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "product": "space",
+      "kind": "workflow",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgb(239, 230, 214)",
+            "border": "rgb(48, 47, 43)",
+            "pressed": "true",
+            "selected": true,
+            "text": "SubmitContent submitted → Assign owner→",
+            "transform": "matrix(1, 0, 0, 1, 0, -2)"
+          },
+          {
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "ReviewOwner review → Record feedback→",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "PublishApproval → Notify team→",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "Submit",
+          "Review",
+          "Publish"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(239, 230, 214)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "true",
+              "selected": true,
+              "text": "SubmitContent submitted → Assign owner→",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "ReviewOwner review → Record feedback→",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "PublishApproval → Notify team→",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "Submit",
+            "Review",
+            "Publish"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(239, 230, 214)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "SubmitContent submitted → Assign owner→",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "ReviewOwner review → Record feedback→",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "PublishApproval → Notify team→",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "Submit",
+            "Review",
+            "Publish"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(240, 231, 216)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "SubmitContent submitted → Assign owner→",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "ReviewOwner review → Record feedback→",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "PublishApproval → Notify team→",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "markers": [
+            "Submit",
+            "Review",
+            "Publish"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        }
+      ],
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "SubmitContent submitted → Assign owner→",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "ReviewOwner review → Record feedback→",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(239, 230, 214)",
+            "border": "rgb(48, 47, 43)",
+            "pressed": "true",
+            "selected": true,
+            "text": "PublishApproval → Notify team→",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "Submit",
+          "Review",
+          "Publish"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "product": "files",
+      "kind": "sharing",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "ExternalBrand proposal.pdfExpires in 3 days✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "InternalHandoff checklist.xlsxOrganization only✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "ExpiryCollaboration agreement.docxExpires tomorrow✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "External",
+          "Internal",
+          "Expiry"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "true",
+              "selected": true,
+              "text": "ExternalBrand proposal.pdfExpires in 3 days✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "InternalHandoff checklist.xlsxOrganization only✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "ExpiryCollaboration agreement.docxExpires tomorrow✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "External",
+            "Internal",
+            "Expiry"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "ExternalBrand proposal.pdfExpires in 3 days✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "InternalHandoff checklist.xlsxOrganization only✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "ExpiryCollaboration agreement.docxExpires tomorrow✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "External",
+            "Internal",
+            "Expiry"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "ExternalBrand proposal.pdfExpires in 3 days✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "InternalHandoff checklist.xlsxOrganization only✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "ExpiryCollaboration agreement.docxExpires tomorrow✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "markers": [
+            "External",
+            "Internal",
+            "Expiry"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        }
+      ],
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "ExternalBrand proposal.pdfExpires in 3 days✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "InternalHandoff checklist.xlsxOrganization only✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "pressed": "true",
+            "selected": true,
+            "text": "ExpiryCollaboration agreement.docxExpires tomorrow✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "External",
+          "Internal",
+          "Expiry"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "product": "files",
+      "kind": "backup",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "LiveLatest backupToday 02:00✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "30DRetention30 daily restore points✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "VerifiedRecovery drillCompleted 8 Sep 2026✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "Live",
+          "30D",
+          "Verified"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(238, 231, 217)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "true",
+              "selected": true,
+              "text": "LiveLatest backupToday 02:00✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "30DRetention30 daily restore points✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "VerifiedRecovery drillCompleted 8 Sep 2026✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "Live",
+            "30D",
+            "Verified"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(238, 231, 217)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "false",
+              "selected": false,
+              "text": "LiveLatest backupToday 02:00✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "30DRetention30 daily restore points✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "VerifiedRecovery drillCompleted 8 Sep 2026✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "Live",
+            "30D",
+            "Verified"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgba(238, 231, 217, 0.918)",
+              "border": "rgb(160, 144, 113)",
+              "pressed": "false",
+              "selected": false,
+              "text": "LiveLatest backupToday 02:00✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -0.16754)"
+            },
+            {
+              "background": "rgba(238, 231, 217, 0.082)",
+              "border": "rgb(215, 209, 198)",
+              "pressed": "false",
+              "selected": false,
+              "text": "30DRetention30 daily restore points✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "VerifiedRecovery drillCompleted 8 Sep 2026✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "Live",
+            "30D",
+            "Verified"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        }
+      ],
+      "blurred": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "MAIN"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "LiveLatest backupToday 02:00✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "30DRetention30 daily restore points✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(238, 231, 217)",
+            "border": "rgb(155, 137, 104)",
+            "pressed": "true",
+            "selected": true,
+            "text": "VerifiedRecovery drillCompleted 8 Sep 2026✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "Live",
+          "30D",
+          "Verified"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      },
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "LiveLatest backupToday 02:00✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "30DRetention30 daily restore points✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(238, 231, 217)",
+            "border": "rgb(155, 137, 104)",
+            "pressed": "true",
+            "selected": true,
+            "text": "VerifiedRecovery drillCompleted 8 Sep 2026✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "Live",
+          "30D",
+          "Verified"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "product": "shield",
+      "kind": "identity",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "YLYLMarketing admin · MacBook compliant✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "CWCWContent editor · Windows compliant✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "KTKTExternal collaborator · Unknown device!",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "YL",
+          "CW",
+          "KT"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "true",
+              "selected": true,
+              "text": "YLYLMarketing admin · MacBook compliant✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "CWCWContent editor · Windows compliant✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "KTKTExternal collaborator · Unknown device!",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "YL",
+            "CW",
+            "KT"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "YLYLMarketing admin · MacBook compliant✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "CWCWContent editor · Windows compliant✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "KTKTExternal collaborator · Unknown device!",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "YL",
+            "CW",
+            "KT"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "YLYLMarketing admin · MacBook compliant✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "CWCWContent editor · Windows compliant✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "KTKTExternal collaborator · Unknown device!",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "markers": [
+            "YL",
+            "CW",
+            "KT"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        }
+      ],
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "YLYLMarketing admin · MacBook compliant✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "CWCWContent editor · Windows compliant✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "pressed": "true",
+            "selected": true,
+            "text": "KTKTExternal collaborator · Unknown device!",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "YL",
+          "CW",
+          "KT"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    },
+    {
+      "product": "shield",
+      "kind": "audit",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "●09:18Access allowed · YL✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "◆08:42Verification required · KT✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "○08:05Policy updated · CW✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "●",
+          "◆",
+          "○"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "true",
+              "selected": true,
+              "text": "●09:18Access allowed · YL✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "◆08:42Verification required · KT✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "○08:05Policy updated · CW✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "●",
+            "◆",
+            "○"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "false",
+              "selected": false,
+              "text": "●09:18Access allowed · YL✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "◆08:42Verification required · KT✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "○08:05Policy updated · CW✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "●",
+            "◆",
+            "○"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "false",
+              "selected": false,
+              "text": "●09:18Access allowed · YL✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "◆08:42Verification required · KT✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "○08:05Policy updated · CW✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "●",
+            "◆",
+            "○"
+          ],
+          "scrollWidth": 1440,
+          "width": 1440
+        }
+      ],
+      "blurred": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "MAIN"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "●09:18Access allowed · YL✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "◆08:42Verification required · KT✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(238, 231, 217)",
+            "border": "rgb(155, 137, 104)",
+            "pressed": "true",
+            "selected": true,
+            "text": "○08:05Policy updated · CW✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "●",
+          "◆",
+          "○"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      },
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "●09:18Access allowed · YL✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "◆08:42Verification required · KT✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(238, 231, 217)",
+            "border": "rgb(155, 137, 104)",
+            "pressed": "true",
+            "selected": true,
+            "text": "○08:05Policy updated · CW✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "●",
+          "◆",
+          "○"
+        ],
+        "scrollWidth": 1440,
+        "width": 1440
+      }
+    }
+  ],
+  "errors": []
+}

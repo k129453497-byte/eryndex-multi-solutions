@@ -1,0 +1,1356 @@
+{
+  "lang": "zh-tw",
+  "width": 768,
+  "height": 1024,
+  "panels": [
+    {
+      "product": "space",
+      "kind": "knowledge",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "語品牌語氣與用字✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "交提案交接方式✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "規素材命名規則✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "語",
+          "交",
+          "規"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "true",
+              "selected": true,
+              "text": "語品牌語氣與用字✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "交提案交接方式✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "規素材命名規則✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "語",
+            "交",
+            "規"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "語品牌語氣與用字✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "交提案交接方式✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "規素材命名規則✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "語",
+            "交",
+            "規"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "語品牌語氣與用字✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "交提案交接方式✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "規素材命名規則✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "markers": [
+            "語",
+            "交",
+            "規"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        }
+      ],
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "語品牌語氣與用字✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "交提案交接方式✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "pressed": "true",
+            "selected": true,
+            "text": "規素材命名規則✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "語",
+          "交",
+          "規"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      }
+    },
+    {
+      "product": "space",
+      "kind": "workflow",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgb(239, 230, 214)",
+            "border": "rgb(48, 47, 43)",
+            "pressed": "true",
+            "selected": true,
+            "text": "提交內容提交 → 指派負責人→",
+            "transform": "matrix(1, 0, 0, 1, 0, -2)"
+          },
+          {
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "審核負責人審核 → 留下意見→",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "發布核准發布 → 通知團隊→",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "提交",
+          "審核",
+          "發布"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(239, 230, 214)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "true",
+              "selected": true,
+              "text": "提交內容提交 → 指派負責人→",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "審核負責人審核 → 留下意見→",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "發布核准發布 → 通知團隊→",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "提交",
+            "審核",
+            "發布"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(239, 230, 214)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "提交內容提交 → 指派負責人→",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "審核負責人審核 → 留下意見→",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "發布核准發布 → 通知團隊→",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "提交",
+            "審核",
+            "發布"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(239, 230, 214)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "提交內容提交 → 指派負責人→",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "審核負責人審核 → 留下意見→",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(251, 248, 241)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "發布核准發布 → 通知團隊→",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "markers": [
+            "提交",
+            "審核",
+            "發布"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        }
+      ],
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "提交內容提交 → 指派負責人→",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "審核負責人審核 → 留下意見→",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(239, 230, 214)",
+            "border": "rgb(48, 47, 43)",
+            "pressed": "true",
+            "selected": true,
+            "text": "發布核准發布 → 通知團隊→",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "提交",
+          "審核",
+          "發布"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      }
+    },
+    {
+      "product": "files",
+      "kind": "sharing",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "外部品牌提案.pdf3 天後到期✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "內部交接清單.xlsx僅限組織內✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "期限合作合約.docx明天到期✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "外部",
+          "內部",
+          "期限"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "true",
+              "selected": true,
+              "text": "外部品牌提案.pdf3 天後到期✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "內部交接清單.xlsx僅限組織內✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "期限合作合約.docx明天到期✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "外部",
+            "內部",
+            "期限"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "外部品牌提案.pdf3 天後到期✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "內部交接清單.xlsx僅限組織內✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "期限合作合約.docx明天到期✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "外部",
+            "內部",
+            "期限"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "外部品牌提案.pdf3 天後到期✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "內部交接清單.xlsx僅限組織內✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "期限合作合約.docx明天到期✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "markers": [
+            "外部",
+            "內部",
+            "期限"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        }
+      ],
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "外部品牌提案.pdf3 天後到期✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "內部交接清單.xlsx僅限組織內✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "pressed": "true",
+            "selected": true,
+            "text": "期限合作合約.docx明天到期✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "外部",
+          "內部",
+          "期限"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      }
+    },
+    {
+      "product": "files",
+      "kind": "backup",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "即時最近備份今天 02:00✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "30D保留範圍30 個每日還原點✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "驗證還原演練2026 年 9 月 8 日完成✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "即時",
+          "30D",
+          "驗證"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(238, 231, 217)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "true",
+              "selected": true,
+              "text": "即時最近備份今天 02:00✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "30D保留範圍30 個每日還原點✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "驗證還原演練2026 年 9 月 8 日完成✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "即時",
+            "30D",
+            "驗證"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(238, 231, 217)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "false",
+              "selected": false,
+              "text": "即時最近備份今天 02:00✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "30D保留範圍30 個每日還原點✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "驗證還原演練2026 年 9 月 8 日完成✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "即時",
+            "30D",
+            "驗證"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(238, 231, 217)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "false",
+              "selected": false,
+              "text": "即時最近備份今天 02:00✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "30D保留範圍30 個每日還原點✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "驗證還原演練2026 年 9 月 8 日完成✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "即時",
+            "30D",
+            "驗證"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        }
+      ],
+      "blurred": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "MAIN"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "即時最近備份今天 02:00✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "30D保留範圍30 個每日還原點✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(238, 231, 217)",
+            "border": "rgb(155, 137, 104)",
+            "pressed": "true",
+            "selected": true,
+            "text": "驗證還原演練2026 年 9 月 8 日完成✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "即時",
+          "30D",
+          "驗證"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      },
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "即時最近備份今天 02:00✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "30D保留範圍30 個每日還原點✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(238, 231, 217)",
+            "border": "rgb(155, 137, 104)",
+            "pressed": "true",
+            "selected": true,
+            "text": "驗證還原演練2026 年 9 月 8 日完成✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "即時",
+          "30D",
+          "驗證"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      }
+    },
+    {
+      "product": "shield",
+      "kind": "identity",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "YLYL行銷管理員 · MacBook 符合條件✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "CWCW內容編輯 · Windows 符合條件✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "KTKT外部協作者 · 未知裝置待驗證!",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "YL",
+          "CW",
+          "KT"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "true",
+              "selected": true,
+              "text": "YLYL行銷管理員 · MacBook 符合條件✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "CWCW內容編輯 · Windows 符合條件✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "KTKT外部協作者 · 未知裝置待驗證!",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "YL",
+            "CW",
+            "KT"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "YLYL行銷管理員 · MacBook 符合條件✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "CWCW內容編輯 · Windows 符合條件✓",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "KTKT外部協作者 · 未知裝置待驗證!",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "YL",
+            "CW",
+            "KT"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(48, 47, 43)",
+              "pressed": "false",
+              "selected": false,
+              "text": "YLYL行銷管理員 · MacBook 符合條件✓",
+              "transform": "matrix(1, 0, 0, 1, 0, -2)"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "CWCW內容編輯 · Windows 符合條件✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgb(255, 254, 250)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "KTKT外部協作者 · 未知裝置待驗證!",
+              "transform": "matrix(1, 0, 0, 1, 0, 0)"
+            }
+          ],
+          "markers": [
+            "YL",
+            "CW",
+            "KT"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        }
+      ],
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "YLYL行銷管理員 · MacBook 符合條件✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "CWCW內容編輯 · Windows 符合條件✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "pressed": "true",
+            "selected": true,
+            "text": "KTKT外部協作者 · 未知裝置待驗證!",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "YL",
+          "CW",
+          "KT"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      }
+    },
+    {
+      "product": "shield",
+      "kind": "audit",
+      "initial": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "●09:18允許存取 · YL✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "◆08:42要求進一步驗證 · KT✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "○08:05政策已更新 · CW✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "●",
+          "◆",
+          "○"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      },
+      "selections": [
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(48, 47, 43) none 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "true",
+              "selected": true,
+              "text": "●09:18允許存取 · YL✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "◆08:42要求進一步驗證 · KT✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "○08:05政策已更新 · CW✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "●",
+            "◆",
+            "○"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "false",
+              "selected": false,
+              "text": "●09:18允許存取 · YL✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "◆08:42要求進一步驗證 · KT✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "○08:05政策已更新 · CW✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "●",
+            "◆",
+            "○"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        },
+        {
+          "focus": {
+            "item": true,
+            "outline": "rgb(130, 80, 39) solid 3px",
+            "tag": "BUTTON"
+          },
+          "hidden": false,
+          "items": [
+            {
+              "background": "rgb(247, 244, 236)",
+              "border": "rgb(155, 137, 104)",
+              "pressed": "false",
+              "selected": false,
+              "text": "●09:18允許存取 · YL✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "false",
+              "selected": false,
+              "text": "◆08:42要求進一步驗證 · KT✓",
+              "transform": "none"
+            },
+            {
+              "background": "rgba(0, 0, 0, 0)",
+              "border": "rgb(220, 216, 207)",
+              "pressed": "true",
+              "selected": true,
+              "text": "○08:05政策已更新 · CW✓",
+              "transform": "none"
+            }
+          ],
+          "markers": [
+            "●",
+            "◆",
+            "○"
+          ],
+          "scrollWidth": 768,
+          "width": 768
+        }
+      ],
+      "blurred": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "MAIN"
+        },
+        "hidden": false,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "●09:18允許存取 · YL✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "◆08:42要求進一步驗證 · KT✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(238, 231, 217)",
+            "border": "rgb(155, 137, 104)",
+            "pressed": "true",
+            "selected": true,
+            "text": "○08:05政策已更新 · CW✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "●",
+          "◆",
+          "○"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      },
+      "returned": {
+        "focus": {
+          "item": false,
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON"
+        },
+        "hidden": true,
+        "items": [
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "●09:18允許存取 · YL✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(220, 216, 207)",
+            "pressed": "false",
+            "selected": false,
+            "text": "◆08:42要求進一步驗證 · KT✓",
+            "transform": "none"
+          },
+          {
+            "background": "rgb(238, 231, 217)",
+            "border": "rgb(155, 137, 104)",
+            "pressed": "true",
+            "selected": true,
+            "text": "○08:05政策已更新 · CW✓",
+            "transform": "none"
+          }
+        ],
+        "markers": [
+          "●",
+          "◆",
+          "○"
+        ],
+        "scrollWidth": 768,
+        "width": 768
+      }
+    }
+  ],
+  "errors": []
+}

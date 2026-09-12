@@ -1,0 +1,1 @@
+PASS: terminology, localized form/UI attributes, brand names, placeholders and three-language structure. Browser interaction not covered.

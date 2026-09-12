@@ -1,0 +1,79 @@
+$ astro build
+22:16:41 [types] Generated 27ms
+22:16:41 [build] output: "static"
+22:16:41 [build] mode: "static"
+22:16:41 [build] directory: /Users/glen/Documents/Obsidian/2026-09-11/eryndex-independent-qa/work/eryndex/dist/
+22:16:41 [build] Collecting build info...
+22:16:41 [build] ✓ Completed in 58ms.
+22:16:41 [build] Building static entrypoints...
+22:16:41 [vite] ✓ built in 625ms
+22:16:41 [vite] ✓ built in 71ms
+22:16:41 [build] Rearranging server assets...
+
+ generating static routes
+22:16:42   ├─ /404.html (+10ms)
+22:16:42   ├─ /robots.txt (+3ms)
+22:16:42   ├─ /sitemap.xml (+5ms)
+22:16:42   ├─ /index.html (+8ms)
+22:16:42   ├─ /zh-tw/index.html (+3ms)
+22:16:42   ├─ /zh-tw/products/index.html (+1ms)
+22:16:42   ├─ /zh-tw/products/space/index.html (+1ms)
+22:16:42   ├─ /zh-tw/products/files/index.html (+3ms)
+22:16:42   ├─ /zh-tw/products/shield/index.html (+1ms)
+22:16:42   ├─ /zh-tw/solutions/index.html (+1ms)
+22:16:42   ├─ /zh-tw/solutions/modern-work/index.html (+1ms)
+22:16:42   ├─ /zh-tw/solutions/information-protection/index.html (+1ms)
+22:16:42   ├─ /zh-tw/solutions/secure-office/index.html (+1ms)
+22:16:42   ├─ /zh-tw/solutions/digital-workplace/index.html (+1ms)
+22:16:42   ├─ /zh-tw/services/index.html (+1ms)
+22:16:42   ├─ /zh-tw/resources/index.html (+2ms)
+22:16:42   ├─ /zh-tw/resources/work-handoffs/index.html (+4ms)
+22:16:42   ├─ /zh-tw/resources/information-lifecycle/index.html (+1ms)
+22:16:42   ├─ /zh-tw/resources/access-review/index.html (+1ms)
+22:16:42   ├─ /zh-tw/about/index.html (+5ms)
+22:16:42   ├─ /zh-tw/contact/index.html (+1ms)
+22:16:42   ├─ /zh-tw/privacy/index.html (+1ms)
+22:16:42   ├─ /zh-tw/terms/index.html (+1ms)
+22:16:42   ├─ /zh-cn/index.html (+13ms)
+22:16:42   ├─ /zh-cn/products/index.html (+1ms)
+22:16:42   ├─ /zh-cn/products/space/index.html (+1ms)
+22:16:42   ├─ /zh-cn/products/files/index.html (+3ms)
+22:16:42   ├─ /zh-cn/products/shield/index.html (+1ms)
+22:16:42   ├─ /zh-cn/solutions/index.html (+0ms)
+22:16:42   ├─ /zh-cn/solutions/modern-work/index.html (+1ms)
+22:16:42   ├─ /zh-cn/solutions/information-protection/index.html (+1ms)
+22:16:42   ├─ /zh-cn/solutions/secure-office/index.html (+2ms)
+22:16:42   ├─ /zh-cn/solutions/digital-workplace/index.html (+1ms)
+22:16:42   ├─ /zh-cn/services/index.html (+1ms)
+22:16:42   ├─ /zh-cn/resources/index.html (+1ms)
+22:16:42   ├─ /zh-cn/resources/work-handoffs/index.html (+1ms)
+22:16:42   ├─ /zh-cn/resources/information-lifecycle/index.html (+1ms)
+22:16:42   ├─ /zh-cn/resources/access-review/index.html (+1ms)
+22:16:42   ├─ /zh-cn/about/index.html (+1ms)
+22:16:42   ├─ /zh-cn/contact/index.html (+1ms)
+22:16:42   ├─ /zh-cn/privacy/index.html (+1ms)
+22:16:42   ├─ /zh-cn/terms/index.html (+1ms)
+22:16:42   ├─ /en/index.html (+2ms)
+22:16:42   ├─ /en/products/index.html (+1ms)
+22:16:42   ├─ /en/products/space/index.html (+1ms)
+22:16:42   ├─ /en/products/files/index.html (+1ms)
+22:16:42   ├─ /en/products/shield/index.html (+1ms)
+22:16:42   ├─ /en/solutions/index.html (+1ms)
+22:16:42   ├─ /en/solutions/modern-work/index.html (+1ms)
+22:16:42   ├─ /en/solutions/information-protection/index.html (+1ms)
+22:16:42   ├─ /en/solutions/secure-office/index.html (+1ms)
+22:16:42   ├─ /en/solutions/digital-workplace/index.html (+1ms)
+22:16:42   ├─ /en/services/index.html (+1ms)
+22:16:42   ├─ /en/resources/index.html (+9ms)
+22:16:42   ├─ /en/resources/work-handoffs/index.html (+1ms)
+22:16:42   ├─ /en/resources/information-lifecycle/index.html (+1ms)
+22:16:42   ├─ /en/resources/access-review/index.html (+1ms)
+22:16:42   ├─ /en/about/index.html (+0ms)
+22:16:42   ├─ /en/contact/index.html (+0ms)
+22:16:42   ├─ /en/privacy/index.html (+1ms)
+22:16:42   ├─ /en/terms/index.html (+0ms)
+22:16:42 ✓ Completed in 202ms.
+
+22:16:42 [build] ✓ Completed in 922ms.
+22:16:42 [build] 59 page(s) built in 1.01s
+22:16:42 [build] Complete!

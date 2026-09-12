@@ -1,0 +1,12 @@
+$ node scripts/qa.mjs
+{
+  "status": "PASS",
+  "htmlPages": 59,
+  "internalLinkReferences": 294,
+  "assetReferences": 258,
+  "originalMastersVerified": 6,
+  "localizedPages": 3,
+  "legacyRedirects": 54,
+  "contactDraft": "PASS",
+  "scope": "Static HTML, assets, links, metadata and contact logic. Not browser, accessibility or visual QA."
+}

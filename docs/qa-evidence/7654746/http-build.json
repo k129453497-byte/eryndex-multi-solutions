@@ -1,0 +1,20 @@
+{
+  "commit": "7654746f45e6e57d84be2fd4204cf5b1da917338",
+  "pages": [
+    {
+      "lang": "zh-tw",
+      "matchesDist": true,
+      "sha256": "3955a05ef971a51589880246cee6e0d49a75e439745f968363053cc327c2aa7a"
+    },
+    {
+      "lang": "zh-cn",
+      "matchesDist": true,
+      "sha256": "ade0aa5f2a57a4f7b56779b3576688c2b25de64cf120405406a38b31ac732353"
+    },
+    {
+      "lang": "en",
+      "matchesDist": true,
+      "sha256": "5ddfbf2e6f7fe9d9242faa40a55579f1ec551ac9f1057f1038fafc3b97ce51c4"
+    }
+  ]
+}
