@@ -1,0 +1,35 @@
+[
+  {
+    "lang": "zh-tw",
+    "width": 1440,
+    "space": [
+      "待處理 1",
+      "進行中 2",
+      "已完成 1"
+    ],
+    "files": "v2",
+    "shield": "需要進一步驗證"
+  },
+  {
+    "lang": "zh-cn",
+    "width": 768,
+    "space": [
+      "待处理 1",
+      "进行中 2",
+      "已完成 1"
+    ],
+    "files": "v2",
+    "shield": "需要进一步验证"
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "space": [
+      "To do 1",
+      "In progress 2",
+      "Done 1"
+    ],
+    "files": "v2",
+    "shield": "Further verification required"
+  }
+]

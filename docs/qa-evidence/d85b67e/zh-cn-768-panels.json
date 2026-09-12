@@ -1,0 +1,2348 @@
+{
+  "lang": "zh-cn",
+  "width": 768,
+  "height": 1024,
+  "panels": [
+    {
+      "product": "space",
+      "kind": "knowledge",
+      "initial": {
+        "active": "团队知识",
+        "canvas": {
+          "height": 176,
+          "width": 637.1953125,
+          "x": 65.3984375,
+          "y": 727.35498046875
+        },
+        "columns": "231.594px 150px 231.602px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "团队知识",
+          "within": false
+        },
+        "heading": "团队知识",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 230,
+            "rect": {
+              "height": 76,
+              "width": 231.59375,
+              "x": 65.3984375,
+              "y": 727.35498046875
+            },
+            "scrollWidth": 230,
+            "selected": false,
+            "text": "語品牌语气与用字✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 230,
+            "rect": {
+              "height": 76,
+              "width": 231.6015625,
+              "x": 470.9921875,
+              "y": 727.35498046875
+            },
+            "scrollWidth": 230,
+            "selected": false,
+            "text": "交提案交接方式✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 230,
+            "rect": {
+              "height": 76,
+              "width": 231.6015625,
+              "x": 470.9921875,
+              "y": 827.35498046875
+            },
+            "scrollWidth": 230,
+            "selected": false,
+            "text": "規素材命名规则✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-knowledge",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "团队知识",
+            "canvas": {
+              "height": 176,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 473.6328125
+            },
+            "columns": "231.594px 150px 231.602px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "語品牌语气与用字✓",
+              "within": true
+            },
+            "heading": "团队知识",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 230,
+                "rect": {
+                  "height": 76,
+                  "width": 231.59375,
+                  "x": 65.3984375,
+                  "y": 471.6328125
+                },
+                "scrollWidth": 230,
+                "selected": true,
+                "text": "語品牌语气与用字✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 230,
+                "rect": {
+                  "height": 76,
+                  "width": 231.6015625,
+                  "x": 470.9921875,
+                  "y": 473.6328125
+                },
+                "scrollWidth": 230,
+                "selected": false,
+                "text": "交提案交接方式✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 230,
+                "rect": {
+                  "height": 76,
+                  "width": 231.6015625,
+                  "x": 470.9921875,
+                  "y": 573.6328125
+                },
+                "scrollWidth": 230,
+                "selected": false,
+                "text": "規素材命名规则✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-knowledge",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "团队知识",
+            "canvas": {
+              "height": 176,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 474.1328125
+            },
+            "columns": "231.594px 150px 231.602px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "交提案交接方式✓",
+              "within": true
+            },
+            "heading": "团队知识",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 230,
+                "rect": {
+                  "height": 76,
+                  "width": 231.59375,
+                  "x": 65.3984375,
+                  "y": 472.1328125
+                },
+                "scrollWidth": 230,
+                "selected": false,
+                "text": "語品牌语气与用字✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 230,
+                "rect": {
+                  "height": 76,
+                  "width": 231.6015625,
+                  "x": 470.9921875,
+                  "y": 474.1328125
+                },
+                "scrollWidth": 230,
+                "selected": true,
+                "text": "交提案交接方式✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 230,
+                "rect": {
+                  "height": 76,
+                  "width": 231.6015625,
+                  "x": 470.9921875,
+                  "y": 574.1328125
+                },
+                "scrollWidth": 230,
+                "selected": false,
+                "text": "規素材命名规则✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-knowledge",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "团队知识",
+            "canvas": {
+              "height": 176,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 474.1328125
+            },
+            "columns": "231.594px 150px 231.602px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "規素材命名规则✓",
+              "within": true
+            },
+            "heading": "团队知识",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 230,
+                "rect": {
+                  "height": 76,
+                  "width": 231.59375,
+                  "x": 65.3984375,
+                  "y": 472.1328125
+                },
+                "scrollWidth": 230,
+                "selected": false,
+                "text": "語品牌语气与用字✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 230,
+                "rect": {
+                  "height": 76,
+                  "width": 231.6015625,
+                  "x": 470.9921875,
+                  "y": 474.1328125
+                },
+                "scrollWidth": 230,
+                "selected": false,
+                "text": "交提案交接方式✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 230,
+                "rect": {
+                  "height": 76,
+                  "width": 231.6015625,
+                  "x": 470.9921875,
+                  "y": 574.1328125
+                },
+                "scrollWidth": 230,
+                "selected": true,
+                "text": "規素材命名规则✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-knowledge",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "项目",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "1fr 150px 1fr",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "项目",
+          "within": false
+        },
+        "heading": "团队知识",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "語品牌语气与用字✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "交提案交接方式✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "規素材命名规则✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-knowledge",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      }
+    },
+    {
+      "product": "space",
+      "kind": "workflow",
+      "initial": {
+        "active": "工作流程",
+        "canvas": {
+          "height": 146,
+          "width": 637.1953125,
+          "x": 65.3984375,
+          "y": 732.1328125
+        },
+        "columns": "204.398px 204.398px 204.398px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "工作流程",
+          "within": false
+        },
+        "heading": "工作流程",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(239, 230, 214)",
+            "border": "rgb(48, 47, 43)",
+            "clientWidth": 202,
+            "rect": {
+              "height": 146,
+              "width": 204.3984375,
+              "x": 65.3984375,
+              "y": 730.1328125
+            },
+            "scrollWidth": 202,
+            "selected": true,
+            "text": "提交内容提交 → 指派负责人→",
+            "transform": "matrix(1, 0, 0, 1, 0, -2)"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 202,
+            "rect": {
+              "height": 146,
+              "width": 204.3984375,
+              "x": 281.796875,
+              "y": 732.1328125
+            },
+            "scrollWidth": 202,
+            "selected": false,
+            "text": "審核负责人审核 → 留下意见→",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 202,
+            "rect": {
+              "height": 146,
+              "width": 204.3984375,
+              "x": 498.1953125,
+              "y": 732.1328125
+            },
+            "scrollWidth": 202,
+            "selected": false,
+            "text": "發布核准发布 → 通知团队→",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-workflow",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "工作流程",
+            "canvas": {
+              "height": 146,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 441.1328125
+            },
+            "columns": "204.398px 204.398px 204.398px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "提交内容提交 → 指派负责人→",
+              "within": true
+            },
+            "heading": "工作流程",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(239, 230, 214)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 146,
+                  "width": 204.3984375,
+                  "x": 65.3984375,
+                  "y": 439.1328125
+                },
+                "scrollWidth": 202,
+                "selected": true,
+                "text": "提交内容提交 → 指派负责人→",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 146,
+                  "width": 204.3984375,
+                  "x": 281.796875,
+                  "y": 441.1328125
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "審核负责人审核 → 留下意见→",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 146,
+                  "width": 204.3984375,
+                  "x": 498.1953125,
+                  "y": 441.1328125
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "發布核准发布 → 通知团队→",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-workflow",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "工作流程",
+            "canvas": {
+              "height": 146,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 439.1328125
+            },
+            "columns": "204.398px 204.398px 204.398px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "審核负责人审核 → 留下意见→",
+              "within": true
+            },
+            "heading": "工作流程",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(239, 230, 214)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 146,
+                  "width": 204.3984375,
+                  "x": 65.3984375,
+                  "y": 437.1328125
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "提交内容提交 → 指派负责人→",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 146,
+                  "width": 204.3984375,
+                  "x": 281.796875,
+                  "y": 439.1328125
+                },
+                "scrollWidth": 202,
+                "selected": true,
+                "text": "審核负责人审核 → 留下意见→",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 146,
+                  "width": 204.3984375,
+                  "x": 498.1953125,
+                  "y": 439.1328125
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "發布核准发布 → 通知团队→",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-workflow",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "工作流程",
+            "canvas": {
+              "height": 146,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 439.1328125
+            },
+            "columns": "204.398px 204.398px 204.398px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "發布核准发布 → 通知团队→",
+              "within": true
+            },
+            "heading": "工作流程",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(240, 231, 216)",
+                "border": "rgb(60, 59, 54)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 146,
+                  "width": 204.3984375,
+                  "x": 65.3984375,
+                  "y": 437.26953125
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "提交内容提交 → 指派负责人→",
+                "transform": "matrix(1, 0, 0, 1, 0, -1.86324)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 146,
+                  "width": 204.3984375,
+                  "x": 281.796875,
+                  "y": 439.1328125
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "審核负责人审核 → 留下意见→",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 146,
+                  "width": 204.3984375,
+                  "x": 498.1953125,
+                  "y": 439.1328125
+                },
+                "scrollWidth": 202,
+                "selected": true,
+                "text": "發布核准发布 → 通知团队→",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-workflow",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "项目",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "repeat(3, 1fr)",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "项目",
+          "within": false
+        },
+        "heading": "工作流程",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "提交内容提交 → 指派负责人→",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "審核负责人审核 → 留下意见→",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(239, 230, 214)",
+            "border": "rgb(48, 47, 43)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "發布核准发布 → 通知团队→",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-workflow",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      }
+    },
+    {
+      "product": "files",
+      "kind": "sharing",
+      "initial": {
+        "active": "共享链接",
+        "canvas": {
+          "height": 256.984375,
+          "width": 637.1953125,
+          "x": 65.3984375,
+          "y": 732.34375
+        },
+        "columns": "637.195px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "共享链接",
+          "within": false
+        },
+        "heading": "共享链接",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 635,
+            "rect": {
+              "height": 80.328125,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 732.34375
+            },
+            "scrollWidth": 635,
+            "selected": false,
+            "text": "外部品牌提案.pdf3 天后到期✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 635,
+            "rect": {
+              "height": 80.328125,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 820.671875
+            },
+            "scrollWidth": 635,
+            "selected": false,
+            "text": "內部交接清单.xlsx仅限组织内✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 635,
+            "rect": {
+              "height": 80.328125,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 909
+            },
+            "scrollWidth": 635,
+            "selected": false,
+            "text": "期限合作合同.docx明天到期✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-sharing",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "共享链接",
+            "canvas": {
+              "height": 256.984375,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 471.84375
+            },
+            "columns": "637.195px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "外部品牌提案.pdf3 天后到期✓",
+              "within": true
+            },
+            "heading": "共享链接",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 635,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 637.1953125,
+                  "x": 65.3984375,
+                  "y": 469.84375
+                },
+                "scrollWidth": 635,
+                "selected": true,
+                "text": "外部品牌提案.pdf3 天后到期✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 635,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 637.1953125,
+                  "x": 65.3984375,
+                  "y": 560.171875
+                },
+                "scrollWidth": 635,
+                "selected": false,
+                "text": "內部交接清单.xlsx仅限组织内✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 635,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 637.1953125,
+                  "x": 65.3984375,
+                  "y": 648.5
+                },
+                "scrollWidth": 635,
+                "selected": false,
+                "text": "期限合作合同.docx明天到期✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-sharing",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "共享链接",
+            "canvas": {
+              "height": 256.984375,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 470.34375
+            },
+            "columns": "637.195px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "內部交接清单.xlsx仅限组织内✓",
+              "within": true
+            },
+            "heading": "共享链接",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 635,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 637.1953125,
+                  "x": 65.3984375,
+                  "y": 468.34375
+                },
+                "scrollWidth": 635,
+                "selected": false,
+                "text": "外部品牌提案.pdf3 天后到期✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 635,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 637.1953125,
+                  "x": 65.3984375,
+                  "y": 558.671875
+                },
+                "scrollWidth": 635,
+                "selected": true,
+                "text": "內部交接清单.xlsx仅限组织内✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 635,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 637.1953125,
+                  "x": 65.3984375,
+                  "y": 647
+                },
+                "scrollWidth": 635,
+                "selected": false,
+                "text": "期限合作合同.docx明天到期✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-sharing",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "共享链接",
+            "canvas": {
+              "height": 256.984375,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 464.34375
+            },
+            "columns": "637.195px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "期限合作合同.docx明天到期✓",
+              "within": true
+            },
+            "heading": "共享链接",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(248, 245, 237)",
+                "border": "rgb(62, 61, 56)",
+                "clientWidth": 635,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 637.1953125,
+                  "x": 65.3984375,
+                  "y": 462.5078125
+                },
+                "scrollWidth": 635,
+                "selected": false,
+                "text": "外部品牌提案.pdf3 天后到期✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -1.83602)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 635,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 637.1953125,
+                  "x": 65.3984375,
+                  "y": 552.671875
+                },
+                "scrollWidth": 635,
+                "selected": false,
+                "text": "內部交接清单.xlsx仅限组织内✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 635,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 637.1953125,
+                  "x": 65.3984375,
+                  "y": 641
+                },
+                "scrollWidth": 635,
+                "selected": true,
+                "text": "期限合作合同.docx明天到期✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-sharing",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "团队文件",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "1fr",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "团队文件",
+          "within": false
+        },
+        "heading": "共享链接",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "外部品牌提案.pdf3 天后到期✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "內部交接清单.xlsx仅限组织内✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "期限合作合同.docx明天到期✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-sharing",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      }
+    },
+    {
+      "product": "files",
+      "kind": "backup",
+      "initial": {
+        "active": "备份与恢复",
+        "canvas": {
+          "height": 261.984375,
+          "width": 637.1953125,
+          "x": 65.3984375,
+          "y": 732.34375
+        },
+        "columns": "613.195px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "备份与恢复",
+          "within": false
+        },
+        "heading": "备份与恢复",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 613,
+            "rect": {
+              "height": 79.328125,
+              "width": 613.1953125,
+              "x": 89.3984375,
+              "y": 732.34375
+            },
+            "scrollWidth": 613,
+            "selected": false,
+            "text": "即時最近备份今天 02:00✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 613,
+            "rect": {
+              "height": 79.328125,
+              "width": 613.1953125,
+              "x": 89.3984375,
+              "y": 823.671875
+            },
+            "scrollWidth": 613,
+            "selected": false,
+            "text": "30D保留范围30 个每日恢复点✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 613,
+            "rect": {
+              "height": 79.328125,
+              "width": 613.1953125,
+              "x": 89.3984375,
+              "y": 915
+            },
+            "scrollWidth": 613,
+            "selected": false,
+            "text": "驗證恢复演练2026 年 9 月 8 日完成✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-backup",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "备份与恢复",
+            "canvas": {
+              "height": 261.984375,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 472.34375
+            },
+            "columns": "613.195px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "即時最近备份今天 02:00✓",
+              "within": true
+            },
+            "heading": "备份与恢复",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 613,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 613.1953125,
+                  "x": 89.3984375,
+                  "y": 470.34375
+                },
+                "scrollWidth": 613,
+                "selected": true,
+                "text": "即時最近备份今天 02:00✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 613,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 613.1953125,
+                  "x": 89.3984375,
+                  "y": 563.671875
+                },
+                "scrollWidth": 613,
+                "selected": false,
+                "text": "30D保留范围30 个每日恢复点✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 613,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 613.1953125,
+                  "x": 89.3984375,
+                  "y": 655
+                },
+                "scrollWidth": 613,
+                "selected": false,
+                "text": "驗證恢复演练2026 年 9 月 8 日完成✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-backup",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "备份与恢复",
+            "canvas": {
+              "height": 261.984375,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 470.84375
+            },
+            "columns": "613.195px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "30D保留范围30 个每日恢复点✓",
+              "within": true
+            },
+            "heading": "备份与恢复",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 613,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 613.1953125,
+                  "x": 89.3984375,
+                  "y": 468.84375
+                },
+                "scrollWidth": 613,
+                "selected": false,
+                "text": "即時最近备份今天 02:00✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 613,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 613.1953125,
+                  "x": 89.3984375,
+                  "y": 562.171875
+                },
+                "scrollWidth": 613,
+                "selected": true,
+                "text": "30D保留范围30 个每日恢复点✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 613,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 613.1953125,
+                  "x": 89.3984375,
+                  "y": 653.5
+                },
+                "scrollWidth": 613,
+                "selected": false,
+                "text": "驗證恢复演练2026 年 9 月 8 日完成✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-backup",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "备份与恢复",
+            "canvas": {
+              "height": 261.984375,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 465.84375
+            },
+            "columns": "613.195px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "驗證恢复演练2026 年 9 月 8 日完成✓",
+              "within": true
+            },
+            "heading": "备份与恢复",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 613,
+                "rect": {
+                  "height": 79.327880859375,
+                  "width": 613.1953125,
+                  "x": 89.3984375,
+                  "y": 463.989501953125
+                },
+                "scrollWidth": 613,
+                "selected": false,
+                "text": "即時最近备份今天 02:00✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -1.85427)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 613,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 613.1953125,
+                  "x": 89.3984375,
+                  "y": 557.171875
+                },
+                "scrollWidth": 613,
+                "selected": false,
+                "text": "30D保留范围30 个每日恢复点✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 613,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 613.1953125,
+                  "x": 89.3984375,
+                  "y": 648.5
+                },
+                "scrollWidth": 613,
+                "selected": true,
+                "text": "驗證恢复演练2026 年 9 月 8 日完成✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-backup",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "团队文件",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "1fr",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "团队文件",
+          "within": false
+        },
+        "heading": "备份与恢复",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "即時最近备份今天 02:00✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "30D保留范围30 个每日恢复点✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "驗證恢复演练2026 年 9 月 8 日完成✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-backup",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      }
+    },
+    {
+      "product": "shield",
+      "kind": "identity",
+      "initial": {
+        "active": "身份与设备",
+        "canvas": {
+          "height": 189.65625,
+          "width": 637.1953125,
+          "x": 65.3984375,
+          "y": 732.265625
+        },
+        "columns": "204.398px 204.398px 204.398px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "身份与设备",
+          "within": false
+        },
+        "heading": "身份与设备",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 202,
+            "rect": {
+              "height": 189.65625,
+              "width": 204.3984375,
+              "x": 65.3984375,
+              "y": 732.265625
+            },
+            "scrollWidth": 202,
+            "selected": false,
+            "text": "YLYL营销管理员 · MacBook 符合条件✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 202,
+            "rect": {
+              "height": 189.65625,
+              "width": 204.3984375,
+              "x": 281.796875,
+              "y": 732.265625
+            },
+            "scrollWidth": 202,
+            "selected": false,
+            "text": "CWCW内容编辑 · Windows 符合条件✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 202,
+            "rect": {
+              "height": 189.65625,
+              "width": 204.3984375,
+              "x": 498.1953125,
+              "y": 732.265625
+            },
+            "scrollWidth": 202,
+            "selected": false,
+            "text": "KTKT外部协作者 · 未知设备待验证!",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-identity",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "身份与设备",
+            "canvas": {
+              "height": 189.65625,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 417.265625
+            },
+            "columns": "204.398px 204.398px 204.398px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "YLYL营销管理员 · MacBook 符合条件✓",
+              "within": true
+            },
+            "heading": "身份与设备",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 189.65625,
+                  "width": 204.3984375,
+                  "x": 65.3984375,
+                  "y": 415.265625
+                },
+                "scrollWidth": 202,
+                "selected": true,
+                "text": "YLYL营销管理员 · MacBook 符合条件✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 189.65625,
+                  "width": 204.3984375,
+                  "x": 281.796875,
+                  "y": 417.265625
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "CWCW内容编辑 · Windows 符合条件✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 189.65625,
+                  "width": 204.3984375,
+                  "x": 498.1953125,
+                  "y": 417.265625
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "KTKT外部协作者 · 未知设备待验证!",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-identity",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "身份与设备",
+            "canvas": {
+              "height": 189.65625,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 417.265625
+            },
+            "columns": "204.398px 204.398px 204.398px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "CWCW内容编辑 · Windows 符合条件✓",
+              "within": true
+            },
+            "heading": "身份与设备",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 189.65625,
+                  "width": 204.3984375,
+                  "x": 65.3984375,
+                  "y": 415.265625
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "YLYL营销管理员 · MacBook 符合条件✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 189.65625,
+                  "width": 204.3984375,
+                  "x": 281.796875,
+                  "y": 417.265625
+                },
+                "scrollWidth": 202,
+                "selected": true,
+                "text": "CWCW内容编辑 · Windows 符合条件✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 189.65625,
+                  "width": 204.3984375,
+                  "x": 498.1953125,
+                  "y": 417.265625
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "KTKT外部协作者 · 未知设备待验证!",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-identity",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "身份与设备",
+            "canvas": {
+              "height": 189.65625,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 417.265625
+            },
+            "columns": "204.398px 204.398px 204.398px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "KTKT外部协作者 · 未知设备待验证!",
+              "within": true
+            },
+            "heading": "身份与设备",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 189.65625,
+                  "width": 204.3984375,
+                  "x": 65.3984375,
+                  "y": 415.265625
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "YLYL营销管理员 · MacBook 符合条件✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 189.65625,
+                  "width": 204.3984375,
+                  "x": 281.796875,
+                  "y": 417.265625
+                },
+                "scrollWidth": 202,
+                "selected": false,
+                "text": "CWCW内容编辑 · Windows 符合条件✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 202,
+                "rect": {
+                  "height": 189.65625,
+                  "width": 204.3984375,
+                  "x": 498.1953125,
+                  "y": 417.265625
+                },
+                "scrollWidth": 202,
+                "selected": true,
+                "text": "KTKT外部协作者 · 未知设备待验证!",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-identity",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "访问策略",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "repeat(3, 1fr)",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "访问策略",
+          "within": false
+        },
+        "heading": "身份与设备",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "YLYL营销管理员 · MacBook 符合条件✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "CWCW内容编辑 · Windows 符合条件✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "KTKT外部协作者 · 未知设备待验证!",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-identity",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      }
+    },
+    {
+      "product": "shield",
+      "kind": "audit",
+      "initial": {
+        "active": "审计记录",
+        "canvas": {
+          "height": 237.984375,
+          "width": 637.1953125,
+          "x": 65.3984375,
+          "y": 732.265625
+        },
+        "columns": "617.195px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "审计记录",
+          "within": false
+        },
+        "heading": "审计记录",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 617,
+            "rect": {
+              "height": 79.328125,
+              "width": 617.1953125,
+              "x": 85.3984375,
+              "y": 732.265625
+            },
+            "scrollWidth": 617,
+            "selected": false,
+            "text": "●09:18允许访问 · YL✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 617,
+            "rect": {
+              "height": 79.328125,
+              "width": 617.1953125,
+              "x": 85.3984375,
+              "y": 811.59375
+            },
+            "scrollWidth": 617,
+            "selected": false,
+            "text": "◆08:42要求进一步验证 · KT✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 617,
+            "rect": {
+              "height": 79.328125,
+              "width": 617.1953125,
+              "x": 85.3984375,
+              "y": 890.921875
+            },
+            "scrollWidth": 617,
+            "selected": false,
+            "text": "○08:05策略已更新 · CW✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-audit",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "审计记录",
+            "canvas": {
+              "height": 237.984375,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 472.265625
+            },
+            "columns": "617.195px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "●09:18允许访问 · YL✓",
+              "within": true
+            },
+            "heading": "审计记录",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 617,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 617.1953125,
+                  "x": 85.3984375,
+                  "y": 472.265625
+                },
+                "scrollWidth": 617,
+                "selected": true,
+                "text": "●09:18允许访问 · YL✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 617,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 617.1953125,
+                  "x": 85.3984375,
+                  "y": 551.59375
+                },
+                "scrollWidth": 617,
+                "selected": false,
+                "text": "◆08:42要求进一步验证 · KT✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 617,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 617.1953125,
+                  "x": 85.3984375,
+                  "y": 630.921875
+                },
+                "scrollWidth": 617,
+                "selected": false,
+                "text": "○08:05策略已更新 · CW✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-audit",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "审计记录",
+            "canvas": {
+              "height": 237.984375,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 472.265625
+            },
+            "columns": "617.195px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "◆08:42要求进一步验证 · KT✓",
+              "within": true
+            },
+            "heading": "审计记录",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgba(247, 244, 236, 0.93)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 617,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 617.1953125,
+                  "x": 85.3984375,
+                  "y": 472.1279296875
+                },
+                "scrollWidth": 617,
+                "selected": false,
+                "text": "●09:18允许访问 · YL✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -0.13761)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 617,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 617.1953125,
+                  "x": 85.3984375,
+                  "y": 551.59375
+                },
+                "scrollWidth": 617,
+                "selected": true,
+                "text": "◆08:42要求进一步验证 · KT✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 617,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 617.1953125,
+                  "x": 85.3984375,
+                  "y": 630.921875
+                },
+                "scrollWidth": 617,
+                "selected": false,
+                "text": "○08:05策略已更新 · CW✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-audit",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "审计记录",
+            "canvas": {
+              "height": 237.984375,
+              "width": 637.1953125,
+              "x": 65.3984375,
+              "y": 472.265625
+            },
+            "columns": "617.195px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "○08:05策略已更新 · CW✓",
+              "within": true
+            },
+            "heading": "审计记录",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgba(247, 244, 236, 0.753)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 617,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 617.1953125,
+                  "x": 85.3984375,
+                  "y": 472.265625
+                },
+                "scrollWidth": 617,
+                "selected": false,
+                "text": "●09:18允许访问 · YL✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 617,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 617.1953125,
+                  "x": 85.3984375,
+                  "y": 551.59375
+                },
+                "scrollWidth": 617,
+                "selected": false,
+                "text": "◆08:42要求进一步验证 · KT✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 617,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 617.1953125,
+                  "x": 85.3984375,
+                  "y": 630.921875
+                },
+                "scrollWidth": 617,
+                "selected": true,
+                "text": "○08:05策略已更新 · CW✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-audit",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 1024,
+              "scrollWidth": 768,
+              "width": 768
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "访问策略",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "1fr",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "访问策略",
+          "within": false
+        },
+        "heading": "审计记录",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "●09:18允许访问 · YL✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "◆08:42要求进一步验证 · KT✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "○08:05策略已更新 · CW✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-audit",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 1024,
+          "scrollWidth": 768,
+          "width": 768
+        }
+      }
+    }
+  ],
+  "errors": []
+}

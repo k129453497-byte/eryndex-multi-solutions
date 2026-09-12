@@ -1,0 +1,160 @@
+[
+  {
+    "product": "files",
+    "kind": "backup",
+    "state": {
+      "active": "Backup & restore",
+      "canvas": {
+        "height": 261.984375,
+        "width": 304,
+        "x": 43,
+        "y": 564.28125
+      },
+      "columns": "280px",
+      "focus": {
+        "outline": "rgb(48, 47, 43) none 3px",
+        "tag": "MAIN",
+        "text": "MAIN",
+        "within": false
+      },
+      "heading": "Backup & restore",
+      "hidden": false,
+      "items": [
+        {
+          "ariaPressed": null,
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+          "clientWidth": 280,
+          "rect": {
+            "height": 79.328125,
+            "width": 280,
+            "x": 67,
+            "y": 564.28125
+          },
+          "scrollWidth": 280,
+          "selected": false,
+          "text": "即時Latest backupToday 02:00✓",
+          "transform": "none"
+        },
+        {
+          "ariaPressed": null,
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+          "clientWidth": 280,
+          "rect": {
+            "height": 79.328125,
+            "width": 280,
+            "x": 67,
+            "y": 653.609375
+          },
+          "scrollWidth": 280,
+          "selected": true,
+          "text": "30DRetention30 daily restore points✓",
+          "transform": "matrix(1, 0, 0, 1, 0, -2)"
+        },
+        {
+          "ariaPressed": null,
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+          "clientWidth": 280,
+          "rect": {
+            "height": 79.328125,
+            "width": 280,
+            "x": 67,
+            "y": 746.9375
+          },
+          "scrollWidth": 280,
+          "selected": false,
+          "text": "驗證Recovery drillCompleted 8 Sep 2026✓",
+          "transform": "none"
+        }
+      ],
+      "layout": "module-canvas module-backup",
+      "primaryVisible": false,
+      "viewport": {
+        "height": 844,
+        "scrollWidth": 390,
+        "width": 390
+      }
+    }
+  },
+  {
+    "product": "shield",
+    "kind": "audit",
+    "state": {
+      "active": "Audit records",
+      "canvas": {
+        "height": 237.984375,
+        "width": 304,
+        "x": 43,
+        "y": 538.96875
+      },
+      "columns": "284px",
+      "focus": {
+        "outline": "rgb(48, 47, 43) none 3px",
+        "tag": "MAIN",
+        "text": "MAIN",
+        "within": false
+      },
+      "heading": "Audit records",
+      "hidden": false,
+      "items": [
+        {
+          "ariaPressed": null,
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+          "clientWidth": 284,
+          "rect": {
+            "height": 79.328125,
+            "width": 284,
+            "x": 63,
+            "y": 538.96875
+          },
+          "scrollWidth": 284,
+          "selected": false,
+          "text": "●09:18Access allowed · YL✓",
+          "transform": "none"
+        },
+        {
+          "ariaPressed": null,
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+          "clientWidth": 284,
+          "rect": {
+            "height": 79.328125,
+            "width": 284,
+            "x": 63,
+            "y": 616.296875
+          },
+          "scrollWidth": 284,
+          "selected": true,
+          "text": "◆08:42Verification required · KT✓",
+          "transform": "matrix(1, 0, 0, 1, 0, -2)"
+        },
+        {
+          "ariaPressed": null,
+          "background": "rgba(0, 0, 0, 0)",
+          "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+          "clientWidth": 284,
+          "rect": {
+            "height": 79.328125,
+            "width": 284,
+            "x": 63,
+            "y": 697.625
+          },
+          "scrollWidth": 284,
+          "selected": false,
+          "text": "○08:05Policy updated · CW✓",
+          "transform": "none"
+        }
+      ],
+      "layout": "module-canvas module-audit",
+      "primaryVisible": false,
+      "viewport": {
+        "height": 844,
+        "scrollWidth": 390,
+        "width": 390
+      }
+    }
+  }
+]

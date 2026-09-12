@@ -1,0 +1,2348 @@
+{
+  "lang": "en",
+  "width": 390,
+  "height": 844,
+  "panels": [
+    {
+      "product": "space",
+      "kind": "knowledge",
+      "initial": {
+        "active": "Team knowledge",
+        "canvas": {
+          "height": 396,
+          "width": 304,
+          "x": 43,
+          "y": 662.216796875
+        },
+        "columns": "304px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Team knowledge",
+          "within": false
+        },
+        "heading": "Team knowledge",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 76,
+              "width": 304,
+              "x": 43,
+              "y": 806.216796875
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "語Brand voice and language✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 76,
+              "width": 304,
+              "x": 43,
+              "y": 894.216796875
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "交Proposal handoff✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 76,
+              "width": 304,
+              "x": 43,
+              "y": 982.216796875
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "規Asset naming rules✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-knowledge",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "Team knowledge",
+            "canvas": {
+              "height": 396,
+              "width": 304,
+              "x": 43,
+              "y": 239.8046875
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "語Brand voice and language✓",
+              "within": true
+            },
+            "heading": "Team knowledge",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 76,
+                  "width": 304,
+                  "x": 43,
+                  "y": 381.8046875
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "語Brand voice and language✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 76,
+                  "width": 304,
+                  "x": 43,
+                  "y": 471.8046875
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "交Proposal handoff✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 76,
+                  "width": 304,
+                  "x": 43,
+                  "y": 559.8046875
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "規Asset naming rules✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-knowledge",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "Team knowledge",
+            "canvas": {
+              "height": 396,
+              "width": 304,
+              "x": 43,
+              "y": 239.8046875
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "交Proposal handoff✓",
+              "within": true
+            },
+            "heading": "Team knowledge",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 76,
+                  "width": 304,
+                  "x": 43,
+                  "y": 381.8046875
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "語Brand voice and language✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 76,
+                  "width": 304,
+                  "x": 43,
+                  "y": 471.8046875
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "交Proposal handoff✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 76,
+                  "width": 304,
+                  "x": 43,
+                  "y": 559.8046875
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "規Asset naming rules✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-knowledge",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "Team knowledge",
+            "canvas": {
+              "height": 396,
+              "width": 304,
+              "x": 43,
+              "y": 238.3046875
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "規Asset naming rules✓",
+              "within": true
+            },
+            "heading": "Team knowledge",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 76,
+                  "width": 304,
+                  "x": 43,
+                  "y": 380.3046875
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "語Brand voice and language✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 76,
+                  "width": 304,
+                  "x": 43,
+                  "y": 470.3046875
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "交Proposal handoff✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 76,
+                  "width": 304,
+                  "x": 43,
+                  "y": 558.3046875
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "規Asset naming rules✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-knowledge",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "Projects",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "1fr",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Projects",
+          "within": false
+        },
+        "heading": "Team knowledge",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "語Brand voice and language✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "交Proposal handoff✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "規Asset naming rules✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-knowledge",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      }
+    },
+    {
+      "product": "space",
+      "kind": "workflow",
+      "initial": {
+        "active": "Workflows",
+        "canvas": {
+          "height": 462,
+          "width": 304,
+          "x": 43,
+          "y": 687
+        },
+        "columns": "304px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Workflows",
+          "within": false
+        },
+        "heading": "Workflows",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(239, 230, 214)",
+            "border": "rgb(48, 47, 43)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 146,
+              "width": 304,
+              "x": 43,
+              "y": 685
+            },
+            "scrollWidth": 302,
+            "selected": true,
+            "text": "提交Content submitted → Assign owner→",
+            "transform": "matrix(1, 0, 0, 1, 0, -2)"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 146,
+              "width": 304,
+              "x": 43,
+              "y": 845
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "審核Owner review → Record feedback→",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 146,
+              "width": 304,
+              "x": 43,
+              "y": 1003
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "發布Approval → Notify team→",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-workflow",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "Workflows",
+            "canvas": {
+              "height": 462,
+              "width": 304,
+              "x": 43,
+              "y": 351
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "提交Content submitted → Assign owner→",
+              "within": true
+            },
+            "heading": "Workflows",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(239, 230, 214)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 146,
+                  "width": 304,
+                  "x": 43,
+                  "y": 349
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "提交Content submitted → Assign owner→",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 146,
+                  "width": 304,
+                  "x": 43,
+                  "y": 509
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "審核Owner review → Record feedback→",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 146,
+                  "width": 304,
+                  "x": 43,
+                  "y": 667
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "發布Approval → Notify team→",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-workflow",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "Workflows",
+            "canvas": {
+              "height": 462,
+              "width": 304,
+              "x": 43,
+              "y": 350
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "審核Owner review → Record feedback→",
+              "within": true
+            },
+            "heading": "Workflows",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(239, 230, 214)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 146,
+                  "width": 304,
+                  "x": 43,
+                  "y": 348
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "提交Content submitted → Assign owner→",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 146,
+                  "width": 304,
+                  "x": 43,
+                  "y": 508
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "審核Owner review → Record feedback→",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 146,
+                  "width": 304,
+                  "x": 43,
+                  "y": 666
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "發布Approval → Notify team→",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-workflow",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "Workflows",
+            "canvas": {
+              "height": 462,
+              "width": 304,
+              "x": 43,
+              "y": 350
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "發布Approval → Notify team→",
+              "within": true
+            },
+            "heading": "Workflows",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(239, 230, 214)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 146,
+                  "width": 304,
+                  "x": 43,
+                  "y": 348
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "提交Content submitted → Assign owner→",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 146,
+                  "width": 304,
+                  "x": 43,
+                  "y": 508
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "審核Owner review → Record feedback→",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(251, 248, 241)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 146,
+                  "width": 304,
+                  "x": 43,
+                  "y": 666
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "發布Approval → Notify team→",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-workflow",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "Projects",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "1fr",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Projects",
+          "within": false
+        },
+        "heading": "Workflows",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "提交Content submitted → Assign owner→",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(251, 248, 241)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "審核Owner review → Record feedback→",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(239, 230, 214)",
+            "border": "rgb(48, 47, 43)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "發布Approval → Notify team→",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-workflow",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      }
+    },
+    {
+      "product": "files",
+      "kind": "sharing",
+      "initial": {
+        "active": "Shared links",
+        "canvas": {
+          "height": 277.984375,
+          "width": 304,
+          "x": 43,
+          "y": 661.5859375
+        },
+        "columns": "304px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Shared links",
+          "within": false
+        },
+        "heading": "Shared links",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 80.328125,
+              "width": 304,
+              "x": 43,
+              "y": 661.5859375
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "外部Brand proposal.pdfExpires in 3 days✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 80.328125,
+              "width": 304,
+              "x": 43,
+              "y": 749.9140625
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "內部Handoff checklist.xlsxOrganization only✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 101.328125,
+              "width": 304,
+              "x": 43,
+              "y": 838.2421875
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "期限Collaboration agreement.docxExpires tomorrow✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-sharing",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "Shared links",
+            "canvas": {
+              "height": 277.984375,
+              "width": 304,
+              "x": 43,
+              "y": 381.5859375
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "外部Brand proposal.pdfExpires in 3 days✓",
+              "within": true
+            },
+            "heading": "Shared links",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 379.5859375
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "外部Brand proposal.pdfExpires in 3 days✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 469.9140625
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "內部Handoff checklist.xlsxOrganization only✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 101.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 558.2421875
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "期限Collaboration agreement.docxExpires tomorrow✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-sharing",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "Shared links",
+            "canvas": {
+              "height": 277.984375,
+              "width": 304,
+              "x": 43,
+              "y": 380.0859375
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "內部Handoff checklist.xlsxOrganization only✓",
+              "within": true
+            },
+            "heading": "Shared links",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 378.0859375
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "外部Brand proposal.pdfExpires in 3 days✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 468.4140625
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "內部Handoff checklist.xlsxOrganization only✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 101.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 556.7421875
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "期限Collaboration agreement.docxExpires tomorrow✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-sharing",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "Shared links",
+            "canvas": {
+              "height": 277.984375,
+              "width": 304,
+              "x": 43,
+              "y": 374.0859375
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "期限Collaboration agreement.docxExpires tomorrow✓",
+              "within": true
+            },
+            "heading": "Shared links",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(248, 245, 237)",
+                "border": "rgb(61, 60, 56)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 372.2392578125
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "外部Brand proposal.pdfExpires in 3 days✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -1.84684)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 80.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 462.4140625
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "內部Handoff checklist.xlsxOrganization only✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 101.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 550.7421875
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "期限Collaboration agreement.docxExpires tomorrow✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-sharing",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "Team files",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "1fr",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Team files",
+          "within": false
+        },
+        "heading": "Shared links",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "外部Brand proposal.pdfExpires in 3 days✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "內部Handoff checklist.xlsxOrganization only✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "期限Collaboration agreement.docxExpires tomorrow✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-sharing",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      }
+    },
+    {
+      "product": "files",
+      "kind": "backup",
+      "initial": {
+        "active": "Backup & restore",
+        "canvas": {
+          "height": 261.984375,
+          "width": 304,
+          "x": 43,
+          "y": 686.78125
+        },
+        "columns": "280px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Backup & restore",
+          "within": false
+        },
+        "heading": "Backup & restore",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 280,
+            "rect": {
+              "height": 79.328125,
+              "width": 280,
+              "x": 67,
+              "y": 686.78125
+            },
+            "scrollWidth": 280,
+            "selected": false,
+            "text": "即時Latest backupToday 02:00✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 280,
+            "rect": {
+              "height": 79.328125,
+              "width": 280,
+              "x": 67,
+              "y": 778.109375
+            },
+            "scrollWidth": 280,
+            "selected": false,
+            "text": "30DRetention30 daily restore points✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 280,
+            "rect": {
+              "height": 79.328125,
+              "width": 280,
+              "x": 67,
+              "y": 869.4375
+            },
+            "scrollWidth": 280,
+            "selected": false,
+            "text": "驗證Recovery drillCompleted 8 Sep 2026✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-backup",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "Backup & restore",
+            "canvas": {
+              "height": 261.984375,
+              "width": 304,
+              "x": 43,
+              "y": 382.28125
+            },
+            "columns": "280px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "即時Latest backupToday 02:00✓",
+              "within": true
+            },
+            "heading": "Backup & restore",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 280,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 280,
+                  "x": 67,
+                  "y": 380.28125
+                },
+                "scrollWidth": 280,
+                "selected": true,
+                "text": "即時Latest backupToday 02:00✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 280,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 280,
+                  "x": 67,
+                  "y": 473.609375
+                },
+                "scrollWidth": 280,
+                "selected": false,
+                "text": "30DRetention30 daily restore points✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 280,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 280,
+                  "x": 67,
+                  "y": 564.9375
+                },
+                "scrollWidth": 280,
+                "selected": false,
+                "text": "驗證Recovery drillCompleted 8 Sep 2026✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-backup",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "Backup & restore",
+            "canvas": {
+              "height": 261.984375,
+              "width": 304,
+              "x": 43,
+              "y": 380.78125
+            },
+            "columns": "280px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "30DRetention30 daily restore points✓",
+              "within": true
+            },
+            "heading": "Backup & restore",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 280,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 280,
+                  "x": 67,
+                  "y": 378.78125
+                },
+                "scrollWidth": 280,
+                "selected": false,
+                "text": "即時Latest backupToday 02:00✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 280,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 280,
+                  "x": 67,
+                  "y": 472.109375
+                },
+                "scrollWidth": 280,
+                "selected": true,
+                "text": "30DRetention30 daily restore points✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 280,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 280,
+                  "x": 67,
+                  "y": 563.4375
+                },
+                "scrollWidth": 280,
+                "selected": false,
+                "text": "驗證Recovery drillCompleted 8 Sep 2026✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-backup",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "Backup & restore",
+            "canvas": {
+              "height": 261.984375,
+              "width": 304,
+              "x": 43,
+              "y": 374.28125
+            },
+            "columns": "280px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "驗證Recovery drillCompleted 8 Sep 2026✓",
+              "within": true
+            },
+            "heading": "Backup & restore",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 280,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 280,
+                  "x": 67,
+                  "y": 372.451171875
+                },
+                "scrollWidth": 280,
+                "selected": false,
+                "text": "即時Latest backupToday 02:00✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -1.83039)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 280,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 280,
+                  "x": 67,
+                  "y": 465.4423828125
+                },
+                "scrollWidth": 280,
+                "selected": false,
+                "text": "30DRetention30 daily restore points✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -0.166783)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 280,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 280,
+                  "x": 67,
+                  "y": 556.9375
+                },
+                "scrollWidth": 280,
+                "selected": true,
+                "text": "驗證Recovery drillCompleted 8 Sep 2026✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-backup",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "Team files",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "1fr",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Team files",
+          "within": false
+        },
+        "heading": "Backup & restore",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "即時Latest backupToday 02:00✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "30DRetention30 daily restore points✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "驗證Recovery drillCompleted 8 Sep 2026✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-backup",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      }
+    },
+    {
+      "product": "shield",
+      "kind": "identity",
+      "initial": {
+        "active": "Identity & devices",
+        "canvas": {
+          "height": 542.984375,
+          "width": 304,
+          "x": 43,
+          "y": 661.59375
+        },
+        "columns": "304px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Identity & devices",
+          "within": false
+        },
+        "heading": "Identity & devices",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 173.328125,
+              "width": 304,
+              "x": 43,
+              "y": 661.59375
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "YLYLMarketing admin · MacBook compliant✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 173.328125,
+              "width": 304,
+              "x": 43,
+              "y": 846.921875
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "CWCWContent editor · Windows compliant✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 302,
+            "rect": {
+              "height": 172.328125,
+              "width": 304,
+              "x": 43,
+              "y": 1032.25
+            },
+            "scrollWidth": 302,
+            "selected": false,
+            "text": "KTKTExternal collaborator · Unknown device!",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-identity",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "Identity & devices",
+            "canvas": {
+              "height": 542.984375,
+              "width": 304,
+              "x": 43,
+              "y": 335.09375
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "YLYLMarketing admin · MacBook compliant✓",
+              "within": true
+            },
+            "heading": "Identity & devices",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 173.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 333.09375
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "YLYLMarketing admin · MacBook compliant✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 173.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 520.421875
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "CWCWContent editor · Windows compliant✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 172.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 705.75
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "KTKTExternal collaborator · Unknown device!",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-identity",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "Identity & devices",
+            "canvas": {
+              "height": 542.984375,
+              "width": 304,
+              "x": 43,
+              "y": 335.09375
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "CWCWContent editor · Windows compliant✓",
+              "within": true
+            },
+            "heading": "Identity & devices",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 173.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 333.09375
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "YLYLMarketing admin · MacBook compliant✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 173.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 520.421875
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "CWCWContent editor · Windows compliant✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 172.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 705.75
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "KTKTExternal collaborator · Unknown device!",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-identity",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "Identity & devices",
+            "canvas": {
+              "height": 542.984375,
+              "width": 304,
+              "x": 43,
+              "y": 334.09375
+            },
+            "columns": "304px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "KTKTExternal collaborator · Unknown device!",
+              "within": true
+            },
+            "heading": "Identity & devices",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 173.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 332.09375
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "YLYLMarketing admin · MacBook compliant✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -2)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 173.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 519.421875
+                },
+                "scrollWidth": 302,
+                "selected": false,
+                "text": "CWCWContent editor · Windows compliant✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgb(255, 254, 250)",
+                "border": "rgb(220, 216, 207)",
+                "clientWidth": 302,
+                "rect": {
+                  "height": 172.328125,
+                  "width": 304,
+                  "x": 43,
+                  "y": 704.75
+                },
+                "scrollWidth": 302,
+                "selected": true,
+                "text": "KTKTExternal collaborator · Unknown device!",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-identity",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "Access policies",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "1fr",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Access policies",
+          "within": false
+        },
+        "heading": "Identity & devices",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "YLYLMarketing admin · MacBook compliant✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(255, 254, 250)",
+            "border": "rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "CWCWContent editor · Windows compliant✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgb(247, 244, 236)",
+            "border": "rgb(48, 47, 43)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "KTKTExternal collaborator · Unknown device!",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-identity",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      }
+    },
+    {
+      "product": "shield",
+      "kind": "audit",
+      "initial": {
+        "active": "Audit records",
+        "canvas": {
+          "height": 237.984375,
+          "width": 304,
+          "x": 43,
+          "y": 661.59375
+        },
+        "columns": "284px",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Audit records",
+          "within": false
+        },
+        "heading": "Audit records",
+        "hidden": false,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 284,
+            "rect": {
+              "height": 79.328125,
+              "width": 284,
+              "x": 63,
+              "y": 661.59375
+            },
+            "scrollWidth": 284,
+            "selected": false,
+            "text": "●09:18Access allowed · YL✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 284,
+            "rect": {
+              "height": 79.328125,
+              "width": 284,
+              "x": 63,
+              "y": 740.921875
+            },
+            "scrollWidth": 284,
+            "selected": false,
+            "text": "◆08:42Verification required · KT✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 284,
+            "rect": {
+              "height": 79.328125,
+              "width": 284,
+              "x": 63,
+              "y": 820.25
+            },
+            "scrollWidth": 284,
+            "selected": false,
+            "text": "○08:05Policy updated · CW✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-audit",
+        "primaryVisible": false,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      },
+      "selected": [
+        {
+          "action": "click first",
+          "state": {
+            "active": "Audit records",
+            "canvas": {
+              "height": 237.984375,
+              "width": 304,
+              "x": 43,
+              "y": 382.09375
+            },
+            "columns": "284px",
+            "focus": {
+              "outline": "rgb(48, 47, 43) none 3px",
+              "tag": "BUTTON",
+              "text": "●09:18Access allowed · YL✓",
+              "within": true
+            },
+            "heading": "Audit records",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgb(247, 244, 236)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 284,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 284,
+                  "x": 63,
+                  "y": 382.09375
+                },
+                "scrollWidth": 284,
+                "selected": true,
+                "text": "●09:18Access allowed · YL✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 284,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 284,
+                  "x": 63,
+                  "y": 461.421875
+                },
+                "scrollWidth": 284,
+                "selected": false,
+                "text": "◆08:42Verification required · KT✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 284,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 284,
+                  "x": 63,
+                  "y": 540.75
+                },
+                "scrollWidth": 284,
+                "selected": false,
+                "text": "○08:05Policy updated · CW✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-audit",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Enter second",
+          "state": {
+            "active": "Audit records",
+            "canvas": {
+              "height": 237.984375,
+              "width": 304,
+              "x": 43,
+              "y": 382.09375
+            },
+            "columns": "284px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "◆08:42Verification required · KT✓",
+              "within": true
+            },
+            "heading": "Audit records",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgba(247, 244, 236, 0.918)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 284,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 284,
+                  "x": 63,
+                  "y": 381.92578125
+                },
+                "scrollWidth": 284,
+                "selected": false,
+                "text": "●09:18Access allowed · YL✓",
+                "transform": "matrix(1, 0, 0, 1, 0, -0.168089)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 284,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 284,
+                  "x": 63,
+                  "y": 461.421875
+                },
+                "scrollWidth": 284,
+                "selected": true,
+                "text": "◆08:42Verification required · KT✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 284,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 284,
+                  "x": 63,
+                  "y": 540.75
+                },
+                "scrollWidth": 284,
+                "selected": false,
+                "text": "○08:05Policy updated · CW✓",
+                "transform": "none"
+              }
+            ],
+            "layout": "module-canvas module-audit",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        },
+        {
+          "action": "Space third",
+          "state": {
+            "active": "Audit records",
+            "canvas": {
+              "height": 237.984375,
+              "width": 304,
+              "x": 43,
+              "y": 380.59375
+            },
+            "columns": "284px",
+            "focus": {
+              "outline": "rgb(130, 80, 39) solid 3px",
+              "tag": "BUTTON",
+              "text": "○08:05Policy updated · CW✓",
+              "within": true
+            },
+            "heading": "Audit records",
+            "hidden": false,
+            "items": [
+              {
+                "ariaPressed": null,
+                "background": "rgba(247, 244, 236, 0.737)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 284,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 284,
+                  "x": 63,
+                  "y": 380.59375
+                },
+                "scrollWidth": 284,
+                "selected": false,
+                "text": "●09:18Access allowed · YL✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 284,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 284,
+                  "x": 63,
+                  "y": 459.921875
+                },
+                "scrollWidth": 284,
+                "selected": false,
+                "text": "◆08:42Verification required · KT✓",
+                "transform": "none"
+              },
+              {
+                "ariaPressed": null,
+                "background": "rgba(0, 0, 0, 0)",
+                "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+                "clientWidth": 284,
+                "rect": {
+                  "height": 79.328125,
+                  "width": 284,
+                  "x": 63,
+                  "y": 539.25
+                },
+                "scrollWidth": 284,
+                "selected": true,
+                "text": "○08:05Policy updated · CW✓",
+                "transform": "matrix(1, 0, 0, 1, 0, 0)"
+              }
+            ],
+            "layout": "module-canvas module-audit",
+            "primaryVisible": false,
+            "viewport": {
+              "height": 844,
+              "scrollWidth": 390,
+              "width": 390
+            }
+          }
+        }
+      ],
+      "returned": {
+        "active": "Access policies",
+        "canvas": {
+          "height": 0,
+          "width": 0,
+          "x": 0,
+          "y": 0
+        },
+        "columns": "1fr",
+        "focus": {
+          "outline": "rgb(48, 47, 43) none 3px",
+          "tag": "BUTTON",
+          "text": "Access policies",
+          "within": false
+        },
+        "heading": "Audit records",
+        "hidden": true,
+        "items": [
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "●09:18Access allowed · YL✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": false,
+            "text": "◆08:42Verification required · KT✓",
+            "transform": "none"
+          },
+          {
+            "ariaPressed": null,
+            "background": "rgba(0, 0, 0, 0)",
+            "border": "rgb(48, 47, 43) rgb(48, 47, 43) rgb(220, 216, 207)",
+            "clientWidth": 0,
+            "rect": {
+              "height": 0,
+              "width": 0,
+              "x": 0,
+              "y": 0
+            },
+            "scrollWidth": 0,
+            "selected": true,
+            "text": "○08:05Policy updated · CW✓",
+            "transform": "none"
+          }
+        ],
+        "layout": "module-canvas module-audit",
+        "primaryVisible": true,
+        "viewport": {
+          "height": 844,
+          "scrollWidth": 390,
+          "width": 390
+        }
+      }
+    }
+  ],
+  "errors": []
+}

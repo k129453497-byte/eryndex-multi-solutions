@@ -1,0 +1,539 @@
+[
+  {
+    "product": "space",
+    "kind": "knowledge",
+    "steps": [
+      {
+        "action": "sidebar Enter",
+        "focus": {
+          "item": false,
+          "kind": "knowledge",
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "Team knowledge"
+        }
+      },
+      {
+        "action": "Tab",
+        "focus": {
+          "item": false,
+          "kind": "workflow",
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "Workflows"
+        }
+      },
+      {
+        "action": "Tab",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "語Brand voice and language✓"
+        }
+      },
+      {
+        "action": "Space first",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "語Brand voice and language✓"
+        }
+      },
+      {
+        "action": "Tab Enter second",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "交Proposal handoff✓"
+        }
+      },
+      {
+        "action": "Tab Space third",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "規Asset naming rules✓"
+        }
+      },
+      {
+        "action": "5 Shift Tab to main entry",
+        "focus": {
+          "item": false,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": true,
+          "tag": "BUTTON",
+          "text": "Projects"
+        }
+      }
+    ],
+    "returned": {
+      "hidden": true,
+      "primaryVisible": true,
+      "focus": {
+        "item": false,
+        "kind": null,
+        "outline": "rgb(130, 80, 39) solid 3px",
+        "primary": true,
+        "tag": "BUTTON",
+        "text": "Projects"
+      }
+    }
+  },
+  {
+    "product": "space",
+    "kind": "workflow",
+    "steps": [
+      {
+        "action": "sidebar Enter",
+        "focus": {
+          "item": false,
+          "kind": "workflow",
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "Workflows"
+        }
+      },
+      {
+        "action": "Tab",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "提交Content submitted → Assign owner→"
+        }
+      },
+      {
+        "action": "Space first",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "提交Content submitted → Assign owner→"
+        }
+      },
+      {
+        "action": "Tab Enter second",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "審核Owner review → Record feedback→"
+        }
+      },
+      {
+        "action": "Tab Space third",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "發布Approval → Notify team→"
+        }
+      },
+      {
+        "action": "5 Shift Tab to main entry",
+        "focus": {
+          "item": false,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": true,
+          "tag": "BUTTON",
+          "text": "Projects"
+        }
+      }
+    ],
+    "returned": {
+      "hidden": true,
+      "primaryVisible": true,
+      "focus": {
+        "item": false,
+        "kind": null,
+        "outline": "rgb(130, 80, 39) solid 3px",
+        "primary": true,
+        "tag": "BUTTON",
+        "text": "Projects"
+      }
+    }
+  },
+  {
+    "product": "files",
+    "kind": "sharing",
+    "steps": [
+      {
+        "action": "sidebar Enter",
+        "focus": {
+          "item": false,
+          "kind": "sharing",
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "Shared links"
+        }
+      },
+      {
+        "action": "Tab",
+        "focus": {
+          "item": false,
+          "kind": "backup",
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "Backup & restore"
+        }
+      },
+      {
+        "action": "Tab",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "外部Brand proposal.pdfExpires in 3 days✓"
+        }
+      },
+      {
+        "action": "Space first",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "外部Brand proposal.pdfExpires in 3 days✓"
+        }
+      },
+      {
+        "action": "Tab Enter second",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "內部Handoff checklist.xlsxOrganization only✓"
+        }
+      },
+      {
+        "action": "Tab Space third",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "期限Collaboration agreement.docxExpires tomorrow✓"
+        }
+      },
+      {
+        "action": "5 Shift Tab to main entry",
+        "focus": {
+          "item": false,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": true,
+          "tag": "BUTTON",
+          "text": "Team files"
+        }
+      }
+    ],
+    "returned": {
+      "hidden": true,
+      "primaryVisible": true,
+      "focus": {
+        "item": false,
+        "kind": null,
+        "outline": "rgb(130, 80, 39) solid 3px",
+        "primary": true,
+        "tag": "BUTTON",
+        "text": "Team files"
+      }
+    }
+  },
+  {
+    "product": "files",
+    "kind": "backup",
+    "steps": [
+      {
+        "action": "sidebar Enter",
+        "focus": {
+          "item": false,
+          "kind": "backup",
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "Backup & restore"
+        }
+      },
+      {
+        "action": "Tab",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "即時Latest backupToday 02:00✓"
+        }
+      },
+      {
+        "action": "Space first",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "即時Latest backupToday 02:00✓"
+        }
+      },
+      {
+        "action": "Tab Enter second",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "30DRetention30 daily restore points✓"
+        }
+      },
+      {
+        "action": "Tab Space third",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "驗證Recovery drillCompleted 8 Sep 2026✓"
+        }
+      },
+      {
+        "action": "5 Shift Tab to main entry",
+        "focus": {
+          "item": false,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": true,
+          "tag": "BUTTON",
+          "text": "Team files"
+        }
+      }
+    ],
+    "returned": {
+      "hidden": true,
+      "primaryVisible": true,
+      "focus": {
+        "item": false,
+        "kind": null,
+        "outline": "rgb(130, 80, 39) solid 3px",
+        "primary": true,
+        "tag": "BUTTON",
+        "text": "Team files"
+      }
+    }
+  },
+  {
+    "product": "shield",
+    "kind": "identity",
+    "steps": [
+      {
+        "action": "sidebar Enter",
+        "focus": {
+          "item": false,
+          "kind": "identity",
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "Identity & devices"
+        }
+      },
+      {
+        "action": "Tab",
+        "focus": {
+          "item": false,
+          "kind": "audit",
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "Audit records"
+        }
+      },
+      {
+        "action": "Tab",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "YLYLMarketing admin · MacBook compliant✓"
+        }
+      },
+      {
+        "action": "Space first",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "YLYLMarketing admin · MacBook compliant✓"
+        }
+      },
+      {
+        "action": "Tab Enter second",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "CWCWContent editor · Windows compliant✓"
+        }
+      },
+      {
+        "action": "Tab Space third",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "KTKTExternal collaborator · Unknown device!"
+        }
+      },
+      {
+        "action": "5 Shift Tab to main entry",
+        "focus": {
+          "item": false,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": true,
+          "tag": "BUTTON",
+          "text": "Access policies"
+        }
+      }
+    ],
+    "returned": {
+      "hidden": true,
+      "primaryVisible": true,
+      "focus": {
+        "item": false,
+        "kind": null,
+        "outline": "rgb(130, 80, 39) solid 3px",
+        "primary": true,
+        "tag": "BUTTON",
+        "text": "Access policies"
+      }
+    }
+  },
+  {
+    "product": "shield",
+    "kind": "audit",
+    "steps": [
+      {
+        "action": "sidebar Enter",
+        "focus": {
+          "item": false,
+          "kind": "audit",
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "Audit records"
+        }
+      },
+      {
+        "action": "Tab",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "●09:18Access allowed · YL✓"
+        }
+      },
+      {
+        "action": "Space first",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "●09:18Access allowed · YL✓"
+        }
+      },
+      {
+        "action": "Tab Enter second",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "◆08:42Verification required · KT✓"
+        }
+      },
+      {
+        "action": "Tab Space third",
+        "focus": {
+          "item": true,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": false,
+          "tag": "BUTTON",
+          "text": "○08:05Policy updated · CW✓"
+        }
+      },
+      {
+        "action": "5 Shift Tab to main entry",
+        "focus": {
+          "item": false,
+          "kind": null,
+          "outline": "rgb(130, 80, 39) solid 3px",
+          "primary": true,
+          "tag": "BUTTON",
+          "text": "Access policies"
+        }
+      }
+    ],
+    "returned": {
+      "hidden": true,
+      "primaryVisible": true,
+      "focus": {
+        "item": false,
+        "kind": null,
+        "outline": "rgb(130, 80, 39) solid 3px",
+        "primary": true,
+        "tag": "BUTTON",
+        "text": "Access policies"
+      }
+    }
+  }
+]
