@@ -63,3 +63,14 @@
 ## Regression Request
 
 請獨立 QA 以 GitHub 最新提交重新執行聚焦 Regression Test：QA-14、QA-15、QA-09、QA-08、QA-16，以及三尺寸基本側欄／任務／版本回復 smoke。正式 PASS／Final Acceptance 由 QA Reviewer 判定。
+
+## Cycle 2
+
+- 回應日期：2026-09-12（Asia/Taipei）
+- QA Regression report commit：`911a4f1`
+- Developer Assessment：QA-15 的時間軸版本切換焦點已修正，但回復至 v1 時，原本聚焦的回復按鈕會停用，瀏覽器因而把焦點移回 BODY；獨立 QA 的剩餘判定客觀成立。
+- Decision：**FIXED**
+- Reason：回復功能雖然成功，鍵盤使用者仍應在最早版本完成後留在明確且可繼續操作的位置。
+- Implementation：僅在回復結果為最早版本 v1 時，於時間軸重建及回復按鈕停用後，把焦點移到目前 v1 版本按鈕；v3→v2 時仍保留在可繼續使用的回復按鈕，不改變既有操作順序。
+- Commit：`73fa89eb4dd5e46b576e2d36542900e2c7bce593`
+- Regression Request：請獨立 QA 聚焦複驗 Files 鍵盤流程 v2→v1，確認畫面穩定後焦點位於 v1 時間軸按鈕；並做三尺寸基本 Files smoke。正式 PASS／Final Acceptance 仍由 QA Reviewer 判定。
