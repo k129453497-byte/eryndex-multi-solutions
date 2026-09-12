@@ -45,8 +45,8 @@ const fileVersions = [
             <>
               <span>{t('設計團隊', 'Design team')}</span>
               <button type="button" class="active" data-module-close>{t('專案', 'Projects')}</button>
-              <button type="button" data-module-title={t('團隊知識', 'Team knowledge')} data-module-copy={t('把作業方式、決策背景與交接文件整理成團隊可以延續使用的知識。', 'Keep working practices, decision context and handoff notes in reusable team knowledge.')} data-module-items={JSON.stringify([t('品牌語氣與用字', 'Brand voice and language'), t('提案交接方式', 'Proposal handoff'), t('素材命名規則', 'Asset naming rules')])}>{t('團隊知識', 'Team knowledge')}</button>
-              <button type="button" data-module-title={t('工作流程', 'Workflows')} data-module-copy={t('以清楚的狀態與條件串接指派、審核與通知，同時保留人工判斷。', 'Connect assignment, review and notifications with clear states while retaining human judgment.')} data-module-items={JSON.stringify([t('內容提交 → 指派負責人', 'Content submitted → Assign owner'), t('負責人審核 → 留下意見', 'Owner review → Record feedback'), t('核准發布 → 通知團隊', 'Approval → Notify team')])}>{t('工作流程', 'Workflows')}</button>
+              <button type="button" data-module-kind="knowledge" data-module-title={t('團隊知識', 'Team knowledge')} data-module-copy={t('把作業方式、決策背景與交接文件整理成團隊可以延續使用的知識。', 'Keep working practices, decision context and handoff notes in reusable team knowledge.')} data-module-items={JSON.stringify([t('品牌語氣與用字', 'Brand voice and language'), t('提案交接方式', 'Proposal handoff'), t('素材命名規則', 'Asset naming rules')])}>{t('團隊知識', 'Team knowledge')}</button>
+              <button type="button" data-module-kind="workflow" data-module-title={t('工作流程', 'Workflows')} data-module-copy={t('以清楚的狀態與條件串接指派、審核與通知，同時保留人工判斷。', 'Connect assignment, review and notifications with clear states while retaining human judgment.')} data-module-items={JSON.stringify([t('內容提交 → 指派負責人', 'Content submitted → Assign owner'), t('負責人審核 → 留下意見', 'Owner review → Record feedback'), t('核准發布 → 通知團隊', 'Approval → Notify team')])}>{t('工作流程', 'Workflows')}</button>
               <small>{t('春季品牌計畫', 'Spring brand project')}</small>
             </>
           </aside>
@@ -166,7 +166,7 @@ const fileVersions = [
                 <p class="eyebrow">{t('功能示意', 'FEATURE PREVIEW')}</p>
                 <h3 data-module-heading />
                 <p data-module-copy />
-                <div class="module-list" data-module-list />
+                <div class="module-canvas" data-module-list />
               </section>
             </>
           </div>
@@ -182,8 +182,8 @@ const fileVersions = [
             <>
               <span>{t('企業資料', 'Business information')}</span>
               <button type="button" class="active" data-module-close>{t('團隊檔案', 'Team files')}</button>
-              <button type="button" data-module-title={t('分享連結', 'Shared links')} data-module-copy={t('集中檢視分享對象、權限與到期時間，避免連結長期留在外部。', 'Review recipients, permissions and expiry in one place so links do not remain external indefinitely.')} data-module-items={JSON.stringify([t('品牌提案.pdf · 3 天後到期', 'Brand proposal.pdf · Expires in 3 days'), t('交接清單.xlsx · 僅限組織內', 'Handoff checklist.xlsx · Organization only'), t('合作合約.docx · 明天到期', 'Collaboration agreement.docx · Expires tomorrow')])}>{t('分享連結', 'Shared links')}</button>
-              <button type="button" data-module-title={t('備份與還原', 'Backup & restore')} data-module-copy={t('追蹤備份時間、保留點與還原演練，讓重要資料有可驗證的回復路徑。', 'Track backup times, restore points and recovery drills so important information has a verified path back.')} data-module-items={JSON.stringify([t('最近備份 · 今天 02:00', 'Latest backup · Today 02:00'), t('保留範圍 · 30 個每日還原點', 'Retention · 30 daily restore points'), t('還原演練 · 2026 年 9 月 8 日完成', 'Recovery drill · Completed 8 Sep 2026')])}>{t('備份與還原', 'Backup & restore')}</button>
+              <button type="button" data-module-kind="sharing" data-module-title={t('分享連結', 'Shared links')} data-module-copy={t('集中檢視分享對象、權限與到期時間，避免連結長期留在外部。', 'Review recipients, permissions and expiry in one place so links do not remain external indefinitely.')} data-module-items={JSON.stringify([t('品牌提案.pdf · 3 天後到期', 'Brand proposal.pdf · Expires in 3 days'), t('交接清單.xlsx · 僅限組織內', 'Handoff checklist.xlsx · Organization only'), t('合作合約.docx · 明天到期', 'Collaboration agreement.docx · Expires tomorrow')])}>{t('分享連結', 'Shared links')}</button>
+              <button type="button" data-module-kind="backup" data-module-title={t('備份與還原', 'Backup & restore')} data-module-copy={t('追蹤備份時間、保留點與還原演練，讓重要資料有可驗證的回復路徑。', 'Track backup times, restore points and recovery drills so important information has a verified path back.')} data-module-items={JSON.stringify([t('最近備份 · 今天 02:00', 'Latest backup · Today 02:00'), t('保留範圍 · 30 個每日還原點', 'Retention · 30 daily restore points'), t('還原演練 · 2026 年 9 月 8 日完成', 'Recovery drill · Completed 8 Sep 2026')])}>{t('備份與還原', 'Backup & restore')}</button>
               <small>{t('保存狀態：已同步', 'Preservation: Synced')}</small>
             </>
           </aside>
@@ -273,7 +273,7 @@ const fileVersions = [
                 <p class="eyebrow">{t('功能示意', 'FEATURE PREVIEW')}</p>
                 <h3 data-module-heading />
                 <p data-module-copy />
-                <div class="module-list" data-module-list />
+                <div class="module-canvas" data-module-list />
               </section>
             </>
           </div>
@@ -289,8 +289,8 @@ const fileVersions = [
             <>
               <span>{t('信任管理', 'Trust management')}</span>
               <button type="button" class="active" data-module-close>{t('存取政策', 'Access policies')}</button>
-              <button type="button" data-module-title={t('身分與裝置', 'Identity & devices')} data-module-copy={t('檢視人員角色、最近使用裝置與驗證狀態，找出需要重新確認的存取。', 'Review roles, recent devices and verification state to identify access that needs attention.')} data-module-items={JSON.stringify([t('YL · 行銷管理員 · MacBook 符合條件', 'YL · Marketing admin · MacBook compliant'), t('CW · 內容編輯 · Windows 符合條件', 'CW · Content editor · Windows compliant'), t('KT · 外部協作者 · 未知裝置待驗證', 'KT · External collaborator · Unknown device')])}>{t('身分與裝置', 'Identity & devices')}</button>
-              <button type="button" data-module-title={t('稽核紀錄', 'Audit records')} data-module-copy={t('依時間查看允許、阻擋與政策變更，保留每次判斷的原因。', 'Review allowed, blocked and policy-change events with the reason for each decision.')} data-module-items={JSON.stringify([t('09:18 · 允許存取 · YL', '09:18 · Access allowed · YL'), t('08:42 · 要求進一步驗證 · KT', '08:42 · Verification required · KT'), t('08:05 · 政策已更新 · CW', '08:05 · Policy updated · CW')])}>{t('稽核紀錄', 'Audit records')}</button>
+              <button type="button" data-module-kind="identity" data-module-title={t('身分與裝置', 'Identity & devices')} data-module-copy={t('檢視人員角色、最近使用裝置與驗證狀態，找出需要重新確認的存取。', 'Review roles, recent devices and verification state to identify access that needs attention.')} data-module-items={JSON.stringify([t('YL · 行銷管理員 · MacBook 符合條件', 'YL · Marketing admin · MacBook compliant'), t('CW · 內容編輯 · Windows 符合條件', 'CW · Content editor · Windows compliant'), t('KT · 外部協作者 · 未知裝置待驗證', 'KT · External collaborator · Unknown device')])}>{t('身分與裝置', 'Identity & devices')}</button>
+              <button type="button" data-module-kind="audit" data-module-title={t('稽核紀錄', 'Audit records')} data-module-copy={t('依時間查看允許、阻擋與政策變更，保留每次判斷的原因。', 'Review allowed, blocked and policy-change events with the reason for each decision.')} data-module-items={JSON.stringify([t('09:18 · 允許存取 · YL', '09:18 · Access allowed · YL'), t('08:42 · 要求進一步驗證 · KT', '08:42 · Verification required · KT'), t('08:05 · 政策已更新 · CW', '08:05 · Policy updated · CW')])}>{t('稽核紀錄', 'Audit records')}</button>
               <small>{t('預設：依條件授權', 'Default: Conditional access')}</small>
             </>
           </aside>
@@ -396,7 +396,7 @@ const fileVersions = [
                 <p class="eyebrow">{t('功能示意', 'FEATURE PREVIEW')}</p>
                 <h3 data-module-heading />
                 <p data-module-copy />
-                <div class="module-list" data-module-list />
+                <div class="module-canvas" data-module-list />
               </section>
             </>
           </div>
@@ -417,16 +417,43 @@ const fileVersions = [
         module.querySelector('[data-module-heading]')!.textContent = button.dataset.moduleTitle!;
         module.querySelector('[data-module-copy]')!.textContent = button.dataset.moduleCopy!;
         const list = module.querySelector<HTMLElement>('[data-module-list]')!;
-        list.replaceChildren(...(JSON.parse(button.dataset.moduleItems!) as string[]).map((text, index) => {
+        const kind = button.dataset.moduleKind!;
+        const items = JSON.parse(button.dataset.moduleItems!) as string[];
+        list.className = `module-canvas module-${kind}`;
+        list.replaceChildren(...items.map((text, index) => {
           const item = document.createElement('button');
           item.type = 'button';
-          item.innerHTML = '<span>0' + (index + 1) + '</span><strong></strong><em>→</em>';
-          item.querySelector('strong')!.textContent = text;
+          item.className = 'module-item';
+          const marker = document.createElement('span');
+          marker.className = 'module-marker';
+          marker.textContent = kind === 'knowledge' ? ['語', '交', '規'][index] :
+            kind === 'workflow' ? ['提交', '審核', '發布'][index] :
+            kind === 'sharing' ? ['外部', '內部', '期限'][index] :
+            kind === 'backup' ? ['即時', '30D', '驗證'][index] :
+            kind === 'identity' ? ['YL', 'CW', 'KT'][index] : ['●', '◆', '○'][index];
+          const content = document.createElement('span');
+          content.className = 'module-item-copy';
+          const strong = document.createElement('strong');
+          strong.textContent = text.split(' · ')[0];
+          const detail = document.createElement('small');
+          detail.textContent = text.split(' · ').slice(1).join(' · ');
+          content.append(strong, detail);
+          const state = document.createElement('em');
+          state.textContent = kind === 'workflow' ? '→' : index === 2 && kind === 'identity' ? '!' : '✓';
+          item.append(marker, content, state);
           item.addEventListener('click', () => {
             list.querySelectorAll('button').forEach(row => row.classList.toggle('selected', row === item));
           });
           return item;
         }));
+        if (kind === 'knowledge') {
+          const core = document.createElement('div');
+          core.className = 'knowledge-core';
+          core.innerHTML = '<span>E</span><strong>TEAM<br>MEMORY</strong>';
+          core.setAttribute('aria-hidden', 'true');
+          list.prepend(core);
+        }
+        if (kind === 'workflow') list.querySelector('button')?.classList.add('selected');
       });
     });
     demo.querySelector<HTMLButtonElement>('[data-module-close]')?.addEventListener('click', (event) => {
