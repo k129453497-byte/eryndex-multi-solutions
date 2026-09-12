@@ -1,0 +1,708 @@
+{
+  "lang": "zh-cn",
+  "width": 768,
+  "steps": [
+    {
+      "action": "valid draft",
+      "state": {
+        "draft": "QA Example / Example QA\nqa@example.com\n尚未确定，想先聊聊\n\n1234567890",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": null,
+        "hidden": false,
+        "mail": "mailto:contact@eryndex.com?subject=Eryndex%20%E9%9C%80%E6%B1%82%E5%92%A8%E8%AF%A2&body=QA%20Example%20%2F%20Example%20QA%0Aqa%40example.com%0A%E5%B0%9A%E6%9C%AA%E7%A1%AE%E5%AE%9A%EF%BC%8C%E6%83%B3%E5%85%88%E8%81%8A%E8%81%8A%0A%0A1234567890",
+        "status": "邮件草稿已准备好，尚未发送。请使用下方按钮开启邮件应用，或复制内容自行发送。"
+      }
+    },
+    {
+      "action": "name changed before submit",
+      "state": {
+        "draft": "",
+        "fields": [
+          {
+            "checked": false,
+            "message": "請填寫這個欄位。",
+            "name": "name",
+            "valid": false,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": "name",
+        "hidden": true,
+        "mail": "mailto:contact@eryndex.com",
+        "status": ""
+      }
+    },
+    {
+      "action": "name invalid submit",
+      "state": {
+        "draft": "",
+        "fields": [
+          {
+            "checked": false,
+            "message": "請填寫這個欄位。",
+            "name": "name",
+            "valid": false,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": "name",
+        "hidden": true,
+        "mail": "mailto:contact@eryndex.com",
+        "status": ""
+      }
+    },
+    {
+      "action": "name corrected submit",
+      "state": {
+        "draft": "QA Example / Example QA\nqa@example.com\n尚未确定，想先聊聊\n\n1234567890",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": null,
+        "hidden": false,
+        "mail": "mailto:contact@eryndex.com?subject=Eryndex%20%E9%9C%80%E6%B1%82%E5%92%A8%E8%AF%A2&body=QA%20Example%20%2F%20Example%20QA%0Aqa%40example.com%0A%E5%B0%9A%E6%9C%AA%E7%A1%AE%E5%AE%9A%EF%BC%8C%E6%83%B3%E5%85%88%E8%81%8A%E8%81%8A%0A%0A1234567890",
+        "status": "邮件草稿已准备好，尚未发送。请使用下方按钮开启邮件应用，或复制内容自行发送。"
+      }
+    },
+    {
+      "action": "email changed before submit",
+      "state": {
+        "draft": "",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": false,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": "email",
+        "hidden": true,
+        "mail": "mailto:contact@eryndex.com",
+        "status": ""
+      }
+    },
+    {
+      "action": "email invalid submit",
+      "state": {
+        "draft": "",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": false,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": "email",
+        "hidden": true,
+        "mail": "mailto:contact@eryndex.com",
+        "status": ""
+      }
+    },
+    {
+      "action": "email corrected submit",
+      "state": {
+        "draft": "QA Example / Example QA\nqa@example.com\n尚未确定，想先聊聊\n\n1234567890",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": null,
+        "hidden": false,
+        "mail": "mailto:contact@eryndex.com?subject=Eryndex%20%E9%9C%80%E6%B1%82%E5%92%A8%E8%AF%A2&body=QA%20Example%20%2F%20Example%20QA%0Aqa%40example.com%0A%E5%B0%9A%E6%9C%AA%E7%A1%AE%E5%AE%9A%EF%BC%8C%E6%83%B3%E5%85%88%E8%81%8A%E8%81%8A%0A%0A1234567890",
+        "status": "邮件草稿已准备好，尚未发送。请使用下方按钮开启邮件应用，或复制内容自行发送。"
+      }
+    },
+    {
+      "action": "consent changed before submit",
+      "state": {
+        "draft": "",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": false,
+            "message": "如果你要繼續執行，請勾選這個核取方塊。",
+            "name": "consent",
+            "valid": false,
+            "value": "on"
+          }
+        ],
+        "focus": "consent",
+        "hidden": true,
+        "mail": "mailto:contact@eryndex.com",
+        "status": ""
+      }
+    },
+    {
+      "action": "consent invalid submit",
+      "state": {
+        "draft": "",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": false,
+            "message": "如果你要繼續執行，請勾選這個核取方塊。",
+            "name": "consent",
+            "valid": false,
+            "value": "on"
+          }
+        ],
+        "focus": "consent",
+        "hidden": true,
+        "mail": "mailto:contact@eryndex.com",
+        "status": ""
+      }
+    },
+    {
+      "action": "consent corrected submit",
+      "state": {
+        "draft": "QA Example / Example QA\nqa@example.com\n尚未确定，想先聊聊\n\n1234567890",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": null,
+        "hidden": false,
+        "mail": "mailto:contact@eryndex.com?subject=Eryndex%20%E9%9C%80%E6%B1%82%E5%92%A8%E8%AF%A2&body=QA%20Example%20%2F%20Example%20QA%0Aqa%40example.com%0A%E5%B0%9A%E6%9C%AA%E7%A1%AE%E5%AE%9A%EF%BC%8C%E6%83%B3%E5%85%88%E8%81%8A%E8%81%8A%0A%0A1234567890",
+        "status": "邮件草稿已准备好，尚未发送。请使用下方按钮开启邮件应用，或复制内容自行发送。"
+      }
+    },
+    {
+      "action": "message changed before submit",
+      "state": {
+        "draft": "",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "   12345   "
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": "message",
+        "hidden": true,
+        "mail": "mailto:contact@eryndex.com",
+        "status": ""
+      }
+    },
+    {
+      "action": "message invalid submit",
+      "state": {
+        "draft": "",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "请输入至少 10 个字符，首尾空格不计入字数。",
+            "name": "message",
+            "valid": false,
+            "value": "12345"
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": "message",
+        "hidden": true,
+        "mail": "mailto:contact@eryndex.com",
+        "status": ""
+      }
+    },
+    {
+      "action": "message corrected submit",
+      "state": {
+        "draft": "QA Example / Example QA\nqa@example.com\n尚未确定，想先聊聊\n\n1234567890",
+        "fields": [
+          {
+            "checked": false,
+            "message": "",
+            "name": "name",
+            "valid": true,
+            "value": "QA Example"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "company",
+            "valid": true,
+            "value": "Example QA"
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "email",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "interest",
+            "valid": true,
+            "value": ""
+          },
+          {
+            "checked": false,
+            "message": "",
+            "name": "message",
+            "valid": true,
+            "value": "1234567890"
+          },
+          {
+            "checked": true,
+            "message": "",
+            "name": "consent",
+            "valid": true,
+            "value": "on"
+          }
+        ],
+        "focus": null,
+        "hidden": false,
+        "mail": "mailto:contact@eryndex.com?subject=Eryndex%20%E9%9C%80%E6%B1%82%E5%92%A8%E8%AF%A2&body=QA%20Example%20%2F%20Example%20QA%0Aqa%40example.com%0A%E5%B0%9A%E6%9C%AA%E7%A1%AE%E5%AE%9A%EF%BC%8C%E6%83%B3%E5%85%88%E8%81%8A%E8%81%8A%0A%0A1234567890",
+        "status": "邮件草稿已准备好，尚未发送。请使用下方按钮开启邮件应用，或复制内容自行发送。"
+      }
+    }
+  ]
+}

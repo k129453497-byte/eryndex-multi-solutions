@@ -1,0 +1,307 @@
+{
+  "lang": "zh-cn",
+  "width": 768,
+  "height": 1024,
+  "steps": [
+    {
+      "action": "initial v2 click",
+      "state": {
+        "focus": {
+          "tag": "BUTTON",
+          "text": "v22026 年 9 月 10 日 16:05CW · 补上品牌方向",
+          "version": "2"
+        },
+        "history": [
+          {
+            "active": "",
+            "v": "3"
+          },
+          {
+            "active": "active",
+            "v": "2"
+          },
+          {
+            "active": "",
+            "v": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "恢复上一版本"
+        },
+        "scrollWidth": 768,
+        "status": "",
+        "version": "v2",
+        "width": 768
+      }
+    },
+    {
+      "action": "keyboard v3",
+      "state": {
+        "focus": {
+          "tag": "BUTTON",
+          "text": "v32026 年 9 月 11 日 14:20YL · 调整首页提案内容",
+          "version": "3"
+        },
+        "history": [
+          {
+            "active": "active",
+            "v": "3"
+          },
+          {
+            "active": "",
+            "v": "2"
+          },
+          {
+            "active": "",
+            "v": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "恢复上一版本"
+        },
+        "scrollWidth": 768,
+        "status": "",
+        "version": "v3",
+        "width": 768
+      }
+    },
+    {
+      "action": "restore to v2",
+      "state": {
+        "focus": {
+          "tag": "BUTTON",
+          "text": "恢复上一版本",
+          "version": null
+        },
+        "history": [
+          {
+            "active": "",
+            "v": "3"
+          },
+          {
+            "active": "active",
+            "v": "2"
+          },
+          {
+            "active": "",
+            "v": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "恢复上一版本"
+        },
+        "scrollWidth": 768,
+        "status": "当前查看已从 v3 恢复为 v2；历史记录仍保留。",
+        "version": "v2",
+        "width": 768
+      }
+    },
+    {
+      "action": "restore to v1",
+      "state": {
+        "focus": {
+          "tag": "BUTTON",
+          "text": "当前已是最早版本",
+          "version": null
+        },
+        "history": [
+          {
+            "active": "",
+            "v": "3"
+          },
+          {
+            "active": "",
+            "v": "2"
+          },
+          {
+            "active": "active",
+            "v": "1"
+          }
+        ],
+        "restore": {
+          "disabled": true,
+          "text": "当前已是最早版本"
+        },
+        "scrollWidth": 768,
+        "status": "当前查看已从 v2 恢复为 v1；历史记录仍保留。",
+        "version": "v1",
+        "width": 768
+      }
+    },
+    {
+      "action": "space sidebar 1",
+      "state": {
+        "active": "团队知识",
+        "heading": "团队知识",
+        "hidden": false,
+        "items": "01品牌语气与用字→02提案交接方式→03素材命名规则→"
+      }
+    },
+    {
+      "action": "space sidebar 2",
+      "state": {
+        "active": "工作流程",
+        "heading": "工作流程",
+        "hidden": false,
+        "items": "01内容提交 → 指派负责人→02负责人审核 → 留下意见→03核准发布 → 通知团队→"
+      }
+    },
+    {
+      "action": "space sidebar 0",
+      "state": {
+        "active": "项目",
+        "heading": "工作流程",
+        "hidden": true,
+        "items": "01内容提交 → 指派负责人→02负责人审核 → 留下意见→03核准发布 → 通知团队→"
+      }
+    },
+    {
+      "action": "files sidebar 1",
+      "state": {
+        "active": "共享链接",
+        "heading": "共享链接",
+        "hidden": false,
+        "items": "01品牌提案.pdf · 3 天后到期→02交接清单.xlsx · 仅限组织内→03合作合同.docx · 明天到期→"
+      }
+    },
+    {
+      "action": "files sidebar 2",
+      "state": {
+        "active": "备份与恢复",
+        "heading": "备份与恢复",
+        "hidden": false,
+        "items": "01最近备份 · 今天 02:00→02保留范围 · 30 个每日恢复点→03恢复演练 · 2026 年 9 月 8 日完成→"
+      }
+    },
+    {
+      "action": "files sidebar 0",
+      "state": {
+        "active": "团队文件",
+        "heading": "备份与恢复",
+        "hidden": true,
+        "items": "01最近备份 · 今天 02:00→02保留范围 · 30 个每日恢复点→03恢复演练 · 2026 年 9 月 8 日完成→"
+      }
+    },
+    {
+      "action": "shield sidebar 1",
+      "state": {
+        "active": "身份与设备",
+        "heading": "身份与设备",
+        "hidden": false,
+        "items": "01YL · 营销管理员 · MacBook 符合条件→02CW · 内容编辑 · Windows 符合条件→03KT · 外部协作者 · 未知设备待验证→"
+      }
+    },
+    {
+      "action": "shield sidebar 2",
+      "state": {
+        "active": "审计记录",
+        "heading": "审计记录",
+        "hidden": false,
+        "items": "0109:18 · 允许访问 · YL→0208:42 · 要求进一步验证 · KT→0308:05 · 策略已更新 · CW→"
+      }
+    },
+    {
+      "action": "shield sidebar 0",
+      "state": {
+        "active": "访问策略",
+        "heading": "审计记录",
+        "hidden": true,
+        "items": "0109:18 · 允许访问 · YL→0208:42 · 要求进一步验证 · KT→0308:05 · 策略已更新 · CW→"
+      }
+    },
+    {
+      "action": "same task 0",
+      "state": {
+        "counts": [
+          "待处理 1",
+          "进行中 2",
+          "已完成 1"
+        ],
+        "scrollWidth": 768,
+        "tasks": [
+          {
+            "checked": false,
+            "name": "开始：整理交接文件"
+          },
+          {
+            "checked": false,
+            "name": "完成：查看首页文案"
+          },
+          {
+            "checked": false,
+            "name": "完成：确认项目范围"
+          },
+          {
+            "checked": true,
+            "name": "重新开启：汇总需求与访谈"
+          }
+        ],
+        "width": 768
+      }
+    },
+    {
+      "action": "same task 1",
+      "state": {
+        "counts": [
+          "待处理 1",
+          "进行中 1",
+          "已完成 2"
+        ],
+        "scrollWidth": 768,
+        "tasks": [
+          {
+            "checked": false,
+            "name": "开始：整理交接文件"
+          },
+          {
+            "checked": false,
+            "name": "完成：查看首页文案"
+          },
+          {
+            "checked": true,
+            "name": "重新开启：汇总需求与访谈"
+          },
+          {
+            "checked": true,
+            "name": "重新开启：确认项目范围"
+          }
+        ],
+        "width": 768
+      }
+    },
+    {
+      "action": "same task 2",
+      "state": {
+        "counts": [
+          "待处理 1",
+          "进行中 2",
+          "已完成 1"
+        ],
+        "scrollWidth": 768,
+        "tasks": [
+          {
+            "checked": false,
+            "name": "开始：整理交接文件"
+          },
+          {
+            "checked": false,
+            "name": "完成：查看首页文案"
+          },
+          {
+            "checked": false,
+            "name": "完成：确认项目范围"
+          },
+          {
+            "checked": true,
+            "name": "重新开启：汇总需求与访谈"
+          }
+        ],
+        "width": 768
+      }
+    }
+  ],
+  "console": []
+}

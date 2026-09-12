@@ -1,0 +1,307 @@
+{
+  "lang": "en",
+  "width": 1440,
+  "height": 900,
+  "steps": [
+    {
+      "action": "initial v2 click",
+      "state": {
+        "focus": {
+          "tag": "BUTTON",
+          "text": "v210 Sep 2026, 16:05CW · Brand direction added",
+          "version": "2"
+        },
+        "history": [
+          {
+            "active": "",
+            "v": "3"
+          },
+          {
+            "active": "active",
+            "v": "2"
+          },
+          {
+            "active": "",
+            "v": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "Restore previous version"
+        },
+        "scrollWidth": 1440,
+        "status": "",
+        "version": "v2",
+        "width": 1440
+      }
+    },
+    {
+      "action": "keyboard v3",
+      "state": {
+        "focus": {
+          "tag": "BUTTON",
+          "text": "v311 Sep 2026, 14:20YL · Homepage proposal updated",
+          "version": "3"
+        },
+        "history": [
+          {
+            "active": "active",
+            "v": "3"
+          },
+          {
+            "active": "",
+            "v": "2"
+          },
+          {
+            "active": "",
+            "v": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "Restore previous version"
+        },
+        "scrollWidth": 1440,
+        "status": "",
+        "version": "v3",
+        "width": 1440
+      }
+    },
+    {
+      "action": "restore to v2",
+      "state": {
+        "focus": {
+          "tag": "BUTTON",
+          "text": "Restore previous version",
+          "version": null
+        },
+        "history": [
+          {
+            "active": "",
+            "v": "3"
+          },
+          {
+            "active": "active",
+            "v": "2"
+          },
+          {
+            "active": "",
+            "v": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "Restore previous version"
+        },
+        "scrollWidth": 1440,
+        "status": "Viewing restored from v3 to v2; history remains available.",
+        "version": "v2",
+        "width": 1440
+      }
+    },
+    {
+      "action": "restore to v1",
+      "state": {
+        "focus": {
+          "tag": "BODY",
+          "text": "BODY",
+          "version": null
+        },
+        "history": [
+          {
+            "active": "",
+            "v": "3"
+          },
+          {
+            "active": "",
+            "v": "2"
+          },
+          {
+            "active": "active",
+            "v": "1"
+          }
+        ],
+        "restore": {
+          "disabled": true,
+          "text": "Already at the earliest version"
+        },
+        "scrollWidth": 1440,
+        "status": "Viewing restored from v2 to v1; history remains available.",
+        "version": "v1",
+        "width": 1440
+      }
+    },
+    {
+      "action": "space sidebar 1",
+      "state": {
+        "active": "Team knowledge",
+        "heading": "Team knowledge",
+        "hidden": false,
+        "items": "01Brand voice and language→02Proposal handoff→03Asset naming rules→"
+      }
+    },
+    {
+      "action": "space sidebar 2",
+      "state": {
+        "active": "Workflows",
+        "heading": "Workflows",
+        "hidden": false,
+        "items": "01Content submitted → Assign owner→02Owner review → Record feedback→03Approval → Notify team→"
+      }
+    },
+    {
+      "action": "space sidebar 0",
+      "state": {
+        "active": "Projects",
+        "heading": "Workflows",
+        "hidden": true,
+        "items": "01Content submitted → Assign owner→02Owner review → Record feedback→03Approval → Notify team→"
+      }
+    },
+    {
+      "action": "files sidebar 1",
+      "state": {
+        "active": "Shared links",
+        "heading": "Shared links",
+        "hidden": false,
+        "items": "01Brand proposal.pdf · Expires in 3 days→02Handoff checklist.xlsx · Organization only→03Collaboration agreement.docx · Expires tomorrow→"
+      }
+    },
+    {
+      "action": "files sidebar 2",
+      "state": {
+        "active": "Backup & restore",
+        "heading": "Backup & restore",
+        "hidden": false,
+        "items": "01Latest backup · Today 02:00→02Retention · 30 daily restore points→03Recovery drill · Completed 8 Sep 2026→"
+      }
+    },
+    {
+      "action": "files sidebar 0",
+      "state": {
+        "active": "Team files",
+        "heading": "Backup & restore",
+        "hidden": true,
+        "items": "01Latest backup · Today 02:00→02Retention · 30 daily restore points→03Recovery drill · Completed 8 Sep 2026→"
+      }
+    },
+    {
+      "action": "shield sidebar 1",
+      "state": {
+        "active": "Identity & devices",
+        "heading": "Identity & devices",
+        "hidden": false,
+        "items": "01YL · Marketing admin · MacBook compliant→02CW · Content editor · Windows compliant→03KT · External collaborator · Unknown device→"
+      }
+    },
+    {
+      "action": "shield sidebar 2",
+      "state": {
+        "active": "Audit records",
+        "heading": "Audit records",
+        "hidden": false,
+        "items": "0109:18 · Access allowed · YL→0208:42 · Verification required · KT→0308:05 · Policy updated · CW→"
+      }
+    },
+    {
+      "action": "shield sidebar 0",
+      "state": {
+        "active": "Access policies",
+        "heading": "Audit records",
+        "hidden": true,
+        "items": "0109:18 · Access allowed · YL→0208:42 · Verification required · KT→0308:05 · Policy updated · CW→"
+      }
+    },
+    {
+      "action": "same task 0",
+      "state": {
+        "counts": [
+          "To do 1",
+          "In progress 2",
+          "Done 1"
+        ],
+        "scrollWidth": 1440,
+        "tasks": [
+          {
+            "checked": false,
+            "name": "Start: Prepare handoff notes"
+          },
+          {
+            "checked": false,
+            "name": "Complete: Review homepage copy"
+          },
+          {
+            "checked": false,
+            "name": "Complete: Confirm project scope"
+          },
+          {
+            "checked": true,
+            "name": "Reopen: Gather requirements"
+          }
+        ],
+        "width": 1440
+      }
+    },
+    {
+      "action": "same task 1",
+      "state": {
+        "counts": [
+          "To do 1",
+          "In progress 1",
+          "Done 2"
+        ],
+        "scrollWidth": 1440,
+        "tasks": [
+          {
+            "checked": false,
+            "name": "Start: Prepare handoff notes"
+          },
+          {
+            "checked": false,
+            "name": "Complete: Review homepage copy"
+          },
+          {
+            "checked": true,
+            "name": "Reopen: Gather requirements"
+          },
+          {
+            "checked": true,
+            "name": "Reopen: Confirm project scope"
+          }
+        ],
+        "width": 1440
+      }
+    },
+    {
+      "action": "same task 2",
+      "state": {
+        "counts": [
+          "To do 1",
+          "In progress 2",
+          "Done 1"
+        ],
+        "scrollWidth": 1440,
+        "tasks": [
+          {
+            "checked": false,
+            "name": "Start: Prepare handoff notes"
+          },
+          {
+            "checked": false,
+            "name": "Complete: Review homepage copy"
+          },
+          {
+            "checked": false,
+            "name": "Complete: Confirm project scope"
+          },
+          {
+            "checked": true,
+            "name": "Reopen: Gather requirements"
+          }
+        ],
+        "width": 1440
+      }
+    }
+  ],
+  "console": []
+}

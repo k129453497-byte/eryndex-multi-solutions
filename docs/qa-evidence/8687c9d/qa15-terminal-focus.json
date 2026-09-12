@@ -1,0 +1,194 @@
+[
+  {
+    "action": "v2 Enter",
+    "state": {
+      "focus": {
+        "tag": "BUTTON",
+        "text": "v210 Sep 2026, 16:05CW · Brand direction added",
+        "version": "2"
+      },
+      "history": [
+        {
+          "active": "",
+          "v": "3"
+        },
+        {
+          "active": "active",
+          "v": "2"
+        },
+        {
+          "active": "",
+          "v": "1"
+        }
+      ],
+      "restore": {
+        "disabled": false,
+        "text": "Restore previous version"
+      },
+      "scrollWidth": 390,
+      "status": "",
+      "version": "v2",
+      "width": 390
+    }
+  },
+  {
+    "action": "Tab to v1",
+    "state": {
+      "focus": {
+        "tag": "BUTTON",
+        "text": "v18 Sep 2026, 09:30YL · Initial file created",
+        "version": "1"
+      },
+      "history": [
+        {
+          "active": "",
+          "v": "3"
+        },
+        {
+          "active": "active",
+          "v": "2"
+        },
+        {
+          "active": "",
+          "v": "1"
+        }
+      ],
+      "restore": {
+        "disabled": false,
+        "text": "Restore previous version"
+      },
+      "scrollWidth": 390,
+      "status": "",
+      "version": "v2",
+      "width": 390
+    }
+  },
+  {
+    "action": "Tab to restore",
+    "state": {
+      "focus": {
+        "tag": "BUTTON",
+        "text": "Restore previous version",
+        "version": null
+      },
+      "history": [
+        {
+          "active": "",
+          "v": "3"
+        },
+        {
+          "active": "active",
+          "v": "2"
+        },
+        {
+          "active": "",
+          "v": "1"
+        }
+      ],
+      "restore": {
+        "disabled": false,
+        "text": "Restore previous version"
+      },
+      "scrollWidth": 390,
+      "status": "",
+      "version": "v2",
+      "width": 390
+    }
+  },
+  {
+    "action": "Enter restore to v1",
+    "state": {
+      "focus": {
+        "tag": "BUTTON",
+        "text": "Already at the earliest version",
+        "version": null
+      },
+      "history": [
+        {
+          "active": "",
+          "v": "3"
+        },
+        {
+          "active": "",
+          "v": "2"
+        },
+        {
+          "active": "active",
+          "v": "1"
+        }
+      ],
+      "restore": {
+        "disabled": true,
+        "text": "Already at the earliest version"
+      },
+      "scrollWidth": 390,
+      "status": "Viewing restored from v2 to v1; history remains available.",
+      "version": "v1",
+      "width": 390
+    }
+  },
+  {
+    "action": "settled after screenshot",
+    "state": {
+      "focus": {
+        "tag": "BODY",
+        "text": "BODY",
+        "version": null
+      },
+      "history": [
+        {
+          "active": "",
+          "v": "3"
+        },
+        {
+          "active": "",
+          "v": "2"
+        },
+        {
+          "active": "active",
+          "v": "1"
+        }
+      ],
+      "restore": {
+        "disabled": true,
+        "text": "Already at the earliest version"
+      },
+      "scrollWidth": 390,
+      "status": "Viewing restored from v2 to v1; history remains available.",
+      "version": "v1",
+      "width": 390
+    }
+  },
+  {
+    "action": "next Tab",
+    "state": {
+      "focus": {
+        "tag": "SUMMARY",
+        "text": "Capabilities and use cases＋",
+        "version": null
+      },
+      "history": [
+        {
+          "active": "",
+          "v": "3"
+        },
+        {
+          "active": "",
+          "v": "2"
+        },
+        {
+          "active": "active",
+          "v": "1"
+        }
+      ],
+      "restore": {
+        "disabled": true,
+        "text": "Already at the earliest version"
+      },
+      "scrollWidth": 390,
+      "status": "Viewing restored from v2 to v1; history remains available.",
+      "version": "v1",
+      "width": 390
+    }
+  }
+]

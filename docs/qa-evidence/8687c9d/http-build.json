@@ -1,0 +1,353 @@
+{
+  "commit": "8687c9df53249477f37a169c1cf0065cc020de2b",
+  "pages": [
+    {
+      "path": "en/about/index.html",
+      "status": 200,
+      "sha256": "2a8a5fff862d9b9adc4cfdf626c1c28a85b9b04a55ba165db9b785f0d0d90018",
+      "matchesDist": true
+    },
+    {
+      "path": "en/contact/index.html",
+      "status": 200,
+      "sha256": "5f506aee5920c895d86fc60c5da7d312d809694bc99eeba39277045c7c563d35",
+      "matchesDist": true
+    },
+    {
+      "path": "en/index.html",
+      "status": 200,
+      "sha256": "356df55e7b348984fa77b02109afce96fd68c046e5c30d9d40c4f928cd5b3fb6",
+      "matchesDist": true
+    },
+    {
+      "path": "en/privacy/index.html",
+      "status": 200,
+      "sha256": "a6ee6f5f52c8ac9c0897b67ff35d8c6d91291c548958347c0b8795f1fbb4cfc7",
+      "matchesDist": true
+    },
+    {
+      "path": "en/products/files/index.html",
+      "status": 200,
+      "sha256": "02751cc821fbc8bbc4b8409bfbe0d4a3bff5fc0f8b8f10eb10dc20500b4e00e0",
+      "matchesDist": true
+    },
+    {
+      "path": "en/products/index.html",
+      "status": 200,
+      "sha256": "89e6367dbed43deb87df9a99d0257a8683ff3f6e144bbfb32a1b9152111732d6",
+      "matchesDist": true
+    },
+    {
+      "path": "en/products/shield/index.html",
+      "status": 200,
+      "sha256": "13dc418fd172534ab684d06d894f1af480419f2ce7957cebba4402c6f5a0c8b7",
+      "matchesDist": true
+    },
+    {
+      "path": "en/products/space/index.html",
+      "status": 200,
+      "sha256": "0587718327ee6fd33de399f7e31276a984f9d887f48c96d71638bf0f94e596b1",
+      "matchesDist": true
+    },
+    {
+      "path": "en/resources/access-review/index.html",
+      "status": 200,
+      "sha256": "edc6c5ca5b40843265eacefda35e101b4aaa5fe472111da40f1364dcd4c9abca",
+      "matchesDist": true
+    },
+    {
+      "path": "en/resources/index.html",
+      "status": 200,
+      "sha256": "20203733c2f691e369d3011668446bd47dffe72b50d87d5c00b13639ac7dbfc3",
+      "matchesDist": true
+    },
+    {
+      "path": "en/resources/information-lifecycle/index.html",
+      "status": 200,
+      "sha256": "20a58e0bbcb48e46929b9a0525e22362d0c1b0089bcb73673cc6cc8fd35370e2",
+      "matchesDist": true
+    },
+    {
+      "path": "en/resources/work-handoffs/index.html",
+      "status": 200,
+      "sha256": "185df0ef833c730c6f5ee0f84bf9c743b9196a004fbae33a4d0ab9fcca8f05fd",
+      "matchesDist": true
+    },
+    {
+      "path": "en/services/index.html",
+      "status": 200,
+      "sha256": "65e057dbe8063080a966cedf32dbdb2509216e8f7be35ce860b0e9433d374488",
+      "matchesDist": true
+    },
+    {
+      "path": "en/solutions/digital-workplace/index.html",
+      "status": 200,
+      "sha256": "29d8a56234021a8cc2bb5282d5edd97ea01373b939479c4e9cc3f41b98ab4675",
+      "matchesDist": true
+    },
+    {
+      "path": "en/solutions/index.html",
+      "status": 200,
+      "sha256": "52ba1e842897383030a638170f0e59045af628cba09ac0c76e266e88241a82f4",
+      "matchesDist": true
+    },
+    {
+      "path": "en/solutions/information-protection/index.html",
+      "status": 200,
+      "sha256": "e863d7904d0a9f92ed9be4364b4a2bede7c3a1592d3f61cbc7145dc57e1c768e",
+      "matchesDist": true
+    },
+    {
+      "path": "en/solutions/modern-work/index.html",
+      "status": 200,
+      "sha256": "0978ceb8fd009b68eb7a06955e7af15e16a51e38cc8ac952861de4fd2878224e",
+      "matchesDist": true
+    },
+    {
+      "path": "en/solutions/secure-office/index.html",
+      "status": 200,
+      "sha256": "7d79edf0d15959719bf597a4fdf11535663bd20ef87417d45d67f2016f2fb893",
+      "matchesDist": true
+    },
+    {
+      "path": "en/terms/index.html",
+      "status": 200,
+      "sha256": "79ba036b4c5d642cfdbb8bf6bc8db63ef20c33a76e9e63761065bcf389f8a8ed",
+      "matchesDist": true
+    },
+    {
+      "path": "index.html",
+      "status": 200,
+      "sha256": "6069d8bf6cc98def30f51b2c737ba2b1825219b29208902d520fee3ac56fee14",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/about/index.html",
+      "status": 200,
+      "sha256": "a8220c4894562e21f69ca9fb70988d20e2ff5b01f99ffd0166da22e6131b5b83",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/contact/index.html",
+      "status": 200,
+      "sha256": "33b4bcfd4c643a5e8dce132059aaef86d844c84b057a27cd0d934b6f9f5ef5ae",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/index.html",
+      "status": 200,
+      "sha256": "2d4e989ca36f3dcc4ae9dd903b532717ac38c203e6f975ce6c1bafa06dd59ce1",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/privacy/index.html",
+      "status": 200,
+      "sha256": "681262cf965a7e1ae4b561e0cb7dc1c3c00d4cad7fcfde4f992da9ca75070d28",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/products/files/index.html",
+      "status": 200,
+      "sha256": "a6bde0e114fc65ada36a79875daf13776e25d83e152806207f313154218b6375",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/products/index.html",
+      "status": 200,
+      "sha256": "ffb24a1f2c700d6b4be1d0e2136db74a58e77aba6859f1edee7af63defa54fab",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/products/shield/index.html",
+      "status": 200,
+      "sha256": "ad46836b8ccdbaa179edecb0ce9a148231924e1d06ab706a2538639c271f1e2c",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/products/space/index.html",
+      "status": 200,
+      "sha256": "7c94f30334e3b5b2a51a678164164b3c75399085f82d3095544d180fb82603a3",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/resources/access-review/index.html",
+      "status": 200,
+      "sha256": "3f30b84bb47c540b8785f957823242e005939486d002f1fcda9f735a9ca62b14",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/resources/index.html",
+      "status": 200,
+      "sha256": "7c38ab32efe998f7ed8bf1a0ad9c92150750f979ea905dc2e6f8403e34cac3ab",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/resources/information-lifecycle/index.html",
+      "status": 200,
+      "sha256": "eeb5e1ad372727bf0811020d485dd518ee01d8f10c0e45dffbe6cf4a3f283e08",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/resources/work-handoffs/index.html",
+      "status": 200,
+      "sha256": "f248c909b0f1c7cd25c25fe5d6c27adf6ba191c7a825db2737219fecc98360a5",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/services/index.html",
+      "status": 200,
+      "sha256": "1134c8579cf1928dc3faa49ed2ea85f020f87d530e87332146b2cacb5065c671",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/solutions/digital-workplace/index.html",
+      "status": 200,
+      "sha256": "27846b31af6b6619a274e2f20d0753022cd24b6ce92b6c1203487a24a0fbc508",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/solutions/index.html",
+      "status": 200,
+      "sha256": "4648cd9b80b676891922ca03b11c1e61b1e5ea2ea09a88304bec447a89460029",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/solutions/information-protection/index.html",
+      "status": 200,
+      "sha256": "0ae7dc3a7236a77ea5187ba4d8286fdd5e2308684c40bf652a04653844eff263",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/solutions/modern-work/index.html",
+      "status": 200,
+      "sha256": "c09f730d921f8afe8ed9c458cb4a492db856c65227b1474de00000e126beb249",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/solutions/secure-office/index.html",
+      "status": 200,
+      "sha256": "176da6e130ec4dc2af899515a60e1f016d96b3438b4db10e3406e53383b02002",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-cn/terms/index.html",
+      "status": 200,
+      "sha256": "ec6c05f56d223f4c131d5d392da388f3faaa3259ecde965f55cc604687371413",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/about/index.html",
+      "status": 200,
+      "sha256": "fc441f2353cae79cda00eb7f1c56c00ad7a9c9d1d635bcd5433baff303274ae0",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/contact/index.html",
+      "status": 200,
+      "sha256": "8fbfe1fd66c2cf1c6e005770f75da2d7bcee4ac951a602b9956960fe826c86cb",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/index.html",
+      "status": 200,
+      "sha256": "6069d8bf6cc98def30f51b2c737ba2b1825219b29208902d520fee3ac56fee14",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/privacy/index.html",
+      "status": 200,
+      "sha256": "d21ee56fb430f30987ffe265fcd30a1ee2a68e421b787c021b259add506cf08c",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/products/files/index.html",
+      "status": 200,
+      "sha256": "c65224fb3b7902b57e56a7172530b1cbbb2fa09155ada9d299fe29573fc282ef",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/products/index.html",
+      "status": 200,
+      "sha256": "c6d7bf4713b4f7acf02427a04888ace3078c34af69e2ff6b4ee861034fd607ab",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/products/shield/index.html",
+      "status": 200,
+      "sha256": "baed10438c41477a8f6a073cc45cea781f35c90a262fa5a7cdb3a81a2bdfdc9d",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/products/space/index.html",
+      "status": 200,
+      "sha256": "73033c863b29fb1bf6d20c4fff70cf335816c3790b9589724ef2c8d18f4c3018",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/resources/access-review/index.html",
+      "status": 200,
+      "sha256": "a6ec074c559e9f26eb1fcbc5537a6162cae570e28c281bff2b99f8f2a23cf7c0",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/resources/index.html",
+      "status": 200,
+      "sha256": "a19d47dd1dc50fe5466d7df4d7ee033b78689ba0bde6d91052331e8c7c46c94d",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/resources/information-lifecycle/index.html",
+      "status": 200,
+      "sha256": "8acc08f922240ab6682ee5db551660b5f30688e8a3e209126b3a3918a3933911",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/resources/work-handoffs/index.html",
+      "status": 200,
+      "sha256": "748f7fdcc445f3f66450aabba911c912155e059e25119524502ec3d4ca07a681",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/services/index.html",
+      "status": 200,
+      "sha256": "f3a9e2321ce4f897efe4b568f0c7cc396631fc27e43255fc3ff869614f04f5b9",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/solutions/digital-workplace/index.html",
+      "status": 200,
+      "sha256": "76fb333c54bfd37b5c1a55bdd58e6fcbc69985b234cdeb1ffa78528ece19fd12",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/solutions/index.html",
+      "status": 200,
+      "sha256": "6d2ea681badab87c7a49bb43d6aa1f9555d4d9a041ef9201f19663e77d8e2943",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/solutions/information-protection/index.html",
+      "status": 200,
+      "sha256": "5c4e0e7362af393b0170b62b8eedfa6a6756e1f6f15036d2314533b5be1b282e",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/solutions/modern-work/index.html",
+      "status": 200,
+      "sha256": "08a48574491d8a00b55645fc62c0a4e099985f9a98d4882e3d5fb30e01d89ae9",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/solutions/secure-office/index.html",
+      "status": 200,
+      "sha256": "880295fec3b783f1e01fd7e162b77c846cb2207a34341931994ac7f0d6aab2ca",
+      "matchesDist": true
+    },
+    {
+      "path": "zh-tw/terms/index.html",
+      "status": 200,
+      "sha256": "4f66feef2c47a21f0c0ecf37f151cd2d780ba431db1dd577070614dde6f814b4",
+      "matchesDist": true
+    }
+  ]
+}
