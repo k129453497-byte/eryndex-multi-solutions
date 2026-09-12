@@ -74,3 +74,38 @@
 - Implementation：僅在回復結果為最早版本 v1 時，於時間軸重建及回復按鈕停用後，把焦點移到目前 v1 版本按鈕；v3→v2 時仍保留在可繼續使用的回復按鈕，不改變既有操作順序。
 - Commit：`73fa89eb4dd5e46b576e2d36542900e2c7bce593`
 - Regression Request：請獨立 QA 聚焦複驗 Files 鍵盤流程 v2→v1，確認畫面穩定後焦點位於 v1 時間軸按鈕；並做三尺寸基本 Files smoke。正式 PASS／Final Acceptance 仍由 QA Reviewer 判定。
+
+## Feature panels — Fix cycle 1
+
+- 回應日期：2026-09-12（Asia/Taipei）
+- QA 報告 commit：`ec30f43`
+- 修正 commit：`bd83880f50960605617d71005705e995187c306c`
+- Developer 結論：QA-17 與 QA-18 均為客觀成立的低風險缺陷，接受並修正。本文件不宣告 QA PASS，等待獨立 QA Regression Test。
+
+### QA-17
+
+- **Developer Assessment：**團隊知識、工作流程、分享連結與備份還原的識別標記寫死為繁體中文，會在英文與簡中頁面留下未在地化字樣，問題成立。
+- **Decision：FIXED**
+- **Reason：**識別標記是產品介面文字的一部分，應與頁面語系一致，不能只翻譯標題與說明。
+- **Implementation：**替四個功能入口加入繁中、英文、簡中三語標記資料，介面建立時依目前語系載入；身分裝置與稽核紀錄則保留原有語言中立符號。
+- **Commit：**`bd83880f50960605617d71005705e995187c306c`
+
+### QA-18
+
+- **Developer Assessment：**功能項目只有視覺 class，未同步公開按下狀態；備份與稽核列表的透明背景又覆蓋一般選取樣式，焦點離開後不易辨識目前項目，問題成立。
+- **Decision：FIXED**
+- **Reason：**互動選取狀態必須同時具備可感知的視覺差異與可被輔助技術讀取的語意。
+- **Implementation：**所有功能項目新增並同步更新 `aria-pressed`；工作流程預選項同步標示為已按下；備份與稽核列表新增持續可見的選取背景與邊線。
+- **Commit：**`bd83880f50960605617d71005705e995187c306c`
+
+### Developer Verification
+
+- `pnpm check`：PASS
+- production subpath build：PASS，59 pages
+- `pnpm qa`：PASS（59 HTML、294 links、258 asset references、6 masters、3 locales、54 redirects、contact draft）
+- `node scripts/qa-localization.mjs`：PASS
+- `git diff --check`：PASS
+
+### Regression Request
+
+請獨立 QA 聚焦複驗 QA-17 與 QA-18：三語頁面的四組功能標記、六組功能項目的 `aria-pressed` 狀態，以及備份與稽核列表在焦點移開後仍可辨識的選取狀態。正式 PASS／Final Acceptance 仍由 QA Reviewer 判定。
