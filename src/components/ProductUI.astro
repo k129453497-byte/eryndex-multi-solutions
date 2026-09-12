@@ -545,7 +545,7 @@ const fileVersions = [
       const to = from - 1;
       selected.dataset.version = String(to);
       selected.querySelector('[data-version-label]')!.textContent = 'v' + to;
-      showHistory(selected);
+      showHistory(selected, to === 1 ? String(to) : undefined);
       demo.querySelector('[data-file-status]')!.textContent = button.dataset.message!
         .replace('{from}', 'v' + from)
         .replace('{to}', 'v' + to);
