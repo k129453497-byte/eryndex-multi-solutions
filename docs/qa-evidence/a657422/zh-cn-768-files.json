@@ -1,0 +1,402 @@
+{
+  "lang": "zh-cn",
+  "width": 768,
+  "height": 1024,
+  "steps": [
+    {
+      "action": "initial v2 click",
+      "state": {
+        "file": "品牌提案.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": "2"
+        },
+        "height": 1024,
+        "history": [
+          {
+            "active": "",
+            "text": "v32026 年 9 月 11 日 14:20YL · 调整首页提案内容",
+            "version": "3"
+          },
+          {
+            "active": "active",
+            "text": "v22026 年 9 月 10 日 16:05CW · 补上品牌方向",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v12026 年 9 月 8 日 09:30YL · 建立初始文件",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "恢复上一版本"
+        },
+        "scrollWidth": 768,
+        "status": "",
+        "version": "v2",
+        "width": 768
+      }
+    },
+    {
+      "action": "Tab to v1",
+      "state": {
+        "file": "品牌提案.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": "1"
+        },
+        "height": 1024,
+        "history": [
+          {
+            "active": "",
+            "text": "v32026 年 9 月 11 日 14:20YL · 调整首页提案内容",
+            "version": "3"
+          },
+          {
+            "active": "active",
+            "text": "v22026 年 9 月 10 日 16:05CW · 补上品牌方向",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v12026 年 9 月 8 日 09:30YL · 建立初始文件",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "恢复上一版本"
+        },
+        "scrollWidth": 768,
+        "status": "",
+        "version": "v2",
+        "width": 768
+      }
+    },
+    {
+      "action": "Tab to restore",
+      "state": {
+        "file": "品牌提案.pdf",
+        "focus": {
+          "restore": true,
+          "tag": "BUTTON",
+          "version": null
+        },
+        "height": 1024,
+        "history": [
+          {
+            "active": "",
+            "text": "v32026 年 9 月 11 日 14:20YL · 调整首页提案内容",
+            "version": "3"
+          },
+          {
+            "active": "active",
+            "text": "v22026 年 9 月 10 日 16:05CW · 补上品牌方向",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v12026 年 9 月 8 日 09:30YL · 建立初始文件",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "恢复上一版本"
+        },
+        "scrollWidth": 768,
+        "status": "",
+        "version": "v2",
+        "width": 768
+      }
+    },
+    {
+      "action": "Enter restore v1 immediate",
+      "state": {
+        "file": "品牌提案.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": "1"
+        },
+        "height": 1024,
+        "history": [
+          {
+            "active": "",
+            "text": "v32026 年 9 月 11 日 14:20YL · 调整首页提案内容",
+            "version": "3"
+          },
+          {
+            "active": "",
+            "text": "v22026 年 9 月 10 日 16:05CW · 补上品牌方向",
+            "version": "2"
+          },
+          {
+            "active": "active",
+            "text": "v12026 年 9 月 8 日 09:30YL · 建立初始文件",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": true,
+          "text": "当前已是最早版本"
+        },
+        "scrollWidth": 768,
+        "status": "当前查看已从 v2 恢复为 v1；历史记录仍保留。",
+        "version": "v1",
+        "width": 768
+      }
+    },
+    {
+      "action": "settled in subsequent tool call",
+      "state": {
+        "file": "品牌提案.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": "1"
+        },
+        "height": 1024,
+        "history": [
+          {
+            "active": "",
+            "text": "v32026 年 9 月 11 日 14:20YL · 调整首页提案内容",
+            "version": "3"
+          },
+          {
+            "active": "",
+            "text": "v22026 年 9 月 10 日 16:05CW · 补上品牌方向",
+            "version": "2"
+          },
+          {
+            "active": "active",
+            "text": "v12026 年 9 月 8 日 09:30YL · 建立初始文件",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": true,
+          "text": "当前已是最早版本"
+        },
+        "scrollWidth": 768,
+        "status": "当前查看已从 v2 恢复为 v1；历史记录仍保留。",
+        "version": "v1",
+        "width": 768
+      }
+    },
+    {
+      "action": "v3 to v2 restore retains restore focus",
+      "state": {
+        "file": "品牌提案.pdf",
+        "focus": {
+          "restore": true,
+          "tag": "BUTTON",
+          "version": null
+        },
+        "height": 1024,
+        "history": [
+          {
+            "active": "",
+            "text": "v32026 年 9 月 11 日 14:20YL · 调整首页提案内容",
+            "version": "3"
+          },
+          {
+            "active": "active",
+            "text": "v22026 年 9 月 10 日 16:05CW · 补上品牌方向",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v12026 年 9 月 8 日 09:30YL · 建立初始文件",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "恢复上一版本"
+        },
+        "scrollWidth": 768,
+        "status": "当前查看已从 v3 恢复为 v2；历史记录仍保留。",
+        "version": "v2",
+        "width": 768
+      }
+    },
+    {
+      "action": "second restore to v1",
+      "state": {
+        "file": "品牌提案.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": "1"
+        },
+        "height": 1024,
+        "history": [
+          {
+            "active": "",
+            "text": "v32026 年 9 月 11 日 14:20YL · 调整首页提案内容",
+            "version": "3"
+          },
+          {
+            "active": "",
+            "text": "v22026 年 9 月 10 日 16:05CW · 补上品牌方向",
+            "version": "2"
+          },
+          {
+            "active": "active",
+            "text": "v12026 年 9 月 8 日 09:30YL · 建立初始文件",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": true,
+          "text": "当前已是最早版本"
+        },
+        "scrollWidth": 768,
+        "status": "当前查看已从 v2 恢复为 v1；历史记录仍保留。",
+        "version": "v1",
+        "width": 768
+      }
+    },
+    {
+      "action": "sidebar 1",
+      "state": {
+        "active": "共享链接",
+        "heading": "共享链接",
+        "hidden": false
+      }
+    },
+    {
+      "action": "sidebar 2",
+      "state": {
+        "active": "备份与恢复",
+        "heading": "备份与恢复",
+        "hidden": false
+      }
+    },
+    {
+      "action": "sidebar 0",
+      "state": {
+        "active": "团队文件",
+        "heading": "备份与恢复",
+        "hidden": true
+      }
+    },
+    {
+      "action": "file 1",
+      "state": {
+        "file": "交接清单.xlsx",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": null
+        },
+        "height": 1024,
+        "history": [
+          {
+            "active": "active",
+            "text": "v22026 年 9 月 11 日 10:15CW · 更新负责人与期限",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v12026 年 9 月 9 日 11:40CW · 建立交接栏位",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "恢复上一版本"
+        },
+        "scrollWidth": 768,
+        "status": "",
+        "version": "v2",
+        "width": 768
+      }
+    },
+    {
+      "action": "file 2",
+      "state": {
+        "file": "合作合同.docx",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": null
+        },
+        "height": 1024,
+        "history": [
+          {
+            "active": "active",
+            "text": "v42026 年 9 月 11 日 09:45YL · 确认最终条款",
+            "version": "4"
+          },
+          {
+            "active": "",
+            "text": "v32026 年 9 月 10 日 13:25CW · 修订服务范围",
+            "version": "3"
+          },
+          {
+            "active": "",
+            "text": "v22026 年 9 月 9 日 15:10YL · 加入交付项目",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v12026 年 9 月 7 日 10:00YL · 建立合同草稿",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "恢复上一版本"
+        },
+        "scrollWidth": 768,
+        "status": "",
+        "version": "v4",
+        "width": 768
+      }
+    },
+    {
+      "action": "file 0",
+      "state": {
+        "file": "品牌提案.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": null
+        },
+        "height": 1024,
+        "history": [
+          {
+            "active": "",
+            "text": "v32026 年 9 月 11 日 14:20YL · 调整首页提案内容",
+            "version": "3"
+          },
+          {
+            "active": "",
+            "text": "v22026 年 9 月 10 日 16:05CW · 补上品牌方向",
+            "version": "2"
+          },
+          {
+            "active": "active",
+            "text": "v12026 年 9 月 8 日 09:30YL · 建立初始文件",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": true,
+          "text": "当前已是最早版本"
+        },
+        "scrollWidth": 768,
+        "status": "",
+        "version": "v1",
+        "width": 768
+      }
+    }
+  ],
+  "errors": []
+}

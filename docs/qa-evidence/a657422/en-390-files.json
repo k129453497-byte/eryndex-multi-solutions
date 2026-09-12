@@ -1,0 +1,402 @@
+{
+  "lang": "en",
+  "width": 390,
+  "height": 844,
+  "steps": [
+    {
+      "action": "initial v2 click",
+      "state": {
+        "file": "Brand proposal.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": "2"
+        },
+        "height": 844,
+        "history": [
+          {
+            "active": "",
+            "text": "v311 Sep 2026, 14:20YL · Homepage proposal updated",
+            "version": "3"
+          },
+          {
+            "active": "active",
+            "text": "v210 Sep 2026, 16:05CW · Brand direction added",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v18 Sep 2026, 09:30YL · Initial file created",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "Restore previous version"
+        },
+        "scrollWidth": 390,
+        "status": "",
+        "version": "v2",
+        "width": 390
+      }
+    },
+    {
+      "action": "Tab to v1",
+      "state": {
+        "file": "Brand proposal.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": "1"
+        },
+        "height": 844,
+        "history": [
+          {
+            "active": "",
+            "text": "v311 Sep 2026, 14:20YL · Homepage proposal updated",
+            "version": "3"
+          },
+          {
+            "active": "active",
+            "text": "v210 Sep 2026, 16:05CW · Brand direction added",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v18 Sep 2026, 09:30YL · Initial file created",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "Restore previous version"
+        },
+        "scrollWidth": 390,
+        "status": "",
+        "version": "v2",
+        "width": 390
+      }
+    },
+    {
+      "action": "Tab to restore",
+      "state": {
+        "file": "Brand proposal.pdf",
+        "focus": {
+          "restore": true,
+          "tag": "BUTTON",
+          "version": null
+        },
+        "height": 844,
+        "history": [
+          {
+            "active": "",
+            "text": "v311 Sep 2026, 14:20YL · Homepage proposal updated",
+            "version": "3"
+          },
+          {
+            "active": "active",
+            "text": "v210 Sep 2026, 16:05CW · Brand direction added",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v18 Sep 2026, 09:30YL · Initial file created",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "Restore previous version"
+        },
+        "scrollWidth": 390,
+        "status": "",
+        "version": "v2",
+        "width": 390
+      }
+    },
+    {
+      "action": "Enter restore v1 immediate",
+      "state": {
+        "file": "Brand proposal.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": "1"
+        },
+        "height": 844,
+        "history": [
+          {
+            "active": "",
+            "text": "v311 Sep 2026, 14:20YL · Homepage proposal updated",
+            "version": "3"
+          },
+          {
+            "active": "",
+            "text": "v210 Sep 2026, 16:05CW · Brand direction added",
+            "version": "2"
+          },
+          {
+            "active": "active",
+            "text": "v18 Sep 2026, 09:30YL · Initial file created",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": true,
+          "text": "Already at the earliest version"
+        },
+        "scrollWidth": 390,
+        "status": "Viewing restored from v2 to v1; history remains available.",
+        "version": "v1",
+        "width": 390
+      }
+    },
+    {
+      "action": "settled in subsequent tool call",
+      "state": {
+        "file": "Brand proposal.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": "1"
+        },
+        "height": 844,
+        "history": [
+          {
+            "active": "",
+            "text": "v311 Sep 2026, 14:20YL · Homepage proposal updated",
+            "version": "3"
+          },
+          {
+            "active": "",
+            "text": "v210 Sep 2026, 16:05CW · Brand direction added",
+            "version": "2"
+          },
+          {
+            "active": "active",
+            "text": "v18 Sep 2026, 09:30YL · Initial file created",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": true,
+          "text": "Already at the earliest version"
+        },
+        "scrollWidth": 390,
+        "status": "Viewing restored from v2 to v1; history remains available.",
+        "version": "v1",
+        "width": 390
+      }
+    },
+    {
+      "action": "v3 to v2 restore retains restore focus",
+      "state": {
+        "file": "Brand proposal.pdf",
+        "focus": {
+          "restore": true,
+          "tag": "BUTTON",
+          "version": null
+        },
+        "height": 844,
+        "history": [
+          {
+            "active": "",
+            "text": "v311 Sep 2026, 14:20YL · Homepage proposal updated",
+            "version": "3"
+          },
+          {
+            "active": "active",
+            "text": "v210 Sep 2026, 16:05CW · Brand direction added",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v18 Sep 2026, 09:30YL · Initial file created",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "Restore previous version"
+        },
+        "scrollWidth": 390,
+        "status": "Viewing restored from v3 to v2; history remains available.",
+        "version": "v2",
+        "width": 390
+      }
+    },
+    {
+      "action": "second restore to v1",
+      "state": {
+        "file": "Brand proposal.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": "1"
+        },
+        "height": 844,
+        "history": [
+          {
+            "active": "",
+            "text": "v311 Sep 2026, 14:20YL · Homepage proposal updated",
+            "version": "3"
+          },
+          {
+            "active": "",
+            "text": "v210 Sep 2026, 16:05CW · Brand direction added",
+            "version": "2"
+          },
+          {
+            "active": "active",
+            "text": "v18 Sep 2026, 09:30YL · Initial file created",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": true,
+          "text": "Already at the earliest version"
+        },
+        "scrollWidth": 390,
+        "status": "Viewing restored from v2 to v1; history remains available.",
+        "version": "v1",
+        "width": 390
+      }
+    },
+    {
+      "action": "sidebar 1",
+      "state": {
+        "active": "Shared links",
+        "heading": "Shared links",
+        "hidden": false
+      }
+    },
+    {
+      "action": "sidebar 2",
+      "state": {
+        "active": "Backup & restore",
+        "heading": "Backup & restore",
+        "hidden": false
+      }
+    },
+    {
+      "action": "sidebar 0",
+      "state": {
+        "active": "Team files",
+        "heading": "Backup & restore",
+        "hidden": true
+      }
+    },
+    {
+      "action": "file 1",
+      "state": {
+        "file": "Handoff checklist.xlsx",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": null
+        },
+        "height": 844,
+        "history": [
+          {
+            "active": "active",
+            "text": "v211 Sep 2026, 10:15CW · Owners and dates updated",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v19 Sep 2026, 11:40CW · Handoff fields created",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "Restore previous version"
+        },
+        "scrollWidth": 390,
+        "status": "",
+        "version": "v2",
+        "width": 390
+      }
+    },
+    {
+      "action": "file 2",
+      "state": {
+        "file": "Collaboration agreement.docx",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": null
+        },
+        "height": 844,
+        "history": [
+          {
+            "active": "active",
+            "text": "v411 Sep 2026, 09:45YL · Final terms reviewed",
+            "version": "4"
+          },
+          {
+            "active": "",
+            "text": "v310 Sep 2026, 13:25CW · Service scope revised",
+            "version": "3"
+          },
+          {
+            "active": "",
+            "text": "v29 Sep 2026, 15:10YL · Deliverables added",
+            "version": "2"
+          },
+          {
+            "active": "",
+            "text": "v17 Sep 2026, 10:00YL · Agreement draft created",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": false,
+          "text": "Restore previous version"
+        },
+        "scrollWidth": 390,
+        "status": "",
+        "version": "v4",
+        "width": 390
+      }
+    },
+    {
+      "action": "file 0",
+      "state": {
+        "file": "Brand proposal.pdf",
+        "focus": {
+          "restore": false,
+          "tag": "BUTTON",
+          "version": null
+        },
+        "height": 844,
+        "history": [
+          {
+            "active": "",
+            "text": "v311 Sep 2026, 14:20YL · Homepage proposal updated",
+            "version": "3"
+          },
+          {
+            "active": "",
+            "text": "v210 Sep 2026, 16:05CW · Brand direction added",
+            "version": "2"
+          },
+          {
+            "active": "active",
+            "text": "v18 Sep 2026, 09:30YL · Initial file created",
+            "version": "1"
+          }
+        ],
+        "restore": {
+          "disabled": true,
+          "text": "Already at the earliest version"
+        },
+        "scrollWidth": 390,
+        "status": "",
+        "version": "v1",
+        "width": 390
+      }
+    }
+  ],
+  "errors": []
+}
