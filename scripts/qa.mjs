@@ -1,6 +1,5 @@
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { createHash } from 'node:crypto';
-import { execFileSync } from 'node:child_process';
 import { parseHTML } from 'linkedom';
 import path from 'node:path';
 import assert from 'node:assert/strict';
@@ -103,8 +102,6 @@ for (const [file, hash] of Object.entries(integrity.masters)) {
     hash,
     'Master hash changed: ' + file,
   );
-  const original = execFileSync('git', ['show', '7a14df0:public/assets/' + file]);
-  assert.ok(original.equals(current), 'Official master differs from original commit: ' + file);
 }
 for (const locale of ['zh-tw', 'zh-cn', 'en']) {
   const list = [...docs.keys()].filter(
@@ -182,7 +179,7 @@ if (issues.length) {
         htmlPages: htmlFiles.length,
         internalLinkReferences: links,
         assetReferences: assets,
-        originalMastersVerified: 6,
+        mastersVerified: 6,
         localizedPages: 3,
         legacyRedirects: 54,
         contactDraft: 'PASS',

@@ -9,9 +9,11 @@ The following six files are the confirmed **Official Master Assets**. Preserve t
 | Logo | `k129453497-byte/eryndex-tactile-systems`: `client/public/brand/eryndex-logo.webp` | `public/assets/brand/logo/eryndex-logo.webp` | Official logo master; retain the original WebP format |
 | Hero Master | `z-image-turbo_00074_.png` | `public/assets/brand/hero/eryndex-hero-master.png` | Official static Hero master |
 | Hero H3 56 | `MiniMax_H3_00056_.mp4` | `public/assets/brand/hero/eryndex-hero-h3-source.mp4` | Official motion source; not the production video |
-| Space Master | `Qwen_Edit_2511_00003_.png` | `public/assets/products/space/eryndex-space-master.png` | Official Space product master |
-| Files Master | `Qwen_Edit_2511_00005_.png` | `public/assets/products/files/eryndex-files-master.png` | Official Files product master |
-| Shield Master | `Qwen_Edit_2511_00008_.png` | `public/assets/products/shield/eryndex-shield-master.png` | Official Shield product master |
+| Space Master | Codex ImageGen 3D editorial generation, 2026-09-18 | `public/assets/products/space/eryndex-space-master.png` | Workflow stages, collaboration and completion |
+| Files Master | Codex ImageGen 3D editorial generation, 2026-09-18 | `public/assets/products/files/eryndex-files-master.png` | Version history and restoration |
+| Shield Master | Codex ImageGen 3D editorial generation, 2026-09-18 | `public/assets/products/shield/eryndex-shield-master.png` | Identity, device trust and policy decisions |
+
+The uncropped ImageGen outputs are preserved beside each product master as `eryndex-*-source-20260918.png`. The 1328 × 800 masters are presentation crops derived from those sources.
 
 ### Hero production derivatives — pending
 

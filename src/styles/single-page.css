@@ -87,10 +87,6 @@
   width: 48%;
   max-width: 560px;
 }
-/* Presentation-only color treatment: original Files artwork is preserved. */
-.single-product.blue .product-atmosphere img {
-  filter: grayscale(1) sepia(0.6) hue-rotate(190deg) saturate(1.2);
-}
 .single-product.blue .product-atmosphere {
   background: transparent;
   isolation: isolate;

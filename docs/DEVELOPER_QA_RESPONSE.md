@@ -109,3 +109,14 @@
 ### Regression Request
 
 請獨立 QA 聚焦複驗 QA-17 與 QA-18：三語頁面的四組功能標記、六組功能項目的 `aria-pressed` 狀態，以及備份與稽核列表在焦點移開後仍可辨識的選取狀態。正式 PASS／Final Acceptance 仍由 QA Reviewer 判定。
+
+## Owner-directed 3D product visual refresh
+
+- 回應日期：2026-09-18（Asia/Taipei）
+- 觸發原因：Owner 確認舊產品素材已被主管否決，解除舊版 Master 不可替換限制，要求圖片以新版明亮企業網站格局與產品辨識度為準。
+- Developer Assessment：Hero 與 Logo 可沿用；Space、Files、Shield 舊圖雖一致，但產品語意不足，且 Files 另受 CSS 即時改色影響。
+- Decision：**ACCEPTED / IMPLEMENTED — AWAITING QA**
+- Reason：產品圖應在未閱讀內文前，仍能分別傳達流程推進、版本保存／還原、身分與裝置信任判斷。
+- Implementation：建立三張明亮 3D editorial 新素材；保留未裁切來源檔，產出 1328 × 800 Master 與 1328／664 WebP；移除 Files CSS 改色；更新素材來源與完整性基準。Hero 與 Logo 保持不變。
+- Browser verification：桌機 1280 × 720 與手機 390 × 844 實際套版檢查完成；三張 responsive 圖片載入成功，無水平溢位，文字對比與手機上圖下文配置正常。
+- Regression Request：請獨立 QA 聚焦驗證 Space／Files／Shield 的產品辨識度、桌機文字對比、手機裁切、三語路徑圖片載入，以及 Master／WebP 完整性。正式 PASS／Final Acceptance 仍由 QA Reviewer 判定。
