@@ -3,24 +3,39 @@
   top: 0;
 }
 .single-products {
-  padding-bottom: 35px;
+  padding-bottom: clamp(96px, 10vw, 150px);
 }
 .product-jumps {
   display: flex;
   gap: 25px;
   flex-wrap: wrap;
-  padding-bottom: 30px;
-  border-bottom: 1px solid var(--line);
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  width: fit-content;
+  margin-bottom: 52px;
 }
 .product-jumps a {
   display: flex;
   gap: 10px;
   align-items: center;
   font-size: 16px;
+  padding: 11px 18px;
+  border-radius: 999px;
+}
+.product-jumps a:hover {
+  background: #edf5f1;
+  color: var(--ink);
 }
 .single-product {
-  padding: 55px 0;
-  border-bottom: 1px solid var(--line);
+  padding: 0;
+  margin: 0 0 42px;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 28px 70px rgba(27, 57, 48, 0.08);
+  overflow: hidden;
   scroll-margin-top: 110px;
 }
 .single-product-intro {
@@ -28,18 +43,18 @@
   isolation: isolate;
   overflow: hidden;
   display: flex;
-  min-height: 470px;
-  padding: 65px 5%;
+  min-height: 560px;
+  padding: 76px 6%;
   align-items: center;
-  background: var(--paper);
+  background: #f8fbfa;
 }
 .product-atmosphere {
   position: absolute;
   inset: 0;
   z-index: -2;
   pointer-events: none;
-  mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 97%, transparent 100%);
-  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 7%, #000 97%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0, #000 5%, #000 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 5%, #000 100%);
 }
 .product-atmosphere picture {
   display: block;
@@ -59,30 +74,41 @@
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(90deg, var(--paper) 0%, rgba(247,245,239,.98) 28%, rgba(247,245,239,.88) 42%, rgba(247,245,239,.34) 62%, transparent 82%);
+  background: linear-gradient(
+    90deg,
+    #f8fbfa 0%,
+    rgba(248, 251, 250, 0.98) 28%,
+    rgba(248, 251, 250, 0.86) 45%,
+    rgba(248, 251, 250, 0.22) 72%,
+    transparent 88%
+  );
 }
 .product-intro-copy {
-  width: 46%;
-  max-width: 520px;
+  width: 48%;
+  max-width: 560px;
 }
 /* Presentation-only color treatment: original Files artwork is preserved. */
 .single-product.blue .product-atmosphere img {
-  filter: grayscale(1) sepia(.6) hue-rotate(190deg) saturate(1.2);
+  filter: grayscale(1) sepia(0.6) hue-rotate(190deg) saturate(1.2);
 }
 .single-product.blue .product-atmosphere {
   background: transparent;
   isolation: isolate;
 }
 .single-product-intro h3 {
-  font-size: clamp(29px, 3vw, 44px);
+  font-size: clamp(42px, 4.6vw, 72px);
+  letter-spacing: -0.045em;
+  line-height: 1.06;
+  font-weight: 650;
 }
 .single-product-intro h4 {
-  font-size: 24px;
-  font-weight: 400;
-  margin: 15px 0;
+  font-size: clamp(22px, 2vw, 30px);
+  font-weight: 550;
+  margin: 22px 0 12px;
 }
 .single-product-intro .lead {
-  font-size: 17px;
+  font-size: 18px;
+  max-width: 480px;
 }
 .single-product-intro .text-link {
   margin-top: 25px;
@@ -90,6 +116,20 @@
 .disclosure {
   border-block-start: 1px solid var(--line);
   scroll-margin-top: 110px;
+}
+.single-product > .experience-label,
+.single-product > .software-demo,
+.single-product > .demo-note,
+.single-product > .product-details {
+  margin-inline: 5%;
+}
+.single-product > .experience-label {
+  margin-top: 54px;
+  font-size: clamp(24px, 2.2vw, 34px);
+  font-weight: 550;
+}
+.single-product > .demo-note {
+  margin-bottom: 36px;
 }
 .disclosure:last-child {
   border-bottom: 1px solid var(--line);
@@ -116,7 +156,8 @@
   transform: rotate(45deg);
 }
 .product-details {
-  margin-top: 32px;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 .disclosure-content {
   padding: 15px 0 40px;
@@ -156,8 +197,24 @@
   display: grid;
   grid-template-columns: 35px 1fr auto 25px;
 }
+.solution-disclosure {
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.75);
+  margin-bottom: 14px;
+  padding-inline: 28px;
+}
+.solution-disclosure > summary {
+  border: 0;
+  min-height: 96px;
+}
+.solution-disclosure h3 {
+  font-size: clamp(22px, 2vw, 30px);
+  font-weight: 550;
+}
 .solution-disclosure .disclosure-content {
   max-width: 1100px;
+  padding-bottom: 48px;
 }
 .solution-title {
   font-size: 30px !important;
@@ -184,7 +241,8 @@
 }
 .single-outcome {
   padding: 25px;
-  background: #eeeee6;
+  background: #edf5f1;
+  border-radius: 16px;
   margin: 25px 0;
 }
 .solution-disclosure .disclosure-content > .text-link {
@@ -209,13 +267,24 @@
 .service-explanation {
   margin-top: 45px;
   padding-top: 30px;
-  border-top: 1px solid #c8bfce;
+  border-top: 1px solid #cbd3e3;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 7%;
 }
 .resource-disclosure > summary {
   align-items: start;
+}
+.resource-disclosure {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  margin-bottom: 14px;
+  padding-inline: 28px;
+  background: #fff;
+}
+.resource-disclosure > summary {
+  border: 0;
+  padding-block: 30px;
 }
 .resource-disclosure summary .eyebrow {
   margin: 0 0 8px;
@@ -257,7 +326,13 @@
 }
 #about .page-intro,
 #contact .page-intro {
-  padding-top: 65px;
+  padding-top: 100px;
+}
+#solutions {
+  background: linear-gradient(180deg, transparent, #edf7f3 12%, #edf7f3 88%, transparent);
+}
+#about {
+  background: #fff;
 }
 section[id],
 details[id] {
@@ -270,7 +345,7 @@ details[id] {
   .single-product-intro {
     min-height: 0;
     align-items: center;
-    padding: 245px 8px 32px;
+    padding: 285px 28px 42px;
   }
   .product-intro-copy {
     width: 100%;
@@ -278,7 +353,7 @@ details[id] {
   }
   .product-atmosphere {
     inset: 0;
-    height: 225px;
+    height: 265px;
     opacity: 1;
     mask-image: none;
     -webkit-mask-image: none;
@@ -314,14 +389,19 @@ details[id] {
 }
 @media (max-width: 600px) {
   .product-jumps {
-    gap: 15px;
+    gap: 4px;
     font-size: 14px;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: space-between;
   }
   .product-jumps a {
-    font-size: 14px;
+    font-size: 13px;
+    padding: 10px 8px;
   }
   .single-product {
-    padding-block: 38px;
+    border-radius: 22px;
+    margin-bottom: 28px;
   }
   .single-product-intro h4 {
     font-size: 21px;
@@ -329,6 +409,25 @@ details[id] {
   .disclosure > summary {
     gap: 12px;
     padding: 22px 0;
+  }
+  .single-product-intro {
+    padding: 245px 22px 34px;
+  }
+  .product-atmosphere {
+    height: 225px;
+  }
+  .single-product-intro h3 {
+    font-size: 38px;
+  }
+  .single-product > .experience-label,
+  .single-product > .software-demo,
+  .single-product > .demo-note,
+  .single-product > .product-details {
+    margin-inline: 20px;
+  }
+  .solution-disclosure,
+  .resource-disclosure {
+    padding-inline: 18px;
   }
   .product-details > summary {
     font-size: 15px;

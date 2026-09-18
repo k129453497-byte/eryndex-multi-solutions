@@ -39,20 +39,22 @@ const productionMotion = false;
     }
   </div>
   <div class="hero-copy">
-    <p class="eyebrow">ERYNDEX · TECHNOLOGY, IN ORDER.</p><h1>
-      {t('讓企業的每一天，', 'A little more clarity.')}<br /><em
-        >{t('更有條理。', 'A lot more possibility.')}</em
+    <p class="eyebrow">ERYNDEX / WORK SYSTEMS FOR GROWING TEAMS</p><h1>
+      {t('讓工作更清楚，', 'Clarity for the work.')}<br /><em
+        >{t('讓團隊更有餘裕。', 'Room for the people.')}</em
       >
     </h1><p class="hero-description">
       {
         t(
-          '為中小企業提供協作、檔案與存取管理軟體，\n搭配導入與維運服務。',
-          'Collaboration, file management and access control software for small and medium businesses, with implementation and ongoing support.',
+          '把協作、檔案與存取管理放進同一套清楚的方法。\n從一個真實問題開始，逐步建立團隊用得久的工作系統。',
+          'Bring collaboration, files and access into one clear way of working. Start with one real problem and build a system your team can keep using.',
         )
       }
-    </p><a class="button" href={href(lang, 'products')}
-      >{t('探索 Eryndex', 'Discover Eryndex')} <span aria-hidden="true">↗</span></a
-    >
+    </p><div class="hero-actions">
+      <a class="button" href={href(lang, 'products')}
+        >{t('探索產品', 'Explore products')} <span aria-hidden="true">↗</span></a
+      ><a class="text-link" href="#contact">{t('談談你的需求', 'Talk about your needs')} →</a>
+    </div>
   </div>
   <div class="hero-foot">
     <span>{t('為真實的企業日常而設計', 'DESIGNED AROUND EVERYDAY BUSINESS')}</span><a

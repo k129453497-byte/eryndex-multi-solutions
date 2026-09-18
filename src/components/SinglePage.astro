@@ -13,14 +13,14 @@ const { t, products, solutions, stages, articles } = content(lang);
 
 <Hero lang={lang} />
 <section id="proposition" class="proposition wrap section">
-  <p class="eyebrow">A CLEARER WAY TO WORK</p><div>
-    <h2>{t('科技的價值，\n在於讓人從容。', 'Better technology.\nMore room to be human.')}</h2><p
+  <p class="eyebrow">WHY ERYNDEX</p><div>
+    <h2>{t('不是更多工具，\n而是更好的工作方式。', 'Not more tools.\nA better way to work.')}</h2><p
       class="lead"
     >
       {
         t(
-          '工作需要組織，資訊需要保存，信任需要管理。三套各有所長的軟體，搭配陪你落地的專業服務，讓企業從需要的地方開始。',
-          'Work needs structure, information needs care, and trust needs boundaries. Three focused products and practical services help your business start where it matters.',
+          '企業真正需要的，不只是功能清單，而是能被理解、被採用，也能持續運作的方法。Eryndex 將工作協作、資訊保存與存取治理拆成清楚的產品，讓你從最需要改善的地方開始。',
+          'Businesses need more than feature lists. They need systems people can understand, adopt and sustain. Eryndex separates collaboration, information care and access governance into focused products, so you can begin where improvement matters most.',
         )
       }
     </p>
@@ -30,13 +30,13 @@ const { t, products, solutions, stages, articles } = content(lang);
   <div class="section-heading">
     <div>
       <p class="eyebrow">ERYNDEX PRODUCTS</p><h2>
-        {t('三種專注，\n回應不同的需要。', 'Three distinct purposes.\nOne thoughtful approach.')}
+        {t('三套產品，\n處理三種企業日常。', 'Three products.\nThree everyday business needs.')}
       </h2>
     </div><p>
       {
         t(
-          '每套產品都能獨立使用，也能在需要時彼此連結。',
-          'Each product stands on its own and connects when you need it.',
+          '先解決眼前最重要的一件事；需要擴充時，再把產品連成一套完整工作系統。',
+          'Solve the most important problem first. Connect products into a complete work system when you are ready to grow.',
         )
       }
     </p>
@@ -78,16 +78,16 @@ const { t, products, solutions, stages, articles } = content(lang);
             </div>
           </>
         </div>
-            <>
-              <h4 class="experience-label">{p.short}</h4>
-              <ProductUI id={p.id} lang={lang} />
-              <p class="demo-note">
-                {t(
-                  '互動示意使用範例資料，不會更動真實系統或檔案。',
-                  'Interactive examples use sample data and do not change real systems or files.',
-                )}
-              </p>
-            </>
+        <>
+          <h4 class="experience-label">{p.short}</h4>
+          <ProductUI id={p.id} lang={lang} />
+          <p class="demo-note">
+            {t(
+              '互動示意使用範例資料，不會更動真實系統或檔案。',
+              'Interactive examples use sample data and do not change real systems or files.',
+            )}
+          </p>
+        </>
 
         <details class="disclosure product-details" id={'product-details-' + p.id}>
           <summary>
@@ -142,13 +142,18 @@ const { t, products, solutions, stages, articles } = content(lang);
   <div class="section-heading">
     <div>
       <p class="eyebrow">BETTER TOGETHER</p><h2>
-        {t('從你的情境，\n找到合適的組合。', 'Your situation.\nThe right combination.')}
+        {
+          t(
+            '從一個痛點開始，\n組成適合你的系統。',
+            'Start with one pain point.\nBuild the right system.',
+          )
+        }
       </h2>
     </div><p>
       {
         t(
-          '解決方案是產品的合適組合。可以從一套開始，選擇跟著需求走。',
-          'Solutions combine the right products for your situation. Start with one and let your needs set the pace.',
+          '不是一次換掉所有工具，而是把最需要改善的流程理清，再依照團隊節奏逐步連結。',
+          'Do not replace everything at once. Clarify the workflow that needs attention, then connect capabilities at your team’s pace.',
         )
       }
     </p>
@@ -228,8 +233,8 @@ const { t, products, solutions, stages, articles } = content(lang);
       <h2>
         {
           t(
-            '軟體只是開始。\n我們陪你真正落地。',
-            'Software is the beginning.\nWe help make it work.',
+            '把軟體導入日常，\n直到團隊真正會用。',
+            'Bring software into daily work.\nMake it last.',
           )
         }
       </h2><div>
@@ -241,7 +246,8 @@ const { t, products, solutions, stages, articles } = content(lang);
             )
           }
         </p><a class="text-link" href="#contact" data-interest="services"
-          >{t('討論服務需求', 'Discuss service needs')} ↗</a>
+          >{t('討論服務需求', 'Discuss service needs')} ↗</a
+        >
       </div>
     </div>
     <ol class="stages">
