@@ -41,9 +41,9 @@
 
 .company-intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
-  gap: clamp(70px, 10vw, 150px);
-  align-items: start;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
+  gap: clamp(60px, 9vw, 130px);
+  align-items: end;
 }
 
 .company-intro h2,
@@ -87,43 +87,42 @@
 }
 
 .system-heading {
-  display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
-  gap: 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 8%;
   align-items: end;
   margin-bottom: clamp(70px, 8vw, 120px);
 }
 
 .system-heading > .lead {
   padding-bottom: 10px;
+  max-width: 380px;
 }
 
 .system-flow {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  border-block: 1px solid var(--line);
+  display: block;
 }
 
 .system-product {
-  min-width: 0;
-  padding: 0 clamp(20px, 2.5vw, 42px) 50px;
-  border-right: 1px solid var(--line);
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  min-height: clamp(520px, 57vw, 700px);
+  margin-bottom: 42px;
+  padding: clamp(60px, 7vw, 96px) 6%;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  background: #f8fbfa;
+  box-shadow: 0 28px 70px rgba(27, 57, 48, 0.08);
   scroll-margin-top: 76px;
 }
 
-.system-product:first-child {
-  padding-left: 0;
-}
-
-.system-product:last-child {
-  border-right: 0;
-  padding-right: 0;
-}
-
 .system-product-art {
-  height: clamp(250px, 26vw, 380px);
-  margin-bottom: 35px;
-  overflow: hidden;
+  position: absolute;
+  inset: 0;
+  z-index: -2;
 }
 
 .system-product-art picture,
@@ -135,13 +134,21 @@
 
 .system-product-art img {
   object-fit: cover;
-  object-position: 66% center;
-  mix-blend-mode: multiply;
+  object-position: 68% center;
+}
+
+.system-product::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, #f8fbfa 0%, rgba(248, 251, 250, 0.98) 31%, rgba(248, 251, 250, 0.84) 48%, rgba(248, 251, 250, 0.2) 73%, transparent 90%);
 }
 
 .system-product-copy {
   position: relative;
-  padding-top: 28px;
+  width: min(48%, 560px);
+  padding-top: 24px;
   border-top: 3px solid var(--accent);
 }
 
@@ -163,8 +170,8 @@
 }
 
 .system-product h3 {
-  margin: 12px 0 22px;
-  font-size: clamp(30px, 3vw, 46px);
+  margin: 14px 0 22px;
+  font-size: clamp(42px, 4.6vw, 72px);
   font-weight: 650;
   line-height: 1.08;
   letter-spacing: -0.04em;
@@ -172,16 +179,22 @@
 
 .system-product h4 {
   margin: 0 0 14px;
-  font-size: 20px;
+  font-size: clamp(22px, 2vw, 30px);
   font-weight: 550;
 }
 
+.system-product-copy > p:last-child {
+  max-width: 490px;
+  font-size: 18px;
+  line-height: 1.85;
+}
+
 .system-summary {
-  width: min(900px, 100%);
-  margin: clamp(70px, 8vw, 120px) auto 0;
+  width: min(980px, 82%);
+  margin: clamp(70px, 8vw, 120px) 0 0 auto;
   font-size: clamp(23px, 2.5vw, 36px);
   line-height: 1.6;
-  text-align: center;
+  text-align: left;
   color: var(--ink);
   text-wrap: balance;
 }
@@ -349,28 +362,30 @@
     gap: 30px;
   }
 
+  .system-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .system-flow {
-    grid-template-columns: 1fr;
+    display: block;
   }
 
   .system-product,
   .system-product:first-child,
   .system-product:last-child {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 35px;
-    padding: 38px 0;
-    border-right: 0;
-    border-bottom: 1px solid var(--line);
-  }
-
-  .system-product:last-child {
-    border-bottom: 0;
+    display: flex;
+    min-height: 560px;
+    padding: 58px 6%;
+    border: 1px solid var(--line);
   }
 
   .system-product-art {
-    margin: 0;
-    height: 300px;
+    height: auto;
+  }
+
+  .system-product-copy {
+    width: 56%;
   }
 
   .approach-list li {
@@ -418,20 +433,31 @@
   .system-product,
   .system-product:first-child,
   .system-product:last-child {
-    grid-template-columns: 1fr;
-    gap: 24px;
-    padding: 32px 0 46px;
+    display: flex;
+    min-height: 620px;
+    padding: 42px 24px;
+    align-items: flex-end;
+    border-radius: 22px;
   }
 
   .system-product-art {
-    height: 220px;
+    height: 100%;
   }
 
   .system-product-art img {
-    object-position: center;
+    object-position: 62% center;
+  }
+
+  .system-product::after {
+    background: linear-gradient(0deg, #f8fbfa 0%, rgba(248, 251, 250, 0.96) 43%, rgba(248, 251, 250, 0.1) 82%);
+  }
+
+  .system-product-copy {
+    width: 100%;
   }
 
   .system-summary {
+    width: 100%;
     text-align: left;
     font-size: 24px;
   }

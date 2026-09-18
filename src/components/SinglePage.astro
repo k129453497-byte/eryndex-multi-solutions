@@ -54,9 +54,9 @@ const companyFacts = [
 <Hero lang={lang} />
 
 <div class="corporate-story">
-  <section id="about" class="company-intro wrap story-section">
+  <section id="about" class="company-intro proposition wrap story-section">
     <p class="eyebrow">ABOUT ERYNDEX / 智序科技</p>
-    <div class="company-intro-grid">
+    <div class="company-intro-grid proposition-grid">
       <h2>
         {t('我們設計的，\n是企業每天都能使用的系統。', 'We design systems\nfor everyday business.')}
       </h2>
@@ -95,8 +95,8 @@ const companyFacts = [
     </div>
   </section>
 
-  <section id="products" class="product-system wrap story-section">
-    <header class="system-heading">
+  <section id="products" class="product-system single-products wrap story-section">
+    <header class="system-heading section-heading">
       <div>
         <p class="eyebrow">ONE SYSTEM · THREE RESPONSIBILITIES</p>
         <h2>
@@ -121,15 +121,15 @@ const companyFacts = [
     <div class="system-flow" aria-label={t('Eryndex 產品體系', 'Eryndex product system')}>
       {
         products.map((product, index) => (
-          <article id={'products-' + product.id} class={'system-product ' + product.accent}>
-            <div class="system-product-art" aria-hidden="true">
+          <article id={'products-' + product.id} class={'system-product single-product ' + product.accent}>
+            <div class="system-product-art product-atmosphere" aria-hidden="true">
               <MasterImage
                 kind={product.id as 'space' | 'files' | 'shield'}
                 alt=""
-                sizes="(max-width: 760px) 100vw, 34vw"
+                sizes="(max-width: 760px) 100vw, 92vw"
               />
             </div>
-            <div class="system-product-copy">
+            <div class="system-product-copy product-intro-copy">
               <span class="product-number">0{index + 1}</span>
               <p class="product-category">{product.category}</p>
               <h3>{product.name}</h3>
@@ -141,7 +141,7 @@ const companyFacts = [
       }
     </div>
 
-    <p class="system-summary">
+    <p class="system-summary editorial-summary">
       {
         t(
           'Space 整理工作，Files 保存資訊，Shield 管理信任。它們不是三個彼此競爭的工具，而是 Eryndex 對企業運作提出的三項清楚責任。',
