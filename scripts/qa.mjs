@@ -120,42 +120,41 @@ for (const [file, doc] of docs) {
     'products-space',
     'products-files',
     'products-shield',
-    'solutions',
-    'services',
-    'resources',
     'about',
+    'approach',
+    'company',
     'contact',
     'privacy',
     'terms',
   ]) {
     assert.ok(doc.getElementById(id), 'Missing single-page section: ' + id + ' in ' + file);
   }
-  assert.equal(doc.querySelectorAll('[data-demo]').length, 3, 'Expected three product experiences');
-  for (const demo of doc.querySelectorAll('[data-demo]')) {
-    assert.equal(demo.closest('details'), null, 'Product experience must be visible without expanding details');
-    assert.equal(demo.querySelectorAll('.demo-sidebar button').length, 3, 'Every product demo needs three sidebar actions');
-    assert.ok(demo.querySelector('[data-module-panel]'), 'Every product demo needs an alternate feature panel');
-  }
-  const space = doc.querySelector('[data-demo="space"]');
-  assert.equal(space.querySelectorAll('[data-task-column]').length, 3, 'Space needs three task stages');
-  assert.equal(space.querySelectorAll('[data-stage="todo"]').length, 2, 'Space needs two initial to-do tasks');
-  assert.equal(space.querySelectorAll('[data-stage="progress"]').length, 1, 'Space needs one initial in-progress task');
-  const files = doc.querySelector('[data-demo="files"]');
-  assert.ok(files.querySelector('[data-version-history]'), 'Files needs a visible version timeline');
-  assert.equal(files.querySelectorAll('[data-version-history] li').length, 3, 'Selected file needs v1-v3 history');
-  assert.ok(files.querySelector('[data-restore]')?.getAttribute('data-message')?.includes('{from}'), 'Restore needs explicit from/to versions');
+  assert.equal(
+    doc.querySelectorAll('.system-product').length,
+    3,
+    'Expected three product chapters',
+  );
+  assert.equal(
+    doc.querySelectorAll('[data-demo]').length,
+    0,
+    'Corporate home must not load interactive product demos',
+  );
+  assert.equal(
+    doc.querySelectorAll('.company-facts > div').length,
+    5,
+    'Expected five company profile facts',
+  );
+  assert.equal(
+    doc.querySelectorAll('a[href="mailto:contact@eryndex.com"]').length >= 1,
+    true,
+    'Missing official contact email',
+  );
   assert.ok(doc.querySelector('meta[property="og:image"]'), 'Missing sharing image');
   assert.equal(
-    doc.querySelectorAll('.resource-disclosure').length,
-    3,
-    'Expected three complete articles',
+    doc.querySelectorAll('#contact-form').length,
+    0,
+    'Corporate home must not load the enquiry form',
   );
-  assert.equal(
-    doc.querySelectorAll('.solution-disclosure').length,
-    4,
-    'Expected four complete solutions',
-  );
-  assert.equal(doc.querySelectorAll('#contact-form').length, 1, 'Expected one contact form');
 }
 const data = new FormData();
 data.set('name', 'Sample Person');
@@ -182,9 +181,9 @@ if (issues.length) {
         mastersVerified: 6,
         localizedPages: 3,
         legacyRedirects: 54,
-        contactDraft: 'PASS',
+        corporateIdentityStructure: 'PASS',
         scope:
-          'Static HTML, assets, links, metadata and contact logic. Not browser, accessibility or visual QA.',
+          'Static HTML, assets, links, metadata and corporate identity structure. Not browser, accessibility or visual QA.',
       },
       null,
       2,

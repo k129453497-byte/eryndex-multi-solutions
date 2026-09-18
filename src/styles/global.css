@@ -585,15 +585,27 @@ main:focus {
   max-width: 290px;
   font-size: 15px;
 }
+.footer-identity strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+}
+.footer-identity p {
+  margin-top: 8px;
+  font-size: 13px;
+}
 .footer-top > a:last-child {
   font-size: 15px;
   justify-self: end;
 }
 .footer-links {
-  display: flex;
-  justify-content: flex-end;
-  gap: clamp(60px, 10vw, 170px);
+  display: grid;
+  grid-template-columns: repeat(4, minmax(130px, 1fr));
+  gap: clamp(35px, 6vw, 90px);
   margin: 50px 0 65px;
+  padding-left: min(23vw, 320px);
 }
 .footer-links > div {
   display: flex;
@@ -604,6 +616,11 @@ main:focus {
 .footer-links > div > span {
   color: var(--muted);
   margin-bottom: 10px;
+}
+.footer-links .footer-location {
+  margin: 0;
+  color: #aebdb7;
+  font-size: 12px;
 }
 .footer-bottom {
   border-top: 1px solid var(--line);
@@ -782,6 +799,7 @@ main:focus {
     justify-self: start;
   }
   .footer-links {
+    padding-left: 0;
     justify-content: space-between;
     gap: 30px;
   }
@@ -927,7 +945,7 @@ main:focus {
     gap: 20px;
   }
   .footer-links {
-    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
     gap: 40px 60px;
     margin-block: 40px;
   }

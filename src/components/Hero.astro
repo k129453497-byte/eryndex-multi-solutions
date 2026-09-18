@@ -1,6 +1,6 @@
 ---
 import MasterImage from './MasterImage.astro';
-import { href, asset, translator, type Locale } from '../data/content';
+import { asset, translator, type Locale } from '../data/content';
 const { lang } = Astro.props as { lang: Locale };
 const t = translator(lang);
 // Source H3 remains untouched. Enable only after separate derivatives pass loop QA.
@@ -39,26 +39,26 @@ const productionMotion = false;
     }
   </div>
   <div class="hero-copy">
-    <p class="eyebrow">ERYNDEX / WORK SYSTEMS FOR GROWING TEAMS</p><h1>
-      {t('讓工作更清楚，', 'Clarity for the work.')}<br /><em
-        >{t('讓團隊更有餘裕。', 'Room for the people.')}</em
+    <p class="eyebrow">ERYNDEX 智序科技 / ENTERPRISE WORK SYSTEMS</p><h1>
+      {t('讓企業運作，', 'A clearer way')}<br /><em
+        >{t('有一套清楚的方法。', 'for business to work.')}</em
       >
     </h1><p class="hero-description">
       {
         t(
-          '把協作、檔案與存取管理放進同一套清楚的方法。\n從一個真實問題開始，逐步建立團隊用得久的工作系統。',
-          'Bring collaboration, files and access into one clear way of working. Start with one real problem and build a system your team can keep using.',
+          'Eryndex 智序科技設計企業工作協作、資訊管理與存取治理系統。\n讓工作、資訊與信任，形成可以持續運作的企業脈絡。',
+          'Eryndex designs systems for business collaboration, information management and access governance. We connect work, information and trust into a sustainable business context.',
         )
       }
     </p><div class="hero-actions">
-      <a class="button" href={href(lang, 'products')}
-        >{t('探索產品', 'Explore products')} <span aria-hidden="true">↗</span></a
-      ><a class="text-link" href="#contact">{t('談談你的需求', 'Talk about your needs')} →</a>
+      <a class="button" href="#about"
+        >{t('認識 Eryndex', 'About Eryndex')} <span aria-hidden="true">↓</span></a
+      ><a class="text-link" href="#company">{t('公司資訊', 'Company profile')} →</a>
     </div>
   </div>
   <div class="hero-foot">
-    <span>{t('為真實的企業日常而設計', 'DESIGNED AROUND EVERYDAY BUSINESS')}</span><a
-      href="#proposition">{t('往下探索', 'Explore below')} ↓</a
+    <span>{t('企業軟體與工作系統設計', 'ENTERPRISE SOFTWARE AND WORK SYSTEMS')}</span><a
+      href="#about">{t('關於智序科技', 'About Eryndex')} ↓</a
     >
   </div>
   {

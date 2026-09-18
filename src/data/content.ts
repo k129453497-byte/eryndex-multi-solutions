@@ -30,7 +30,20 @@ export const legacyRoutes = [
   'terms',
 ];
 export const routes = [''];
-export const anchorFor = (path: string) => path.replace(/^\/|\/$/g, '').replaceAll('/', '-');
+const legacyAnchors: Record<string, string> = {
+  solutions: 'approach',
+  'solutions/modern-work': 'approach',
+  'solutions/information-protection': 'approach',
+  'solutions/secure-office': 'approach',
+  'solutions/digital-workplace': 'approach',
+  services: 'approach',
+  resources: 'company',
+  'resources/work-handoffs': 'company',
+  'resources/information-lifecycle': 'company',
+  'resources/access-review': 'company',
+};
+export const anchorFor = (path: string) =>
+  legacyAnchors[path] ?? path.replace(/^\/|\/$/g, '').replaceAll('/', '-');
 export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const asset = (path: string) => base + '/assets/' + path;
 export const href = (lang: Locale, path = '') =>
