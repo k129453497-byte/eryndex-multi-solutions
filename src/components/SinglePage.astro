@@ -24,14 +24,6 @@ const process = [
   [t('持續運作', 'Make it sustainable'), t('透過導入、訓練與後續調整，讓新的工作方式穩定進入日常。', 'Use implementation, training and ongoing refinement to make the new way of working part of daily operations.')],
 ];
 
-const companyFacts = [
-  [t('公司名稱', 'Company'), t('Eryndex 智序科技', 'Eryndex')],
-  [t('業務方向', 'Business focus'), t('企業軟體與工作系統設計', 'Enterprise software and work systems')],
-  [t('核心領域', 'Core fields'), t('工作協作、資訊管理、存取治理', 'Work coordination, information management and access governance')],
-  [t('服務內容', 'Services'), t('系統規劃、導入、資料遷移、訓練與維護支援', 'System planning, implementation, data migration, training and maintenance support')],
-  [t('服務地區', 'Service region'), t('台灣', 'Taiwan')],
-  [t('聯絡方式', 'Contact'), 'contact@eryndex.com'],
-];
 ---
 
 <Hero lang={lang} />
@@ -88,17 +80,6 @@ const companyFacts = [
       <p class="eyebrow">PROFESSIONAL SERVICES</p>
       <h3>{t('規劃、導入、遷移、訓練與持續支援。', 'Planning, implementation, migration, training and ongoing support.')}</h3>
       <p>{t('實際服務範圍會依企業環境、既有系統與專案需求共同確認。', 'Service scope is agreed around each business environment, existing system and project requirement.')}</p>
-    </div>
-  </section>
-
-  <section id="company" class="company-scene scene">
-    <div class="wrap company-layout">
-      <div><p class="eyebrow">COMPANY PROFILE</p><h2>{t('清楚、正式、\n可以被理解的公司資訊。', 'Clear, formal and understandable company information.')}</h2></div>
-      <dl class="company-facts">
-        {companyFacts.map(([term, description]) => (
-          <div><dt>{term}</dt><dd>{description === 'contact@eryndex.com' ? <a href="mailto:contact@eryndex.com">{description} ↗</a> : description}</dd></div>
-        ))}
-      </dl>
     </div>
   </section>
 

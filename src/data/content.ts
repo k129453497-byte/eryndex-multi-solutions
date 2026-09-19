@@ -37,12 +37,12 @@ const legacyAnchors: Record<string, string> = {
   'solutions/secure-office': 'approach',
   'solutions/digital-workplace': 'approach',
   services: 'approach',
-  resources: 'company',
-  'resources/work-handoffs': 'company',
-  'resources/information-lifecycle': 'company',
-  'resources/access-review': 'company',
-  privacy: 'company',
-  terms: 'company',
+  resources: 'approach',
+  'resources/work-handoffs': 'approach',
+  'resources/information-lifecycle': 'approach',
+  'resources/access-review': 'approach',
+  privacy: 'contact',
+  terms: 'contact',
 };
 export const anchorFor = (path: string) =>
   legacyAnchors[path] ?? path.replace(/^\/|\/$/g, '').replaceAll('/', '-');

@@ -16,7 +16,6 @@ try {
   const output = cn.documentElement.outerHTML;
   for (const [term] of cnTerms) assert.ok(!output.includes(term), `Unlocalized term: ${term}`);
   assert.ok(cn.querySelector('.hero-description').textContent.includes('智序科技'));
-  assert.ok(output.includes('公司信息'));
   assert.equal(
     localizeSimplified('Eryndex Space Files Shield Services'),
     'Eryndex Space Files Shield Services',
@@ -25,7 +24,6 @@ try {
     assert.equal(document.querySelectorAll('.system-product').length, 0);
     assert.equal(document.querySelectorAll('.capability-stack > article').length, 3);
     assert.equal(document.querySelectorAll('[data-demo]').length, 0);
-    assert.equal(document.querySelectorAll('.company-facts > div').length, 6);
     assert.ok(document.querySelector('a[href="mailto:contact@eryndex.com"]'));
   }
   assert.ok(docs['zh-tw'].querySelector('.hero-description').textContent.includes('智序科技'));
@@ -33,7 +31,7 @@ try {
     docs.en.querySelector('.hero-description').textContent.includes('Eryndex turns fragmented processes'),
   );
   console.log(
-    'PASS: corporate copy, terminology, company facts, unified system theme and three-language structure. Browser interaction not covered.',
+    'PASS: corporate copy, terminology, unified system theme and three-language structure. Browser interaction not covered.',
   );
 } catch (error) {
   console.error('Localization regression failed:', error.message);

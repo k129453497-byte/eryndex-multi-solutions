@@ -122,7 +122,6 @@ for (const [file, doc] of docs) {
     'products-shield',
     'about',
     'approach',
-    'company',
     'contact',
   ]) {
     assert.ok(doc.getElementById(id), 'Missing single-page section: ' + id + ' in ' + file);
@@ -137,11 +136,6 @@ for (const [file, doc] of docs) {
     doc.querySelectorAll('[data-demo]').length,
     0,
     'Corporate home must not load interactive product demos',
-  );
-  assert.equal(
-    doc.querySelectorAll('.company-facts > div').length,
-    6,
-    'Expected six company profile facts',
   );
   assert.equal(
     doc.querySelectorAll('a[href="mailto:contact@eryndex.com"]').length >= 1,
