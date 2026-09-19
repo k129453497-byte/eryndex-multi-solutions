@@ -24,7 +24,7 @@ try {
   for (const document of Object.values(docs)) {
     assert.equal(document.querySelectorAll('.system-product').length, 3);
     assert.equal(document.querySelectorAll('[data-demo]').length, 0);
-    assert.equal(document.querySelectorAll('.company-facts > div').length, 5);
+    assert.equal(document.querySelectorAll('.company-facts > div').length, 6);
     assert.ok(document.querySelector('a[href="mailto:contact@eryndex.com"]'));
   }
   assert.ok(docs['zh-tw'].querySelector('.hero-description').textContent.includes('智序科技'));

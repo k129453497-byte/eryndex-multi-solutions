@@ -46,6 +46,10 @@ const companyFacts = [
       'Collaboration, information management and access governance',
     ),
   ],
+  [
+    t('設計原則', 'Design principles'),
+    t('清楚、可治理、可持續', 'Clear, governable and sustainable'),
+  ],
   [t('服務地區', 'Service region'), t('台灣', 'Taiwan')],
   [t('聯絡方式', 'Contact'), 'contact@eryndex.com'],
 ];
@@ -58,7 +62,10 @@ const companyFacts = [
     <p class="eyebrow">ABOUT ERYNDEX / 智序科技</p>
     <div class="company-intro-grid proposition-grid">
       <h2>
-        {t('我們設計的，\n是企業每天都能使用的系統。', 'We design systems\nfor everyday business.')}
+        {t(
+          '我們設計的，\n是企業每天都能使用的\n工作系統。',
+          'We design work systems\nfor everyday business.',
+        )}
       </h2>
       <div class="company-intro-copy">
         <p class="lead">
@@ -203,12 +210,12 @@ const companyFacts = [
     <div class="profile-heading">
       <p class="eyebrow">COMPANY PROFILE</p>
       <h2>
-        {
-          t(
-            '清楚說明我們是誰，\n也說明我們負責什麼。',
-            'Clear about who we are\nand what we are responsible for.',
-          )
-        }
+          {
+            t(
+              '我們是誰，\n負責什麼。',
+              'Who we are.\nWhat we are responsible for.',
+            )
+          }
       </h2>
     </div>
     <dl class="company-facts">
@@ -242,7 +249,7 @@ const companyFacts = [
   <section id="contact" class="contact-statement story-section">
     <div class="wrap contact-statement-inner">
       <div>
-        <p class="eyebrow">CONTACT ERYNDEX</p><h2>{t('與智序科技聯絡。', 'Contact Eryndex.')}</h2>
+        <p class="eyebrow">CONTACT ERYNDEX</p><h2>{t('公司與合作資訊。', 'Company and partnership information.')}</h2>
       </div>
       <div>
         <p class="lead">

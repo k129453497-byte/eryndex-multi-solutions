@@ -31,12 +31,12 @@
 
 .story-section {
   position: relative;
-  padding-block: clamp(100px, 11vw, 170px);
+  padding-block: clamp(88px, 9vw, 138px);
   scroll-margin-top: 76px;
 }
 
 .company-intro {
-  padding-top: clamp(120px, 13vw, 190px);
+  padding-top: clamp(100px, 10vw, 150px);
 }
 
 .company-intro-grid {
@@ -50,7 +50,7 @@
 .system-heading h2,
 .approach-heading h2,
 .profile-heading h2 {
-  font-size: clamp(43px, 5vw, 76px);
+  font-size: clamp(42px, 4.6vw, 68px);
 }
 
 .company-intro-copy {
@@ -251,7 +251,7 @@
 
 .company-profile {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1.05fr 0.95fr;
   gap: 10%;
 }
 

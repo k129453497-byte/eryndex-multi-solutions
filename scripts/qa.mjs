@@ -141,8 +141,8 @@ for (const [file, doc] of docs) {
   );
   assert.equal(
     doc.querySelectorAll('.company-facts > div').length,
-    5,
-    'Expected five company profile facts',
+    6,
+    'Expected six company profile facts',
   );
   assert.equal(
     doc.querySelectorAll('a[href="mailto:contact@eryndex.com"]').length >= 1,
