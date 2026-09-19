@@ -1,127 +1,45 @@
 ---
-import MasterImage from './MasterImage.astro';
 import { asset, translator, type Locale } from '../data/content';
 const { lang } = Astro.props as { lang: Locale };
 const t = translator(lang);
-// Source H3 remains untouched. Enable only after separate derivatives pass loop QA.
-const productionMotion = false;
 ---
 
 <section class="hero">
-  <div class="hero-art">
-    <MasterImage
-      kind="hero"
-      eager
-      sizes="100vw"
-      alt={t(
-        '暖光中的半透明材質，以結構、層次與流動呈現秩序',
-        'Translucent materials in warm light expressing structure, layers and flow',
-      )}
-    />
-    {
-      productionMotion && (
-        <video
-          class="hero-video"
-          muted
-          playsinline
-          loop
-          preload="none"
-          poster={asset('brand/hero/eryndex-hero-master.png')}
-          aria-label={t('品牌動態主視覺', 'Brand motion')}
-          data-motion
-        >
-          <>
-            <source data-src={asset('brand/hero/production/hero-loop.webm')} type="video/webm" />
-            <source data-src={asset('brand/hero/production/hero-loop.mp4')} type="video/mp4" />
-          </>
-        </video>
-      )
-    }
-  </div>
-  <div class="hero-copy">
-    <p class="eyebrow">ERYNDEX 智序科技 / ENTERPRISE WORK SYSTEMS</p><h1>
-      {t('讓企業運作，', 'A clearer way')}<br /><em
-        >{t('有一套清楚的方法。', 'for business to work.')}</em
-      >
-    </h1><p class="hero-description">
-      {
-        t(
-          'Eryndex 智序科技設計企業工作協作、資訊管理與存取治理系統。\n讓工作、資訊與信任，形成可以持續運作的企業脈絡。',
-          'Eryndex designs systems for business collaboration, information management and access governance. We connect work, information and trust into a sustainable business context.',
-        )
-      }
-    </p><div class="hero-actions">
-      <a class="button" href="#about"
-        >{t('認識 Eryndex', 'About Eryndex')} <span aria-hidden="true">↓</span></a
-      ><a class="text-link" href="#company">{t('公司資訊', 'Company profile')} →</a>
+  <div class="hero-layout">
+    <div class="hero-copy">
+      <p class="eyebrow">ERYNDEX 智序科技 · ENTERPRISE WORK SYSTEMS</p>
+      <h1>
+        {t('把企業每天的工作，', 'Turn everyday business work')}<br />
+        <em>{t('整理成可以持續運作的系統。', 'into a system built to last.')}</em>
+      </h1>
+      <p class="hero-description">
+        {t(
+          '從工作協作、資訊管理到存取治理，智序科技將分散的流程與管理責任，整理成一套清楚的企業運作方法。',
+          'From work coordination and information management to access governance, Eryndex turns fragmented processes and responsibilities into one clear way for business to operate.',
+        )}
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="#about">{t('認識智序科技', 'About Eryndex')} <span aria-hidden="true">↓</span></a>
+        <a class="text-link" href="#products">{t('了解企業系統', 'Explore the business system')} →</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="system-orbit orbit-a"><span></span><span></span></div>
+      <div class="system-orbit orbit-b"><span></span><span></span></div>
+      <div class="system-orbit orbit-c"><span></span><span></span></div>
+      <div class="system-grid"></div>
+      <div class="system-core">
+        <span class="core-halo"></span>
+        <img src={asset('web/logo-72.webp')} alt="" width="88" height="88" />
+      </div>
+      <span class="signal signal-work">WORK</span>
+      <span class="signal signal-info">INFORMATION</span>
+      <span class="signal signal-trust">TRUST</span>
     </div>
   </div>
   <div class="hero-foot">
-    <span>{t('企業軟體與工作系統設計', 'ENTERPRISE SOFTWARE AND WORK SYSTEMS')}</span><a
-      href="#about">{t('關於智序科技', 'About Eryndex')} ↓</a
-    >
+    <span>{t('企業軟體與工作系統設計', 'ENTERPRISE SOFTWARE AND WORK SYSTEMS')}</span>
+    <a href="#about">{t('向下探索', 'Explore below')} ↓</a>
   </div>
-  {
-    productionMotion && (
-      <button
-        class="motion-toggle"
-        data-motion-toggle
-        data-play={t('播放動畫', 'Play motion')}
-        data-pause={t('暫停動畫', 'Pause motion')}
-        aria-pressed="false"
-      >
-        {t('播放動畫', 'Play motion')}
-      </button>
-    )
-  }
 </section>
-<script>
-  const video = document.querySelector<HTMLVideoElement>('[data-motion]');
-  const toggle = document.querySelector<HTMLButtonElement>('[data-motion-toggle]');
-  if (video && toggle) {
-    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
-    const wide = matchMedia('(min-width: 900px)');
-    const connection = (navigator as Navigator & { connection?: { saveData?: boolean } })
-      .connection;
-    const allowed = () => wide.matches && !reduced.matches && !connection?.saveData;
-    const label = () => {
-      toggle.textContent = video.paused ? toggle.dataset.play! : toggle.dataset.pause!;
-      toggle.setAttribute('aria-pressed', String(!video.paused));
-    };
-    const load = () => {
-      if (!video.dataset.loaded) {
-        video.querySelectorAll('source').forEach((s) => {
-          s.src = s.dataset.src!;
-        });
-        video.load();
-        video.dataset.loaded = 'true';
-      }
-    };
-    toggle.addEventListener('click', async () => {
-      if (video.paused) {
-        load();
-        try {
-          await video.play();
-        } catch {}
-      } else video.pause();
-      label();
-    });
-    if (allowed()) {
-      load();
-      video.play().catch(() => {});
-    }
-    reduced.addEventListener('change', () => {
-      if (reduced.matches) video.pause();
-      label();
-    });
-    wide.addEventListener('change', () => {
-      if (!wide.matches) video.pause();
-      label();
-    });
-    video.addEventListener('play', label);
-    video.addEventListener('pause', label);
-    document.addEventListener('visibilitychange', () => {
-      if (document.hidden) video.pause();
-    });
-  }
-</script>

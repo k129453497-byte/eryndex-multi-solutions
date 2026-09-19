@@ -30,7 +30,7 @@ try {
   }
   assert.ok(docs['zh-tw'].querySelector('.hero-description').textContent.includes('智序科技'));
   assert.ok(
-    docs.en.querySelector('.hero-description').textContent.includes('Eryndex designs systems'),
+    docs.en.querySelector('.hero-description').textContent.includes('Eryndex turns fragmented processes'),
   );
   console.log(
     'PASS: corporate copy, terminology, company facts, unified system theme and three-language structure. Browser interaction not covered.',
