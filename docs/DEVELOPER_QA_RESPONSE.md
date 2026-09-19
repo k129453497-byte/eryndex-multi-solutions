@@ -137,3 +137,11 @@
 - Reason：保留企業形象內容不代表必須推翻既有設計方向；本項為 Developer 執行偏差。
 - Implementation：恢復左右分欄的公司介紹、單一產品一個大幅橫向場景、產品圖片作為背景，以及桌面到手機的一致閱讀節奏；維持互動產品展示移除狀態。
 - Commit：由本輪 Git 紀錄識別。
+
+## Owner-directed reference layout redesign — 2026-09-19
+
+- Developer Assessment：Owner 明確指定以 Elias Net Corporate Site 與 Fullinnotech 的企業官網格局重新設計，並要求產品不再個別展示。
+- Decision：ACCEPTED / FIXED
+- Reason：公司形象與真實性是主要目標，產品差異與互動操作不是首頁任務。
+- Implementation：建立明亮左文右圖 Hero、公司定位、單一企業運作系統、工作方法、公司資訊、聯絡與正式頁尾；移除所有獨立產品卡與產品名稱導覽，舊產品素材改作抽象能力視覺。
+- Commit：由本輪 Git 紀錄識別。

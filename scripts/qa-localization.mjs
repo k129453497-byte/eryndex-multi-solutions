@@ -22,7 +22,8 @@ try {
     'Eryndex Space Files Shield Services',
   );
   for (const document of Object.values(docs)) {
-    assert.equal(document.querySelectorAll('.system-product').length, 3);
+    assert.equal(document.querySelectorAll('.system-product').length, 0);
+    assert.equal(document.querySelectorAll('.capability-stack > article').length, 3);
     assert.equal(document.querySelectorAll('[data-demo]').length, 0);
     assert.equal(document.querySelectorAll('.company-facts > div').length, 6);
     assert.ok(document.querySelector('a[href="mailto:contact@eryndex.com"]'));
@@ -32,7 +33,7 @@ try {
     docs.en.querySelector('.hero-description').textContent.includes('Eryndex designs systems'),
   );
   console.log(
-    'PASS: corporate copy, terminology, company facts, product chapters and three-language structure. Browser interaction not covered.',
+    'PASS: corporate copy, terminology, company facts, unified system theme and three-language structure. Browser interaction not covered.',
   );
 } catch (error) {
   console.error('Localization regression failed:', error.message);

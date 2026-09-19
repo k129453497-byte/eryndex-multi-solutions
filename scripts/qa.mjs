@@ -129,10 +129,11 @@ for (const [file, doc] of docs) {
   ]) {
     assert.ok(doc.getElementById(id), 'Missing single-page section: ' + id + ' in ' + file);
   }
+  assert.equal(doc.querySelectorAll('.system-product').length, 0, 'Product cards must remain removed');
   assert.equal(
-    doc.querySelectorAll('.system-product').length,
+    doc.querySelectorAll('.capability-stack > article').length,
     3,
-    'Expected three product chapters',
+    'Expected three capabilities inside one business system theme',
   );
   assert.equal(
     doc.querySelectorAll('[data-demo]').length,

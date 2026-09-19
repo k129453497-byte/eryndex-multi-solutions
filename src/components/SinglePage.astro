@@ -1,5 +1,5 @@
 ---
-import { content, translator, type Locale } from '../data/content';
+import { translator, type Locale } from '../data/content';
 import Hero from './Hero.astro';
 import MasterImage from './MasterImage.astro';
 import Legal from './Legal.astro';
@@ -7,49 +7,30 @@ import '../styles/single-page.css';
 
 const { lang } = Astro.props as { lang: Locale };
 const t = translator(lang);
-const { products } = content(lang);
 
-const operatingPrinciples = [
-  [
-    t('從真實工作開始', 'Begin with real work'),
-    t(
-      '先理解企業每天如何協作、保存資訊與管理存取，再決定系統應該扮演的角色。',
-      'Understand how the business collaborates, preserves information and controls access before deciding what the system should do.',
-    ),
-  ],
-  [
-    t('建立清楚的責任', 'Give every system a clear responsibility'),
-    t(
-      '讓工作、資訊與信任各有明確邊界，減少重複工具與模糊的管理責任。',
-      'Give work, information and trust clear boundaries, reducing duplicated tools and unclear ownership.',
-    ),
-  ],
-  [
-    t('讓改變能夠持續', 'Make change sustainable'),
-    t(
-      '把導入、訓練與後續調整一起納入設計，讓系統成為可以持續使用的方法。',
-      'Design implementation, training and ongoing improvement together so the system becomes a lasting way of working.',
-    ),
-  ],
+const values = [
+  [t('工作更清楚', 'Clearer work'), t('讓責任、進度與交接都有一致脈絡。', 'Give responsibility, progress and handoffs one shared context.')],
+  [t('資訊能延續', 'Information that lasts'), t('讓重要資料保留版本、來源與可追溯性。', 'Preserve version, origin and traceability for important information.')],
+  [t('治理可落實', 'Governance in practice'), t('讓存取、核准與管理規則進入日常工作。', 'Bring access, approval and governance into everyday work.')],
+];
+
+const capabilities = [
+  [t('工作協作', 'Work coordination'), t('整理任務、責任、交接與決策，讓團隊知道現在發生什麼，以及下一步由誰推進。', 'Organize tasks, ownership, handoffs and decisions so teams know what is happening and who moves next.')],
+  [t('資訊管理', 'Information management'), t('建立一致的保存方式與版本脈絡，讓重要資訊能被找到、理解並持續使用。', 'Create a consistent record and version context so important information can be found, understood and reused.')],
+  [t('存取治理', 'Access governance'), t('把身分、權限、核准與稽核放進清楚的管理流程，讓信任有依據。', 'Place identity, permission, approval and audit into a clear management process so trust has evidence.')],
+];
+
+const process = [
+  [t('理解現況', 'Understand the current state'), t('從真實工作、現有工具與管理責任開始，釐清真正需要改善的問題。', 'Begin with real work, existing tools and management ownership to identify what actually needs improvement.')],
+  [t('建立脈絡', 'Build the operating context'), t('把流程、資訊與治理原則整理成團隊能理解、可以執行的系統。', 'Turn processes, information and governance principles into a system teams can understand and use.')],
+  [t('持續運作', 'Make it sustainable'), t('透過導入、訓練與後續調整，讓新的工作方式穩定進入日常。', 'Use implementation, training and ongoing refinement to make the new way of working part of daily operations.')],
 ];
 
 const companyFacts = [
   [t('公司名稱', 'Company'), t('Eryndex 智序科技', 'Eryndex')],
-  [
-    t('業務方向', 'Business focus'),
-    t('企業軟體與工作系統設計', 'Enterprise software and work systems'),
-  ],
-  [
-    t('產品領域', 'Product fields'),
-    t(
-      '工作協作、資訊管理、存取治理',
-      'Collaboration, information management and access governance',
-    ),
-  ],
-  [
-    t('設計原則', 'Design principles'),
-    t('清楚、可治理、可持續', 'Clear, governable and sustainable'),
-  ],
+  [t('業務方向', 'Business focus'), t('企業軟體與工作系統設計', 'Enterprise software and work systems')],
+  [t('核心領域', 'Core fields'), t('工作協作、資訊管理、存取治理', 'Work coordination, information management and access governance')],
+  [t('服務內容', 'Services'), t('系統規劃、導入、資料遷移、訓練與維護支援', 'System planning, implementation, data migration, training and maintenance support')],
   [t('服務地區', 'Service region'), t('台灣', 'Taiwan')],
   [t('聯絡方式', 'Contact'), 'contact@eryndex.com'],
 ];
@@ -57,259 +38,105 @@ const companyFacts = [
 
 <Hero lang={lang} />
 
-<div class="corporate-story">
-  <section id="about" class="company-intro proposition wrap story-section">
-    <p class="eyebrow">ABOUT ERYNDEX / 智序科技</p>
-    <div class="company-intro-grid proposition-grid">
-      <h2>
-        {t(
-          '我們設計的，\n是企業每天都能使用的\n工作系統。',
-          'We design work systems\nfor everyday business.',
-        )}
-      </h2>
-      <div class="company-intro-copy">
-        <p class="lead">
-          {
-            t(
-              'Eryndex 智序科技專注於企業工作協作、資訊管理與存取治理系統的設計與開發。我們從真實的工作情境出發，把分散的流程、重要資訊與管理規則，整理成清楚、可以持續運作的方法。',
-              'Eryndex designs and develops systems for business collaboration, information management and access governance. We begin with real working situations and turn fragmented processes, important information and management rules into clear, sustainable ways of working.',
-            )
-          }
-        </p>
-        <p>
-          {
-            t(
-              '科技不應讓企業增加更多維護負擔。它應該讓責任更清楚、交接更連續，也讓重要決策保留可以理解與檢視的依據。',
-              'Technology should not create more maintenance overhead. It should clarify responsibility, make handoffs continuous and keep important decisions understandable and reviewable.',
-            )
-          }
-        </p>
-      </div>
+<main class="corporate-site">
+  <section class="value-strip" aria-label={t('Eryndex 核心價值', 'Eryndex core values')}>
+    <div class="wrap value-strip-grid">
+      {values.map(([title, description], index) => (
+        <article><span>0{index + 1}</span><h2>{title}</h2><p>{description}</p></article>
+      ))}
     </div>
   </section>
 
-  <section class="business-problem story-section">
-    <div class="wrap business-problem-inner">
-      <p class="eyebrow">THE WORK BEHIND EVERY BUSINESS</p>
-      <p class="statement">
-        {
-          t(
-            '工作散落在不同工具裡，檔案缺少一致的保存方式，權限也隨著時間逐漸失去脈絡。企業真正需要的，不是再增加一套孤立的工具，而是讓每天的工作重新連成一個整體。',
-            'Work becomes scattered across tools, files lose a dependable way to be preserved and access drifts out of context. Businesses do not need another isolated tool. They need everyday work to become connected again.',
-          )
-        }
-      </p>
+  <section id="about" class="about-scene wrap scene">
+    <div class="scene-label"><span>ABOUT ERYNDEX</span><span>{t('關於智序科技', 'About Eryndex')}</span></div>
+    <div class="about-layout">
+      <h2>{t('科技的價值，\n在於讓企業更有秩序地前進。', 'Technology matters when it helps business move forward with clarity.')}</h2>
+      <div class="about-copy">
+        <p class="lead">{t('Eryndex 智序科技專注於企業工作協作、資訊管理與存取治理系統的設計與開發。', 'Eryndex designs and develops systems for business coordination, information management and access governance.')}</p>
+        <p>{t('我們從企業每天真正發生的工作出發，把分散的流程、重要資訊與管理規則整理成可以理解、可以執行，也可以持續改善的企業脈絡。', 'We begin with the work that actually happens every day, turning fragmented processes, important information and management rules into an operating context that can be understood, executed and continuously improved.')}</p>
+      </div>
+    </div>
+    <div class="about-visual" aria-hidden="true">
+      <MasterImage kind="space" alt="" sizes="(max-width: 700px) 92vw, 42vw" />
+      <MasterImage kind="files" alt="" sizes="(max-width: 700px) 92vw, 42vw" />
+      <MasterImage kind="shield" alt="" sizes="(max-width: 700px) 92vw, 42vw" />
     </div>
   </section>
 
-  <section id="products" class="product-system single-products wrap story-section">
-    <header class="system-heading section-heading">
-      <div>
-        <p class="eyebrow">ONE SYSTEM · THREE RESPONSIBILITIES</p>
-        <h2>
-          {
-            t(
-              '工作、資訊與信任，\n形成同一套企業脈絡。',
-              'Work, information and trust.\nOne business context.',
-            )
-          }
-        </h2>
+  <section id="products" class="system-scene scene">
+    <span id="products-space" class="legacy-anchor" aria-hidden="true"></span>
+    <span id="products-files" class="legacy-anchor" aria-hidden="true"></span>
+    <span id="products-shield" class="legacy-anchor" aria-hidden="true"></span>
+    <div class="wrap system-layout">
+      <div class="system-intro">
+        <p class="eyebrow">ONE BUSINESS OPERATING SYSTEM</p>
+        <h2>{t('不是更多產品，\n而是一套完整的企業運作方法。', 'Not more products.\nOne complete way for business to work.')}</h2>
+        <p class="lead">{t('Eryndex 將工作、資訊與信任放進同一套清楚的系統主題。企業不必理解多個產品的差異，只需要從正在發生的問題開始。', 'Eryndex brings work, information and trust into one clear system. Businesses do not need to navigate separate products; they can begin with the problem in front of them.')}</p>
       </div>
-      <p class="lead">
-        {
-          t(
-            '三項產品各自承擔清楚的責任，也能在企業需要時彼此連結。',
-            'Three products with distinct responsibilities, designed to connect when the business needs them to.',
-          )
-        }
-      </p>
+      <div class="capability-stack">
+        {capabilities.map(([title, description], index) => (
+          <article><span>0{index + 1}</span><div><h3>{title}</h3><p>{description}</p></div></article>
+        ))}
+      </div>
+    </div>
+    <div class="system-statement wrap">
+      <p>{t('讓工作留下脈絡，讓資訊可以延續，讓每一次授權與決策都有依據。', 'Keep the context of work, preserve the continuity of information and give every permission and decision a clear basis.')}</p>
+    </div>
+  </section>
+
+  <section id="approach" class="process-scene wrap scene">
+    <header class="scene-heading">
+      <div><p class="eyebrow">HOW WE WORK</p><h2>{t('從理解企業，\n到系統穩定運作。', 'From understanding the business\nto a system that works reliably.')}</h2></div>
+      <p>{t('我們不以功能清單開始，而是先確認工作如何發生、資訊如何流動，以及誰需要承擔管理責任。', 'We do not begin with a feature list. We first understand how work happens, how information moves and where management responsibility belongs.')}</p>
     </header>
-
-    <div class="system-flow" aria-label={t('Eryndex 產品體系', 'Eryndex product system')}>
-      {
-        products.map((product, index) => (
-          <article id={'products-' + product.id} class={'system-product single-product ' + product.accent}>
-            <div class="system-product-art product-atmosphere" aria-hidden="true">
-              <MasterImage
-                kind={product.id as 'space' | 'files' | 'shield'}
-                alt=""
-                sizes="(max-width: 760px) 100vw, 92vw"
-              />
-            </div>
-            <div class="system-product-copy product-intro-copy">
-              <span class="product-number">0{index + 1}</span>
-              <p class="product-category">{product.category}</p>
-              <h3>{product.name}</h3>
-              <h4>{product.line}</h4>
-              <p>{product.desc}</p>
-            </div>
-          </article>
-        ))
-      }
-    </div>
-
-    <p class="system-summary editorial-summary">
-      {
-        t(
-          'Space 整理工作，Files 保存資訊，Shield 管理信任。它們不是三個彼此競爭的工具，而是 Eryndex 對企業運作提出的三項清楚責任。',
-          'Space organizes work, Files preserves information and Shield governs trust. They are not competing tools, but three clear responsibilities within the Eryndex approach to business operations.',
-        )
-      }
-    </p>
-  </section>
-
-  <section id="approach" class="approach-section story-section">
-    <div class="wrap">
-      <header class="approach-heading">
-        <p class="eyebrow">HOW WE WORK</p>
-        <h2>
-          {
-            t(
-              '先理解，再建立；\n先能運作，再逐步連結。',
-              'Understand first. Build with purpose.\nConnect when it is ready.',
-            )
-          }
-        </h2>
-      </header>
-      <ol class="approach-list">
-        {
-          operatingPrinciples.map(([title, description], index) => (
-            <li>
-              <>
-                <span>0{index + 1}</span>
-                <h3>{title}</h3>
-                <p>{description}</p>
-              </>
-            </li>
-          ))
-        }
-      </ol>
-      <div class="services-note">
-        <p class="eyebrow">ERYNDEX SERVICES</p>
-        <h3>
-          {
-            t(
-              '從規劃、導入到持續調整。',
-              'From planning and implementation to ongoing improvement.',
-            )
-          }
-        </h3>
-        <p>
-          {
-            t(
-              'Eryndex 提供系統規劃、初始設定、資料遷移、工作流程整理、使用者訓練與維護支援。實際範圍會依企業環境與需求確認。',
-              'Eryndex provides system planning, initial configuration, data migration, workflow design, user training and maintenance support. Scope is agreed around each business environment and need.',
-            )
-          }
-        </p>
-      </div>
+    <ol class="process-list">
+      {process.map(([title, description], index) => (
+        <li><span>0{index + 1}</span><h3>{title}</h3><p>{description}</p></li>
+      ))}
+    </ol>
+    <div class="service-callout">
+      <p class="eyebrow">PROFESSIONAL SERVICES</p>
+      <h3>{t('規劃、導入、遷移、訓練與持續支援。', 'Planning, implementation, migration, training and ongoing support.')}</h3>
+      <p>{t('實際服務範圍會依企業環境、既有系統與專案需求共同確認。', 'Service scope is agreed around each business environment, existing system and project requirement.')}</p>
     </div>
   </section>
 
-  <section id="company" class="company-profile wrap story-section">
-    <div class="profile-heading">
-      <p class="eyebrow">COMPANY PROFILE</p>
-      <h2>
-          {
-            t(
-              '我們是誰，\n負責什麼。',
-              'Who we are.\nWhat we are responsible for.',
-            )
-          }
-      </h2>
+  <section id="company" class="company-scene scene">
+    <div class="wrap company-layout">
+      <div><p class="eyebrow">COMPANY PROFILE</p><h2>{t('清楚、正式、\n可以被理解的公司資訊。', 'Clear, formal and understandable company information.')}</h2></div>
+      <dl class="company-facts">
+        {companyFacts.map(([term, description]) => (
+          <div><dt>{term}</dt><dd>{description === 'contact@eryndex.com' ? <a href="mailto:contact@eryndex.com">{description} ↗</a> : description}</dd></div>
+        ))}
+      </dl>
     </div>
-    <dl class="company-facts">
-      {
-        companyFacts.map(([term, description]) => (
-          <div>
-            <>
-              <dt>{term}</dt>
-              <dd>
-                {description === 'contact@eryndex.com' ? (
-                  <a href="mailto:contact@eryndex.com">{description} ↗</a>
-                ) : (
-                  description
-                )}
-              </dd>
-            </>
-          </div>
-        ))
-      }
-    </dl>
-    <p class="profile-note">
-      {
-        t(
-          '本網站用於介紹 Eryndex 的公司方向、產品體系與服務內容。對外合作、產品範圍與專案條件，以雙方正式確認的文件為準。',
-          'This website introduces the Eryndex company direction, product system and services. External cooperation, product scope and project terms are subject to formally agreed documentation.',
-        )
-      }
-    </p>
   </section>
 
-  <section id="contact" class="contact-statement story-section">
-    <div class="wrap contact-statement-inner">
-      <div>
-        <p class="eyebrow">CONTACT ERYNDEX</p><h2>{t('公司與合作資訊。', 'Company and partnership information.')}</h2>
-      </div>
-      <div>
-        <p class="lead">
-          {
-            t(
-              '若需要公司、產品或合作相關資訊，歡迎透過官方信箱與我們聯絡。',
-              'For company, product or partnership information, contact us through our official email address.',
-            )
-          }
-        </p>
-        <a class="contact-address" href="mailto:contact@eryndex.com">contact@eryndex.com ↗</a>
-        <p class="contact-region">Taiwan · Asia/Taipei</p>
-      </div>
+  <section id="contact" class="contact-scene scene">
+    <div class="wrap contact-layout">
+      <div><p class="eyebrow">CONTACT ERYNDEX</p><h2>{t('需要公司、合作或系統相關資訊？', 'Need company, partnership or system information?')}</h2></div>
+      <div><p>{t('歡迎透過官方信箱與智序科技聯絡。', 'Contact Eryndex through our official email address.')}</p><a href="mailto:contact@eryndex.com">contact@eryndex.com ↗</a><span>Taiwan · Asia/Taipei</span></div>
     </div>
   </section>
 
   <section class="wrap corporate-legal" aria-label={t('網站政策', 'Website policies')}>
-    {
-      ['privacy', 'terms'].map((kind) => (
-        <details id={kind}>
-          <summary>
-            <>
-              <span>
-                {kind === 'privacy'
-                  ? t('隱私權說明', 'Privacy notice')
-                  : t('網站使用條款', 'Website terms')}
-              </span>
-              <span aria-hidden="true">＋</span>
-            </>
-          </summary>
-          <Legal lang={lang} kind={kind} embedded />
-        </details>
-      ))
-    }
+    {['privacy', 'terms'].map((kind) => (
+      <details id={kind}><summary><span>{kind === 'privacy' ? t('隱私權說明', 'Privacy notice') : t('網站使用條款', 'Website terms')}</span><span aria-hidden="true">＋</span></summary><Legal lang={lang} kind={kind} embedded /></details>
+    ))}
   </section>
-</div>
+</main>
 
 <script>
   function revealAnchor() {
     if (!location.hash) return;
     let id: string;
-    try {
-      id = decodeURIComponent(location.hash.slice(1));
-    } catch {
-      return;
-    }
+    try { id = decodeURIComponent(location.hash.slice(1)); } catch { return; }
     const target = document.getElementById(id);
     if (!target) return;
     let node: HTMLElement | null = target;
-    while (node) {
-      if (node instanceof HTMLDetailsElement) node.open = true;
-      node = node.parentElement;
-    }
-    requestAnimationFrame(() =>
-      target.scrollIntoView({
-        block: 'start',
-        behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
-      }),
-    );
+    while (node) { if (node instanceof HTMLDetailsElement) node.open = true; node = node.parentElement; }
+    requestAnimationFrame(() => target.scrollIntoView({ block: 'start' }));
   }
-  window.addEventListener('hashchange', revealAnchor);
-  if (location.hash) revealAnchor();
+  addEventListener('hashchange', revealAnchor);
+  revealAnchor();
 </script>
