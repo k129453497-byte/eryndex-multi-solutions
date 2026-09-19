@@ -107,55 +107,17 @@
 .system-intro h2 { margin-bottom: 38px; }
 .system-intro .lead { max-width: 620px; color: #b9cbc5; }
 
-.capability-stack { display: grid; gap: 18px; }
+.capability-stack { border-top: 1px solid rgba(255,255,255,0.22); }
 .capability-stack article {
-  position: relative;
   display: grid;
   grid-template-columns: 58px 1fr;
   gap: 25px;
-  min-height: 265px;
-  padding: 44px 42px 46px;
-  overflow: hidden;
-  border: 1px solid rgba(255,255,255,0.16);
-  border-radius: 24px;
-  background: #142925;
-  isolation: isolate;
+  padding: 42px 0 48px;
+  border-bottom: 1px solid rgba(255,255,255,0.22);
 }
-.capability-stack article::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(90deg, rgba(10,28,24,0.98) 0%, rgba(10,28,24,0.88) 48%, rgba(10,28,24,0.35) 100%),
-    linear-gradient(0deg, rgba(10,28,24,0.75), transparent 58%);
-}
-.capability-media,
-.capability-media picture {
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  display: block;
-}
-.capability-media picture { width: 100%; height: 100%; }
-.capability-media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 58% center;
-  filter: saturate(0.72) contrast(0.94);
-  transform: scale(1.035);
-  transition: transform 0.9s ease, filter 0.9s ease;
-}
-.capability-stack article:hover .capability-media img {
-  filter: saturate(0.9) contrast(1);
-  transform: scale(1.07);
-}
-.capability-stack span,
-.capability-copy { position: relative; z-index: 1; }
-.capability-stack span { color: #8ed3c0; font-size: 11px; letter-spacing: 0.13em; }
+.capability-stack span { color: #74c3ae; font-size: 11px; letter-spacing: 0.13em; }
 .capability-stack h3 { margin: 0 0 15px; font-size: clamp(27px, 2.6vw, 39px); font-weight: 550; }
-.capability-stack p { max-width: 500px; color: #c5d4cf; }
+.capability-stack p { color: #afc1bb; }
 
 .system-statement { padding-top: clamp(100px, 11vw, 170px); }
 .system-statement p {
@@ -266,10 +228,7 @@
   .about-visual picture:nth-child(2) { left: 12%; top: 29%; }
   .about-visual picture:nth-child(3) { right: -9%; top: 54%; transform: rotate(3deg); }
   .system-layout { gap: 65px; }
-  .capability-stack article { grid-template-columns: 35px 1fr; gap: 12px; min-height: 230px; padding: 30px 26px 34px; }
-  .capability-stack article::after {
-    background: linear-gradient(90deg, rgba(10,28,24,0.97), rgba(10,28,24,0.72));
-  }
+  .capability-stack article { grid-template-columns: 35px 1fr; gap: 12px; padding: 30px 0 34px; }
   .system-statement { padding-top: 80px; }
   .system-statement p { font-size: 30px; }
   .process-list li { grid-template-columns: 34px 1fr; gap: 10px 15px; padding: 30px 0; }
