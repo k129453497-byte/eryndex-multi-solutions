@@ -47,7 +47,7 @@
 .value-strip h2 { margin: 35px 0 13px; font-size: clamp(24px, 2.2vw, 34px); font-weight: 600; }
 .value-strip p { max-width: 320px; font-size: 14px; }
 
-.about-scene { padding-bottom: clamp(130px, 13vw, 205px); }
+.about-scene { padding-bottom: clamp(112px, 11vw, 176px); }
 
 .about-layout {
   display: grid;
@@ -59,34 +59,6 @@
 
 .about-copy { padding-bottom: 6px; }
 .about-copy .lead { margin-bottom: 28px; color: var(--ink); font-size: 20px; }
-
-.about-visual {
-  position: relative;
-  height: clamp(420px, 48vw, 680px);
-  margin-top: clamp(80px, 9vw, 130px);
-  border-radius: 36px;
-  overflow: hidden;
-  background:
-    radial-gradient(circle at 22% 26%, rgba(104, 192, 166, 0.22), transparent 28%),
-    radial-gradient(circle at 78% 72%, rgba(141, 146, 204, 0.2), transparent 30%),
-    linear-gradient(135deg, #f0f7f5, #f7f3ef 52%, #f1f3fb);
-  box-shadow: inset 0 0 0 1px rgba(34, 72, 62, 0.08);
-}
-
-.about-visual picture {
-  position: absolute;
-  display: block;
-  width: 48%;
-  height: 76%;
-  overflow: hidden;
-  border-radius: 26px;
-  box-shadow: 0 26px 65px rgba(41, 58, 52, 0.14);
-}
-
-.about-visual picture:nth-child(1) { left: -3%; top: 12%; transform: rotate(-5deg); }
-.about-visual picture:nth-child(2) { left: 28%; top: 8%; z-index: 2; }
-.about-visual picture:nth-child(3) { right: -3%; top: 15%; transform: rotate(5deg); }
-.about-visual img { width: 100%; height: 100%; object-fit: cover; }
 
 .system-scene {
   color: var(--ink);
@@ -235,11 +207,6 @@
   .value-strip h2 { margin: 16px 0 8px; }
   .about-layout { padding-top: 55px; }
   .about-copy .lead { font-size: 18px; }
-  .about-visual { height: 510px; margin-top: 70px; border-radius: 24px; }
-  .about-visual picture { width: 76%; height: 44%; border-radius: 18px; }
-  .about-visual picture:nth-child(1) { left: -9%; top: 5%; transform: rotate(-3deg); }
-  .about-visual picture:nth-child(2) { left: 12%; top: 29%; }
-  .about-visual picture:nth-child(3) { right: -9%; top: 54%; transform: rotate(3deg); }
   .system-layout { gap: 65px; }
   .capability-stack article { grid-template-columns: 35px 1fr; gap: 12px; padding: 30px 0 34px; }
   .system-statement { padding-top: 80px; }

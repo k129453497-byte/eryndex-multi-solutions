@@ -1,7 +1,6 @@
 ---
 import { translator, type Locale } from '../data/content';
 import Hero from './Hero.astro';
-import MasterImage from './MasterImage.astro';
 import Legal from './Legal.astro';
 import '../styles/single-page.css';
 
@@ -55,11 +54,6 @@ const companyFacts = [
         <p class="lead">{t('Eryndex 智序科技專注於企業工作協作、資訊管理與存取治理系統的設計與開發。', 'Eryndex designs and develops systems for business coordination, information management and access governance.')}</p>
         <p>{t('我們從企業每天真正發生的工作出發，把分散的流程、重要資訊與管理規則整理成可以理解、可以執行，也可以持續改善的企業脈絡。', 'We begin with the work that actually happens every day, turning fragmented processes, important information and management rules into an operating context that can be understood, executed and continuously improved.')}</p>
       </div>
-    </div>
-    <div class="about-visual" aria-hidden="true">
-      <MasterImage kind="space" alt="" sizes="(max-width: 700px) 92vw, 42vw" />
-      <MasterImage kind="files" alt="" sizes="(max-width: 700px) 92vw, 42vw" />
-      <MasterImage kind="shield" alt="" sizes="(max-width: 700px) 92vw, 42vw" />
     </div>
   </section>
 
