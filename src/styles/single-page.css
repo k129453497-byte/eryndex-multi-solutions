@@ -95,17 +95,6 @@
 .capability-stack h3 { margin: 0 0 15px; font-size: clamp(27px, 2.6vw, 39px); font-weight: 550; }
 .capability-stack p { color: #596a64; }
 
-.system-statement { padding-top: clamp(100px, 11vw, 170px); }
-.system-statement p {
-  width: min(1050px, 100%);
-  margin-left: auto;
-  font-size: clamp(32px, 4.1vw, 62px);
-  line-height: 1.45;
-  letter-spacing: -0.035em;
-  text-wrap: balance;
-  color: #20342e;
-}
-
 .process-scene { background: #fbfcfb; }
 .scene-heading {
   display: grid;
@@ -209,8 +198,6 @@
   .about-copy .lead { font-size: 18px; }
   .system-layout { gap: 65px; }
   .capability-stack article { grid-template-columns: 35px 1fr; gap: 12px; padding: 30px 0 34px; }
-  .system-statement { padding-top: 80px; }
-  .system-statement p { font-size: 30px; }
   .process-list li { grid-template-columns: 34px 1fr; gap: 10px 15px; padding: 30px 0; }
   .process-list p { grid-column: 2; }
   .service-callout { grid-template-columns: 1fr; gap: 18px; padding: 28px 24px; }
