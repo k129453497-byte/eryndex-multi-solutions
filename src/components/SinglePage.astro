@@ -20,6 +20,8 @@ const capabilities = [
   [t('存取治理', 'Access governance'), t('把身分、權限、核准與稽核放進清楚的管理流程，讓信任有依據。', 'Place identity, permission, approval and audit into a clear management process so trust has evidence.')],
 ];
 
+const capabilityVisuals = ['space', 'files', 'shield'] as const;
+
 const process = [
   [t('理解現況', 'Understand the current state'), t('從真實工作、現有工具與管理責任開始，釐清真正需要改善的問題。', 'Begin with real work, existing tools and management ownership to identify what actually needs improvement.')],
   [t('建立脈絡', 'Build the operating context'), t('把流程、資訊與治理原則整理成團隊能理解、可以執行的系統。', 'Turn processes, information and governance principles into a system teams can understand and use.')],
@@ -48,7 +50,6 @@ const companyFacts = [
   </section>
 
   <section id="about" class="about-scene wrap scene">
-    <div class="scene-backdrop backdrop-space" aria-hidden="true"><MasterImage kind="space" alt="" sizes="70vw" /></div>
     <div class="scene-label"><span>ABOUT ERYNDEX</span><span>{t('關於智序科技', 'About Eryndex')}</span></div>
     <div class="about-layout">
       <h2>{t('科技的價值，\n在於讓企業更有秩序地前進。', 'Technology matters when it helps business move forward with clarity.')}</h2>
@@ -56,6 +57,11 @@ const companyFacts = [
         <p class="lead">{t('Eryndex 智序科技專注於企業工作協作、資訊管理與存取治理系統的設計與開發。', 'Eryndex designs and develops systems for business coordination, information management and access governance.')}</p>
         <p>{t('我們從企業每天真正發生的工作出發，把分散的流程、重要資訊與管理規則整理成可以理解、可以執行，也可以持續改善的企業脈絡。', 'We begin with the work that actually happens every day, turning fragmented processes, important information and management rules into an operating context that can be understood, executed and continuously improved.')}</p>
       </div>
+    </div>
+    <div class="about-visual" aria-hidden="true">
+      <MasterImage kind="space" alt="" sizes="(max-width: 700px) 92vw, 42vw" />
+      <MasterImage kind="files" alt="" sizes="(max-width: 700px) 92vw, 42vw" />
+      <MasterImage kind="shield" alt="" sizes="(max-width: 700px) 92vw, 42vw" />
     </div>
   </section>
 
@@ -72,6 +78,9 @@ const companyFacts = [
       <div class="capability-stack">
         {capabilities.map(([title, description], index) => (
           <article>
+            <div class="capability-media" aria-hidden="true">
+              <MasterImage kind={capabilityVisuals[index]} alt="" sizes="(max-width: 900px) 92vw, 38vw" />
+            </div>
             <span>0{index + 1}</span>
             <div class="capability-copy"><h3>{title}</h3><p>{description}</p></div>
           </article>
@@ -84,7 +93,6 @@ const companyFacts = [
   </section>
 
   <section id="approach" class="process-scene wrap scene">
-    <div class="scene-backdrop backdrop-files" aria-hidden="true"><MasterImage kind="files" alt="" sizes="70vw" /></div>
     <header class="scene-heading">
       <div><p class="eyebrow">HOW WE WORK</p><h2>{t('從理解企業，\n到系統穩定運作。', 'From understanding the business\nto a system that works reliably.')}</h2></div>
       <p>{t('我們不以功能清單開始，而是先確認工作如何發生、資訊如何流動，以及誰需要承擔管理責任。', 'We do not begin with a feature list. We first understand how work happens, how information moves and where management responsibility belongs.')}</p>
@@ -102,7 +110,6 @@ const companyFacts = [
   </section>
 
   <section id="company" class="company-scene scene">
-    <div class="scene-backdrop backdrop-shield" aria-hidden="true"><MasterImage kind="shield" alt="" sizes="65vw" /></div>
     <div class="wrap company-layout">
       <div><p class="eyebrow">COMPANY PROFILE</p><h2>{t('清楚、正式、\n可以被理解的公司資訊。', 'Clear, formal and understandable company information.')}</h2></div>
       <dl class="company-facts">
