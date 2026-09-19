@@ -292,9 +292,9 @@ main:focus {
 }
 .hero-copy h1 {
   max-width: 760px;
-  font-size: clamp(52px, 5.15vw, 82px);
-  line-height: 1.05;
-  letter-spacing: -0.055em;
+  font-size: clamp(48px, 4.7vw, 74px);
+  line-height: 1.08;
+  letter-spacing: -0.045em;
 }
 .hero-copy h1 em {
   color: var(--ink);
@@ -308,7 +308,7 @@ main:focus {
   font-size: 17px;
   line-height: 1.9;
   margin: 34px 0 38px;
-  max-width: 590px;
+  max-width: 640px;
   color: #50635d;
 }
 .hero-actions {

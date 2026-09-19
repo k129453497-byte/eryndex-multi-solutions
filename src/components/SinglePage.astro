@@ -7,9 +7,9 @@ const { lang } = Astro.props as { lang: Locale };
 const t = translator(lang);
 
 const values = [
-  [t('工作更清楚', 'Clearer work'), t('讓責任、進度與交接都有一致脈絡。', 'Give responsibility, progress and handoffs one shared context.')],
-  [t('資訊能延續', 'Information that lasts'), t('讓重要資料保留版本、來源與可追溯性。', 'Preserve version, origin and traceability for important information.')],
-  [t('治理可落實', 'Governance in practice'), t('讓存取、核准與管理規則進入日常工作。', 'Bring access, approval and governance into everyday work.')],
+  [t('企業軟體設計', 'Enterprise software'), t('以實際營運需求規劃系統與工作流程。', 'Systems and workflows planned around real operating needs.')],
+  [t('系統導入服務', 'Implementation services'), t('從需求釐清、資料遷移到教育訓練。', 'From discovery and migration to user enablement.')],
+  [t('持續維護支援', 'Ongoing support'), t('協助系統穩定運作並因應組織變化。', 'Keeping systems reliable as organizations evolve.')],
 ];
 
 const capabilities = [
@@ -40,10 +40,11 @@ const process = [
   <section id="about" class="about-scene wrap scene">
     <div class="scene-label"><span>ABOUT ERYNDEX</span><span>{t('關於智序科技', 'About Eryndex')}</span></div>
     <div class="about-layout">
-      <h2>{t('科技的價值，\n在於讓企業更有秩序地前進。', 'Technology matters when it helps business move forward with clarity.')}</h2>
+        <h2>{t('以企業每天的工作，\n作為系統設計的起點。', 'Enterprise systems designed around the work people actually do.')}</h2>
       <div class="about-copy">
-        <p class="lead">{t('Eryndex 智序科技專注於企業工作協作、資訊管理與存取治理系統的設計與開發。', 'Eryndex designs and develops systems for business coordination, information management and access governance.')}</p>
-        <p>{t('我們從企業每天真正發生的工作出發，把分散的流程、重要資訊與管理規則整理成可以理解、可以執行，也可以持續改善的企業脈絡。', 'We begin with the work that actually happens every day, turning fragmented processes, important information and management rules into an operating context that can be understood, executed and continuously improved.')}</p>
+        <p class="lead">{t('Eryndex 智序科技是一家位於台灣的企業軟體與工作系統設計公司。', 'Eryndex is a Taiwan-based enterprise software and work systems company.')}</p>
+        <p>{t('我們協助企業釐清流程、資訊與管理責任，並將需求落實為能被團隊使用、管理與持續維護的數位系統。服務涵蓋系統規劃、導入、資料遷移、訓練與後續支援。', 'We help organizations clarify processes, information and management ownership, then turn those requirements into digital systems teams can use, govern and maintain. Services include planning, implementation, data migration, training and ongoing support.')}</p>
+        <div class="about-meta"><span>{t('服務地區', 'REGION')} · TAIWAN</span><span>{t('業務類型', 'FOCUS')} · B2B SOFTWARE</span></div>
       </div>
     </div>
   </section>
@@ -54,9 +55,9 @@ const process = [
     <span id="products-shield" class="legacy-anchor" aria-hidden="true"></span>
     <div class="wrap system-layout">
       <div class="system-intro">
-        <p class="eyebrow">ONE BUSINESS OPERATING SYSTEM</p>
-        <h2>{t('不是更多產品，\n而是一套完整的企業運作方法。', 'Not more products.\nOne complete way for business to work.')}</h2>
-        <p class="lead">{t('Eryndex 將工作、資訊與信任放進同一套清楚的系統主題。企業不必理解多個產品的差異，只需要從正在發生的問題開始。', 'Eryndex brings work, information and trust into one clear system. Businesses do not need to navigate separate products; they can begin with the problem in front of them.')}</p>
+        <p class="eyebrow">CORE CAPABILITIES</p>
+        <h2>{t('三項能力，\n支撐一套企業系統。', 'Three capabilities.\nOne enterprise system.')}</h2>
+        <p class="lead">{t('從日常協作、資訊保存到權限管理，智序科技以一致的系統觀點協助企業建立可持續的工作方式。', 'From daily collaboration and information continuity to permission management, Eryndex builds sustainable ways of working through one consistent system perspective.')}</p>
       </div>
       <div class="capability-stack">
         {capabilities.map(([title, description], index) => (
@@ -68,7 +69,7 @@ const process = [
 
   <section id="approach" class="process-scene wrap scene">
     <header class="scene-heading">
-      <div><p class="eyebrow">HOW WE WORK</p><h2>{t('從理解企業，\n到系統穩定運作。', 'From understanding the business\nto a system that works reliably.')}</h2></div>
+      <div><p class="eyebrow">DELIVERY MODEL</p><h2>{t('從需求確認，\n到系統穩定運作。', 'From confirmed requirements\nto reliable operation.')}</h2></div>
       <p>{t('我們不以功能清單開始，而是先確認工作如何發生、資訊如何流動，以及誰需要承擔管理責任。', 'We do not begin with a feature list. We first understand how work happens, how information moves and where management responsibility belongs.')}</p>
     </header>
     <ol class="process-list">
@@ -77,7 +78,7 @@ const process = [
       ))}
     </ol>
     <div class="service-callout">
-      <p class="eyebrow">PROFESSIONAL SERVICES</p>
+      <p class="eyebrow">SERVICE SCOPE</p>
       <h3>{t('規劃、導入、遷移、訓練與持續支援。', 'Planning, implementation, migration, training and ongoing support.')}</h3>
       <p>{t('實際服務範圍會依企業環境、既有系統與專案需求共同確認。', 'Service scope is agreed around each business environment, existing system and project requirement.')}</p>
     </div>
@@ -85,8 +86,8 @@ const process = [
 
   <section id="contact" class="contact-scene scene">
     <div class="wrap contact-layout">
-      <div><p class="eyebrow">CONTACT ERYNDEX</p><h2>{t('需要公司、合作或系統相關資訊？', 'Need company, partnership or system information?')}</h2></div>
-      <div><p>{t('歡迎透過官方信箱與智序科技聯絡。', 'Contact Eryndex through our official email address.')}</p><a href="mailto:contact@eryndex.com">contact@eryndex.com ↗</a><span>Taiwan · Asia/Taipei</span></div>
+      <div><p class="eyebrow">CONTACT ERYNDEX</p><h2>{t('與智序科技聯絡。', 'Contact Eryndex.')}</h2></div>
+      <div><p>{t('企業合作、系統規劃或公司資料需求，歡迎透過官方信箱與我們聯絡。', 'For business partnerships, system planning or company information, contact us through our official email address.')}</p><a href="mailto:contact@eryndex.com">contact@eryndex.com ↗</a><span>Eryndex 智序科技 · Taiwan · Asia/Taipei</span></div>
     </div>
   </section>
 
