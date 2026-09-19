@@ -20,6 +20,8 @@ const capabilities = [
   [t('存取治理', 'Access governance'), t('把身分、權限、核准與稽核放進清楚的管理流程，讓信任有依據。', 'Place identity, permission, approval and audit into a clear management process so trust has evidence.')],
 ];
 
+const capabilityVisuals = ['space', 'files', 'shield'] as const;
+
 const process = [
   [t('理解現況', 'Understand the current state'), t('從真實工作、現有工具與管理責任開始，釐清真正需要改善的問題。', 'Begin with real work, existing tools and management ownership to identify what actually needs improvement.')],
   [t('建立脈絡', 'Build the operating context'), t('把流程、資訊與治理原則整理成團隊能理解、可以執行的系統。', 'Turn processes, information and governance principles into a system teams can understand and use.')],
@@ -75,7 +77,13 @@ const companyFacts = [
       </div>
       <div class="capability-stack">
         {capabilities.map(([title, description], index) => (
-          <article><span>0{index + 1}</span><div><h3>{title}</h3><p>{description}</p></div></article>
+          <article>
+            <div class="capability-media" aria-hidden="true">
+              <MasterImage kind={capabilityVisuals[index]} alt="" sizes="(max-width: 900px) 92vw, 38vw" />
+            </div>
+            <span>0{index + 1}</span>
+            <div class="capability-copy"><h3>{title}</h3><p>{description}</p></div>
+          </article>
         ))}
       </div>
     </div>
