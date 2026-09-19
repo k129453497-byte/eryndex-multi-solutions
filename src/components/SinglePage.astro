@@ -1,7 +1,6 @@
 ---
 import { translator, type Locale } from '../data/content';
 import Hero from './Hero.astro';
-import Legal from './Legal.astro';
 import '../styles/single-page.css';
 
 const { lang } = Astro.props as { lang: Locale };
@@ -110,11 +109,6 @@ const companyFacts = [
     </div>
   </section>
 
-  <section class="wrap corporate-legal" aria-label={t('網站政策', 'Website policies')}>
-    {['privacy', 'terms'].map((kind) => (
-      <details id={kind}><summary><span>{kind === 'privacy' ? t('隱私權說明', 'Privacy notice') : t('網站使用條款', 'Website terms')}</span><span aria-hidden="true">＋</span></summary><Legal lang={lang} kind={kind} embedded /></details>
-    ))}
-  </section>
 </main>
 
 <script>

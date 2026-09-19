@@ -124,8 +124,6 @@ for (const [file, doc] of docs) {
     'approach',
     'company',
     'contact',
-    'privacy',
-    'terms',
   ]) {
     assert.ok(doc.getElementById(id), 'Missing single-page section: ' + id + ' in ' + file);
   }

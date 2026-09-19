@@ -41,6 +41,8 @@ const legacyAnchors: Record<string, string> = {
   'resources/work-handoffs': 'company',
   'resources/information-lifecycle': 'company',
   'resources/access-review': 'company',
+  privacy: 'company',
+  terms: 'company',
 };
 export const anchorFor = (path: string) =>
   legacyAnchors[path] ?? path.replace(/^\/|\/$/g, '').replaceAll('/', '-');

@@ -169,13 +169,6 @@
 }
 .contact-layout span { display: block; color: #51645e; font-size: 12px; letter-spacing: 0.14em; }
 
-.corporate-legal { padding-block: 35px 70px; background: #fff; }
-.corporate-legal details { border-top: 1px solid var(--line); }
-.corporate-legal details:last-child { border-bottom: 1px solid var(--line); }
-.corporate-legal summary { display: flex; justify-content: space-between; padding: 24px 0; list-style: none; }
-.corporate-legal summary::-webkit-details-marker { display: none; }
-.corporate-legal .reading { width: 100%; max-width: 850px; padding: 20px 0 45px; }
-
 @media (max-width: 900px) {
   .about-layout, .system-layout, .scene-heading, .company-layout, .contact-layout { grid-template-columns: 1fr; gap: 48px; }
   .system-intro { position: static; }

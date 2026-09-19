@@ -713,7 +713,7 @@ main:focus {
 }
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(4, minmax(130px, 1fr));
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
   gap: clamp(35px, 6vw, 90px);
   margin: 50px 0 65px;
   padding-left: min(23vw, 320px);
