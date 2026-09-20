@@ -846,6 +846,17 @@ main:focus {
     max-width: 1460px;
   }
 }
+@media (min-width: 1200px) {
+  .wrap {
+    width: 50%;
+    max-width: none;
+  }
+  .hero-layout {
+    width: 50%;
+    max-width: none;
+    padding-inline: 0;
+  }
+}
 @media (max-width: 1100px) {
   .site-header {
     gap: 18px;
