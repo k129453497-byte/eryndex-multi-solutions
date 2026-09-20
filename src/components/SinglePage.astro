@@ -29,18 +29,6 @@ const process = [
 <Hero lang={lang} />
 
 <main class="corporate-site">
-  <section class="value-strip" aria-label={t('Eryndex 核心價值', 'Eryndex core values')}>
-    <div class="wrap value-strip-grid">
-      {values.map(([category, title, description]) => (
-        <article>
-          <header><span>{category}</span></header>
-          <h2>{title}</h2>
-          <p>{description}</p>
-        </article>
-      ))}
-    </div>
-  </section>
-
   <section id="about" class="about-scene wrap scene">
     <div class="scene-label"><span>ABOUT ERYNDEX</span><span>{t('關於智序科技', 'About Eryndex')}</span></div>
     <div class="about-layout">
@@ -50,6 +38,18 @@ const process = [
         <p>{t('我們協助企業釐清流程、資訊與管理責任，並將需求落實為能被團隊使用、管理與持續維護的數位系統。服務涵蓋系統規劃、導入、資料遷移、訓練與後續支援。', 'We help organizations clarify processes, information and management ownership, then turn those requirements into digital systems teams can use, govern and maintain. Services include planning, implementation, data migration, training and ongoing support.')}</p>
         <div class="about-meta"><span>{t('服務地區', 'REGION')} · TAIWAN</span><span>{t('業務類型', 'FOCUS')} · B2B SOFTWARE</span></div>
       </div>
+    </div>
+  </section>
+
+  <section class="value-strip" aria-label={t('Eryndex 核心價值', 'Eryndex core values')}>
+    <div class="wrap value-strip-grid">
+      {values.map(([category, title, description]) => (
+        <article>
+          <header><span>{category}</span></header>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </article>
+      ))}
     </div>
   </section>
 
