@@ -217,6 +217,42 @@
   .service-callout .eyebrow { grid-column: 1 / -1; }
 }
 
+@media (min-width: 1200px) {
+  .system-intro,
+  .scene-heading,
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .scene-heading { margin-bottom: 64px; }
+  .capability-stack { gap: 14px; }
+  .capability-stack article {
+    min-height: 285px;
+    padding: 26px 20px 30px;
+    border-radius: 22px;
+  }
+  .capability-icon {
+    width: 54px;
+    height: 54px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+  }
+  .capability-icon svg { width: 27px; height: 27px; }
+  .capability-stack h3 {
+    font-size: clamp(17px, 1.35vw, 23px);
+    white-space: nowrap;
+  }
+  .capability-stack p { font-size: 13px; }
+  .process-list li {
+    grid-template-columns: 44px minmax(170px, 0.72fr) 1fr;
+    gap: 3%;
+  }
+  .process-list h3 {
+    font-size: clamp(17px, 1.35vw, 23px);
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 700px) {
   .scene { padding-block: 78px; }
   .scene h2 { font-size: 40px; }

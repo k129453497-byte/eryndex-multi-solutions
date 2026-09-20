@@ -856,6 +856,10 @@ main:focus {
     max-width: none;
     padding-inline: 0;
   }
+  .scene h2 {
+    font-size: clamp(28px, 2.15vw, 38px);
+    white-space: nowrap;
+  }
 }
 @media (max-width: 1100px) {
   .site-header {
