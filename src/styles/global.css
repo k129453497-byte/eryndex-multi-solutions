@@ -1236,7 +1236,6 @@ main:focus {
     animation: none !important;
     transition: none !important;
   }
-  .hero-video-bg { display: none; }
 }
 .experience-home .software-demo {
   margin-bottom: 35px;
