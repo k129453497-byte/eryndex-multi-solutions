@@ -5,6 +5,18 @@ const t = translator(lang);
 ---
 
 <section class="hero">
+  <video
+    class="hero-video-bg"
+    src={asset('web/hero-company.mp4')}
+    poster={asset('web/hero-company.jpg')}
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="metadata"
+    aria-hidden="true"
+  ></video>
+  <div class="hero-video-shade" aria-hidden="true"></div>
   <div class="hero-field" aria-hidden="true">
     <span class="field-line field-line-a"></span>
     <span class="field-line field-line-b"></span>

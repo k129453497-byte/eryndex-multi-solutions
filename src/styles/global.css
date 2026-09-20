@@ -273,6 +273,26 @@ main:focus {
     radial-gradient(circle at 91% 14%, rgba(82, 112, 162, 0.24), transparent 26%),
     linear-gradient(120deg, #0a1f1b 0%, #102f28 55%, #142b35 100%);
 }
+.hero-video-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.58;
+  filter: saturate(0.72) contrast(1.06) brightness(0.72);
+}
+.hero-video-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(6,24,20,0.98) 0%, rgba(8,31,26,0.9) 39%, rgba(8,28,25,0.42) 70%, rgba(8,25,23,0.25) 100%),
+    linear-gradient(0deg, rgba(6,23,20,0.52), transparent 44%);
+  pointer-events: none;
+}
 .hero::before {
   content: '';
   position: absolute;
@@ -285,6 +305,7 @@ main:focus {
   mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.35) 35%, #000 100%);
   -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.35) 35%, #000 100%);
   pointer-events: none;
+  z-index: 2;
 }
 .hero::after {
   content: '';
@@ -299,12 +320,14 @@ main:focus {
     0 0 0 90px rgba(135, 203, 183, 0.025),
     0 0 0 180px rgba(135, 203, 183, 0.018);
   pointer-events: none;
+  z-index: 2;
 }
 .hero-field {
   position: absolute;
   inset: 0;
   overflow: hidden;
   pointer-events: none;
+  z-index: 3;
 }
 .field-line {
   position: absolute;
@@ -330,7 +353,7 @@ main:focus {
 .field-node-c { right: 7%; bottom: 17%; }
 .hero-layout {
   position: relative;
-  z-index: 1;
+  z-index: 4;
   width: 100%;
   height: 100%;
   max-width: 1380px;
@@ -511,7 +534,7 @@ main:focus {
 }
 .hero-foot {
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   bottom: 22px;
   left: var(--gutter);
   right: var(--gutter);
@@ -907,6 +930,12 @@ main:focus {
   .field-node-a { right: 8%; top: 55%; }
   .field-node-b { right: 67%; top: 68%; }
   .field-node-c { right: 17%; bottom: 7%; }
+  .hero-video-bg { object-position: 66% center; opacity: 0.48; }
+  .hero-video-shade {
+    background:
+      linear-gradient(180deg, rgba(6,24,20,0.98) 0%, rgba(7,29,24,0.9) 48%, rgba(8,27,24,0.5) 100%),
+      linear-gradient(90deg, rgba(6,24,20,0.88), transparent);
+  }
   .hero-layout {
     height: auto;
     padding: 62px var(--gutter) 34px;
@@ -1191,6 +1220,7 @@ main:focus {
     animation: none !important;
     transition: none !important;
   }
+  .hero-video-bg { display: none; }
 }
 .experience-home .software-demo {
   margin-bottom: 35px;
