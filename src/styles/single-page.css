@@ -113,7 +113,6 @@
   box-shadow: 0 8px 24px rgba(28,52,45,0.07);
   transition: transform 0.25s ease, background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
 }
-.capability-stack article:nth-child(2),
 .capability-stack article:hover,
 .capability-stack article:focus-visible {
   color: #f7fbfa;
@@ -141,16 +140,13 @@
   stroke-linecap: round;
   stroke-linejoin: round;
 }
-.capability-stack article:nth-child(2) .capability-icon,
 .capability-stack article:hover .capability-icon,
 .capability-stack article:focus-visible .capability-icon { background: rgba(255,255,255,0.16); color: #fff; }
 .capability-stack h3 { margin: 0 0 18px; font-size: clamp(24px, 2.2vw, 32px); font-weight: 600; }
 .capability-stack h3 span { color: #3f8875; font-size: 0.62em; letter-spacing: 0.04em; }
 .capability-stack p { color: #596a64; }
-.capability-stack article:nth-child(2) h3 span,
 .capability-stack article:hover h3 span,
 .capability-stack article:focus-visible h3 span { color: #bde9dc; }
-.capability-stack article:nth-child(2) p,
 .capability-stack article:hover p,
 .capability-stack article:focus-visible p { color: #d8ebe5; }
 
@@ -235,7 +231,6 @@
   .about-copy .lead { font-size: 18px; }
   .system-layout { gap: 50px; }
   .capability-stack article { padding: 28px 26px 32px; border-radius: 22px; }
-  .capability-stack article:nth-child(2),
   .capability-stack article:hover,
   .capability-stack article:focus-visible { transform: none; }
   .capability-icon { width: 56px; height: 56px; margin-bottom: 28px; border-radius: 15px; }
