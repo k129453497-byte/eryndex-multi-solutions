@@ -31,9 +31,9 @@ const process = [
 <main class="corporate-site">
   <section class="value-strip" aria-label={t('Eryndex 核心價值', 'Eryndex core values')}>
     <div class="wrap value-strip-grid">
-      {values.map(([category, title, description], index) => (
+      {values.map(([category, title, description]) => (
         <article>
-          <header><span>{category}</span><b>0{index + 1}</b></header>
+          <header><span>{category}</span></header>
           <h2>{title}</h2>
           <p>{description}</p>
         </article>
@@ -77,7 +77,7 @@ const process = [
                 <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.8-2.8 8.2-7 10-4.2-1.8-7-5.2-7-10V6zM9 12l2 2 4-4" /></svg>
               )}
             </div>
-            <div class="capability-copy"><h3><span>0{index + 1}.</span> {title}</h3><p>{description}</p></div>
+            <div class="capability-copy"><h3>{title}</h3><p>{description}</p></div>
           </article>
         ))}
       </div>
@@ -90,8 +90,8 @@ const process = [
       <p>{t('我們不以功能清單開始，而是先確認工作如何發生、資訊如何流動，以及誰需要承擔管理責任。', 'We do not begin with a feature list. We first understand how work happens, how information moves and where management responsibility belongs.')}</p>
     </header>
     <ol class="process-list">
-      {process.map(([title, description], index) => (
-        <li><span>0{index + 1}</span><h3>{title}</h3><p>{description}</p></li>
+      {process.map(([title, description]) => (
+        <li><h3>{title}</h3><p>{description}</p></li>
       ))}
     </ol>
   </section>
