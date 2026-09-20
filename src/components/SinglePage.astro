@@ -1,5 +1,5 @@
 ---
-import { translator, type Locale } from '../data/content';
+import { asset, translator, type Locale } from '../data/content';
 import Hero from './Hero.astro';
 import '../styles/single-page.css';
 
@@ -53,7 +53,7 @@ const process = [
     </div>
   </section>
 
-  <section id="products" class="system-scene scene">
+  <section id="products" class="system-scene scene" style={`--system-bg: url("${asset('web/files-1328.webp')}")`}>
     <span id="products-space" class="legacy-anchor" aria-hidden="true"></span>
     <span id="products-files" class="legacy-anchor" aria-hidden="true"></span>
     <span id="products-shield" class="legacy-anchor" aria-hidden="true"></span>
