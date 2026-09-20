@@ -7,9 +7,9 @@ const { lang } = Astro.props as { lang: Locale };
 const t = translator(lang);
 
 const values = [
-  [t('企業軟體設計', 'Enterprise software'), t('以實際營運需求規劃系統與工作流程。', 'Systems and workflows planned around real operating needs.')],
-  [t('系統導入服務', 'Implementation services'), t('從需求釐清、資料遷移到教育訓練。', 'From discovery and migration to user enablement.')],
-  [t('持續維護支援', 'Ongoing support'), t('協助系統穩定運作並因應組織變化。', 'Keeping systems reliable as organizations evolve.')],
+  [t('企業系統設計', 'ENTERPRISE SYSTEM DESIGN'), t('企業軟體設計', 'Enterprise software'), t('以實際營運需求規劃系統與工作流程。', 'Systems and workflows planned around real operating needs.')],
+  [t('導入與啟用', 'IMPLEMENTATION & ENABLEMENT'), t('系統導入服務', 'Implementation services'), t('從需求釐清、資料遷移到教育訓練。', 'From discovery and migration to user enablement.')],
+  [t('持續營運', 'ONGOING OPERATIONS'), t('持續維護支援', 'Ongoing support'), t('協助系統穩定運作並因應組織變化。', 'Keeping systems reliable as organizations evolve.')],
 ];
 
 const capabilities = [
@@ -31,8 +31,12 @@ const process = [
 <main class="corporate-site">
   <section class="value-strip" aria-label={t('Eryndex 核心價值', 'Eryndex core values')}>
     <div class="wrap value-strip-grid">
-      {values.map(([title, description], index) => (
-        <article><span>0{index + 1}</span><h2>{title}</h2><p>{description}</p></article>
+      {values.map(([category, title, description], index) => (
+        <article>
+          <header><span>{category}</span><b>0{index + 1}</b></header>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </article>
       ))}
     </div>
   </section>
