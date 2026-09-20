@@ -273,7 +273,64 @@ main:focus {
     radial-gradient(circle at 91% 14%, rgba(82, 112, 162, 0.24), transparent 26%),
     linear-gradient(120deg, #0a1f1b 0%, #102f28 55%, #142b35 100%);
 }
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.18;
+  background:
+    linear-gradient(rgba(196, 229, 219, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(196, 229, 219, 0.1) 1px, transparent 1px);
+  background-size: 68px 68px;
+  mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.35) 35%, #000 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, rgba(0,0,0,0.35) 35%, #000 100%);
+  pointer-events: none;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  width: min(74vw, 1060px);
+  height: min(74vw, 1060px);
+  right: -25%;
+  top: -46%;
+  border: 1px solid rgba(174, 225, 209, 0.12);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 90px rgba(135, 203, 183, 0.025),
+    0 0 0 180px rgba(135, 203, 183, 0.018);
+  pointer-events: none;
+}
+.hero-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.field-line {
+  position: absolute;
+  right: -4%;
+  width: 63%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(164, 226, 206, 0.32), transparent);
+  transform-origin: right center;
+}
+.field-line-a { top: 26%; transform: rotate(-13deg); }
+.field-line-b { bottom: 22%; transform: rotate(11deg); opacity: 0.68; }
+.field-node {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 1px solid rgba(190, 235, 221, 0.64);
+  border-radius: 50%;
+  background: #173f35;
+  box-shadow: 0 0 18px rgba(142, 226, 200, 0.42);
+}
+.field-node-a { right: 13%; top: 19%; }
+.field-node-b { right: 39%; top: 34%; }
+.field-node-c { right: 7%; bottom: 17%; }
 .hero-layout {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   max-width: 1380px;
@@ -454,6 +511,7 @@ main:focus {
 }
 .hero-foot {
   position: absolute;
+  z-index: 2;
   bottom: 22px;
   left: var(--gutter);
   right: var(--gutter);
@@ -843,6 +901,12 @@ main:focus {
       radial-gradient(circle at 62% 72%, rgba(86, 181, 154, 0.2), transparent 34%),
       linear-gradient(160deg, #0a1f1b, #12352d 60%, #162f38);
   }
+  .hero::before { background-size: 48px 48px; opacity: 0.12; }
+  .hero::after { width: 120vw; height: 120vw; right: -62%; top: 42%; }
+  .field-line { width: 105%; right: -35%; opacity: 0.45; }
+  .field-node-a { right: 8%; top: 55%; }
+  .field-node-b { right: 67%; top: 68%; }
+  .field-node-c { right: 17%; bottom: 7%; }
   .hero-layout {
     height: auto;
     padding: 62px var(--gutter) 34px;
