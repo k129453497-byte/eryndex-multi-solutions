@@ -32,6 +32,7 @@
 
 .value-strip {
   padding-block: clamp(48px, 5vw, 78px);
+  border: 0;
   background: transparent;
 }
 
@@ -77,6 +78,7 @@
 
 .system-scene {
   color: var(--ink);
+  border: 0;
   background: transparent;
 }
 
@@ -179,7 +181,7 @@
 .capability-stack article:hover .capability-features li::before,
 .capability-stack article:focus-visible .capability-features li::before { background: #fff; }
 
-.process-scene { background: transparent; }
+.process-scene { border: 0; background: transparent; }
 .scene-heading {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -217,6 +219,7 @@
 
 .contact-scene {
   color: var(--ink);
+  border: 0;
   background: transparent;
 }
 .contact-layout { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 9%; align-items: center; }
