@@ -8,15 +8,15 @@
 
 .scene {
   position: relative;
-  padding-block: clamp(112px, 11vw, 176px);
+  padding-block: clamp(82px, 7.5vw, 118px);
   scroll-margin-top: 76px;
 }
 
 .scene h2 {
   white-space: pre-line;
-  font-size: clamp(34px, 3.1vw, 46px);
-  line-height: 1.18;
-  letter-spacing: -0.03em;
+  font-size: clamp(32px, 2.8vw, 43px);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
 }
 
 .scene-label {
@@ -31,7 +31,7 @@
 }
 
 .value-strip {
-  padding-block: clamp(48px, 5vw, 78px);
+  padding-block: clamp(26px, 3vw, 46px);
   border: 0;
   background: transparent;
 }
@@ -39,8 +39,8 @@
 .value-strip-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 
 .value-strip article {
-  min-height: 290px;
-  padding: 28px 22px 32px;
+  min-height: 245px;
+  padding: 26px 26px 30px;
   border: 1px solid var(--line);
   background: var(--theme-surface);
   box-shadow: var(--theme-shadow);
@@ -48,17 +48,17 @@
 }
 .value-strip article header { display: flex; gap: 24px; }
 .value-strip article header span { color: var(--theme-accent); font-size: 11px; font-weight: 700; letter-spacing: 0.11em; }
-.value-strip h2 { margin: 40px 0 16px; font-size: clamp(18px, 1.45vw, 23px); font-weight: 700; letter-spacing: -0.02em; white-space: nowrap; }
-.value-strip p { max-width: 540px; font-size: 14px; line-height: 1.75; }
+.value-strip h2 { margin: 32px 0 14px; font-size: clamp(18px, 1.35vw, 21px); font-weight: 700; line-height: 1.38; letter-spacing: -0.018em; }
+.value-strip p { max-width: 540px; font-size: 14px; line-height: 1.7; }
 
-.about-scene { padding-bottom: clamp(112px, 11vw, 176px); }
+.about-scene { padding-bottom: clamp(68px, 6vw, 96px); }
 
 .about-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.22fr) minmax(320px, 0.78fr);
   gap: 10%;
   align-items: end;
-  padding-top: clamp(70px, 8vw, 118px);
+  padding-top: clamp(52px, 5vw, 78px);
 }
 
 .about-copy { padding-bottom: 6px; }
@@ -87,7 +87,7 @@
 .system-layout {
   display: grid;
   grid-template-columns: 1fr;
-  gap: clamp(60px, 7vw, 100px);
+  gap: clamp(46px, 5vw, 72px);
   align-items: start;
 }
 
@@ -107,8 +107,8 @@
   gap: 22px;
 }
 .capability-stack article {
-  min-height: 440px;
-  padding: 36px 34px 40px;
+  min-height: 390px;
+  padding: 32px 30px 34px;
   border: 1px solid var(--line);
   border-radius: 28px;
   background: var(--theme-surface);
@@ -145,8 +145,8 @@
 }
 .capability-stack article:hover .capability-icon,
 .capability-stack article:focus-visible .capability-icon { background: rgba(255,255,255,0.16); color: #fff; }
-.capability-stack h3 { margin: 0 0 16px; font-size: clamp(20px, 1.8vw, 27px); font-weight: 700; letter-spacing: -0.02em; }
-.capability-stack p { color: var(--muted); font-size: 15px; line-height: 1.75; }
+.capability-stack h3 { margin: 0 0 14px; font-size: clamp(19px, 1.55vw, 23px); font-weight: 700; line-height: 1.36; letter-spacing: -0.018em; }
+.capability-stack p { color: var(--muted); font-size: 14px; line-height: 1.7; }
 .capability-stack article:hover p,
 .capability-stack article:focus-visible p { color: #d8ebe5; }
 .capability-features {
@@ -187,7 +187,7 @@
   grid-template-columns: 1.2fr 0.8fr;
   gap: 10%;
   align-items: end;
-  margin-bottom: clamp(70px, 8vw, 115px);
+  margin-bottom: clamp(48px, 5vw, 72px);
 }
 .scene-heading > p { max-width: 440px; padding-bottom: 9px; }
 
@@ -261,8 +261,8 @@
   .scene-heading { margin-bottom: 64px; }
   .capability-stack { gap: 14px; }
   .capability-stack article {
-    min-height: 410px;
-    padding: 26px 20px 30px;
+    min-height: 370px;
+    padding: 28px 24px 30px;
     border-radius: 22px;
   }
   .capability-icon {
@@ -273,8 +273,7 @@
   }
   .capability-icon svg { width: 27px; height: 27px; }
   .capability-stack h3 {
-    font-size: clamp(17px, 1.25vw, 21px);
-    white-space: nowrap;
+    font-size: clamp(17px, 1.2vw, 20px);
   }
   .capability-stack p { font-size: 14px; }
   .capability-features li { font-size: 12px; }
@@ -289,13 +288,13 @@
 }
 
 @media (max-width: 700px) {
-  .scene { padding-block: 78px; }
+  .scene { padding-block: 64px; }
   .scene h2 { font-size: clamp(32px, 9vw, 38px); }
   .scene-label { align-items: flex-start; gap: 25px; }
   .value-strip-grid { grid-template-columns: 1fr; }
-  .value-strip article, .value-strip article:last-child { grid-column: auto; min-height: 250px; padding: 28px 24px 32px; }
-  .value-strip h2 { margin: 38px 0 14px; }
-  .about-layout { padding-top: 55px; }
+  .value-strip article, .value-strip article:last-child { grid-column: auto; min-height: 220px; padding: 26px 24px 28px; }
+  .value-strip h2 { margin: 30px 0 12px; }
+  .about-layout { padding-top: 42px; }
   .about-copy .lead { font-size: 18px; }
   .system-layout { gap: 50px; }
   .capability-stack article { padding: 28px 26px 32px; border-radius: 22px; }
