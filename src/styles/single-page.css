@@ -14,7 +14,7 @@
 
 .scene h2 {
   white-space: pre-line;
-  font-size: clamp(32px, 2.8vw, 43px);
+  font-size: clamp(32px, 2.4vw, 35.2px);
   line-height: 1.2;
   letter-spacing: -0.025em;
 }
@@ -48,8 +48,8 @@
 }
 .value-strip article header { display: flex; gap: 24px; }
 .value-strip article header span { color: var(--theme-accent); font-size: 11px; font-weight: 700; letter-spacing: 0.11em; }
-.value-strip h2 { margin: 32px 0 14px; font-size: clamp(18px, 1.35vw, 21px); font-weight: 700; line-height: 1.38; letter-spacing: -0.018em; }
-.value-strip p { max-width: 540px; font-size: 14px; line-height: 1.7; }
+.value-strip h2 { margin: 32px 0 14px; font-size: 1.3rem; font-weight: 700; line-height: 1.4; letter-spacing: -0.018em; white-space: normal; overflow-wrap: anywhere; }
+.value-strip p { max-width: 540px; font-size: 0.92rem; line-height: 1.7; }
 
 .about-scene { padding-bottom: clamp(68px, 6vw, 96px); }
 
@@ -145,8 +145,8 @@
 }
 .capability-stack article:hover .capability-icon,
 .capability-stack article:focus-visible .capability-icon { background: rgba(255,255,255,0.16); color: #fff; }
-.capability-stack h3 { margin: 0 0 14px; font-size: clamp(19px, 1.55vw, 23px); font-weight: 700; line-height: 1.36; letter-spacing: -0.018em; }
-.capability-stack p { color: var(--muted); font-size: 14px; line-height: 1.7; }
+.capability-stack h3 { margin: 0 0 14px; font-size: 1.3rem; font-weight: 700; line-height: 1.4; letter-spacing: -0.018em; overflow-wrap: anywhere; }
+.capability-stack p { color: var(--muted); font-size: 0.92rem; line-height: 1.7; }
 .capability-stack article:hover p,
 .capability-stack article:focus-visible p { color: #d8ebe5; }
 .capability-features {
@@ -273,7 +273,7 @@
   }
   .capability-icon svg { width: 27px; height: 27px; }
   .capability-stack h3 {
-    font-size: clamp(17px, 1.2vw, 20px);
+    font-size: 1.2rem;
   }
   .capability-stack p { font-size: 14px; }
   .capability-features li { font-size: 12px; }
