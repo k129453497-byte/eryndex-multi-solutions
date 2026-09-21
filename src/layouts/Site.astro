@@ -63,6 +63,15 @@ const languageNames = { 'zh-tw': '繁體中文', 'zh-cn': '简体中文', en: 'E
       name="twitter:title"
       content={title + ' · Eryndex'}
     /><meta name="twitter:description" content={description} />
+    <script is:inline>
+      (() => {
+        const saved = localStorage.getItem('eryndex-theme');
+        const theme = saved === 'dark' || saved === 'light'
+          ? saved
+          : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
   </head>
   <body>
     <a class="skip" href="#main">{t('跳至主要內容', 'Skip to content')}</a>
@@ -90,6 +99,11 @@ const languageNames = { 'zh-tw': '繁體中文', 'zh-cn': '简体中文', en: 'E
           >{t('聯絡我們', 'Contact')} <span aria-hidden="true">↗</span></a
         >
       </nav>
+      <button class="theme-toggle" type="button" aria-label={t('切換明暗模式', 'Toggle light and dark mode')} aria-pressed="false">
+        <span class="theme-toggle-track" aria-hidden="true"><span class="theme-toggle-thumb"></span></span>
+        <span class="theme-toggle-label theme-label-light">{t('亮', 'Light')}</span>
+        <span class="theme-toggle-label theme-label-dark">{t('暗', 'Dark')}</span>
+      </button>
       <details class="language">
         <summary
           aria-label={(lang === 'en' ? 'EN' : lang === 'zh-tw' ? '繁' : '简') +
@@ -113,6 +127,7 @@ const languageNames = { 'zh-tw': '繁體中文', 'zh-cn': '简体中文', en: 'E
         </div>
       </details>
     </header>
+    <canvas class="theme-network" aria-hidden="true"></canvas>
     <main id="main" tabindex="-1"><slot /></main>
     <footer class="footer">
       <div class="footer-top">
@@ -162,6 +177,19 @@ const languageNames = { 'zh-tw': '繁體中文', 'zh-cn': '简体中文', en: 'E
     <script>
       const menu = document.querySelector<HTMLButtonElement>('.menu-toggle');
       const nav = document.querySelector<HTMLElement>('#site-nav');
+      const themeToggle = document.querySelector<HTMLButtonElement>('.theme-toggle');
+      const themeColor = document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+      const applyTheme = (theme: 'light' | 'dark') => {
+        document.documentElement.dataset.theme = theme;
+        themeToggle?.setAttribute('aria-pressed', String(theme === 'dark'));
+        themeColor?.setAttribute('content', theme === 'dark' ? '#030712' : '#f8fafc');
+        localStorage.setItem('eryndex-theme', theme);
+        window.dispatchEvent(new CustomEvent('eryndex-theme-change', { detail: theme }));
+      };
+      applyTheme(document.documentElement.dataset.theme === 'dark' ? 'dark' : 'light');
+      themeToggle?.addEventListener('click', () => {
+        applyTheme(document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark');
+      });
       menu?.addEventListener('click', () => {
         const on = menu.getAttribute('aria-expanded') !== 'true';
         menu.setAttribute('aria-expanded', String(on));
@@ -211,6 +239,75 @@ const languageNames = { 'zh-tw': '繁體中文', 'zh-cn': '简体中文', en: 'E
           { threshold: 0.08 },
         );
         document.querySelectorAll('.section').forEach((e) => observer.observe(e));
+      }
+
+      const canvas = document.querySelector<HTMLCanvasElement>('.theme-network');
+      const context = canvas?.getContext('2d');
+      if (canvas && context) {
+        let width = 0;
+        let height = 0;
+        let frame = 0;
+        const particles = Array.from({ length: Math.min(Math.floor(innerWidth / 32), 34) }, () => ({
+          x: Math.random(),
+          y: Math.random(),
+          vx: (Math.random() - 0.5) * 0.00013,
+          vy: (Math.random() - 0.5) * 0.00013,
+          size: 1 + Math.random() * 1.4,
+        }));
+        const resizeCanvas = () => {
+          const ratio = Math.min(devicePixelRatio || 1, 2);
+          width = innerWidth;
+          height = innerHeight;
+          canvas.width = Math.round(width * ratio);
+          canvas.height = Math.round(height * ratio);
+          canvas.style.width = width + 'px';
+          canvas.style.height = height + 'px';
+          context.setTransform(ratio, 0, 0, ratio, 0, 0);
+        };
+        const renderNetwork = () => {
+          context.clearRect(0, 0, width, height);
+          const dark = document.documentElement.dataset.theme === 'dark';
+          for (let i = 0; i < particles.length; i += 1) {
+            const a = particles[i];
+            const ax = a.x * width;
+            const ay = a.y * height;
+            for (let j = i + 1; j < particles.length; j += 1) {
+              const b = particles[j];
+              const bx = b.x * width;
+              const by = b.y * height;
+              const distance = Math.hypot(ax - bx, ay - by);
+              if (distance < 145) {
+                context.beginPath();
+                context.strokeStyle = dark
+                  ? `rgba(56,189,248,${0.13 * (1 - distance / 145)})`
+                  : `rgba(2,132,199,${0.12 * (1 - distance / 145)})`;
+                context.lineWidth = 0.8;
+                context.moveTo(ax, ay);
+                context.lineTo(bx, by);
+                context.stroke();
+              }
+            }
+            context.beginPath();
+            context.arc(ax, ay, a.size, 0, Math.PI * 2);
+            context.fillStyle = dark ? 'rgba(56,189,248,0.42)' : 'rgba(2,132,199,0.3)';
+            context.fill();
+            if (!mq.matches) {
+              a.x += a.vx;
+              a.y += a.vy;
+              if (a.x < 0 || a.x > 1) a.vx *= -1;
+              if (a.y < 0 || a.y > 1) a.vy *= -1;
+            }
+          }
+          if (!mq.matches) frame = requestAnimationFrame(renderNetwork);
+        };
+        const restartNetwork = () => {
+          cancelAnimationFrame(frame);
+          renderNetwork();
+        };
+        resizeCanvas();
+        restartNetwork();
+        addEventListener('resize', () => { resizeCanvas(); restartNetwork(); }, { passive: true });
+        addEventListener('eryndex-theme-change', restartNetwork);
       }
     </script>
   </body>
