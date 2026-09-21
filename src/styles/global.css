@@ -871,7 +871,6 @@ html[data-theme='dark'] .theme-label-light { display: none; }
 }
 .footer {
   padding: 65px var(--gutter) 25px;
-  border-top: 1px solid var(--line);
   background: var(--theme-surface-strong);
   color: var(--ink);
   backdrop-filter: blur(20px);
