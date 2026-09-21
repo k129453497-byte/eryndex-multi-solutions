@@ -7,21 +7,33 @@ const { lang } = Astro.props as { lang: Locale };
 const t = translator(lang);
 
 const values = [
-  [t('企業系統設計', 'ENTERPRISE SYSTEM DESIGN'), t('企業軟體設計', 'Enterprise software'), t('以實際營運需求規劃系統與工作流程。', 'Systems and workflows planned around real operating needs.')],
-  [t('導入與啟用', 'IMPLEMENTATION & ENABLEMENT'), t('系統導入服務', 'Implementation services'), t('從需求釐清、資料遷移到教育訓練。', 'From discovery and migration to user enablement.')],
-  [t('持續營運', 'ONGOING OPERATIONS'), t('持續維護支援', 'Ongoing support'), t('協助系統穩定運作並因應組織變化。', 'Keeping systems reliable as organizations evolve.')],
+  [t('企業數位基礎', 'ENTERPRISE DIGITAL FOUNDATION'), t('依照營運方式設計系統', 'Systems shaped around operations'), t('從角色、流程與資料關係開始，建立真正符合團隊工作方式的企業軟體。', 'Start with roles, processes and data relationships to build software that reflects how teams actually work.')],
+  [t('智慧工作整合', 'INTELLIGENT WORK INTEGRATION'), t('讓資訊與工具彼此連結', 'Connect information and tools'), t('整合既有服務、知識與自動化能力，減少重複輸入並保留完整工作脈絡。', 'Connect existing services, knowledge and automation to reduce duplicate work and preserve context.')],
+  [t('可信任的營運', 'TRUSTED OPERATIONS'), t('讓管理與持續改善有依據', 'Govern and improve with evidence'), t('以版本、權限、核准與稽核紀錄，支援組織長期、安全且可追溯的運作。', 'Use versions, permissions, approvals and audit records to support secure, traceable operations over time.')],
 ];
 
-const capabilities = [
-  [t('工作協作', 'Work coordination'), t('整理任務、責任、交接與決策，讓團隊知道現在發生什麼，以及下一步由誰推進。', 'Organize tasks, ownership, handoffs and decisions so teams know what is happening and who moves next.')],
-  [t('資訊管理', 'Information management'), t('建立一致的保存方式與版本脈絡，讓重要資訊能被找到、理解並持續使用。', 'Create a consistent record and version context so important information can be found, understood and reused.')],
-  [t('存取治理', 'Access governance'), t('把身分、權限、核准與稽核放進清楚的管理流程，讓信任有依據。', 'Place identity, permission, approval and audit into a clear management process so trust has evidence.')],
+const capabilities: Array<[string, string, string[]]> = [
+  [
+    t('智慧工作與協作', 'Intelligent work and collaboration'),
+    t('把任務、知識與自動化放在同一條工作脈絡中，協助團隊清楚掌握責任、進度與下一步。', 'Bring tasks, knowledge and automation into one operating context so teams can clearly see ownership, progress and next actions.'),
+    [t('任務與流程管理', 'Task and workflow management'), t('團隊知識與語意搜尋', 'Team knowledge and semantic search'), t('AI 輔助整理與回應', 'AI-assisted organization and responses'), t('通知、交接與決策紀錄', 'Notifications, handoffs and decision records')],
+  ],
+  [
+    t('資訊資產與系統整合', 'Information assets and system integration'),
+    t('以一致的保存、版本與連結方式管理企業資訊，並串接既有工具與服務，形成可持續使用的數位資產。', 'Manage enterprise information through consistent storage, versions and links while connecting existing tools into reusable digital assets.'),
+    [t('文件與版本歷程', 'Documents and version history'), t('分享連結與跨部門協作', 'Shared links and cross-team collaboration'), t('API 與既有系統串接', 'API and legacy system integration'), t('備份、還原與資料遷移', 'Backup, restore and data migration')],
+  ],
+  [
+    t('身分安全與治理', 'Identity, security and governance'),
+    t('將身分、裝置、權限、核准與稽核整合成可管理的治理流程，讓每一次存取與變更都有依據。', 'Unify identity, devices, permissions, approvals and audit into manageable governance so every access and change has evidence.'),
+    [t('身分與裝置管理', 'Identity and device management'), t('角色權限與存取核准', 'Role permissions and access approvals'), t('稽核紀錄與異常追蹤', 'Audit records and anomaly tracking'), t('資料保護與存取政策', 'Data protection and access policies')],
+  ],
 ];
 
 const process = [
-  [t('理解現況', 'Understand the current state'), t('從真實工作、現有工具與管理責任開始，釐清真正需要改善的問題。', 'Begin with real work, existing tools and management ownership to identify what actually needs improvement.')],
-  [t('建立脈絡', 'Build the operating context'), t('把流程、資訊與治理原則整理成團隊能理解、可以執行的系統。', 'Turn processes, information and governance principles into a system teams can understand and use.')],
-  [t('持續運作', 'Make it sustainable'), t('透過導入、訓練與後續調整，讓新的工作方式穩定進入日常。', 'Use implementation, training and ongoing refinement to make the new way of working part of daily operations.')],
+  [t('理解企業現況', 'Understand the business context'), t('盤點真實工作、既有工具、資料來源與管理責任，辨識需要優先處理的問題。', 'Review real work, existing tools, data sources and ownership to identify the problems that matter first.')],
+  [t('設計並連結系統', 'Design and connect the system'), t('將流程、資訊、AI 輔助與治理原則整理成可操作的系統，並依需求與既有服務整合。', 'Turn processes, information, AI assistance and governance into an operable system connected to existing services where needed.')],
+  [t('導入與持續營運', 'Implement and operate'), t('透過資料遷移、教育訓練、版本管理與後續支援，讓新的工作方式穩定進入日常。', 'Use migration, enablement, version management and ongoing support to make the new way of working sustainable.')],
 ];
 
 ---
@@ -34,8 +46,8 @@ const process = [
     <div class="about-layout">
         <h2>{t('以企業每天的工作，\n作為系統設計的起點。', 'Enterprise systems designed around the work people actually do.')}</h2>
       <div class="about-copy">
-        <p class="lead">{t('Eryndex 智序科技是一家位於台灣的企業軟體與工作系統設計公司。', 'Eryndex is a Taiwan-based enterprise software and work systems company.')}</p>
-        <p>{t('我們協助企業釐清流程、資訊與管理責任，並將需求落實為能被團隊使用、管理與持續維護的數位系統。服務涵蓋系統規劃、導入、資料遷移、訓練與後續支援。', 'We help organizations clarify processes, information and management ownership, then turn those requirements into digital systems teams can use, govern and maintain. Services include planning, implementation, data migration, training and ongoing support.')}</p>
+        <p class="lead">{t('Eryndex 智序科技是一家位於台灣的企業軟體與智慧工作系統設計公司。', 'Eryndex is a Taiwan-based enterprise software and intelligent work systems company.')}</p>
+        <p>{t('我們從企業真實的營運流程出發，整合工作協作、資訊資產、AI 輔助與存取治理，將分散的工具與資料整理成團隊可以使用、管理並持續演進的系統。服務涵蓋需求釐清、系統規劃、既有服務串接、資料遷移、教育訓練與後續支援。', 'We begin with real operating processes, bringing together collaboration, information assets, AI assistance and access governance. The result is a system teams can use, manage and evolve. Services include discovery, system planning, integration, migration, enablement and ongoing support.')}</p>
         <div class="about-meta"><span>{t('服務地區', 'REGION')} · TAIWAN</span><span>{t('業務類型', 'FOCUS')} · B2B SOFTWARE</span></div>
       </div>
     </div>
@@ -63,10 +75,10 @@ const process = [
           <p class="eyebrow">CORE CAPABILITIES</p>
           <h2>{t('三項能力，\n支撐一套企業系統。', 'Three capabilities.\nOne enterprise system.')}</h2>
         </div>
-        <p class="lead">{t('從日常協作、資訊保存到權限管理，智序科技以一致的系統觀點協助企業建立可持續的工作方式。', 'From daily collaboration and information continuity to permission management, Eryndex builds sustainable ways of working through one consistent system perspective.')}</p>
+        <p class="lead">{t('三項能力不是彼此分離的產品，而是共同支撐企業工作、資訊與治理的一套系統基礎。', 'These capabilities are not isolated products. Together they form one system foundation for work, information and governance.')}</p>
       </div>
       <div class="capability-stack">
-        {capabilities.map(([title, description], index) => (
+        {capabilities.map(([title, description, features], index) => (
           <article tabindex="0">
             <div class="capability-icon" aria-hidden="true">
               {index === 0 ? (
@@ -77,7 +89,13 @@ const process = [
                 <svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.8-2.8 8.2-7 10-4.2-1.8-7-5.2-7-10V6zM9 12l2 2 4-4" /></svg>
               )}
             </div>
-            <div class="capability-copy"><h3>{title}</h3><p>{description}</p></div>
+            <div class="capability-copy">
+              <h3>{title}</h3>
+              <p>{description}</p>
+              <ul class="capability-features">
+                {features.map((feature) => <li>{feature}</li>)}
+              </ul>
+            </div>
           </article>
         ))}
       </div>
