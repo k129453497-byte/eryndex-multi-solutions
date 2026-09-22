@@ -1,22 +1,41 @@
 ---
 import Site from '../layouts/Site.astro';
 import SinglePage from '../components/SinglePage.astro';
-import { locales, legacyRoutes, href, anchorFor, translator, type Locale } from '../data/content';
+import SolutionDetail from '../components/SolutionDetail.astro';
+import { locales, legacyRoutes, solutionRoutes, href, anchorFor, translator, type Locale } from '../data/content';
 export function getStaticPaths() {
-  return locales.flatMap((lang) =>
-    legacyRoutes.map((path) => ({
+  return locales.flatMap((lang) => [
+    ...legacyRoutes.map((path) => ({
       params: { route: lang + (path ? '/' + path : '') },
       props: { lang, path },
     })),
-  );
+    ...solutionRoutes.map((path) => ({ params: { route: lang + '/' + path }, props: { lang, path } })),
+  ]);
 }
 const { lang, path } = Astro.props as { lang: Locale; path: string };
 const t = translator(lang);
 const target = href(lang) + (path ? '#' + anchorFor(path) : '');
+const solutionId = path.startsWith('solutions/') ? path.slice('solutions/'.length) : '';
+const isSolution = ['ai-solution-design', 'enterprise-digital-infrastructure', 'zero-trust-access-governance'].includes(solutionId);
+const solutionTitle = {
+  'ai-solution-design': t('AI 解決方案設計', 'AI solution design'),
+  'enterprise-digital-infrastructure': t('企業數位基礎架構', 'Enterprise digital infrastructure'),
+  'zero-trust-access-governance': t('零信任存取治理', 'Zero trust access governance'),
+}[solutionId] ?? t('企業解決方案', 'Enterprise solution');
 ---
 
 {
-  path ? (
+  isSolution ? (
+    <Site
+      lang={lang}
+      path={path}
+      singlePage={false}
+      title={solutionTitle}
+      description={t('Eryndex 智序科技企業解決方案規格與導入說明。', 'Eryndex enterprise solution capabilities and implementation approach.')}
+    >
+      <SolutionDetail lang={lang} id={solutionId} />
+    </Site>
+  ) : path ? (
     <html lang={lang === 'zh-tw' ? 'zh-Hant' : lang === 'zh-cn' ? 'zh-Hans' : 'en'}>
       <>
         <head>

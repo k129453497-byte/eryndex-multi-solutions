@@ -1,4 +1,4 @@
-import { locales, routes, href } from '../data/content';
+import { locales, routes, href, pageHref } from '../data/content';
 import type { APIRoute } from 'astro';
 const escape = (s: string) => s.replaceAll('&', '&amp;').replaceAll('"', '&quot;');
 export const GET: APIRoute = ({ site }) => {
@@ -10,13 +10,13 @@ export const GET: APIRoute = ({ site }) => {
             '<xhtml:link rel="alternate" hreflang="' +
             (l === 'zh-tw' ? 'zh-Hant' : l === 'zh-cn' ? 'zh-Hans' : 'en') +
             '" href="' +
-            escape(new URL(href(l, route), site).href) +
+            escape(new URL(route ? pageHref(l, route) : href(l), site).href) +
             '"/>',
         )
         .join('');
       return (
         '<url><loc>' +
-        escape(new URL(href(lang, route), site).href) +
+        escape(new URL(route ? pageHref(lang, route) : href(lang), site).href) +
         '</loc>' +
         alternates +
         '</url>'

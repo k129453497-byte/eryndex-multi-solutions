@@ -29,7 +29,12 @@ export const legacyRoutes = [
   'privacy',
   'terms',
 ];
-export const routes = [''];
+export const solutionRoutes = [
+  'solutions/ai-solution-design',
+  'solutions/enterprise-digital-infrastructure',
+  'solutions/zero-trust-access-governance',
+];
+export const routes = ['', ...solutionRoutes];
 const legacyAnchors: Record<string, string> = {
   solutions: 'approach',
   'solutions/modern-work': 'approach',
@@ -50,6 +55,7 @@ export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 export const asset = (path: string) => base + '/assets/' + path;
 export const href = (lang: Locale, path = '') =>
   path ? '#' + anchorFor(path) : base + '/' + lang + '/';
+export const pageHref = (lang: Locale, path: string) => `${base}/${lang}/${path}/`;
 export function content(lang: Locale) {
   const t = translator(lang);
   const products = [

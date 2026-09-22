@@ -1,0 +1,65 @@
+---
+import { base, translator, type Locale } from '../data/content';
+const { lang, id } = Astro.props as { lang: Locale; id: string };
+const t = translator(lang);
+const data = {
+  'ai-solution-design': {
+    key: 'ai',
+    eyebrow: 'AI SOLUTION DESIGN',
+    title: t('AI 解決方案設計', 'AI solution design'),
+    lead: t('將 AI、知識與自動化放進清楚的企業流程，讓效率提升不犧牲責任與判斷。', 'Bring AI, knowledge and automation into accountable business workflows.'),
+    scope: [t('專案管理與生產力工具', 'Project management and productivity tools'), t('任務與流程管理', 'Task and workflow management'), t('團隊知識與語意搜尋', 'Team knowledge and semantic search'), t('AI 輔助整理與回應', 'AI-assisted organization and responses'), t('通知、交接與決策紀錄', 'Notifications, handoffs and decision records')],
+    scenarios: [t('跨部門專案與交接', 'Cross-team projects and handoffs'), t('內部知識查找與回應', 'Internal knowledge retrieval and response'), t('重複性行政流程自動化', 'Routine administrative automation')],
+    approach: t('先釐清工作責任、資料來源與人工覆核點，再設計 AI 與自動化的介入方式。', 'Clarify ownership, data sources and human review before introducing AI and automation.'),
+  },
+  'enterprise-digital-infrastructure': {
+    key: 'infrastructure',
+    eyebrow: 'ENTERPRISE DIGITAL INFRASTRUCTURE',
+    title: t('企業數位基礎架構', 'Enterprise digital infrastructure'),
+    lead: t('整合資訊資產、既有系統、伺服器與復原能力，建立可持續營運的企業基礎。', 'Connect information assets, existing systems, servers and recovery capabilities into a sustainable foundation.'),
+    scope: [t('文件與版本歷程', 'Documents and version history'), t('分享連結與跨部門協作', 'Shared links and cross-team collaboration'), t('API 與既有系統串接', 'API and legacy system integration'), t('備份、還原與伺服器升級遷移', 'Backup, recovery and server upgrade migration')],
+    scenarios: [t('舊系統與伺服器升級', 'Legacy system and server upgrades'), t('資料中心或雲端遷移', 'Data center or cloud migration'), t('備份、復原與營運持續規劃', 'Backup, recovery and continuity planning')],
+    approach: t('以相依性、復原目標與切換風險為基礎分階段遷移，每一階段都保留驗證與回復方案。', 'Migrate in stages based on dependencies, recovery objectives and cutover risk, with validation and rollback at every stage.'),
+  },
+  'zero-trust-access-governance': {
+    key: 'zero-trust',
+    eyebrow: 'ZERO TRUST ACCESS GOVERNANCE',
+    title: t('零信任存取治理', 'Zero trust access governance'),
+    lead: t('依身分、裝置、情境與風險持續判斷存取，讓每一次授權與變更都有依據。', 'Evaluate access continuously using identity, device, context and risk.'),
+    scope: [t('身分與裝置管理', 'Identity and device management'), t('角色權限與存取核准', 'Role permissions and access approvals'), t('稽核紀錄與異常追蹤', 'Audit records and anomaly tracking'), t('資料保護與存取政策', 'Data protection and access policies')],
+    scenarios: [t('人員到職、異動與離職', 'Joiners, movers and leavers'), t('混合辦公與外部協作', 'Hybrid work and external collaboration'), t('特權帳號與定期權限複核', 'Privileged access and periodic reviews')],
+    approach: t('採最小權限、強式驗證、裝置合規與持續監控，不因網路位置預設信任。', 'Apply least privilege, strong authentication, device compliance and continuous monitoring without trusting network location by default.'),
+  },
+}[id]!;
+const whitepaper = `${base}/downloads/eryndex-${id}-whitepaper.pdf`;
+---
+
+<article class="solution-detail">
+  <header class="solution-detail-hero wrap">
+    <p class="eyebrow">{data.eyebrow}</p>
+    <h1>{data.title}</h1>
+    <p class="lead">{data.lead}</p>
+    <div class="solution-detail-actions">
+      <a class="button" href="#contact-dialog" data-contact-open data-solution={data.key}>{t('討論你的需求', 'Discuss your requirements')} ↗</a>
+      <a class="text-link" href={whitepaper} download>{t('下載方案白皮書', 'Download solution brief')} ↓</a>
+    </div>
+  </header>
+  <section class="wrap solution-detail-grid">
+    <div>
+      <p class="eyebrow">CAPABILITY SCOPE</p>
+      <h2>{t('核心能力範圍', 'Core capability scope')}</h2>
+      <ul>{data.scope.map((item) => <li>{item}</li>)}</ul>
+    </div>
+    <div>
+      <p class="eyebrow">WHERE IT FITS</p>
+      <h2>{t('適用企業情境', 'Where it fits')}</h2>
+      <ul>{data.scenarios.map((item) => <li>{item}</li>)}</ul>
+    </div>
+  </section>
+  <section class="wrap solution-approach">
+    <p class="eyebrow">DELIVERY PRINCIPLE</p>
+    <h2>{t('從現況與風險出發，設計可以落地的路線。', 'Design an achievable path from current reality and risk.')}</h2>
+    <p class="lead">{data.approach}</p>
+    <a class="button" href="#contact-dialog" data-contact-open data-solution={data.key}>{t('開始規劃', 'Start planning')} →</a>
+  </section>
+</article>

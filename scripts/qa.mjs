@@ -109,12 +109,13 @@ for (const locale of ['zh-tw', 'zh-cn', 'en']) {
       path.relative(root, f).startsWith(locale + '/') &&
       !docs.get(f).querySelector('meta[http-equiv="refresh"]'),
   );
-  assert.equal(list.length, 1, 'Missing localized routes: ' + locale);
+  assert.equal(list.length, 4, 'Missing localized routes: ' + locale);
   const names = list.map((f) => docs.get(f).querySelector('title').textContent);
   assert.equal(new Set(names).size, names.length, 'Duplicate page titles: ' + locale);
 }
 for (const [file, doc] of docs) {
   if (doc.querySelector('meta[http-equiv="refresh"]') || file.endsWith('/404.html')) continue;
+  if (!doc.querySelector('.corporate-site')) continue;
   for (const id of [
     'products',
     'products-space',
@@ -146,8 +147,9 @@ for (const [file, doc] of docs) {
   assert.equal(
     doc.querySelectorAll('#contact-form').length,
     0,
-    'Corporate home must not load the enquiry form',
+    'Legacy full-page enquiry form must remain removed',
   );
+  assert.equal(doc.querySelectorAll('#contact-dialog-form').length, 1, 'Missing contact dialog form');
 }
 const data = new FormData();
 data.set('name', 'Sample Person');
@@ -172,7 +174,7 @@ if (issues.length) {
         internalLinkReferences: links,
         assetReferences: assets,
         mastersVerified: 6,
-        localizedPages: 3,
+        localizedPages: 12,
         legacyRedirects: 54,
         corporateIdentityStructure: 'PASS',
         scope:

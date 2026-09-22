@@ -1,0 +1,88 @@
+---
+import { translator, type Locale } from '../data/content';
+const { lang } = Astro.props as { lang: Locale };
+const t = translator(lang);
+---
+
+<dialog id="contact-dialog" class="contact-dialog" aria-labelledby="contact-dialog-title">
+  <div class="contact-dialog-shell">
+    <button class="contact-dialog-close" type="button" data-contact-close aria-label={t('關閉聯絡表單', 'Close contact form')}>×</button>
+    <header>
+      <p class="eyebrow">CONTACT ERYNDEX</p>
+      <h2 id="contact-dialog-title">{t('告訴我們你想改善的系統', 'Tell us what you want to improve')}</h2>
+      <p>{t('填寫後會在你的裝置上整理成郵件草稿，不會自動上傳或儲存資料。', 'Your answers are prepared as an email draft on your device and are not uploaded or stored automatically.')}</p>
+    </header>
+    <form id="contact-dialog-form" data-subject={t('Eryndex 企業系統需求諮詢', 'Eryndex enterprise systems enquiry')}>
+      <div class="form-row">
+        <label>{t('姓名', 'Name')} <span>*</span><input name="name" autocomplete="name" required maxlength="80" /></label>
+        <label>{t('公司名稱', 'Company')} <span>*</span><input name="company" autocomplete="organization" required maxlength="120" /></label>
+      </div>
+      <div class="form-row">
+        <label>{t('企業 Email', 'Business email')} <span>*</span><input name="email" type="email" autocomplete="email" required maxlength="254" /></label>
+        <label>{t('職位', 'Job title')} <span>*</span><input name="jobTitle" autocomplete="organization-title" required maxlength="100" /></label>
+      </div>
+      <label>{t('企業系統製作', 'Enterprise solution')} <span>*</span>
+        <select name="interest" required>
+          <option value="">{t('請選擇解決方案', 'Select a solution')}</option>
+          <option value="ai">{t('AI 解決方案設計', 'AI solution design')}</option>
+          <option value="infrastructure">{t('企業數位基礎架構', 'Enterprise digital infrastructure')}</option>
+          <option value="zero-trust">{t('零信任存取治理', 'Zero trust access governance')}</option>
+        </select>
+      </label>
+      <label>{t('預算區間', 'Budget range')} <span>*</span>
+        <select name="budget" required>
+          <option value="">{t('請選擇預算區間', 'Select a budget range')}</option>
+          <option>{t('新台幣 30 萬元以下', 'Below TWD 300,000')}</option>
+          <option>{t('新台幣 30–80 萬元', 'TWD 300,000–800,000')}</option>
+          <option>{t('新台幣 80–200 萬元', 'TWD 800,000–2,000,000')}</option>
+          <option>{t('新台幣 200 萬元以上', 'Above TWD 2,000,000')}</option>
+          <option>{t('尚未確定', 'Not determined yet')}</option>
+        </select>
+      </label>
+      <label>{t('預計改善的系統需求', 'System requirements to improve')} <span>*</span>
+        <textarea name="message" rows="5" required minlength="10" maxlength="4000" placeholder={t('請簡述目前的工作方式、系統問題與期望成果。', 'Describe your current workflow, system challenges and desired outcome.')}></textarea>
+        <small>{t('至少 10 個字元，請勿填入密碼或機密資料。', 'At least 10 characters. Do not include passwords or confidential information.')}</small>
+      </label>
+      <label class="consent"><input type="checkbox" required name="consent" /><span>{t('我了解此表單會開啟郵件程式，由我確認後寄出。', 'I understand this form opens my email app and I will confirm before sending.')}</span></label>
+      <div class="contact-dialog-actions">
+        <button class="button" type="submit">{t('建立諮詢郵件', 'Prepare enquiry email')} ↗</button>
+        <span id="contact-dialog-status" role="status"></span>
+      </div>
+    </form>
+  </div>
+</dialog>
+
+<script>
+  import { prepareEnquiry } from '../lib/contact';
+  const dialog = document.querySelector<HTMLDialogElement>('#contact-dialog');
+  const form = document.querySelector<HTMLFormElement>('#contact-dialog-form');
+  const openDialog = (trigger?: HTMLElement | null) => {
+    if (!dialog || !form) return;
+    const requested = trigger?.dataset.solution;
+    const select = form.elements.namedItem('interest') as HTMLSelectElement;
+    if (requested && [...select.options].some((option) => option.value === requested)) select.value = requested;
+    if (!dialog.open) dialog.showModal();
+    requestAnimationFrame(() => (form.elements.namedItem('name') as HTMLInputElement)?.focus());
+  };
+  document.addEventListener('click', (event) => {
+    const trigger = (event.target as Element).closest<HTMLElement>('[data-contact-open]');
+    if (!trigger) return;
+    event.preventDefault();
+    openDialog(trigger);
+  });
+  document.querySelector('[data-contact-close]')?.addEventListener('click', () => dialog?.close());
+  dialog?.addEventListener('click', (event) => { if (event.target === dialog) dialog.close(); });
+  dialog?.addEventListener('cancel', () => dialog.close());
+  form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+    ['name', 'company', 'email', 'jobTitle', 'message'].forEach((name) => {
+      const field = form.elements.namedItem(name) as HTMLInputElement | HTMLTextAreaElement;
+      field.value = field.value.trim();
+    });
+    if (!form.reportValidity()) return;
+    const interest = form.elements.namedItem('interest') as HTMLSelectElement;
+    const result = prepareEnquiry(new FormData(form), interest.selectedOptions[0].text, form.dataset.subject!);
+    document.querySelector('#contact-dialog-status')!.textContent = dialog?.dataset.ready ?? '';
+    location.href = result.mailto;
+  });
+</script>

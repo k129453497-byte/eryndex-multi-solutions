@@ -358,6 +358,25 @@
   gap: 12%;
   padding-block: 65px 100px;
 }
+.solution-detail { padding-top: 88px; }
+.solution-detail-hero {
+  min-height: 560px;
+  padding-block: clamp(90px, 10vw, 150px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.solution-detail-hero h1 { max-width: 900px; margin: 14px 0 24px; font-size: clamp(48px, 6vw, 86px); line-height: 1.05; letter-spacing: -0.045em; }
+.solution-detail-hero .lead { max-width: 760px; font-size: clamp(19px, 2vw, 26px); }
+.solution-detail-actions { display: flex; align-items: center; gap: 28px; margin-top: 38px; }
+.solution-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(50px, 9vw, 140px); padding-block: clamp(70px, 9vw, 130px); }
+.solution-detail-grid h2 { margin: 12px 0 28px; font-size: clamp(28px, 3vw, 44px); }
+.solution-detail-grid ul { margin: 0; padding: 0; list-style: none; }
+.solution-detail-grid li { padding: 18px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 17px; }
+.solution-approach { margin-bottom: clamp(70px, 9vw, 130px); padding-block: clamp(54px, 7vw, 90px); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.solution-approach h2 { max-width: 820px; margin: 14px 0 24px; font-size: clamp(32px, 4vw, 58px); line-height: 1.16; }
+.solution-approach .lead { max-width: 760px; }
+.solution-approach .button { margin-top: 32px; }
 .contact-layout h2 {
   font-size: 28px;
   margin-bottom: 20px;
@@ -1108,6 +1127,11 @@ label > small {
   }
 }
 @media (max-width: 600px) {
+  .solution-detail { padding-top: 68px; }
+  .solution-detail-hero { min-height: 0; padding-block: 70px; }
+  .solution-detail-hero h1 { font-size: 43px; }
+  .solution-detail-actions { align-items: flex-start; flex-direction: column; gap: 18px; }
+  .solution-detail-grid { grid-template-columns: 1fr; gap: 64px; }
   .page-intro {
     padding-block: 48px;
   }

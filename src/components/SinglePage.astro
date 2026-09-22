@@ -1,5 +1,5 @@
 ---
-import { translator, type Locale } from '../data/content';
+import { base, translator, type Locale } from '../data/content';
 import Hero from './Hero.astro';
 import '../styles/single-page.css';
 
@@ -12,21 +12,24 @@ const values = [
   [t('可信任的營運', 'TRUSTED OPERATIONS'), t('讓管理與持續改善有依據', 'Govern and improve with evidence'), t('以版本、權限、核准與稽核紀錄，支援組織長期、安全且可追溯的運作。', 'Use versions, permissions, approvals and audit records to support secure, traceable operations over time.')],
 ];
 
-const capabilities: Array<[string, string, string[]]> = [
+const capabilities: Array<[string, string, string[], string]> = [
   [
     t('AI 解決方案設計', 'AI solution design'),
     t('把任務、知識與自動化放在同一條工作脈絡中，協助團隊清楚掌握責任、進度與下一步。', 'Bring tasks, knowledge and automation into one operating context so teams can clearly see ownership, progress and next actions.'),
     [t('任務與流程管理', 'Task and workflow management'), t('專案管理與生產力工具', 'Project management and productivity tools'), t('團隊知識與語意搜尋', 'Team knowledge and semantic search'), t('AI 輔助整理與回應', 'AI-assisted organization and responses'), t('通知、交接與決策紀錄', 'Notifications, handoffs and decision records')],
+    'ai-solution-design',
   ],
   [
     t('企業數位基礎架構', 'Enterprise digital infrastructure'),
     t('以一致的保存、版本與連結方式管理企業資訊，並串接既有工具與服務，形成可持續使用的數位資產。', 'Manage enterprise information through consistent storage, versions and links while connecting existing tools into reusable digital assets.'),
     [t('文件與版本歷程', 'Documents and version history'), t('分享連結與跨部門協作', 'Shared links and cross-team collaboration'), t('API 與既有系統串接', 'API and legacy system integration'), t('備份、還原與伺服器升級遷移', 'Backup, recovery and server upgrade migration')],
+    'enterprise-digital-infrastructure',
   ],
   [
     t('零信任存取治理', 'Zero trust access governance'),
     t('將身分、裝置、權限、核准與稽核整合成可管理的治理流程，讓每一次存取與變更都有依據。', 'Unify identity, devices, permissions, approvals and audit into manageable governance so every access and change has evidence.'),
     [t('身分與裝置管理', 'Identity and device management'), t('角色權限與存取核准', 'Role permissions and access approvals'), t('稽核紀錄與異常追蹤', 'Audit records and anomaly tracking'), t('資料保護與存取政策', 'Data protection and access policies')],
+    'zero-trust-access-governance',
   ],
 ];
 
@@ -78,7 +81,7 @@ const process = [
         <p class="lead">{t('三項能力不是彼此分離的產品，而是共同支撐企業工作、資訊與治理的一套系統基礎。', 'These capabilities are not isolated products. Together they form one system foundation for work, information and governance.')}</p>
       </div>
       <div class="capability-stack">
-        {capabilities.map(([title, description, features], index) => (
+        {capabilities.map(([title, description, features, slug], index) => (
           <article tabindex="0">
             <div class="capability-icon" aria-hidden="true">
               {index === 0 ? (
@@ -95,6 +98,7 @@ const process = [
               <ul class="capability-features">
                 {features.map((feature) => <li>{feature}</li>)}
               </ul>
+              <a class="capability-link" href={`${base}/${lang}/solutions/${slug}/`}>{t('查看完整方案', 'View full solution')} →</a>
             </div>
           </article>
         ))}

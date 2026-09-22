@@ -178,6 +178,15 @@
 .capability-stack article:focus-visible .capability-features { border-color: rgba(255,255,255,0.2); }
 .capability-stack article:hover .capability-features li,
 .capability-stack article:focus-visible .capability-features li { color: #e7f4f0; }
+.capability-link {
+  display: inline-flex;
+  margin-top: 24px;
+  color: var(--theme-accent);
+  font-size: 13px;
+  font-weight: 700;
+}
+.capability-stack article:hover .capability-link,
+.capability-stack article:focus-visible .capability-link { color: #fff; }
 .capability-stack article:hover .capability-features li::before,
 .capability-stack article:focus-visible .capability-features li::before { background: #fff; }
 
