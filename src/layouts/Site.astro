@@ -59,8 +59,11 @@ const solutionHref = (slug: string) => `${base}/${lang}/solutions/${slug}/`;
       property="og:locale"
       content={lang === 'zh-tw' ? 'zh_TW' : lang === 'zh-cn' ? 'zh_CN' : 'en_US'}
     />
-    <meta property="og:image" content={new URL(asset('web/hero-1344.webp'), Astro.site)} />
-    <meta name="twitter:image" content={new URL(asset('web/hero-1344.webp'), Astro.site)} />
+    <meta property="og:image" content={new URL(asset('web/hero-social.png'), Astro.site)} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={t('Eryndex 智序科技網站 Hero', 'Eryndex hero')} />
+    <meta name="twitter:image" content={new URL(asset('web/hero-social.png'), Astro.site)} />
     <meta name="twitter:card" content="summary_large_image" /><meta
       name="twitter:title"
       content={title + ' · Eryndex'}
