@@ -14,7 +14,7 @@ const values = [
 
 const capabilities: Array<[string, string, string[]]> = [
   [
-    t('智慧工作與協作', 'Intelligent work and collaboration'),
+    t('AI 解決方案設計', 'AI solution design'),
     t('把任務、知識與自動化放在同一條工作脈絡中，協助團隊清楚掌握責任、進度與下一步。', 'Bring tasks, knowledge and automation into one operating context so teams can clearly see ownership, progress and next actions.'),
     [t('任務與流程管理', 'Task and workflow management'), t('團隊知識與語意搜尋', 'Team knowledge and semantic search'), t('AI 輔助整理與回應', 'AI-assisted organization and responses'), t('通知、交接與決策紀錄', 'Notifications, handoffs and decision records')],
   ],
@@ -82,7 +82,7 @@ const process = [
           <article tabindex="0">
             <div class="capability-icon" aria-hidden="true">
               {index === 0 ? (
-                <svg viewBox="0 0 24 24"><path d="M4 7h6M14 7h6M7 4v6M17 4v6M4 17h6M14 17h6M7 14v6M17 14v6M10 7h4v10h-4z" /></svg>
+                <svg viewBox="0 0 24 24"><path d="M9.5 4.5a3 3 0 0 0-5 2.2 3.2 3.2 0 0 0 .8 6.2A3.5 3.5 0 0 0 9.5 18M14.5 4.5a3 3 0 0 1 5 2.2 3.2 3.2 0 0 1-.8 6.2 3.5 3.5 0 0 1-4.2 5.1M9.5 4.5V20M14.5 4.5V20M9.5 8H7.8M14.5 8h1.7M9.5 12H7M14.5 12H17M9.5 16H8M14.5 16H16" /></svg>
               ) : index === 1 ? (
                 <svg viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v5h5M9 12h6M9 16h6" /></svg>
               ) : (
