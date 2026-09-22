@@ -15,7 +15,7 @@ try {
   const cn = docs['zh-cn'];
   const output = cn.documentElement.outerHTML;
   for (const [term] of cnTerms) assert.ok(!output.includes(term), `Unlocalized term: ${term}`);
-  assert.ok(cn.querySelector('.hero-description').textContent.includes('智序科技'));
+  assert.ok(cn.querySelector('.hero-description').textContent.includes('企业软件规划'));
   assert.equal(
     localizeSimplified('Eryndex Space Files Shield Services'),
     'Eryndex Space Files Shield Services',
@@ -26,9 +26,9 @@ try {
     assert.equal(document.querySelectorAll('[data-demo]').length, 0);
     assert.ok(document.querySelector('a[href="mailto:contact@eryndex.com"]'));
   }
-  assert.ok(docs['zh-tw'].querySelector('.hero-description').textContent.includes('智序科技'));
+  assert.ok(docs['zh-tw'].querySelector('.hero-description').textContent.includes('企業軟體規劃'));
   assert.ok(
-    docs.en.querySelector('.hero-description').textContent.includes('Eryndex plans, designs and implements'),
+    docs.en.querySelector('.hero-description').textContent.includes('Enterprise software planning'),
   );
   console.log(
     'PASS: corporate copy, terminology, unified system theme and three-language structure. Browser interaction not covered.',
